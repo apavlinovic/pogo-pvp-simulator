@@ -1,7 +1,6 @@
 import Constants from "../Shared/Constants";
 import { Move } from "./Move";
 import { Type } from "../Shared/Types";
-import { TypeEfficiency } from "../Shared/TypeEfficiency";
 
 export class Pokemon {
     STA: number;
@@ -14,9 +13,6 @@ export class Pokemon {
     Type1: Type;
     Type2: Type | null;
 
-    FastMove!: Move;
-    ChargeMove!: Move;
-    ChargeMove2!: Move;
 
     constructor(
         sta: number, atk: number, def: number, 
@@ -51,17 +47,6 @@ export class Pokemon {
             ) 
         / 10);
     }    
-
-    CalculateDamageToTargetPokemon(target: Pokemon, move: Move) {
-        let multi_type = TypeEfficiency.GetMoveEfficiency(move.Type, this.Type1, this.Type2);
-        let multi_stab = this.GetStabMultiplier(move);
-        let ratio_cpm = Constants.GetCPM(this.LVL) / Constants.GetCPM(target.LVL);
-        let ratio_stats = this.ATK / target.DEF;
-
-        let move_damage = 0.5 * (move.Power * ratio_stats * ratio_cpm) * (multi_type * multi_stab);
-
-        return Math.floor(move_damage) + 1;
-    }
 
     GetStabMultiplier(move: Move) {
         return (move.Type === this.Type1 || move.Type === this.Type2) ? Constants.STAB_MULTI : 1;
