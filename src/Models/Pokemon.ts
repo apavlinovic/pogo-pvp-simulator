@@ -9,7 +9,8 @@ export class Pokemon {
     DEF: number;
     LVL: number;
     HP: number;
-
+    CP: number;
+    
     Type1: Type;
     Type2: Type | null;
 
@@ -26,16 +27,30 @@ export class Pokemon {
         this.STA = sta + staIV;
         this.ATK = atk + atkIV;
         this.DEF = def + defIV;
+
         this.LVL = level;
+
         this.Type1 = type1;
         this.Type2 = type2 || null;
         
         this.HP = this.CalculateHP(sta, staIV, level);
+        this.CP = this.CalculateCP();
     }
 
     CalculateHP(STA: number, IV: number, LVL: number) {
         return Constants.GetCPM(LVL) * (STA + IV);
     }
+
+    CalculateCP() {
+        return Math.floor(
+            (
+                this.ATK 
+                * Math.pow(this.DEF, 0.5) 
+                * Math.pow(this.STA, 0.5) 
+                * Math.pow(Constants.GetCPM(this.LVL), 2)
+            ) 
+        / 10);
+    }    
 
     CalculateDamageToTargetPokemon(target: Pokemon, move: Move) {
         let multi_type = TypeEfficiency.GetMoveEfficiency(move.Type, this.Type1, this.Type2);

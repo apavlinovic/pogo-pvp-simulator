@@ -1,4 +1,4 @@
-var GameMaster = [
+[
     {
         "template_id": "AVATAR_f_backpack_cute_0",
         "avatar_customization": {
@@ -101935,6 +101935,4 @@ var GameMaster = [
             ]
         }
     }
-];
-
-export default GameMaster;
+]
