@@ -2,55 +2,110 @@ import { Pokemon } from "./Pokemon";
 import { Move } from "./Move";
 import { TypeEfficiency } from "../Shared/TypeEfficiency";
 import Constants from "../Shared/Constants";
+import { Timeline, TimelineEvent, TimelineEventType } from "../Simulator/Timeline";
 
 export class Battler {
-    Pokemon: Pokemon;
+    readonly Pokemon: Pokemon;
     FastMove: Move;
     ChargeMove: Move;
     ChargeMove2: Move | null;
 
     Energy: number;
     Shields: number;
+    Health: number;
+
+    private Turn: number;
+    private NextActionableTurn: number;
+    private NextDeclaredMove: Move | null;
+
+    private Timeline: Timeline;
 
     constructor(pokemon: Pokemon, fastMove: Move, chargeMove: Move, chargeMove2?: Move | null) {
         this.Pokemon = pokemon;
+
         this.FastMove = fastMove;
         this.ChargeMove = chargeMove;
         this.ChargeMove2 = chargeMove2 ? chargeMove2 : null;
+        this.Timeline = new Timeline();
+
+        this.Health = this.Pokemon.HP;
+        
+        this.Turn = 0;        
+        this.NextActionableTurn = 0;
+        this.NextDeclaredMove = null;
 
         this.Energy = 0;
-        this.Shields = 2;
+        this.Shields = Constants.SHIELD_COUNT;
+    }
+
+    Tick() {
+        this.Turn++;
+    }
+
+    Reset() {
+                
+        this.Health = this.Pokemon.HP;
+        
+        this.Timeline = new Timeline();
+        this.Turn = 0;        
+        this.NextActionableTurn = 0;
+        this.NextDeclaredMove = null;
+
+        this.Energy = 0;
+        this.Shields = Constants.SHIELD_COUNT;
     }
 
     IsAlive() {
-        return this.Pokemon.HP >= 0;
-    }
-
-    TakeDamage(damage: number) {
-        this.Pokemon.HP -= damage;
+        return this.Health >= 0;
     }
 
     CanUseShield() {
         return this.Shields > 0;
     }
 
-    ActivateShield() {
-        this.Shields--;
-    }
-
     CanUseChargeMove() {
         return this.Energy + this.ChargeMove.Energy > 0;
     }
 
-    ActivateMove(move: Move) {
-        this.Energy += move.Energy;
+    CanAct() {
+        return this.Turn == 0 || this.Turn > this.NextActionableTurn;
     }
 
-    CalculateDamage(target: Battler, move: Move) {
-        
-        let damage = this.CalculateDamageToTargetPokemon(target.Pokemon, move);
 
-        return damage;
+
+    UseShield() {
+        this.Shields--;
+        this.NextActionableTurn = this.Turn + Constants.SHIELD_TURN_DURATION;
+
+        this.Timeline.AddEvent(new TimelineEvent(Constants.CHARGE_MOVE_TURN_DURATION, TimelineEventType.Shield))
+    }
+
+    DeclareAttack(move: Move) {
+        this.Energy += move.Energy;
+        this.NextDeclaredMove = move;
+        
+        if(this.Energy > 100) {
+            this.Energy = 100;
+        } else if (this.Energy < 0) {
+            this.Energy = 0;
+        }
+
+        this.NextActionableTurn = this.Turn + (move.Turns || Constants.CHARGE_MOVE_TURN_DURATION);
+    }
+
+    FoilAttack() {
+        this.NextDeclaredMove = null;
+    }
+
+    ExecuteAttack(target: Battler) {
+        if(this.NextDeclaredMove) {
+            let damage = this.CalculateDamageToTargetPokemon(target.Pokemon, this.NextDeclaredMove);
+            target.Health -= damage;
+
+            return damage;
+        }
+
+        return 0;
     }
 
     private CalculateDamageToTargetPokemon(target: Pokemon, move: Move) {

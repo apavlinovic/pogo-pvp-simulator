@@ -24,44 +24,32 @@ export class Simulator {
 
     Simulate() {
         do {
-            
-            this.AdvanceTimelineFor(this.Battler1, this.Timeline_Battler1, this.Battler2, this.Timeline_Battler2);
-            this.AdvanceTimelineFor(this.Battler2, this.Timeline_Battler2, this.Battler1, this.Timeline_Battler1);
+
+            this.SimulateTurn(this.Battler1, this.Battler2);
+            this.SimulateTurn(this.Battler2, this.Battler1);
 
         } while(this.Battler1.IsAlive() && this.Battler2.IsAlive())
     }
 
-    private AdvanceTimelineFor(attacker: Battler,  attackerTimeline: Timeline, 
-        defender: Battler, defenderTimeline: Timeline) {
+    private SimulateTurn(attacker: Battler, defender: Battler) {
         
-        if(attackerTimeline.CanAct()) {
-            
-            let damage = 0;
-
+        if(attacker.CanAct()) {
             if(attacker.CanUseChargeMove()) {
-                
-                attacker.ActivateMove(attacker.ChargeMove);
-                attackerTimeline.AddEvent(new TimelineEvent(attacker.ChargeMove.Turns, TimelineEventType.ChargeMove));
-                
-                damage = attacker.CalculateDamage(defender, attacker.ChargeMove);
+                attacker.DeclareAttack(attacker.ChargeMove);
 
                 if(defender.CanUseShield()) {
-                    damage = 0;
-
-                    defender.ActivateShield();
-                    defenderTimeline.AddEvent(new TimelineEvent(attacker.ChargeMove.Turns, TimelineEventType.Shield));
+                    defender.UseShield();
+                    attacker.FoilAttack();
+                } else {
+                    attacker.ExecuteAttack(defender)
                 }
 
             } else {
-                damage = attacker.CalculateDamage(defender, attacker.FastMove);
-                
-                attacker.ActivateMove(attacker.FastMove);
-                attackerTimeline.AddEvent(new TimelineEvent(attacker.FastMove.Turns, TimelineEventType.FastMove));
+                attacker.DeclareAttack(attacker.FastMove);
+                attacker.ExecuteAttack(defender);
             }
-
-            defender.TakeDamage(damage);
         }
 
-        attackerTimeline.NextTurn();
+        attacker.Tick();
     }
 }

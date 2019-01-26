@@ -24,5 +24,4 @@ var x = new Simulator(
 
 x.Simulate();
 
-console.log(x.Battler1, x.Timeline_Battler1.Events[x.Timeline_Battler1.Events.length - 1], 
-    x.Battler2, x.Timeline_Battler2.Events[x.Timeline_Battler2.Events.length - 1]);
+console.log(x.Battler1, x.Battler2);
