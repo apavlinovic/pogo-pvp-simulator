@@ -2,7 +2,6 @@
 export class Timeline {
 
     Events: Array<TimelineEvent>;
-    
 
     constructor() {
 

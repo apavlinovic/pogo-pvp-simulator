@@ -1,6 +1,3 @@
-import { Pokemon } from "./Models/Pokemon";
-import { Move } from "./Models/Move";
-import { Type } from "./Shared/Types";
 import { MoveRepository } from "./Repository/MoveRepository";
 import { PokemonRepository } from "./Repository/PokemonRepository";
 import { Simulator } from "./Simulator/Simulator";
@@ -17,11 +14,14 @@ var kyogre = pokemon_repo.LoadPokemon("Kyogre", null, 40);
 var waterfall = move_repo.LoadMove("Waterfall");
 var hydro_pump = move_repo.LoadMove("Hydro Pump");
 
+console.log("Start");
+
 var x = new Simulator(
         new Battler(venusaur, vine_whip, frenzy_plant), 
         new Battler(kyogre, waterfall, hydro_pump)
     );
 
 x.Simulate();
+console.log("End");
 
 console.log(x.Battler1, x.Battler2);
