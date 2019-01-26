@@ -1,8 +1,9 @@
 import { Pokemon } from "./Pokemon";
-import { Move } from "./Move";
+import { Move, MoveCategory } from "./Move";
 import { TypeEfficiency } from "../Shared/TypeEfficiency";
 import Constants from "../Shared/Constants";
 import { Timeline, TimelineEvent, TimelineEventType } from "../Simulator/Timeline";
+import { ECANCELED } from "constants";
 
 export class Battler {
     readonly Pokemon: Pokemon;
@@ -18,7 +19,7 @@ export class Battler {
     private NextActionableTurn: number;
     private NextDeclaredMove: Move | null;
 
-    private Timeline: Timeline;
+    Timeline: Timeline;
 
     constructor(pokemon: Pokemon, fastMove: Move, chargeMove: Move, chargeMove2?: Move | null) {
         this.Pokemon = pokemon;
@@ -77,7 +78,7 @@ export class Battler {
         this.Shields--;
         this.NextActionableTurn = this.Turn + Constants.SHIELD_TURN_DURATION;
 
-        this.Timeline.AddEvent(new TimelineEvent(Constants.CHARGE_MOVE_TURN_DURATION, TimelineEventType.Shield))
+        this.Timeline.AddEvent(new TimelineEvent(this.Turn, Constants.CHARGE_MOVE_TURN_DURATION, TimelineEventType.Shield))
     }
 
     DeclareAttack(move: Move) {
@@ -91,6 +92,12 @@ export class Battler {
         }
 
         this.NextActionableTurn = this.Turn + (move.Turns || Constants.CHARGE_MOVE_TURN_DURATION);
+
+        if(move.Category == MoveCategory.Fast) {
+            this.Timeline.AddEvent(new TimelineEvent(this.Turn, (move.Turns as number), TimelineEventType.FastMove));
+        } else if(move.Category == MoveCategory.Charge) {
+            this.Timeline.AddEvent(new TimelineEvent(this.Turn,  Constants.CHARGE_MOVE_TURN_DURATION, TimelineEventType.ChargeMove));
+        }
     }
 
     FoilAttack() {

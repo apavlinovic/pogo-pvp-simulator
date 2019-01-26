@@ -12,16 +12,42 @@ export class Timeline {
         
         this.Events.push(event);
     }
+
+    ZipWithAnotherTimeline(timeline: Timeline) {
+        var zipped : any = {};
+
+        this.Events.forEach(element => {
+            zipped[element.Turn] = [ element, null ];
+        });
+
+        timeline.Events.forEach(element => {
+            if(zipped[element.Turn]) {
+                zipped[element.Turn][1] = element;
+            } else {
+                zipped[element.Turn] = [null, element];
+            }
+        });
+
+        let result : Array<[number, TimelineEvent, TimelineEvent]> = new Array;
+
+        for (const turn in zipped) {
+            if (zipped.hasOwnProperty(turn)) {
+                result.push([ parseInt(turn), zipped[turn][0], zipped[turn][1] ]);
+            }
+        }
+
+        return result;
+    }
 }
 
 export class TimelineEvent {
 
-    Duration: number | null;
-    Turn!: number | null;
+    Duration: number;
+    Turn: number;
     Type: TimelineEventType;
     
-    constructor(duration: number | null, type: TimelineEventType) {
-        
+    constructor(turn: number, duration: number, type: TimelineEventType) {
+        this.Turn = turn;
         this.Duration = duration;
         this.Type = type;
     }
