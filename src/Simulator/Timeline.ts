@@ -13,6 +13,10 @@ export class Timeline {
         this.Events.push(event);
     }
 
+    GetLastEvent() {
+        return this.Events[this.Events.length - 1];
+    }
+
     ZipWithAnotherTimeline(timeline: Timeline) {
         var zipped : any = {};
 

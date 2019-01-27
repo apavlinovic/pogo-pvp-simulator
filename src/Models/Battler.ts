@@ -3,7 +3,6 @@ import { Move, MoveCategory } from "./Move";
 import { TypeEfficiency } from "../Shared/TypeEfficiency";
 import Constants from "../Shared/Constants";
 import { Timeline, TimelineEvent, TimelineEventType } from "../Simulator/Timeline";
-import { ECANCELED } from "constants";
 
 export class Battler {
     readonly Pokemon: Pokemon;
@@ -69,7 +68,7 @@ export class Battler {
     }
 
     CanAct() {
-        return this.Turn == 0 || this.Turn > this.NextActionableTurn;
+        return this.Turn == 0 || this.Turn >= this.NextActionableTurn;
     }
 
 
@@ -77,6 +76,7 @@ export class Battler {
     UseShield() {
         this.Shields--;
         this.NextActionableTurn = this.Turn + Constants.SHIELD_TURN_DURATION;
+        this.NextDeclaredMove = null;
 
         this.Timeline.AddEvent(new TimelineEvent(this.Turn, Constants.CHARGE_MOVE_TURN_DURATION, TimelineEventType.Shield))
     }

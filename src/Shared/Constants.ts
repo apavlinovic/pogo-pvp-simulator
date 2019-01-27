@@ -5,6 +5,7 @@ export default class Constants {
 	static STAB_MULTI = 1.2;
 	static WEATHER_MULTI = 1.2;
 
+    static TURN_DURATION_MS = 500;
     static CHARGE_MOVE_TURN_DURATION = 6;
     static SHIELD_TURN_DURATION = 6;
     static SHIELD_COUNT = 2;

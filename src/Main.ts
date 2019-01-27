@@ -1,28 +1,61 @@
 import { MoveRepository } from "./Repository/MoveRepository";
 import { PokemonRepository } from "./Repository/PokemonRepository";
-import { Simulator } from "./Simulator/Simulator";
+import { Simulator, SimulationResult } from "./Simulator/Simulator";
 import { Battler } from "./Models/Battler";
+import * as colors from 'colors';
 import { TimelineEventType } from "./Simulator/Timeline";
+import _ = require("lodash");
 
 var pokemon_repo = new PokemonRepository()
 var move_repo = new MoveRepository();
 
-var venusaur = pokemon_repo.LoadPokemon("Venusaur", null, 40);
-var vine_whip = move_repo.LoadMove("Vine Whip");
-var frenzy_plant = move_repo.LoadMove("Frenzy Plant");
+var pokemons =  pokemon_repo.LoadAllPokemon();
+let results : Array<SimulationResult>= new Array;
 
-var kyogre = pokemon_repo.LoadPokemon("Kyogre", null, 40);
-var waterfall = move_repo.LoadMove("Waterfall");
-var hydro_pump = move_repo.LoadMove("Hydro Pump");
+console.time("pvp-sims-all-vs-all");
 
-var simulation = new Simulator(
-        new Battler(venusaur, vine_whip, frenzy_plant), 
-        new Battler(kyogre, waterfall, hydro_pump)
-    );
+[pokemon_repo.LoadPokemon("Venusaur")].forEach(attacker => {
+    pokemons.forEach(defender => {
+        attacker.FastMoves.forEach(attacker_fm => {
+            attacker.ChargeMoves.forEach(attacker_cm => {
+                defender.FastMoves.forEach(defender_fm => {
+                    defender.ChargeMoves.forEach(defender_cm => {
+        
+                        let sim = new Simulator(
+                            new Battler(
+                                attacker,
+                                move_repo.LoadMove(attacker_fm),
+                                move_repo.LoadMove(attacker_cm),
+                            ),
+        
+                            new Battler(
+                                defender,
+                                move_repo.LoadMove(defender_fm),
+                                move_repo.LoadMove(defender_cm),
+                            )
+                        );
+        
+                        let result = sim.Simulate();
 
-simulation.Simulate();
+                        if(attacker.ID !== result.Winner.Pokemon.ID)
+                            results.push(result);
+        
+                    });    
+                });
+            });    
+        });
+    })
+})
 
-let timeline = simulation.Battler1.Timeline.ZipWithAnotherTimeline(simulation.Battler2.Timeline);
+console.timeEnd("pvp-sims-all-vs-all");
+
+
+var best_counter = _(results).orderBy((sim:SimulationResult) => {
+    return sim.CombatTime();
+}, 'asc').value()[0]
+
+
+let timeline = best_counter.Winner.Timeline.ZipWithAnotherTimeline(best_counter.Looser.Timeline);
 
 let poke1 = Array();
 let poke2 = Array();
@@ -57,6 +90,7 @@ timeline.forEach(ev => {
 
 });
 
+console.log(best_counter.Winner.Pokemon.ID)
 console.log(poke1.join(' '));
 console.log(poke2.join(' '));
 console.log(turns.join(' '));

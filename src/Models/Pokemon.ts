@@ -3,6 +3,8 @@ import { Move } from "./Move";
 import { Type } from "../Shared/Types";
 
 export class Pokemon {
+    ID: string;
+
     STA: number;
     ATK: number;
     DEF: number;
@@ -13,12 +15,19 @@ export class Pokemon {
     Type1: Type;
     Type2: Type | null;
 
+    FastMoves: Array<string>;
+    ChargeMoves: Array<string>;
 
     constructor(
+        id: string,
         sta: number, atk: number, def: number, 
         type1: Type, type2: Type | null, 
-        level: number, 
-        staIV: number = 15, atkIV: number = 15, defIV: number = 15) {
+        level: number,
+        fastMoves: Array<string> = new Array,
+        chargeMoves: Array<string> = new Array,
+        staIV: number = 0, atkIV: number = 0, defIV: number = 0) {
+
+        this.ID = id;
 
         this.STA = sta + staIV;
         this.ATK = atk + atkIV;
@@ -29,12 +38,31 @@ export class Pokemon {
         this.Type1 = type1;
         this.Type2 = type2 || null;
         
-        this.HP = this.CalculateHP(sta, staIV, level);
+        this.HP = this.CalculateHP();
         this.CP = this.CalculateCP();
+
+        this.FastMoves = fastMoves;
+        this.ChargeMoves = chargeMoves;
     }
 
-    CalculateHP(STA: number, IV: number, LVL: number) {
-        return Constants.GetCPM(LVL) * (STA + IV);
+    ApplyIVs(staIV: number = 0, atkIV: number = 0, defIV: number = 0) {
+        this.STA += staIV;
+        this.ATK += atkIV;
+        this.DEF += defIV;
+
+        this.CP = this.CalculateCP();
+        this.HP = this.CalculateHP();
+    }
+
+    ApplyLVL(level: number) {
+        this.LVL = level
+
+        this.CP = this.CalculateCP();
+        this.HP = this.CalculateHP();
+    }    
+
+    CalculateHP() {
+        return Constants.GetCPM(this.LVL) * (this.STA);
     }
 
     CalculateCP() {
