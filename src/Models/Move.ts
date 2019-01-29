@@ -1,14 +1,17 @@
 import { Type } from "../Shared/Types";
 
 export class Move {
+    ID: string;
+
     Power: number;
     Energy: number;
     Turns: number | null;
     Type: Type;
     Category: MoveCategory
 
-    constructor(power: number, energy: number, turns: number | null, type: Type) {
-        this.Power = power;
+    constructor(id: string, power: number, energy: number, turns: number | null, type: Type) {
+        this.ID = id;
+        this.Power = power || 0;
         this.Energy = energy;
         this.Turns = turns;
         this.Type = type;

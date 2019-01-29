@@ -16,7 +16,8 @@ export class MoveRepository {
         var type = this.ExtractTypeIdentifier(gm_move.combat_move.type);
 
         return new Move(
-            gm_move.combat_move.power,
+            gm_move.template_id,
+            gm_move.combat_move.power || 0,
             gm_move.combat_move.energy_delta,
             gm_move.combat_move.duration_turns || null,
             Type[type]
