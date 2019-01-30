@@ -10,7 +10,7 @@ export class Timeline {
 
     AddEvent(event: TimelineEvent) {
         
-        this.Events.push(event);
+        // this.Events.push(event);
     }
 
     GetLastEvent() {

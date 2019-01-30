@@ -5,7 +5,7 @@
   "main": "lib/Main.js",
   "scripts": {
     "test": "jest",
-    "start": "tsc && node lib/main.js",
+    "start": "tsc && node --max-old-space-size=8192 lib/main.js",
     "build": "tsc"
   },
   "husky": {

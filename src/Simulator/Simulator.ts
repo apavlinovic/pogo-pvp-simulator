@@ -2,10 +2,13 @@ import { Battler } from "../Models/Battler";
 import Constants from "../Shared/Constants";
 
 export class Simulator {
-    Battler1: Battler;
-    Battler2: Battler;
+    Battler1!: Battler;
+    Battler2!: Battler;
 
-    constructor(pokemon1: Battler, pokemon2: Battler) {
+    constructor() {
+    }
+
+    SetBattlers(pokemon1: Battler, pokemon2: Battler) {
         this.Battler1 = pokemon1;
         this.Battler2 = pokemon2;
     }

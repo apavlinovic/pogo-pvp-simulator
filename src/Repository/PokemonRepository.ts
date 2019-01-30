@@ -6,9 +6,18 @@ import { startCase } from 'lodash';
 
 export class PokemonRepository {
     dataContext: Array<any>;
+    bannedPokemon = [ 'V0151_POKEMON_MEW' ];
 
     constructor() {
         this.dataContext = JSON.parse(fs.readFileSync('./src/Data/GameMaster.js', 'utf8'));
+
+        let template_id =  `V0`;
+
+        this.dataContext = this.dataContext.filter(item => {
+            return (item.template_id as string).startsWith(template_id)
+                && (item.template_id as string).indexOf(`_POKEMON_`) != -1
+                && item.pokemon_settings != null;
+        });        
     }
 
     LoadAllPokemon() {
@@ -54,12 +63,13 @@ export class PokemonRepository {
 
     private FindAllPokemon() {
         return this.dataContext.filter(gm_entry => {
-            return !!gm_entry.pokemon_settings && !gm_entry.pokemon_settings.evolution_branch;
+            return !!gm_entry.pokemon_settings 
+                && !gm_entry.pokemon_settings.evolution_branch
+                && this.bannedPokemon.indexOf(gm_entry.template_id) === -1;
         });
     };
 
     private FindPokemon(name: string, form?: string | null) {
-        let template_id =  `V0`;
         let pokemon_id = name.toUpperCase().replace(/[\W_]+/g,"_");
 
         if(form) {
@@ -67,12 +77,8 @@ export class PokemonRepository {
         }
 
         let potential_results = this.dataContext.filter(item => {
-            return (item.template_id as string).startsWith(template_id)
-                && (item.template_id as string).indexOf(`_POKEMON_`) != -1
-                && (item.template_id as string).endsWith(`_POKEMON_${ pokemon_id}`)
-                && item.pokemon_settings != null;
+            return (item.template_id as string).endsWith(`_POKEMON_${ pokemon_id}`);
         });
-
 
         return potential_results[0];
     }
