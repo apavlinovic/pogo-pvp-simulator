@@ -5,7 +5,7 @@ import Constants from "../Shared/Constants";
 import { Timeline, TimelineEvent, TimelineEventType } from "../Simulator/Timeline";
 
 export class Battler {
-    readonly Pokemon: Pokemon;
+    Pokemon: Pokemon;
     FastMove: Move;
     ChargeMove: Move;
     ChargeMove2: Move | null;
@@ -40,6 +40,11 @@ export class Battler {
 
     Tick() {
         this.Turn++;
+    }
+
+    ScaleTo(combatPower: number) {
+        this.Pokemon.ScaleToCombatPower(combatPower);
+        this.Reset();
     }
 
     Reset() {
@@ -120,7 +125,7 @@ export class Battler {
         let multi_stab = this.Pokemon.GetStabMultiplier(move);
 
         let ratio_cpm = Constants.GetCPM(this.Pokemon.LVL) / Constants.GetCPM(target.LVL);
-        let ratio_stats = this.Pokemon.ATK / target.DEF;
+        let ratio_stats = (this.Pokemon.ATK + this.Pokemon.IV_ATK) / (target.DEF + target.IV_DEF);
 
         let move_damage = 0.5 * (move.Power * ratio_stats * ratio_cpm) * (multi_type * multi_stab);
 

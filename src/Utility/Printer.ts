@@ -5,7 +5,12 @@ import * as colors from 'colors';
 export class Printer {
 
     PrintBattleOutcome(battle: SimulationResult) {
-        console.log(colors.green(battle.Winner.Pokemon.ID), battle.Winner.FastMove.ID, battle.Winner.ChargeMove.ID, colors.red(battle.Looser.Pokemon.ID), battle.Looser.FastMove.ID, battle.Looser.ChargeMove.ID, battle.CombatTime())
+        console.log(
+            colors.green(battle.Winner.Pokemon.ID),
+            colors.yellow(battle.Winner.FastMove.ID),
+            colors.yellow(battle.Winner.ChargeMove.ID),
+            battle.WinnerEfficiency() / battle.CombatTime() * 1000000,
+        )
     }
 
     PrintBattleTimeline(battle: SimulationResult) {
@@ -41,8 +46,7 @@ export class Printer {
             }
             
         });
-        
-        console.log(colors.green(battle.Winner.Pokemon.ID))
+
         console.log(timeline_battler_1.join(' '));
         console.log(timeline_battler_2.join(' '));
         console.log(timeline_turns.join(' '));

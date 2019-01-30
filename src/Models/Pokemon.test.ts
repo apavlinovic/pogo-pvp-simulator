@@ -22,5 +22,30 @@ test('Pokemon:StatGeneration', () => {
 
     expect(Regigigas_20_100.CP).toBe(2483);
     expect(Regigigas_25_100.CP).toBe(3104);
+})
+
+test('Pokemon:StatScaling', () => {
+    let Venusaur_40_100 = new Pokemon("VENUSAUR", 190, 198, 189, Type.Grass, Type.Poison, 40, [], [], 15, 15, 15);
+    let Regigigas_20_100 = new Pokemon("REGIGIGAS", 221, 287, 210, Type.Normal, null, 20, [], [], 15, 15, 15);
+
+    Regigigas_20_100.ScaleToCombatPower(2500);
+
+    expect(Regigigas_20_100.CP).toBeLessThanOrEqual(2500);
+
+    Regigigas_20_100.ScaleToCombatPower(1500);
+
+    expect(Regigigas_20_100.CP).toBeLessThanOrEqual(1500);
+
+    Regigigas_20_100.ScaleToCombatPower(15000);
+    expect(Regigigas_20_100.CP).toBe(4346);
+
+    Venusaur_40_100.ScaleToCombatPower(1500)
+    expect(Venusaur_40_100.CP).toBeLessThanOrEqual(1500);
+
+    Venusaur_40_100.ScaleToCombatPower(2500)
+    expect(Venusaur_40_100.CP).toBeLessThanOrEqual(2500);
+    
+    Venusaur_40_100.ScaleToCombatPower(3500)
+    expect(Venusaur_40_100.CP).toBe(2720);
 
 })

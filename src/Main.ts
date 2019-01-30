@@ -4,17 +4,24 @@ import { Simulator, SimulationResult } from "./Simulator/Simulator";
 import { Battler } from "./Models/Battler";
 import _ = require("lodash");
 import { Printer } from "./Utility/Printer";
+import Constants from "./Shared/Constants";
 
 var pokemon_repo = new PokemonRepository()
 var move_repo = new MoveRepository();
 
-var pokemons =  pokemon_repo.LoadAllPokemon().slice(0, 200);
+var pokemons =  pokemon_repo.LoadAllPokemon();
+
 let results : Array<SimulationResult>= new Array;
 
 console.time("pvp-sims-all-vs-all");
 
-[pokemon_repo.LoadPokemon("Venusaur")].forEach(attacker => {
+[pokemon_repo.LoadPokemon("Whiscash")].forEach(attacker => {
+    attacker.ScaleToCombatPower(Constants.GREAT_LEAGUE_MAX_CP);
+
     pokemons.forEach(defender => {
+
+        defender.ScaleToCombatPower(Constants.GREAT_LEAGUE_MAX_CP);
+
         attacker.FastMoves.forEach(attacker_fm => {
             attacker.ChargeMoves.forEach(attacker_cm => {
                 defender.FastMoves.forEach(defender_fm => {
@@ -36,8 +43,9 @@ console.time("pvp-sims-all-vs-all");
         
                         let result = sim.Simulate();
 
-                        if(attacker.ID !== result.Winner.Pokemon.ID)
+                        if(attacker.ID !== result.Winner.Pokemon.ID) {
                             results.push(result);
+                        }
                     });    
                 });
             });    
@@ -49,15 +57,29 @@ console.timeEnd("pvp-sims-all-vs-all");
 
 
 let printer = new Printer();
+let already_printed : any = {};
+let already_printed_count = 0;
 
-_(results).orderBy((sim:SimulationResult) => {
+_(results)
+.groupBy((sim: SimulationResult) => {
+    return `${sim.Looser.FastMove.ID}-${sim.Looser.ChargeMove.ID}`
+})
+.each((result: Array<SimulationResult>, key: string) => {
 
-    return sim.CombatTime();
+    console.log(key);
+    let already_printed : any = {};
+    let already_printed_count = 0;
 
-}, 'asc')
-.take(40)
-.each((result: SimulationResult) => {
+    _(result).orderBy((sim: SimulationResult) => {
+        return sim.WinnerEfficiency() / sim.CombatTime();
+    }, 'desc')
+    .forEach((sim: SimulationResult) => {
 
-    printer.PrintBattleOutcome(result);
+        if(!already_printed[sim.Winner.Pokemon.ID] && already_printed_count < 20) {
+            printer.PrintBattleOutcome(sim);
 
+            already_printed_count++;
+            already_printed[sim.Winner.Pokemon.ID] = true;
+        }
+    });
 });
