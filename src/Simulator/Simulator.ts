@@ -15,10 +15,14 @@ export class Simulator {
 
             if(this.Battler1.IsAlive() && this.Battler2.IsAlive()) {
                 this.SimulateTurn(this.Battler1, this.Battler2);
+            } else {
+                break;
             }
             
             if(this.Battler1.IsAlive() && this.Battler2.IsAlive()) {
                 this.SimulateTurn(this.Battler2, this.Battler1);
+            } else {
+                break;
             }
 
             this.Battler1.Tick();

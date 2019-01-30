@@ -15,7 +15,7 @@ let results : Array<SimulationResult>= new Array;
 
 console.time("pvp-sims-all-vs-all");
 
-[pokemon_repo.LoadPokemon("Whiscash")].forEach(attacker => {
+[pokemon_repo.LoadPokemon("Venusaur")].forEach(attacker => {
     attacker.ScaleToCombatPower(Constants.GREAT_LEAGUE_MAX_CP);
 
     pokemons.forEach(defender => {
@@ -57,8 +57,6 @@ console.timeEnd("pvp-sims-all-vs-all");
 
 
 let printer = new Printer();
-let already_printed : any = {};
-let already_printed_count = 0;
 
 _(results)
 .groupBy((sim: SimulationResult) => {
@@ -70,9 +68,8 @@ _(results)
     let already_printed : any = {};
     let already_printed_count = 0;
 
-    _(result).orderBy((sim: SimulationResult) => {
-        return sim.WinnerEfficiency() / sim.CombatTime();
-    }, 'desc')
+    _(result)
+    .orderBy((sim: SimulationResult) => { return sim.WinnerEfficiency() / sim.CombatTime(); }, 'desc')
     .forEach((sim: SimulationResult) => {
 
         if(!already_printed[sim.Winner.Pokemon.ID] && already_printed_count < 20) {

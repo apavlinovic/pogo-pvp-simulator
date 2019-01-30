@@ -54,7 +54,7 @@ export class PokemonRepository {
 
     private FindAllPokemon() {
         return this.dataContext.filter(gm_entry => {
-            return !!gm_entry.pokemon_settings;
+            return !!gm_entry.pokemon_settings && !gm_entry.pokemon_settings.evolution_branch;
         });
     };
 
