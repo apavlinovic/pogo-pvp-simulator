@@ -12,6 +12,8 @@ var move_repo = new MoveRepository();
 var pokemons =  pokemon_repo.LoadAllPokemon();
 
 let results : Array<SimulationResult>= new Array;
+let counters : number = 0;
+let non_counters : number = 0;
 
 console.time("pvp-sims-all-vs-all");
 
@@ -45,6 +47,9 @@ console.time("pvp-sims-all-vs-all");
 
                         if(attacker.ID !== result.Winner.Pokemon.ID) {
                             results.push(result);
+                            counters++;
+                        } else {
+                            non_counters++;
                         }
                     });    
                 });
@@ -53,7 +58,6 @@ console.time("pvp-sims-all-vs-all");
     })
 })
 
-console.timeEnd("pvp-sims-all-vs-all");
 
 
 let printer = new Printer();
@@ -69,7 +73,7 @@ _(results)
     let already_printed_count = 0;
 
     _(result)
-    .orderBy((sim: SimulationResult) => { return sim.WinnerEfficiency() / sim.CombatTime(); }, 'desc')
+    .orderBy((sim: SimulationResult) => { return sim.WinnerEfficiency() / sim.CombatTime() || 0; }, 'desc')
     .forEach((sim: SimulationResult) => {
 
         if(!already_printed[sim.Winner.Pokemon.ID] && already_printed_count < 20) {
@@ -80,3 +84,6 @@ _(results)
         }
     });
 });
+
+console.timeEnd("pvp-sims-all-vs-all");
+console.log(counters, non_counters);

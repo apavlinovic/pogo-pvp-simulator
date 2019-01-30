@@ -3,7 +3,7 @@ export enum Type {
     Dark = 16,
     Dragon = 15,
     Electric = 12,
-    Fairy = 18,
+    Fairy = 17,
     Fighting = 1,
     Fire = 9,
     Flying = 2,
