@@ -78,18 +78,28 @@ export class SimulationResult {
 
     WinnerRemainingHP() {
         /* Returns [0...1] value based on Winner's remaining Health */
-        return  this.Winner.Health / this.Winner.Pokemon.HP;
+        return this.Winner.Health / this.Winner.Pokemon.HP;
     }
     
     WinnerDamageDealt() {
         /* Returns [0...1] value based on Looser's potential remaining Health. In case of clean victory returns 1 */
         return this.Looser.Health <= 0 
         ? 1
-        : 1 - (this.Looser.Pokemon.HP - this.Looser.Health) / this.Looser.Pokemon.HP;
+        : 1 - ((this.Looser.Pokemon.HP - this.Looser.Health) / this.Looser.Pokemon.HP);
     }
 
     WinnerEfficiency() {
 
         return this.WinnerDamageDealt() * this.WinnerRemainingHP();
+    }
+
+    LooserDamageDealt() {
+        /* Returns [0...1] value based on Looser's potential remaining Health. In case of clean victory returns 1 */
+        return 1 - ((this.Winner.Pokemon.HP - this.Winner.Health) / this.Winner.Pokemon.HP);
+    }
+
+    LooserEfficiency() {
+
+        return this.LooserDamageDealt();
     }
 }

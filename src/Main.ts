@@ -57,14 +57,30 @@ console.timeEnd("pvp-sims-all-vs-all");
 
 let output : any = { };
 
+_(pokemons).each(poke => {
+    output[poke.ID] = {
+        id: poke.ID,
+        wins: 0,
+        losses: 0,
+        win_score: 0,
+        losse_score: 0
+    };
+})
+
+
 _(results)
 .groupBy((sim: SimulationResult) => {
     return `${sim.Winner.Pokemon.ID}`
 })
 .each((result: Array<SimulationResult>, key: string) => {
 
-    output[key] = [ key, result.length, null ];
+    
+    let score = _.reduce(result, (memo, sim) => {
+        return memo + sim.WinnerEfficiency();
+    }, 0)
 
+    output[key].wins = result.length;
+    output[key].win_score = score / result.length;
 })
 
 _(results)
@@ -73,10 +89,18 @@ _(results)
 })
 .each((result: Array<SimulationResult>, key: string) => {
 
-    output[key][2] = result.length;
-    output[key][3] = output[key][1] / (output[key][1] + output[key][2]);
+    output[key].losses = result.length;
+
+    
+    
+    let score = _.reduce(result, (memo, sim) => {
+        return memo + sim.LooserEfficiency();
+    }, 0)
+
+    output[key].losse_score = score / result.length;
+    output[key].total_score = output[key].wins / output[key].losses * output[key].win_score / output[key].losse_score; 
 })
 
-_(output).values().orderBy(row => { return row[3] }).each(row => {
+_(output).values().orderBy(row => { return row.total_score }).each(row => {
     console.log(row)
 })
