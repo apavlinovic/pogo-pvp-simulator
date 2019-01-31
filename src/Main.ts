@@ -15,9 +15,12 @@ let results : Array<SimulationResult>= new Array;
 let counters : number = 0;
 let non_counters : number = 0;
 
-console.time("pvp-sims-all-vs-all");
+console.log(pokemons.length);
 
-[pokemon_repo.LoadPokemon("Venusaur")].forEach(attacker => {
+console.time("pvp-sims-all-vs-all");
+let sim = new Simulator();
+
+pokemons.forEach(attacker => {
     attacker.ScaleToCombatPower(Constants.GREAT_LEAGUE_MAX_CP);
 
     pokemons.forEach(defender => {
@@ -29,28 +32,21 @@ console.time("pvp-sims-all-vs-all");
                 defender.FastMoves.forEach(defender_fm => {
                     defender.ChargeMoves.forEach(defender_cm => {
         
-                        let sim = new Simulator(
-                            new Battler(
-                                attacker,
-                                move_repo.LoadMove(attacker_fm),
-                                move_repo.LoadMove(attacker_cm),
-                            ),
-        
-                            new Battler(
-                                defender,
-                                move_repo.LoadMove(defender_fm),
-                                move_repo.LoadMove(defender_cm),
-                            )
-                        );
+                        sim.SetBattlers(new Battler(
+                            attacker,
+                            move_repo.LoadMove(attacker_fm),
+                            move_repo.LoadMove(attacker_cm),
+                        ),
+    
+                        new Battler(
+                            defender,
+                            move_repo.LoadMove(defender_fm),
+                            move_repo.LoadMove(defender_cm),
+                        ));
         
                         let result = sim.Simulate();
 
-                        if(attacker.ID !== result.Winner.Pokemon.ID) {
-                            results.push(result);
-                            counters++;
-                        } else {
-                            non_counters++;
-                        }
+                        results.push(result);
                     });    
                 });
             });    
@@ -58,32 +54,55 @@ console.time("pvp-sims-all-vs-all");
     })
 })
 
+console.timeEnd("pvp-sims-all-vs-all");
 
 
-let printer = new Printer();
+let output : any = { };
+
+_(pokemons).each(poke => {
+    output[poke.ID] = {
+        id: poke.ID,
+        wins: 0,
+        losses: 0,
+        win_score: 0,
+        losse_score: 0
+    };
+})
+
 
 _(results)
 .groupBy((sim: SimulationResult) => {
-    return `${sim.Looser.FastMove.ID}-${sim.Looser.ChargeMove.ID}`
+    return `${sim.Winner.Pokemon.ID}`
 })
 .each((result: Array<SimulationResult>, key: string) => {
 
-    console.log(key);
-    let already_printed : any = {};
-    let already_printed_count = 0;
+    
+    let score = _.reduce(result, (memo, sim) => {
+        return memo + sim.WinnerEfficiency();
+    }, 0)
 
-    _(result)
-    .orderBy((sim: SimulationResult) => { return sim.WinnerEfficiency() / sim.CombatTime() || 0; }, 'desc')
-    .forEach((sim: SimulationResult) => {
+    output[key].wins = result.length;
+    output[key].win_score = score / result.length;
+})
 
-        if(!already_printed[sim.Winner.Pokemon.ID] && already_printed_count < 20) {
-            printer.PrintBattleOutcome(sim);
+_(results)
+.groupBy((sim: SimulationResult) => {
+    return `${sim.Looser.Pokemon.ID}`
+})
+.each((result: Array<SimulationResult>, key: string) => {
 
-            already_printed_count++;
-            already_printed[sim.Winner.Pokemon.ID] = true;
-        }
-    });
-});
+    output[key].losses = result.length;
 
-console.timeEnd("pvp-sims-all-vs-all");
-console.log(counters, non_counters);
+    
+    
+    let score = _.reduce(result, (memo, sim) => {
+        return memo + sim.LooserEfficiency();
+    }, 0)
+
+    output[key].losse_score = score / result.length;
+    output[key].total_score = output[key].wins / output[key].losses * output[key].win_score / output[key].losse_score; 
+})
+
+_(output).values().orderBy(row => { return row.total_score }).each(row => {
+    console.log(row)
+})
