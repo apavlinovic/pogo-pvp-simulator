@@ -1,6 +1,6 @@
-import { SimulationResult } from "../Simulator/Simulator";
 import { TimelineEventType } from "../Simulator/Timeline";
 import * as colors from 'colors';
+import { SimulationResult } from "../Simulator/SimulationResult";
 
 export class Printer {
 

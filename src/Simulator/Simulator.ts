@@ -1,5 +1,6 @@
 import { Battler } from "../Models/Battler";
 import Constants from "../Shared/Constants";
+import { SimulationResult } from "./SimulationResult";
 
 export class Simulator {
     Battler1!: Battler;
@@ -30,12 +31,14 @@ export class Simulator {
 
             this.Battler1.Tick();
             this.Battler2.Tick();
+
         } while(this.Battler1.IsAlive() && this.Battler2.IsAlive());
 
-        return new SimulationResult(
-            this.Battler1,
-            this.Battler2
-        );
+        if(this.Battler1.Health >= this.Battler2.Health) {
+            return new SimulationResult(this.Battler1, this.Battler2);
+        }
+
+        return new SimulationResult(this.Battler2, this.Battler1);
     }
 
     private SimulateTurn(attacker: Battler, defender: Battler) {
@@ -56,50 +59,5 @@ export class Simulator {
                 attacker.ExecuteAttack(defender);
             }
         }
-    }
-}
-
-export class SimulationResult {
-    Winner: Battler;
-    Looser: Battler;
-
-    constructor(participant1: Battler, participant2: Battler) {
-        this.Winner = participant1.IsAlive() ? participant1 : participant2;
-        this.Looser = participant1.IsAlive() ? participant2 : participant1;
-    }
-
-    CombatTime() {
-        return this.Winner.Timeline.GetLastEvent().Turn * Constants.TURN_DURATION_MS;
-    }
-
-    Overkill() {
-        return this.Looser.Health;
-    }
-
-    WinnerRemainingHP() {
-        /* Returns [0...1] value based on Winner's remaining Health */
-        return this.Winner.Health / this.Winner.Pokemon.HP;
-    }
-    
-    WinnerDamageDealt() {
-        /* Returns [0...1] value based on Looser's potential remaining Health. In case of clean victory returns 1 */
-        return this.Looser.Health <= 0 
-        ? 1
-        : 1 - ((this.Looser.Pokemon.HP - this.Looser.Health) / this.Looser.Pokemon.HP);
-    }
-
-    WinnerEfficiency() {
-
-        return this.WinnerDamageDealt() * this.WinnerRemainingHP();
-    }
-
-    LooserDamageDealt() {
-        /* Returns [0...1] value based on Looser's potential remaining Health. In case of clean victory returns 1 */
-        return 1 - ((this.Winner.Pokemon.HP - this.Winner.Health) / this.Winner.Pokemon.HP);
-    }
-
-    LooserEfficiency() {
-
-        return this.LooserDamageDealt();
     }
 }

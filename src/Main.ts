@@ -1,19 +1,18 @@
 import { MoveRepository } from "./Repository/MoveRepository";
 import { PokemonRepository } from "./Repository/PokemonRepository";
-import { Simulator, SimulationResult } from "./Simulator/Simulator";
+import { Simulator } from "./Simulator/Simulator";
 import { Battler } from "./Models/Battler";
 import _ = require("lodash");
 import { Printer } from "./Utility/Printer";
 import Constants from "./Shared/Constants";
+import { SimulationResult } from "./Simulator/SimulationResult";
 
-var pokemon_repo = new PokemonRepository()
+var pokemon_repo = new PokemonRepository();
 var move_repo = new MoveRepository();
 
-var pokemons =  pokemon_repo.LoadAllPokemon();
+var pokemons =  pokemon_repo.LoadAllPokemon().slice(0, 25);
 
 let results : Array<SimulationResult>= new Array;
-let counters : number = 0;
-let non_counters : number = 0;
 
 console.log(pokemons.length);
 
@@ -54,9 +53,9 @@ pokemons.forEach(attacker => {
     })
 })
 
-console.timeEnd("pvp-sims-all-vs-all");
+console.log(results[0].ToJSON());
 
-
+/*
 let output : any = { };
 
 _(pokemons).each(poke => {
@@ -65,7 +64,7 @@ _(pokemons).each(poke => {
         wins: 0,
         losses: 0,
         win_score: 0,
-        losse_score: 0
+        loss_Score: 0
     };
 })
 
@@ -99,10 +98,14 @@ _(results)
         return memo + sim.LooserEfficiency();
     }, 0)
 
-    output[key].losse_score = score / result.length;
+    output[key].loss_Score = score / result.length;
     output[key].total_score = output[key].wins / output[key].losses * output[key].win_score / output[key].losse_score; 
 })
 
 _(output).values().orderBy(row => { return row.total_score }).each(row => {
     console.log(row)
 })
+*/
+
+console.timeEnd("pvp-sims-all-vs-all");
+
