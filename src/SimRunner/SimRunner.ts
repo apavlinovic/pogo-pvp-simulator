@@ -11,7 +11,7 @@ export class SimRunner {
         let pokemon_repo = new PokemonRepository();
         let move_repo = new MoveRepository();
 
-        let pokemons =  pokemon_repo.LoadAllPokemon().slice(0, 1);
+        let pokemons =  pokemon_repo.LoadAllPokemon();
         
         let sim_results : Array<SimulationResult>= new Array;
         

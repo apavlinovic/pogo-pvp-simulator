@@ -20,7 +20,20 @@ let db = new sqlite3.Database("result-db.db", sqlite3.OPEN_READWRITE, (err) => {
 
 let sql = new SQLGenerator();
 
-db.exec(sql.GenerateSimulationResultInsertCommand(results))
+let step = 0;
+let step_size = 200000;
+
+while(step * step_size < results.length) {
+    
+    db.exec(sql.GenerateSimulationResultInsertCommand(
+        results.slice(step * step_size, step * step_size + step_size)
+    ))
+
+    console.log(`Processed ${ step * step_size } - ${ step * step_size + step_size }`)
+    step++;
+
+}
+
 
 db.close((err) => {
 
