@@ -20,7 +20,7 @@ export class Battler {
 
     Timeline!: Timeline | null;
 
-    constructor(pokemon: Pokemon, fastMove: Move, chargeMove: Move, chargeMove2?: Move | null, enableTimeline: boolean = false) {
+    constructor(pokemon: Pokemon, fastMove: Move, chargeMove: Move, chargeMove2?: Move | null, shields : number = 2, enableTimeline: boolean = false) {
         this.Pokemon = pokemon;
 
         this.FastMove = fastMove;
@@ -38,7 +38,7 @@ export class Battler {
         this.NextDeclaredMove = null;
 
         this.Energy = 0;
-        this.Shields = Constants.SHIELD_COUNT;
+        this.Shields = shields || Constants.SHIELD_COUNT;
     }
 
     Tick() {

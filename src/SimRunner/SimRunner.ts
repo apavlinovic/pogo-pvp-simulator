@@ -11,7 +11,7 @@ export class SimRunner {
         let pokemon_repo = new PokemonRepository();
         let move_repo = new MoveRepository();
 
-        let pokemons =  pokemon_repo.LoadAllPokemon();
+        let pokemons =  pokemon_repo.LoadAllPokemon().slice(0, 150);
         
         let sim_results : Array<SimulationResult>= new Array;
         
@@ -20,34 +20,43 @@ export class SimRunner {
         console.time("pvp-sims-all-vs-all");
         let sim = new Simulator();
         
-        pokemons.forEach(attacker => {
-            attacker.ScaleToCombatPower(MaxCP);
-        
-            pokemons.forEach(defender => {
-        
-                defender.ScaleToCombatPower(MaxCP);
-        
-                attacker.FastMoves.forEach(attacker_fm => {
-                    attacker.ChargeMoves.forEach(attacker_cm => {
-                        defender.FastMoves.forEach(defender_fm => {
-                            defender.ChargeMoves.forEach(defender_cm => {
-                
-                                sim.SetBattlers(new Battler(
-                                    attacker,
-                                    move_repo.LoadMove(attacker_fm),
-                                    move_repo.LoadMove(attacker_cm),
-                                ),
+        let shields = [[0,0], [0, 1], [1, 0], [1, 1], [2, 2]];
+
+        shields.forEach(shield => {
+
+            pokemons.forEach(attacker => {
+                attacker.ScaleToCombatPower(MaxCP);
             
-                                new Battler(
-                                    defender,
-                                    move_repo.LoadMove(defender_fm),
-                                    move_repo.LoadMove(defender_cm),
-                                ));
+                pokemons.forEach(defender => {
+            
+                    defender.ScaleToCombatPower(MaxCP);
+            
+                    attacker.FastMoves.forEach(attacker_fm => {
+                        attacker.ChargeMoves.forEach(attacker_cm => {
+                            defender.FastMoves.forEach(defender_fm => {
+                                defender.ChargeMoves.forEach(defender_cm => {
+                    
+                                    sim.SetBattlers(new Battler(
+                                        attacker,
+                                        move_repo.LoadMove(attacker_fm),
+                                        move_repo.LoadMove(attacker_cm),
+                                        null,
+                                        shield[0]
+                                    ),
                 
-                                sim_results.push(sim.Simulate());
-                            });    
-                        });
-                    });    
+                                    new Battler(
+                                        defender,
+                                        move_repo.LoadMove(defender_fm),
+                                        move_repo.LoadMove(defender_cm),
+                                        null,
+                                        shield[1]
+                                    ));
+                    
+                                    sim_results.push(sim.Simulate());
+                                });    
+                            });
+                        });    
+                    });
                 });
             });
         });
