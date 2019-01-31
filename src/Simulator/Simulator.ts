@@ -1,5 +1,4 @@
 import { Battler } from "../Models/Battler";
-import Constants from "../Shared/Constants";
 import { SimulationResult } from "./SimulationResult";
 
 export class Simulator {

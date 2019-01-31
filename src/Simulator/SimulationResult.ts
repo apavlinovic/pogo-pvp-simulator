@@ -16,15 +16,15 @@ export class SimulationResult {
             Winner_FM: this.Winner.FastMove.ID,
             Winner_CM: this.Winner.ChargeMove.ID,
             Winner_CM2: this.Winner.ChargeMove2 ? this.Winner.ChargeMove2.ID : null,
-            WinnerRemainingHP: this.WinnerRemainingHP(),
-            WinnerDamageDealt: this.WinnerDamageDealt(),
+            Winner_Remaining_HP: this.WinnerRemainingHP(),
+            Winner_Damage_Dealt: this.WinnerDamageDealt(),
 
             Looser: this.Looser.Pokemon.ID,
             Looser_FM: this.Looser.FastMove.ID,
             Looser_CM: this.Looser.ChargeMove.ID,
             Looser_CM2: this.Looser.ChargeMove2 ? this.Looser.ChargeMove2.ID : null,
-            LooserDamageDealt: this.LooserDamageDealt(),
-            LooserRemainingHP: this.LooserRemainingHP(),
+            Looser_Damage_Dealt: this.LooserDamageDealt(),
+            Looser_Remaining_HP: this.LooserRemainingHP(),
 
             Duration: this.CombatTime(),
             Overkill: this.Overkill()
@@ -32,7 +32,7 @@ export class SimulationResult {
     }
 
     CombatTime() {
-        return this.Winner.Timeline.GetLastEvent().Turn * Constants.TURN_DURATION_MS;
+        return this.Winner.Turn * Constants.TURN_DURATION_MS;
     }
 
     Overkill() {

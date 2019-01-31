@@ -6,7 +6,7 @@ import { startCase } from 'lodash';
 
 export class PokemonRepository {
     dataContext: Array<any>;
-    bannedPokemon = [ 'V0151_POKEMON_MEW' ];
+    bannedPokemon = [  'V0292_POKEMON_SHEDINJA', 'V0132_POKEMON_DITTO' ];
 
     constructor() {
         this.dataContext = JSON.parse(fs.readFileSync('./src/Data/GameMaster.js', 'utf8'));

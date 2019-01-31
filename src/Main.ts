@@ -1,59 +1,35 @@
-import { MoveRepository } from "./Repository/MoveRepository";
-import { PokemonRepository } from "./Repository/PokemonRepository";
-import { Simulator } from "./Simulator/Simulator";
-import { Battler } from "./Models/Battler";
 import _ = require("lodash");
-import { Printer } from "./Utility/Printer";
+import * as sqlite3 from 'sqlite3'
+import { SimRunner } from "./SimRunner/SimRunner";
 import Constants from "./Shared/Constants";
-import { SimulationResult } from "./Simulator/SimulationResult";
+import { SQLGenerator } from "./Data/SQLGenerator";
 
-var pokemon_repo = new PokemonRepository();
-var move_repo = new MoveRepository();
+let runner = new SimRunner();
+let results = runner.RunAllVsAllSimulations(Constants.GREAT_LEAGUE_MAX_CP);
 
-var pokemons =  pokemon_repo.LoadAllPokemon().slice(0, 25);
+console.log(results.length);
 
-let results : Array<SimulationResult>= new Array;
-
-console.log(pokemons.length);
-
-console.time("pvp-sims-all-vs-all");
-let sim = new Simulator();
-
-pokemons.forEach(attacker => {
-    attacker.ScaleToCombatPower(Constants.GREAT_LEAGUE_MAX_CP);
-
-    pokemons.forEach(defender => {
-
-        defender.ScaleToCombatPower(Constants.GREAT_LEAGUE_MAX_CP);
-
-        attacker.FastMoves.forEach(attacker_fm => {
-            attacker.ChargeMoves.forEach(attacker_cm => {
-                defender.FastMoves.forEach(defender_fm => {
-                    defender.ChargeMoves.forEach(defender_cm => {
-        
-                        sim.SetBattlers(new Battler(
-                            attacker,
-                            move_repo.LoadMove(attacker_fm),
-                            move_repo.LoadMove(attacker_cm),
-                        ),
+let db = new sqlite3.Database("result-db.db", sqlite3.OPEN_READWRITE, (err) => {
     
-                        new Battler(
-                            defender,
-                            move_repo.LoadMove(defender_fm),
-                            move_repo.LoadMove(defender_cm),
-                        ));
-        
-                        let result = sim.Simulate();
+    if (err) {
+      return console.error(err.message);
+    }
 
-                        results.push(result);
-                    });    
-                });
-            });    
-        });
-    })
-})
+    console.log('Connected to the SQlite database.'); 
+});
 
-console.log(results[0].ToJSON());
+let sql = new SQLGenerator();
+
+db.exec(sql.GenerateSimulationResultInsertCommand(results))
+
+db.close((err) => {
+
+    if (err) {
+        return console.error(err.message);
+    }
+
+    console.log('Close the database connection.');
+});
 
 /*
 let output : any = { };
@@ -107,5 +83,4 @@ _(output).values().orderBy(row => { return row.total_score }).each(row => {
 })
 */
 
-console.timeEnd("pvp-sims-all-vs-all");
 

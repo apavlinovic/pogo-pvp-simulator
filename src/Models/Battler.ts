@@ -14,19 +14,22 @@ export class Battler {
     Shields: number;
     Health: number;
 
-    private Turn: number;
+    Turn: number;
     private NextActionableTurn: number;
     private NextDeclaredMove: Move | null;
 
-    Timeline: Timeline;
+    Timeline!: Timeline | null;
 
-    constructor(pokemon: Pokemon, fastMove: Move, chargeMove: Move, chargeMove2?: Move | null) {
+    constructor(pokemon: Pokemon, fastMove: Move, chargeMove: Move, chargeMove2?: Move | null, enableTimeline: boolean = false) {
         this.Pokemon = pokemon;
 
         this.FastMove = fastMove;
         this.ChargeMove = chargeMove;
         this.ChargeMove2 = chargeMove2 ? chargeMove2 : null;
-        this.Timeline = new Timeline();
+
+        if(enableTimeline) {
+            this.Timeline = new Timeline();
+        }
 
         this.Health = this.Pokemon.HP;
         
@@ -51,7 +54,10 @@ export class Battler {
                 
         this.Health = this.Pokemon.HP;
         
-        this.Timeline = new Timeline();
+        if(this.Timeline) {
+            this.Timeline = new Timeline();
+        }
+
         this.Turn = 0;        
         this.NextActionableTurn = 0;
         this.NextDeclaredMove = null;
@@ -83,7 +89,9 @@ export class Battler {
         this.NextActionableTurn = this.Turn + Constants.SHIELD_TURN_DURATION;
         this.NextDeclaredMove = null;
 
-        this.Timeline.AddEvent(new TimelineEvent(this.Turn, Constants.CHARGE_MOVE_TURN_DURATION, TimelineEventType.Shield))
+        if(this.Timeline) {
+            this.Timeline.AddEvent(new TimelineEvent(this.Turn, Constants.CHARGE_MOVE_TURN_DURATION, TimelineEventType.Shield))
+        }
     }
 
     DeclareAttack(move: Move) {
@@ -98,10 +106,12 @@ export class Battler {
 
         this.NextActionableTurn = this.Turn + (move.Turns || Constants.CHARGE_MOVE_TURN_DURATION);
 
-        if(move.Category == MoveCategory.Fast) {
-            this.Timeline.AddEvent(new TimelineEvent(this.Turn, (move.Turns as number), TimelineEventType.FastMove));
-        } else if(move.Category == MoveCategory.Charge) {
-            this.Timeline.AddEvent(new TimelineEvent(this.Turn,  Constants.CHARGE_MOVE_TURN_DURATION, TimelineEventType.ChargeMove));
+        if(this.Timeline) {
+            if(move.Category == MoveCategory.Fast) {
+                this.Timeline.AddEvent(new TimelineEvent(this.Turn, (move.Turns as number), TimelineEventType.FastMove));
+            } else if(move.Category == MoveCategory.Charge) {
+                this.Timeline.AddEvent(new TimelineEvent(this.Turn,  Constants.CHARGE_MOVE_TURN_DURATION, TimelineEventType.ChargeMove));
+            }
         }
     }
 

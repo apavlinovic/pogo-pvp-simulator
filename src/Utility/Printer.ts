@@ -14,6 +14,12 @@ export class Printer {
     }
 
     PrintBattleTimeline(battle: SimulationResult) {
+
+        if(!battle.Winner.Timeline || !battle.Looser.Timeline) {
+            console.log("Timeline tracking not enabled for battlers.");
+            return;
+        }
+        
         let timeline = battle.Winner.Timeline.ZipWithAnotherTimeline(battle.Looser.Timeline);
         
         let timeline_battler_1 = Array();
