@@ -9,16 +9,16 @@ test("SimulationResults", () => {
 
     // BASE HP = 162
     var venusaur = new Battler(
-        pokemon_repo.LoadPokemon("Venusaur"),
-        move_repo.LoadMove("Vine Whip"),
-        move_repo.LoadMove("Solar Beam")
+        pokemon_repo.LoadPokemon("V0003_POKEMON_VENUSAUR"),
+        move_repo.LoadMove("COMBAT_V0214_MOVE_VINE_WHIP_FAST"),
+        move_repo.LoadMove("COMBAT_V0296_MOVE_FRENZY_PLANT")
     );
 
     // BASE HP = 160
     var blastoise = new Battler(
-        pokemon_repo.LoadPokemon("Blastoise"),
-        move_repo.LoadMove("Water Gun"),
-        move_repo.LoadMove("Hydro Pump")
+        pokemon_repo.LoadPokemon("V0009_POKEMON_BLASTOISE"),
+        move_repo.LoadMove("COMBAT_V0214_MOVE_VINE_WHIP_FAST"),
+        move_repo.LoadMove("COMBAT_V0296_MOVE_FRENZY_PLANT")
     );
 
     var sim_result = new SimulationResult(venusaur, blastoise);

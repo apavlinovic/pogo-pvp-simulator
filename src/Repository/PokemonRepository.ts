@@ -5,41 +5,42 @@ import { Type } from '../Shared/Types';
 import { startCase } from 'lodash';
 
 export class PokemonRepository {
-    dataContext: Array<any>;
+    dataContext: any;
     bannedPokemon = [  'V0292_POKEMON_SHEDINJA', 'V0132_POKEMON_DITTO' ];
 
     constructor() {
-        this.dataContext = JSON.parse(fs.readFileSync('./src/Data/GameMaster.js', 'utf8'));
+        this.dataContext = {};
 
-        let template_id =  `V0`;
+        let pokemon = JSON.parse(fs.readFileSync('./src/Data/GameMaster.js', 'utf8'));
 
-        this.dataContext = this.dataContext.filter(item => {
-            return (item.template_id as string).startsWith(template_id)
+        pokemon = pokemon.filter((item: any) => {
+            return (item.template_id as string).startsWith("V0")
                 && (item.template_id as string).indexOf(`_POKEMON_`) != -1
-                && item.pokemon_settings != null;
+                && item.pokemon_settings != null
+                && !item.pokemon_settings.evolution_ids;
         });        
-    }
 
-    LoadAllPokemon() {
-        let _pokemons : Array<any> = this.FindAllPokemon();
-        
-        return _pokemons.map((pokemon) => {
-            return this.CreatePokemonModelFromDataContextPokemon(pokemon);
+        pokemon.forEach((gm_pokemon : any) => {
+            this.dataContext[gm_pokemon.template_id] = this.CreatePokemonModelFromDataContextPokemon(gm_pokemon);
         });
     }
 
-    LoadPokemon(name: string, form: string | null = null) {
-        let _pokemon : any = this.FindPokemon(name, form);
+    LoadAllPokemon() {
         
-        return this.CreatePokemonModelFromDataContextPokemon(_pokemon);
+        return Object.values(this.dataContext) as Array<Pokemon>;
+    }
+
+    LoadPokemon(game_master_id: any) {
+        
+        return this.dataContext[game_master_id]
     }
 
     private CreatePokemonModelFromDataContextPokemon(_pokemon: any) {
         let type = this.ExtractTypeIdentifier(_pokemon.pokemon_settings.type);
         let type2 = _pokemon.pokemon_settings.type_2 ? this.ExtractTypeIdentifier(_pokemon.pokemon_settings.type_2) : null;
 
-        let fastMoves = this.FormatAsHumanFriendlyStrings(_pokemon.pokemon_settings.quick_moves);
-        let chargeMoves = this.FormatAsHumanFriendlyStrings(_pokemon.pokemon_settings.cinematic_moves);
+        let fastMoves = _pokemon.pokemon_settings.quick_moves;
+        let chargeMoves = _pokemon.pokemon_settings.cinematic_moves;
 
         return new Pokemon(
             _pokemon.template_id,
@@ -59,34 +60,6 @@ export class PokemonRepository {
             15,
             15
         )
-    }
-
-    private FindAllPokemon() {
-        return this.dataContext.filter(gm_entry => {
-            return !!gm_entry.pokemon_settings 
-                && !gm_entry.pokemon_settings.evolution_branch
-                && this.bannedPokemon.indexOf(gm_entry.template_id) === -1;
-        });
-    };
-
-    private FindPokemon(name: string, form?: string | null) {
-        let pokemon_id = name.toUpperCase().replace(/[\W_]+/g,"_");
-
-        if(form) {
-            pokemon_id += `_${ form.toUpperCase() }`;
-        }
-
-        let potential_results = this.dataContext.filter(item => {
-            return (item.template_id as string).endsWith(`_POKEMON_${ pokemon_id}`);
-        });
-
-        return potential_results[0];
-    }
-
-    private FormatAsHumanFriendlyStrings(gm_string_array: Array<string>) {
-        return gm_string_array.map(move => {
-            return startCase(move.replace('_FAST', '').toLowerCase());
-        })
     }
 
     ExtractTypeIdentifier(gm_type: string ) {

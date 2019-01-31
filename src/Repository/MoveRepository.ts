@@ -22,7 +22,7 @@ export class MoveRepository {
         moves.forEach((gm_move: any) => {
             var type = this.ExtractTypeIdentifier(gm_move.combat_move.type);
 
-            this.dataContext[gm_move.combat_move.unique_id] =  new Move(
+            this.dataContext[gm_move.template_id] = this.dataContext[gm_move.combat_move.unique_id] =  new Move(
                 gm_move.template_id,
                 gm_move.combat_move.power || 0,
                 gm_move.combat_move.energy_delta,
@@ -32,16 +32,10 @@ export class MoveRepository {
         })
     }
 
-    LoadMove(name: string) {
 
-        return this.FindPVPMove(name);
-    }
+    LoadMove(game_master_id: string) {
 
-    private FindPVPMove(name: string) {
-        let move_id =  `${ name.toUpperCase().replace(' ', '_')}`;
-        let move_id_fast =  `${ name.toUpperCase().replace(' ', '_')}_FAST`;
-        
-        return this.dataContext[move_id_fast] || this.dataContext[move_id];
+        return this.dataContext[game_master_id];
     }
 
     ExtractTypeIdentifier(gm_type: string ) {

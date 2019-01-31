@@ -1,8 +1,9 @@
 import { SimulationResult } from "../Simulator/SimulationResult";
+import Constants from "../Shared/Constants";
 
 export class SQLGenerator {
     GenerateSimulationResultInsertCommand(sims: Array<SimulationResult>) {
-        let sql = "INSERT INTO SimulationResult VALUES ";
+        let sql = `INSERT INTO ${ Constants.SQLITE_TABLE_NAME } VALUES `;
         let inserts : Array<string> = [];
 
         sims.forEach(sim => {

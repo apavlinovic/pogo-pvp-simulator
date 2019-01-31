@@ -9,9 +9,9 @@ let move_repo = new MoveRepository();
 
 test('Battler initializes and resets properly', () => {
 
-    let venusaur = pokemon_repo.LoadPokemon("Venusaur", null);
-    let vine_whip = move_repo.LoadMove("Vine Whip");
-    let frenzy_plant = move_repo.LoadMove("Frenzy Plant");
+    let venusaur = pokemon_repo.LoadPokemon("V0003_POKEMON_VENUSAUR");
+    let vine_whip = move_repo.LoadMove("COMBAT_V0214_MOVE_VINE_WHIP_FAST");
+    let frenzy_plant = move_repo.LoadMove("COMBAT_V0296_MOVE_FRENZY_PLANT");
     
     let venu_battler = new Battler(venusaur, vine_whip, frenzy_plant);
 
@@ -29,9 +29,9 @@ test('Battler initializes and resets properly', () => {
 
 test('Battler energy generation and usage works and doesnt break limits', () => {
 
-    let venusaur = pokemon_repo.LoadPokemon("Venusaur", null);
-    let vine_whip = move_repo.LoadMove("Vine Whip");
-    let frenzy_plant = move_repo.LoadMove("Frenzy Plant");
+    let venusaur = pokemon_repo.LoadPokemon("V0003_POKEMON_VENUSAUR");
+    let vine_whip = move_repo.LoadMove("COMBAT_V0214_MOVE_VINE_WHIP_FAST");
+    let frenzy_plant = move_repo.LoadMove("COMBAT_V0296_MOVE_FRENZY_PLANT");
     
     let venu_battler = new Battler(venusaur, vine_whip, frenzy_plant);
 
@@ -58,9 +58,9 @@ test('Battler energy generation and usage works and doesnt break limits', () => 
 
 test('Battler deals damage properly', () => {
 
-    let venusaur = pokemon_repo.LoadPokemon("Venusaur", null);
-    let vine_whip = move_repo.LoadMove("Vine Whip");
-    let frenzy_plant = move_repo.LoadMove("Frenzy Plant");
+    let venusaur = pokemon_repo.LoadPokemon("V0003_POKEMON_VENUSAUR");
+    let vine_whip = move_repo.LoadMove("COMBAT_V0214_MOVE_VINE_WHIP_FAST");
+    let frenzy_plant = move_repo.LoadMove("COMBAT_V0296_MOVE_FRENZY_PLANT");
     
     let venu_battler = new Battler(venusaur, vine_whip, frenzy_plant);
     let start_health = venu_battler.Health;
@@ -73,12 +73,12 @@ test('Battler deals damage properly', () => {
 
 test('Battler loses HP and faints properly', () => {
 
-    let venusaur = pokemon_repo.LoadPokemon("Venusaur", null);
+    let venusaur = pokemon_repo.LoadPokemon("V0003_POKEMON_VENUSAUR");
     venusaur.ApplyLVL(1);
-    let frenzy_plant = move_repo.LoadMove("Frenzy Plant");
+    let frenzy_plant = move_repo.LoadMove("COMBAT_V0296_MOVE_FRENZY_PLANT");
     
-    let charizard = pokemon_repo.LoadPokemon("Charizard", null);
-    let flamethrower = move_repo.LoadMove("Flamethrower");
+    let charizard = pokemon_repo.LoadPokemon("V0006_POKEMON_CHARIZARD");
+    let flamethrower = move_repo.LoadMove("COMBAT_V0024_MOVE_FLAMETHROWER");
 
     let venu_battler = new Battler(venusaur, frenzy_plant, frenzy_plant);
     let charizard_battler = new Battler(charizard, flamethrower, flamethrower);
