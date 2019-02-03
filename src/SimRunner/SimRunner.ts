@@ -18,7 +18,10 @@ export class SimRunner {
             pokemons = pokemons.filter(pokemon => {
                 return allowedTypes.indexOf(pokemon.Type1) != -1 ||
                        (pokemon.Type2 && allowedTypes.indexOf(pokemon.Type2) != -1);
+            }).filter(pokemon => {
+                return !pokemon.ID.startsWith('V0493_POKEMON_ARCEUS_') && !pokemon.ID.startsWith('V0479_POKEMON_ROTOM')
             });
+
         }
 
         let sim_results : Array<SimulationResult>= new Array;
@@ -28,7 +31,7 @@ export class SimRunner {
         console.time("pvp-sims-all-vs-all");
         let sim = new Simulator();
         
-        let shields = [[0,0], [1, 1], [2, 2]];
+        let shields = [[0,0]];
 
         shields.forEach(shield => {
 

@@ -45,9 +45,7 @@ export class SimulationResult {
     }
     
     WinnerDamageDealt() {
-        return this.Looser.Health <= 0 
-        ? 1
-        : (this.Looser.Pokemon.HP - this.Looser.Health) / this.Looser.Pokemon.HP;
+        return 1 - this.LooserRemainingHP();
     }
 
     WinnerEfficiency() {

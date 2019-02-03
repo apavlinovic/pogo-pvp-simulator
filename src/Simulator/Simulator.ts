@@ -43,7 +43,10 @@ export class Simulator {
     private SimulateTurn(attacker: Battler, defender: Battler) {
         
         if(attacker.CanAct()) {
-            if(attacker.CanUseChargeMove()) {
+            if(attacker.CanUseChargeMove()
+            && !attacker.CanUseFastMoveBeforeTargetCanAct(defender)
+            && !attacker.CanKillTarget(defender, attacker.FastMove)) {
+
                 attacker.DeclareAttack(attacker.ChargeMove);
 
                 if(defender.CanUseShield()) {

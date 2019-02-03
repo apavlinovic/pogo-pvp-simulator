@@ -15,12 +15,12 @@ export class Battler {
     Health: number;
 
     Turn: number;
-    private NextActionableTurn: number;
+    private Cooldown: number;
     private NextDeclaredMove: Move | null;
 
     Timeline!: Timeline | null;
 
-    constructor(pokemon: Pokemon, fastMove: Move, chargeMove: Move, chargeMove2?: Move | null, shields : number = 2, enableTimeline: boolean = false) {
+    constructor(pokemon: Pokemon, fastMove: Move, chargeMove: Move, chargeMove2?: Move | null, shields : number = Constants.SHIELD_COUNT, enableTimeline: boolean = false) {
         this.Pokemon = pokemon;
 
         this.FastMove = fastMove;
@@ -34,14 +34,15 @@ export class Battler {
         this.Health = this.Pokemon.HP;
         
         this.Turn = 0;        
-        this.NextActionableTurn = 0;
+        this.Cooldown = 0;
         this.NextDeclaredMove = null;
 
         this.Energy = 0;
-        this.Shields = shields || Constants.SHIELD_COUNT;
+        this.Shields = shields;
     }
 
     Tick() {
+        this.Cooldown--;
         this.Turn++;
     }
 
@@ -59,7 +60,7 @@ export class Battler {
         }
 
         this.Turn = 0;        
-        this.NextActionableTurn = 0;
+        this.Cooldown = 0;
         this.NextDeclaredMove = null;
 
         this.Energy = 0;
@@ -79,14 +80,26 @@ export class Battler {
     }
 
     CanAct() {
-        return this.Turn == 0 || this.Turn >= this.NextActionableTurn;
+        return this.Cooldown === 0;
     }
 
+    CanUseFastMoveBeforeTargetCanAct(target: Battler) {
+        if(this.FastMove.Turns) {
+            return target.Cooldown > this.FastMove.Turns;
+        }
+
+        return false;
+    }
+
+    CanKillTarget(target: Battler, move: Move) {
+
+        return target.Health <= this.CalculateDamageToTargetPokemon(target.Pokemon, move);
+    }
 
 
     UseShield() {
         this.Shields--;
-        this.NextActionableTurn = this.Turn + Constants.SHIELD_TURN_DURATION;
+        this.Cooldown = Constants.SHIELD_TURN_DURATION;
         this.NextDeclaredMove = null;
 
         if(this.Timeline) {
@@ -104,7 +117,7 @@ export class Battler {
             this.Energy = 0;
         }
 
-        this.NextActionableTurn = this.Turn + (move.Turns || Constants.CHARGE_MOVE_TURN_DURATION);
+        this.Cooldown = move.Turns || Constants.CHARGE_MOVE_TURN_DURATION;
 
         if(this.Timeline) {
             if(move.Category == MoveCategory.Fast) {
