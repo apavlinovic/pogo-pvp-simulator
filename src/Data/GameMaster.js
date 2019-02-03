@@ -708,7 +708,7 @@
             "bundle_name": "f_gloves_acetrainersm_bundle",
             "asset_name": "f_gloves_acetrainersm_0",
             "group_name": "group_gloves",
-            "sort_order": 43,
+            "sort_order": 45,
             "unlock_type": "IAP_CLOTHING",
             "unlock_badge_type": "BADGE_GREAT_LEAGUE",
             "iap_sku": "pgorelease.avatar.f_gloves_acetrainersm_0",
@@ -727,7 +727,7 @@
             "bundle_name": "f_gloves_battlegirl_bundle",
             "asset_name": "f_gloves_battlegirl_0",
             "group_name": "group_gloves",
-            "sort_order": 45,
+            "sort_order": 47,
             "unlock_type": "IAP_CLOTHING",
             "unlock_badge_type": "BADGE_BATTLE_ATTACK_WON",
             "iap_sku": "pgorelease.avatar.f_gloves_battlegirl_0",
@@ -746,7 +746,7 @@
             "bundle_name": "f_gloves_default_bundle",
             "asset_name": "f_gloves_default_0",
             "group_name": "group_gloves",
-            "sort_order": 46,
+            "sort_order": 48,
             "unlock_type": "DEFAULT",
             "icon_name": "f_gloves_default_bundle_icon"
         }
@@ -762,7 +762,7 @@
             "bundle_name": "f_gloves_default_bundle",
             "asset_name": "f_gloves_default_1",
             "group_name": "group_gloves",
-            "sort_order": 47,
+            "sort_order": 49,
             "unlock_type": "DEFAULT",
             "icon_name": "f_gloves_default_bundle_icon"
         }
@@ -778,7 +778,7 @@
             "bundle_name": "f_gloves_default_bundle",
             "asset_name": "f_gloves_default_2",
             "group_name": "group_gloves",
-            "sort_order": 48,
+            "sort_order": 50,
             "unlock_type": "DEFAULT",
             "icon_name": "f_gloves_default_bundle_icon"
         }
@@ -794,7 +794,7 @@
             "bundle_name": "f_gloves_default_bundle",
             "asset_name": "f_gloves_default_3",
             "group_name": "group_gloves",
-            "sort_order": 49,
+            "sort_order": 51,
             "unlock_type": "DEFAULT",
             "icon_name": "f_gloves_default_bundle_icon"
         }
@@ -810,7 +810,7 @@
             "bundle_name": "f_gloves_delibird_bundle",
             "asset_name": "f_gloves_delibird_0",
             "group_name": "group_gloves",
-            "sort_order": 44,
+            "sort_order": 46,
             "unlock_type": "IAP_CLOTHING",
             "iap_sku": "pgorelease.avatar.f_gloves_delibird_0",
             "icon_name": "f_gloves_delibird_0_bundle_icon"
@@ -827,7 +827,7 @@
             "bundle_name": "f_gloves_empty_bundle",
             "asset_name": "f_gloves_empty",
             "group_name": "group_gloves",
-            "sort_order": 50,
+            "sort_order": 52,
             "unlock_type": "DEFAULT",
             "icon_name": "f_gloves_empty_bundle_icon"
         }
@@ -843,7 +843,7 @@
             "bundle_name": "f_gloves_frlg_bundle",
             "asset_name": "f_gloves_frlg_0",
             "group_name": "group_gloves",
-            "sort_order": 51,
+            "sort_order": 53,
             "unlock_type": "IAP_CLOTHING",
             "unlock_badge_type": "BADGE_POKEDEX_ENTRIES",
             "iap_sku": "pgorelease.avatar.f_gloves_frlg_0",
@@ -862,12 +862,46 @@
             "bundle_name": "f_gloves_gymleader_bundle",
             "asset_name": "f_gloves_gymleader_0",
             "group_name": "group_gloves",
-            "sort_order": 52,
+            "sort_order": 54,
             "unlock_type": "IAP_CLOTHING",
             "unlock_badge_type": "BADGE_HOURS_DEFENDED",
             "iap_sku": "pgorelease.avatar.f_gloves_gymleader_0",
             "unlock_badge_level": 10,
             "icon_name": "f_gloves_gymleader_bundle_icon"
+        }
+    },
+    {
+        "template_id": "AVATAR_f_gloves_teamaqua",
+        "avatar_customization": {
+            "enabled": true,
+            "avatar_type": "PLAYER_AVATAR_FEMALE",
+            "slot": [
+                "GLOVES"
+            ],
+            "bundle_name": "f_gloves_teamaqua_bundle",
+            "asset_name": "f_gloves_teamaqua_0",
+            "group_name": "group_gloves",
+            "sort_order": 44,
+            "unlock_type": "IAP_CLOTHING",
+            "iap_sku": "pgorelease.avatar.f_gloves_teamaqua_0",
+            "icon_name": "f_gloves_teamaqua_0_bundle_icon"
+        }
+    },
+    {
+        "template_id": "AVATAR_f_gloves_teammagma",
+        "avatar_customization": {
+            "enabled": true,
+            "avatar_type": "PLAYER_AVATAR_FEMALE",
+            "slot": [
+                "GLOVES"
+            ],
+            "bundle_name": "f_gloves_teammagma_bundle",
+            "asset_name": "f_gloves_teammagma_0",
+            "group_name": "group_gloves",
+            "sort_order": 43,
+            "unlock_type": "IAP_CLOTHING",
+            "iap_sku": "pgorelease.avatar.f_gloves_teammagma_0",
+            "icon_name": "f_gloves_teammagma_0_bundle_icon"
         }
     },
     {
@@ -881,7 +915,7 @@
             "bundle_name": "f_gloves_teamrocket_bundle",
             "asset_name": "f_gloves_teamrocket_0",
             "group_name": "group_gloves",
-            "sort_order": 53,
+            "sort_order": 55,
             "unlock_type": "IAP_CLOTHING",
             "iap_sku": "pgorelease.avatar.f_gloves_teamrocket_0",
             "icon_name": "f_gloves_teamrocket_bundle_icon"
@@ -898,7 +932,7 @@
             "bundle_name": "f_hair_default_asset_bundle",
             "asset_name": "f_hair_default_0",
             "group_name": "group_hair",
-            "sort_order": 57,
+            "sort_order": 59,
             "unlock_type": "DEFAULT",
             "icon_name": "f_group_hair"
         }
@@ -914,7 +948,7 @@
             "bundle_name": "f_hair_default_asset_bundle",
             "asset_name": "f_hair_default_1",
             "group_name": "group_hair",
-            "sort_order": 61,
+            "sort_order": 63,
             "unlock_type": "DEFAULT",
             "icon_name": "f_group_hair"
         }
@@ -930,7 +964,7 @@
             "bundle_name": "f_hair_default_asset_bundle",
             "asset_name": "f_hair_default_10",
             "group_name": "group_hair",
-            "sort_order": 70,
+            "sort_order": 72,
             "unlock_type": "DEFAULT",
             "icon_name": "f_group_hair"
         }
@@ -946,7 +980,7 @@
             "bundle_name": "f_hair_default_asset_bundle",
             "asset_name": "f_hair_default_11",
             "group_name": "group_hair",
-            "sort_order": 59,
+            "sort_order": 61,
             "unlock_type": "DEFAULT",
             "icon_name": "f_group_hair"
         }
@@ -962,7 +996,7 @@
             "bundle_name": "f_hair_default_asset_bundle",
             "asset_name": "f_hair_default_12",
             "group_name": "group_hair",
-            "sort_order": 60,
+            "sort_order": 62,
             "unlock_type": "DEFAULT",
             "icon_name": "f_group_hair"
         }
@@ -978,7 +1012,7 @@
             "bundle_name": "f_hair_default_asset_bundle",
             "asset_name": "f_hair_default_13",
             "group_name": "group_hair",
-            "sort_order": 64,
+            "sort_order": 66,
             "unlock_type": "DEFAULT",
             "icon_name": "f_group_hair"
         }
@@ -994,7 +1028,7 @@
             "bundle_name": "f_hair_default_asset_bundle",
             "asset_name": "f_hair_default_14",
             "group_name": "group_hair",
-            "sort_order": 68,
+            "sort_order": 70,
             "unlock_type": "DEFAULT",
             "icon_name": "f_group_hair"
         }
@@ -1010,7 +1044,7 @@
             "bundle_name": "f_hair_default_asset_bundle",
             "asset_name": "f_hair_default_15",
             "group_name": "group_hair",
-            "sort_order": 69,
+            "sort_order": 71,
             "unlock_type": "DEFAULT",
             "icon_name": "f_group_hair"
         }
@@ -1026,7 +1060,7 @@
             "bundle_name": "f_hair_default_asset_bundle",
             "asset_name": "f_hair_default_16",
             "group_name": "group_hair",
-            "sort_order": 63,
+            "sort_order": 65,
             "unlock_type": "DEFAULT",
             "icon_name": "f_group_hair"
         }
@@ -1042,7 +1076,7 @@
             "bundle_name": "f_hair_default_asset_bundle",
             "asset_name": "f_hair_default_17",
             "group_name": "group_hair",
-            "sort_order": 67,
+            "sort_order": 69,
             "unlock_type": "DEFAULT",
             "icon_name": "f_group_hair"
         }
@@ -1058,7 +1092,7 @@
             "bundle_name": "f_hair_default_asset_bundle",
             "asset_name": "f_hair_default_2",
             "group_name": "group_hair",
-            "sort_order": 54,
+            "sort_order": 56,
             "unlock_type": "DEFAULT",
             "icon_name": "f_group_hair"
         }
@@ -1074,7 +1108,7 @@
             "bundle_name": "f_hair_default_asset_bundle",
             "asset_name": "f_hair_default_3",
             "group_name": "group_hair",
-            "sort_order": 66,
+            "sort_order": 68,
             "unlock_type": "DEFAULT",
             "icon_name": "f_group_hair"
         }
@@ -1090,7 +1124,7 @@
             "bundle_name": "f_hair_default_asset_bundle",
             "asset_name": "f_hair_default_4",
             "group_name": "group_hair",
-            "sort_order": 71,
+            "sort_order": 73,
             "unlock_type": "DEFAULT",
             "icon_name": "f_group_hair"
         }
@@ -1106,7 +1140,7 @@
             "bundle_name": "f_hair_default_asset_bundle",
             "asset_name": "f_hair_default_5",
             "group_name": "group_hair",
-            "sort_order": 56,
+            "sort_order": 58,
             "unlock_type": "DEFAULT",
             "icon_name": "f_group_hair"
         }
@@ -1122,7 +1156,7 @@
             "bundle_name": "f_hair_default_asset_bundle",
             "asset_name": "f_hair_default_6",
             "group_name": "group_hair",
-            "sort_order": 58,
+            "sort_order": 60,
             "unlock_type": "DEFAULT",
             "icon_name": "f_group_hair"
         }
@@ -1138,7 +1172,7 @@
             "bundle_name": "f_hair_default_asset_bundle",
             "asset_name": "f_hair_default_7",
             "group_name": "group_hair",
-            "sort_order": 62,
+            "sort_order": 64,
             "unlock_type": "DEFAULT",
             "icon_name": "f_group_hair"
         }
@@ -1154,7 +1188,7 @@
             "bundle_name": "f_hair_default_asset_bundle",
             "asset_name": "f_hair_default_8",
             "group_name": "group_hair",
-            "sort_order": 55,
+            "sort_order": 57,
             "unlock_type": "DEFAULT",
             "icon_name": "f_group_hair"
         }
@@ -1170,7 +1204,7 @@
             "bundle_name": "f_hair_default_asset_bundle",
             "asset_name": "f_hair_default_9",
             "group_name": "group_hair",
-            "sort_order": 65,
+            "sort_order": 67,
             "unlock_type": "DEFAULT",
             "icon_name": "f_group_hair"
         }
@@ -1186,7 +1220,7 @@
             "bundle_name": "f_hat_acetrainersm_bundle",
             "asset_name": "f_hat_acetrainersm_0",
             "group_name": "group_hat",
-            "sort_order": 72,
+            "sort_order": 75,
             "unlock_type": "IAP_CLOTHING",
             "unlock_badge_type": "BADGE_GREAT_LEAGUE",
             "iap_sku": "pgorelease.avatar.f_hat_acetrainersm_0",
@@ -1205,7 +1239,7 @@
             "bundle_name": "f_hat_adventure_bundle",
             "asset_name": "f_hat_adventure_0",
             "group_name": "group_hat",
-            "sort_order": 74,
+            "sort_order": 77,
             "unlock_type": "DEFAULT",
             "icon_name": "f_hat_adventure_bundle_icon"
         }
@@ -1221,7 +1255,7 @@
             "bundle_name": "f_hat_casket_bundle",
             "asset_name": "f_hat_casket_0",
             "group_name": "group_hat",
-            "sort_order": 75,
+            "sort_order": 78,
             "unlock_type": "IAP_CLOTHING",
             "iap_sku": "pgorelease.avatar.f_hat_casket_0",
             "icon_name": "f_hat_casket_bundle_icon"
@@ -1238,7 +1272,7 @@
             "bundle_name": "f_hat_default_bundle",
             "asset_name": "f_hat_default_A_0",
             "group_name": "group_hat",
-            "sort_order": 76,
+            "sort_order": 79,
             "unlock_type": "DEFAULT",
             "icon_name": "f_hat_default_a_bundle_icon"
         }
@@ -1254,7 +1288,7 @@
             "bundle_name": "f_hat_default_bundle",
             "asset_name": "f_hat_default_A_1",
             "group_name": "group_hat",
-            "sort_order": 77,
+            "sort_order": 80,
             "unlock_type": "DEFAULT",
             "icon_name": "f_hat_default_a_bundle_icon"
         }
@@ -1270,7 +1304,7 @@
             "bundle_name": "f_hat_default_bundle",
             "asset_name": "f_hat_default_A_2",
             "group_name": "group_hat",
-            "sort_order": 78,
+            "sort_order": 81,
             "unlock_type": "DEFAULT",
             "icon_name": "f_hat_default_a_bundle_icon"
         }
@@ -1286,7 +1320,7 @@
             "bundle_name": "f_hat_default_bundle",
             "asset_name": "f_hat_default_A_3",
             "group_name": "group_hat",
-            "sort_order": 79,
+            "sort_order": 82,
             "unlock_type": "DEFAULT",
             "icon_name": "f_hat_default_a_bundle_icon"
         }
@@ -1302,7 +1336,7 @@
             "bundle_name": "f_hat_default_bundle",
             "asset_name": "f_hat_default_A_4",
             "group_name": "group_hat",
-            "sort_order": 80,
+            "sort_order": 83,
             "unlock_type": "DEFAULT",
             "icon_name": "f_hat_default_a_bundle_icon"
         }
@@ -1318,7 +1352,7 @@
             "bundle_name": "f_hat_default_bundle",
             "asset_name": "f_hat_default_A_5",
             "group_name": "group_hat",
-            "sort_order": 81,
+            "sort_order": 84,
             "unlock_type": "DEFAULT",
             "icon_name": "f_hat_default_a_bundle_icon"
         }
@@ -1334,7 +1368,7 @@
             "bundle_name": "f_hat_default_bundle",
             "asset_name": "f_hat_default_B_0",
             "group_name": "group_hat",
-            "sort_order": 82,
+            "sort_order": 85,
             "unlock_type": "DEFAULT",
             "icon_name": "f_hat_default_b_bundle_icon"
         }
@@ -1350,7 +1384,7 @@
             "bundle_name": "f_hat_default_bundle",
             "asset_name": "f_hat_default_B_1",
             "group_name": "group_hat",
-            "sort_order": 83,
+            "sort_order": 86,
             "unlock_type": "DEFAULT",
             "icon_name": "f_hat_default_b_bundle_icon"
         }
@@ -1366,7 +1400,7 @@
             "bundle_name": "f_hat_delibird_bundle",
             "asset_name": "f_hat_delibird_0",
             "group_name": "group_hat",
-            "sort_order": 73,
+            "sort_order": 76,
             "unlock_type": "IAP_CLOTHING",
             "iap_sku": "pgorelease.avatar.f_hat_delibird_0",
             "icon_name": "f_hat_delibird_0_bundle_icon"
@@ -1416,7 +1450,7 @@
             "bundle_name": "f_hat_empty_bundle",
             "asset_name": "f_hat_empty",
             "group_name": "group_hat",
-            "sort_order": 84,
+            "sort_order": 87,
             "unlock_type": "DEFAULT",
             "icon_name": "f_hat_empty_bundle_icon"
         }
@@ -1432,7 +1466,7 @@
             "bundle_name": "f_hat_fedora_bundle",
             "asset_name": "f_hat_fedora_0",
             "group_name": "group_hat",
-            "sort_order": 85,
+            "sort_order": 88,
             "unlock_type": "IAP_CLOTHING",
             "iap_sku": "pgorelease.avatar.f_hat_fedora_0",
             "icon_name": "f_hat_fedora_bundle_icon"
@@ -1449,7 +1483,7 @@
             "bundle_name": "f_hat_fedora_bundle",
             "asset_name": "f_hat_fedora_1",
             "group_name": "group_hat",
-            "sort_order": 86,
+            "sort_order": 89,
             "unlock_type": "IAP_CLOTHING",
             "iap_sku": "pgorelease.avatar.f_hat_fedora_1",
             "icon_name": "f_hat_fedora_bundle_icon"
@@ -1482,7 +1516,7 @@
             "bundle_name": "f_hat_frlg_bundle",
             "asset_name": "f_hat_frlg_0",
             "group_name": "group_hat",
-            "sort_order": 87,
+            "sort_order": 90,
             "unlock_type": "IAP_CLOTHING",
             "unlock_badge_type": "BADGE_POKEDEX_ENTRIES",
             "iap_sku": "pgorelease.avatar.f_hat_frlg_0",
@@ -1518,7 +1552,7 @@
             "bundle_name": "f_hat_hgss_bundle",
             "asset_name": "f_hat_hgss_0",
             "group_name": "group_hat",
-            "sort_order": 88,
+            "sort_order": 91,
             "unlock_type": "IAP_CLOTHING",
             "unlock_badge_type": "BADGE_POKEDEX_ENTRIES_GEN2",
             "iap_sku": "pgorelease.avatar.f_hat_hgss_0",
@@ -1537,7 +1571,7 @@
             "bundle_name": "f_hat_knitted_bundle",
             "asset_name": "f_hat_knitted_0",
             "group_name": "group_hat",
-            "sort_order": 89,
+            "sort_order": 92,
             "unlock_type": "IAP_CLOTHING",
             "iap_sku": "pgorelease.avatar.f_hat_knitted_0",
             "icon_name": "f_hat_knitted_bundle_icon"
@@ -1554,7 +1588,7 @@
             "bundle_name": "f_hat_knitted_bundle",
             "asset_name": "f_hat_knitted_1",
             "group_name": "group_hat",
-            "sort_order": 90,
+            "sort_order": 93,
             "unlock_type": "IAP_CLOTHING",
             "iap_sku": "pgorelease.avatar.f_hat_knitted_1",
             "icon_name": "f_hat_knitted_bundle_icon"
@@ -1571,7 +1605,7 @@
             "bundle_name": "f_hat_magikarp_bundle",
             "asset_name": "f_hat_magikarp",
             "group_name": "group_hat",
-            "sort_order": 91,
+            "sort_order": 94,
             "unlock_type": "DEFAULT",
             "icon_name": "f_hat_magikarp_bundle_icon"
         }
@@ -1587,7 +1621,7 @@
             "bundle_name": "f_hat_mimikyu_bundle",
             "asset_name": "f_hat_mimikyu_0",
             "group_name": "group_hat",
-            "sort_order": 92,
+            "sort_order": 95,
             "unlock_type": "DEFAULT",
             "icon_name": "f_hat_mimikyu_bundle_icon"
         }
@@ -1636,7 +1670,7 @@
             "bundle_name": "f_hat_pikachufan_bundle",
             "asset_name": "f_hat_pikachufan_0",
             "group_name": "group_hat",
-            "sort_order": 93,
+            "sort_order": 96,
             "unlock_type": "IAP_CLOTHING",
             "unlock_badge_type": "BADGE_PIKACHU",
             "iap_sku": "pgorelease.avatar.f_hat_pikachufan_0",
@@ -1696,6 +1730,23 @@
         }
     },
     {
+        "template_id": "AVATAR_f_hat_teamaqua",
+        "avatar_customization": {
+            "enabled": true,
+            "avatar_type": "PLAYER_AVATAR_FEMALE",
+            "slot": [
+                "HAT"
+            ],
+            "bundle_name": "f_hat_teamaqua_bundle",
+            "asset_name": "f_hat_teamaqua_0",
+            "group_name": "group_hat",
+            "sort_order": 74,
+            "unlock_type": "IAP_CLOTHING",
+            "iap_sku": "pgorelease.avatar.f_hat_teamaqua_0",
+            "icon_name": "f_hat_teamaqua_0_bundle_icon"
+        }
+    },
+    {
         "template_id": "AVATAR_f_hat_teamleadercap_0",
         "avatar_customization": {
             "enabled": true,
@@ -1740,7 +1791,7 @@
             "bundle_name": "f_hat_teamleadercap_bundle",
             "asset_name": "f_hat_teamleadercap_2",
             "group_name": "group_hat",
-            "sort_order": 94,
+            "sort_order": 97,
             "unlock_type": "IAP_CLOTHING",
             "iap_sku": "pgorelease.avatar.f_hat_teamleadercap_2",
             "icon_name": "f_hat_teamleadercap_2_bundle_icon"
@@ -1757,7 +1808,7 @@
             "bundle_name": "f_hat_teamrocket_bundle",
             "asset_name": "f_hat_teamrocket_0",
             "group_name": "group_hat",
-            "sort_order": 95,
+            "sort_order": 98,
             "unlock_type": "IAP_CLOTHING",
             "iap_sku": "pgorelease.avatar.f_hat_teamrocket_0",
             "icon_name": "f_hat_teamrocket_bundle_icon"
@@ -1774,7 +1825,7 @@
             "bundle_name": "f_hat_tophat_bundle",
             "asset_name": "f_hat_tophat_0",
             "group_name": "group_hat",
-            "sort_order": 96,
+            "sort_order": 99,
             "unlock_type": "IAP_CLOTHING",
             "iap_sku": "pgorelease.avatar.f_hat_tophat_0",
             "icon_name": "f_hat_tophat_bundle_icon"
@@ -1791,7 +1842,7 @@
             "bundle_name": "f_hat_ultra_bundle",
             "asset_name": "f_hat_ultra_0",
             "group_name": "group_hat",
-            "sort_order": 97,
+            "sort_order": 100,
             "unlock_type": "DEFAULT",
             "icon_name": "f_hat_ultra_bundle_icon"
         }
@@ -1807,7 +1858,7 @@
             "bundle_name": "f_necklace_default_bundle",
             "asset_name": "f_necklace_default_0",
             "group_name": "group_necklace",
-            "sort_order": 98,
+            "sort_order": 101,
             "unlock_type": "DEFAULT",
             "icon_name": "f_necklace_default_bundle_icon"
         }
@@ -1823,7 +1874,7 @@
             "bundle_name": "f_necklace_default_bundle",
             "asset_name": "f_necklace_default_1",
             "group_name": "group_necklace",
-            "sort_order": 99,
+            "sort_order": 102,
             "unlock_type": "DEFAULT",
             "icon_name": "f_necklace_default_bundle_icon"
         }
@@ -1839,7 +1890,7 @@
             "bundle_name": "f_necklace_empty_bundle",
             "asset_name": "f_necklace_empty",
             "group_name": "group_necklace",
-            "sort_order": 102,
+            "sort_order": 105,
             "unlock_type": "DEFAULT",
             "icon_name": "f_necklace_empty_bundle_icon"
         }
@@ -1855,7 +1906,7 @@
             "bundle_name": "f_necklace_heart_bundle",
             "asset_name": "f_necklace_heart_0",
             "group_name": "group_necklace",
-            "sort_order": 100,
+            "sort_order": 103,
             "unlock_type": "DEFAULT",
             "icon_name": "f_necklace_heart_bundle_icon"
         }
@@ -1871,7 +1922,7 @@
             "bundle_name": "f_necklace_star_bundle",
             "asset_name": "f_necklace_star_0",
             "group_name": "group_necklace",
-            "sort_order": 101,
+            "sort_order": 104,
             "unlock_type": "DEFAULT",
             "icon_name": "f_necklace_star_bundle_icon"
         }
@@ -1887,7 +1938,7 @@
             "bundle_name": "f_pants_acetrainerbw_bundle",
             "asset_name": "f_pants_acetrainerbw_0",
             "group_name": "group_pants",
-            "sort_order": 103,
+            "sort_order": 108,
             "unlock_type": "IAP_CLOTHING",
             "unlock_badge_type": "BADGE_BATTLE_TRAINING_WON",
             "iap_sku": "pgorelease.avatar.f_pants_acetrainerbw_0",
@@ -1906,7 +1957,7 @@
             "bundle_name": "f_pants_battlegirl_bundle",
             "asset_name": "f_pants_battlegirl_0",
             "group_name": "group_pants",
-            "sort_order": 105,
+            "sort_order": 110,
             "unlock_type": "IAP_CLOTHING",
             "unlock_badge_type": "BADGE_BATTLE_ATTACK_WON",
             "iap_sku": "pgorelease.avatar.f_pants_battlegirl_0",
@@ -1925,7 +1976,7 @@
             "bundle_name": "f_pants_default_bundle",
             "asset_name": "f_pants_default_0",
             "group_name": "group_pants",
-            "sort_order": 106,
+            "sort_order": 111,
             "unlock_type": "DEFAULT",
             "icon_name": "f_pants_default_bundle_icon"
         }
@@ -1941,7 +1992,7 @@
             "bundle_name": "f_pants_default_bundle",
             "asset_name": "f_pants_default_1",
             "group_name": "group_pants",
-            "sort_order": 107,
+            "sort_order": 112,
             "unlock_type": "DEFAULT",
             "icon_name": "f_pants_default_bundle_icon"
         }
@@ -1957,7 +2008,7 @@
             "bundle_name": "f_pants_default_bundle",
             "asset_name": "f_pants_default_2",
             "group_name": "group_pants",
-            "sort_order": 108,
+            "sort_order": 113,
             "unlock_type": "DEFAULT",
             "icon_name": "f_pants_default_bundle_icon"
         }
@@ -1973,7 +2024,7 @@
             "bundle_name": "f_pants_default_bundle",
             "asset_name": "f_pants_default_3",
             "group_name": "group_pants",
-            "sort_order": 109,
+            "sort_order": 114,
             "unlock_type": "DEFAULT",
             "icon_name": "f_pants_default_bundle_icon"
         }
@@ -1989,7 +2040,7 @@
             "bundle_name": "f_pants_default_bundle",
             "asset_name": "f_pants_default_4",
             "group_name": "group_pants",
-            "sort_order": 110,
+            "sort_order": 115,
             "unlock_type": "DEFAULT",
             "icon_name": "f_pants_default_bundle_icon"
         }
@@ -2005,7 +2056,7 @@
             "bundle_name": "f_pants_default_bundle",
             "asset_name": "f_pants_default_5",
             "group_name": "group_pants",
-            "sort_order": 111,
+            "sort_order": 116,
             "unlock_type": "DEFAULT",
             "icon_name": "f_pants_default_bundle_icon"
         }
@@ -2021,7 +2072,7 @@
             "bundle_name": "f_pants_frlg_bundle",
             "asset_name": "f_pants_frlg_0",
             "group_name": "group_pants",
-            "sort_order": 112,
+            "sort_order": 117,
             "unlock_type": "IAP_CLOTHING",
             "unlock_badge_type": "BADGE_POKEDEX_ENTRIES",
             "iap_sku": "pgorelease.avatar.f_pants_frlg_0",
@@ -2040,7 +2091,7 @@
             "bundle_name": "f_pants_gymleader_bundle",
             "asset_name": "f_pants_gymleader_0",
             "group_name": "group_pants",
-            "sort_order": 113,
+            "sort_order": 118,
             "unlock_type": "IAP_CLOTHING",
             "unlock_badge_type": "BADGE_HOURS_DEFENDED",
             "iap_sku": "pgorelease.avatar.f_pants_gymleader_0",
@@ -2059,7 +2110,7 @@
             "bundle_name": "f_pants_gymleader_bundle",
             "asset_name": "f_pants_gymleader_1",
             "group_name": "group_pants",
-            "sort_order": 114,
+            "sort_order": 119,
             "unlock_type": "IAP_CLOTHING",
             "unlock_badge_type": "BADGE_HOURS_DEFENDED",
             "iap_sku": "pgorelease.avatar.f_pants_gymleader_1",
@@ -2078,7 +2129,7 @@
             "bundle_name": "f_pants_gymleader_bundle",
             "asset_name": "f_pants_gymleader_2",
             "group_name": "group_pants",
-            "sort_order": 115,
+            "sort_order": 120,
             "unlock_type": "IAP_CLOTHING",
             "unlock_badge_type": "BADGE_HOURS_DEFENDED",
             "iap_sku": "pgorelease.avatar.f_pants_gymleader_2",
@@ -2097,7 +2148,7 @@
             "bundle_name": "f_pants_hgss_bundle",
             "asset_name": "f_pants_hgss_0",
             "group_name": "group_pants",
-            "sort_order": 116,
+            "sort_order": 121,
             "unlock_type": "IAP_CLOTHING",
             "unlock_badge_type": "BADGE_POKEDEX_ENTRIES_GEN2",
             "iap_sku": "pgorelease.avatar.f_pants_hgss_0",
@@ -2116,7 +2167,7 @@
             "bundle_name": "f_pants_miniskirt_bundle",
             "asset_name": "f_pants_miniskirt_0",
             "group_name": "group_pants",
-            "sort_order": 117,
+            "sort_order": 122,
             "unlock_type": "IAP_CLOTHING",
             "iap_sku": "pgorelease.avatar.f_pants_miniskirt_0",
             "icon_name": "f_pants_miniskirt_bundle_icon"
@@ -2133,7 +2184,7 @@
             "bundle_name": "f_pants_miniskirt_bundle",
             "asset_name": "f_pants_miniskirt_1",
             "group_name": "group_pants",
-            "sort_order": 118,
+            "sort_order": 123,
             "unlock_type": "IAP_CLOTHING",
             "iap_sku": "pgorelease.avatar.f_pants_miniskirt_1",
             "icon_name": "f_pants_miniskirt_bundle_icon"
@@ -2150,7 +2201,7 @@
             "bundle_name": "f_pants_miniskirt_bundle",
             "asset_name": "f_pants_miniskirt_2",
             "group_name": "group_pants",
-            "sort_order": 119,
+            "sort_order": 124,
             "unlock_type": "IAP_CLOTHING",
             "iap_sku": "pgorelease.avatar.f_pants_miniskirt_2",
             "icon_name": "f_pants_miniskirt_bundle_icon"
@@ -2167,7 +2218,7 @@
             "bundle_name": "f_pants_miniskirt_bundle",
             "asset_name": "f_pants_miniskirt_3",
             "group_name": "group_pants",
-            "sort_order": 120,
+            "sort_order": 125,
             "unlock_type": "IAP_CLOTHING",
             "iap_sku": "pgorelease.avatar.f_pants_miniskirt_3",
             "icon_name": "f_pants_miniskirt_bundle_icon"
@@ -2184,7 +2235,7 @@
             "bundle_name": "f_pants_miniskirt_bundle",
             "asset_name": "f_pants_miniskirt_wave_0",
             "group_name": "group_pants",
-            "sort_order": 121,
+            "sort_order": 126,
             "unlock_type": "DEFAULT",
             "icon_name": "f_pants_miniskirt_wave_bundle_icon"
         }
@@ -2200,7 +2251,7 @@
             "bundle_name": "f_pants_miniskirt_bundle",
             "asset_name": "f_pants_miniskirt_wave_1",
             "group_name": "group_pants",
-            "sort_order": 122,
+            "sort_order": 127,
             "unlock_type": "DEFAULT",
             "icon_name": "f_pants_miniskirt_wave_bundle_icon"
         }
@@ -2216,7 +2267,7 @@
             "bundle_name": "f_pants_miniskirt_bundle",
             "asset_name": "f_pants_miniskirt_wave_2",
             "group_name": "group_pants",
-            "sort_order": 123,
+            "sort_order": 128,
             "unlock_type": "DEFAULT",
             "icon_name": "f_pants_miniskirt_wave_bundle_icon"
         }
@@ -2232,7 +2283,7 @@
             "bundle_name": "f_pants_misty_bundle",
             "asset_name": "f_pants_misty_0",
             "group_name": "group_pants",
-            "sort_order": 124,
+            "sort_order": 129,
             "unlock_type": "IAP_CLOTHING",
             "iap_sku": "pgorelease.avatar.f_pants_misty_0",
             "icon_name": "f_pants_misty_0_bundle_icon"
@@ -2249,7 +2300,7 @@
             "bundle_name": "f_pants_neon_bundle",
             "asset_name": "f_pants_neon_solid_0",
             "group_name": "group_pants",
-            "sort_order": 125,
+            "sort_order": 130,
             "unlock_type": "IAP_CLOTHING",
             "iap_sku": "pgorelease.avatar.f_pants_neon_solid_0",
             "icon_name": "f_pants_neon_bundle_icon"
@@ -2266,7 +2317,7 @@
             "bundle_name": "f_pants_neon_bundle",
             "asset_name": "f_pants_neon_solid_1",
             "group_name": "group_pants",
-            "sort_order": 126,
+            "sort_order": 131,
             "unlock_type": "IAP_CLOTHING",
             "iap_sku": "pgorelease.avatar.f_pants_neon_solid_1",
             "icon_name": "f_pants_neon_bundle_icon"
@@ -2283,7 +2334,7 @@
             "bundle_name": "f_pants_neon_bundle",
             "asset_name": "f_pants_neon_solid_2",
             "group_name": "group_pants",
-            "sort_order": 127,
+            "sort_order": 132,
             "unlock_type": "IAP_CLOTHING",
             "iap_sku": "pgorelease.avatar.f_pants_neon_solid_2",
             "icon_name": "f_pants_neon_bundle_icon"
@@ -2300,7 +2351,7 @@
             "bundle_name": "f_pants_neon_bundle",
             "asset_name": "f_pants_neon_stripes_0",
             "group_name": "group_pants",
-            "sort_order": 128,
+            "sort_order": 133,
             "unlock_type": "IAP_CLOTHING",
             "iap_sku": "pgorelease.avatar.f_pants_neon_stripes_0",
             "icon_name": "f_pants_neon_bundle_icon"
@@ -2317,7 +2368,7 @@
             "bundle_name": "f_pants_neon_bundle",
             "asset_name": "f_pants_neon_stripes_1",
             "group_name": "group_pants",
-            "sort_order": 129,
+            "sort_order": 134,
             "unlock_type": "IAP_CLOTHING",
             "iap_sku": "pgorelease.avatar.f_pants_neon_stripes_1",
             "icon_name": "f_pants_neon_bundle_icon"
@@ -2334,7 +2385,7 @@
             "bundle_name": "f_pants_pikachufan_bundle",
             "asset_name": "f_pants_pikachufan_0",
             "group_name": "group_pants",
-            "sort_order": 130,
+            "sort_order": 135,
             "unlock_type": "IAP_CLOTHING",
             "unlock_badge_type": "BADGE_PIKACHU",
             "iap_sku": "pgorelease.avatar.f_pants_pikachufan_0",
@@ -2353,7 +2404,7 @@
             "bundle_name": "f_pants_shorts_bundle",
             "asset_name": "f_pants_shorts_0",
             "group_name": "group_pants",
-            "sort_order": 131,
+            "sort_order": 136,
             "unlock_type": "IAP_CLOTHING",
             "iap_sku": "pgorelease.avatar.f_pants_shorts_0",
             "icon_name": "f_pants_shorts_bundle_icon"
@@ -2370,7 +2421,7 @@
             "bundle_name": "f_pants_shorts_bundle",
             "asset_name": "f_pants_shorts_1",
             "group_name": "group_pants",
-            "sort_order": 132,
+            "sort_order": 137,
             "unlock_type": "IAP_CLOTHING",
             "iap_sku": "pgorelease.avatar.f_pants_shorts_1",
             "icon_name": "f_pants_shorts_bundle_icon"
@@ -2387,7 +2438,7 @@
             "bundle_name": "f_pants_shorts_bundle",
             "asset_name": "f_pants_shorts_2",
             "group_name": "group_pants",
-            "sort_order": 133,
+            "sort_order": 138,
             "unlock_type": "IAP_CLOTHING",
             "iap_sku": "pgorelease.avatar.f_pants_shorts_2",
             "icon_name": "f_pants_shorts_bundle_icon"
@@ -2404,7 +2455,7 @@
             "bundle_name": "f_pants_shorts_bundle",
             "asset_name": "f_pants_shorts_3",
             "group_name": "group_pants",
-            "sort_order": 134,
+            "sort_order": 139,
             "unlock_type": "IAP_CLOTHING",
             "iap_sku": "pgorelease.avatar.f_pants_shorts_3",
             "icon_name": "f_pants_shorts_bundle_icon"
@@ -2421,10 +2472,44 @@
             "bundle_name": "f_pants_skinnyjeans_bundle",
             "asset_name": "f_pants_skinnyjeans_0",
             "group_name": "group_pants",
-            "sort_order": 135,
+            "sort_order": 140,
             "unlock_type": "IAP_CLOTHING",
             "iap_sku": "pgorelease.avatar.f_pants_skinnyjeans_0",
             "icon_name": "f_pants_skinnyjeans_bundle_icon"
+        }
+    },
+    {
+        "template_id": "AVATAR_f_pants_teamaqua",
+        "avatar_customization": {
+            "enabled": true,
+            "avatar_type": "PLAYER_AVATAR_FEMALE",
+            "slot": [
+                "PANTS"
+            ],
+            "bundle_name": "f_pants_teamaqua_bundle",
+            "asset_name": "f_pants_teamaqua_0",
+            "group_name": "group_pants",
+            "sort_order": 107,
+            "unlock_type": "IAP_CLOTHING",
+            "iap_sku": "pgorelease.avatar.f_pants_teamaqua_0",
+            "icon_name": "f_pants_teamaqua_0_bundle_icon"
+        }
+    },
+    {
+        "template_id": "AVATAR_f_pants_teammagma",
+        "avatar_customization": {
+            "enabled": true,
+            "avatar_type": "PLAYER_AVATAR_FEMALE",
+            "slot": [
+                "PANTS"
+            ],
+            "bundle_name": "f_pants_teammagma_bundle",
+            "asset_name": "f_pants_teammagma_0",
+            "group_name": "group_pants",
+            "sort_order": 106,
+            "unlock_type": "IAP_CLOTHING",
+            "iap_sku": "pgorelease.avatar.f_pants_teammagma_0",
+            "icon_name": "f_pants_teammagma_0_bundle_icon"
         }
     },
     {
@@ -2438,7 +2523,7 @@
             "bundle_name": "f_pants_teamrocket_bundle",
             "asset_name": "f_pants_teamrocket_0",
             "group_name": "group_pants",
-            "sort_order": 136,
+            "sort_order": 141,
             "unlock_type": "IAP_CLOTHING",
             "iap_sku": "pgorelease.avatar.f_pants_teamrocket_0",
             "icon_name": "f_pants_teamrocket_bundle_icon"
@@ -2455,7 +2540,7 @@
             "bundle_name": "f_pants_miniskirt_bundle",
             "asset_name": "f_pants_miniskirt_turbine_0",
             "group_name": "group_pants",
-            "sort_order": 137,
+            "sort_order": 142,
             "unlock_type": "IAP_CLOTHING",
             "iap_sku": "pgorelease.avatar.f_pants_miniskirt_turbine_0",
             "icon_name": "f_pants_miniskirt_turbine_bundle_icon"
@@ -2472,7 +2557,7 @@
             "bundle_name": "f_pants_miniskirt_bundle",
             "asset_name": "f_pants_miniskirt_turbine_1",
             "group_name": "group_pants",
-            "sort_order": 138,
+            "sort_order": 143,
             "unlock_type": "IAP_CLOTHING",
             "iap_sku": "pgorelease.avatar.f_pants_miniskirt_turbine_1",
             "icon_name": "f_pants_miniskirt_turbine_bundle_icon"
@@ -2489,7 +2574,7 @@
             "bundle_name": "f_pants_miniskirt_bundle",
             "asset_name": "f_pants_miniskirt_turbine_2",
             "group_name": "group_pants",
-            "sort_order": 139,
+            "sort_order": 144,
             "unlock_type": "IAP_CLOTHING",
             "iap_sku": "pgorelease.avatar.f_pants_miniskirt_turbine_2",
             "icon_name": "f_pants_miniskirt_turbine_bundle_icon"
@@ -2506,7 +2591,7 @@
             "bundle_name": "f_pants_ultra_bundle",
             "asset_name": "f_pants_ultra_0",
             "group_name": "group_pants",
-            "sort_order": 140,
+            "sort_order": 145,
             "unlock_type": "DEFAULT",
             "icon_name": "f_pants_ultra_bundle_icon"
         }
@@ -2522,7 +2607,7 @@
             "bundle_name": "f_pants_veterantrainerxy_bundle",
             "asset_name": "f_pants_veterantrainerxy_0",
             "group_name": "group_pants",
-            "sort_order": 104,
+            "sort_order": 109,
             "unlock_type": "IAP_CLOTHING",
             "unlock_badge_type": "BADGE_GREAT_LEAGUE",
             "iap_sku": "pgorelease.avatar.f_pants_veterantrainerxy_0",
@@ -2541,7 +2626,7 @@
             "bundle_name": "f_shirt_acetrainerbw_bundle",
             "asset_name": "f_shirt_acetrainerbw_0",
             "group_name": "group_shirt",
-            "sort_order": 141,
+            "sort_order": 148,
             "unlock_type": "IAP_CLOTHING",
             "unlock_badge_type": "BADGE_BATTLE_TRAINING_WON",
             "iap_sku": "pgorelease.avatar.f_shirt_acetrainerbw_0",
@@ -2560,7 +2645,7 @@
             "bundle_name": "f_shirt_acetrainersm_bundle",
             "asset_name": "f_shirt_acetrainersm_0",
             "group_name": "group_shirt",
-            "sort_order": 142,
+            "sort_order": 149,
             "unlock_type": "IAP_CLOTHING",
             "unlock_badge_type": "BADGE_ULTRA_LEAGUE",
             "iap_sku": "pgorelease.avatar.f_shirt_acetrainersm_0",
@@ -2579,7 +2664,7 @@
             "bundle_name": "f_shirt_battlegirl_bundle",
             "asset_name": "f_shirt_battlegirl_0",
             "group_name": "group_shirt",
-            "sort_order": 145,
+            "sort_order": 152,
             "unlock_type": "IAP_CLOTHING",
             "unlock_badge_type": "BADGE_BATTLE_ATTACK_WON",
             "iap_sku": "pgorelease.avatar.f_shirt_battlegirl_0",
@@ -2597,7 +2682,7 @@
             "bundle_name": "f_shirt_buttondown_bundle",
             "asset_name": "f_shirt_buttondown_0",
             "group_name": "group_shirt",
-            "sort_order": 146,
+            "sort_order": 153,
             "unlock_type": "IAP_CLOTHING",
             "iap_sku": "pgorelease.avatar.f_shirt_buttondown_0",
             "icon_name": "f_shirt_buttondown_bundle_icon"
@@ -2614,7 +2699,7 @@
             "bundle_name": "f_shirt_celebi_bundle",
             "asset_name": "f_shirt_celebi_0",
             "group_name": "group_shirt",
-            "sort_order": 147,
+            "sort_order": 154,
             "unlock_type": "DEFAULT",
             "icon_name": "f_shirt_celebi_bundle_icon"
         }
@@ -2630,7 +2715,7 @@
             "bundle_name": "f_shirt_default_bundle",
             "asset_name": "f_shirt_default_0",
             "group_name": "group_shirt",
-            "sort_order": 148,
+            "sort_order": 155,
             "unlock_type": "DEFAULT",
             "icon_name": "f_shirt_default_bundle_icon"
         }
@@ -2646,7 +2731,7 @@
             "bundle_name": "f_shirt_default_bundle",
             "asset_name": "f_shirt_default_1",
             "group_name": "group_shirt",
-            "sort_order": 149,
+            "sort_order": 156,
             "unlock_type": "DEFAULT",
             "icon_name": "f_shirt_default_bundle_icon"
         }
@@ -2662,7 +2747,7 @@
             "bundle_name": "f_shirt_default_bundle",
             "asset_name": "f_shirt_default_2",
             "group_name": "group_shirt",
-            "sort_order": 150,
+            "sort_order": 157,
             "unlock_type": "DEFAULT",
             "icon_name": "f_shirt_default_bundle_icon"
         }
@@ -2678,7 +2763,7 @@
             "bundle_name": "f_shirt_default_bundle",
             "asset_name": "f_shirt_default_3",
             "group_name": "group_shirt",
-            "sort_order": 151,
+            "sort_order": 158,
             "unlock_type": "DEFAULT",
             "icon_name": "f_shirt_default_bundle_icon"
         }
@@ -2694,7 +2779,7 @@
             "bundle_name": "f_shirt_default_bundle",
             "asset_name": "f_shirt_default_4",
             "group_name": "group_shirt",
-            "sort_order": 152,
+            "sort_order": 159,
             "unlock_type": "DEFAULT",
             "icon_name": "f_shirt_default_bundle_icon"
         }
@@ -2710,7 +2795,7 @@
             "bundle_name": "f_shirt_default_bundle",
             "asset_name": "f_shirt_default_5",
             "group_name": "group_shirt",
-            "sort_order": 153,
+            "sort_order": 160,
             "unlock_type": "DEFAULT",
             "icon_name": "f_shirt_default_bundle_icon"
         }
@@ -2726,7 +2811,7 @@
             "bundle_name": "f_shirt_default_bundle",
             "asset_name": "f_shirt_default_6",
             "group_name": "group_shirt",
-            "sort_order": 154,
+            "sort_order": 161,
             "unlock_type": "DEFAULT",
             "icon_name": "f_shirt_default_bundle_icon"
         }
@@ -2742,7 +2827,7 @@
             "bundle_name": "f_shirt_default_bundle",
             "asset_name": "f_shirt_default_7",
             "group_name": "group_shirt",
-            "sort_order": 155,
+            "sort_order": 162,
             "unlock_type": "DEFAULT",
             "icon_name": "f_shirt_default_bundle_icon"
         }
@@ -2758,7 +2843,7 @@
             "bundle_name": "f_shirt_default_bundle",
             "asset_name": "f_shirt_default_8",
             "group_name": "group_shirt",
-            "sort_order": 156,
+            "sort_order": 163,
             "unlock_type": "DEFAULT",
             "icon_name": "f_shirt_default_bundle_icon"
         }
@@ -2774,7 +2859,7 @@
             "bundle_name": "f_shirt_delibird_bundle",
             "asset_name": "f_shirt_delibird_0",
             "group_name": "group_shirt",
-            "sort_order": 144,
+            "sort_order": 151,
             "unlock_type": "IAP_CLOTHING",
             "iap_sku": "pgorelease.avatar.f_shirt_delibird_0",
             "icon_name": "f_shirt_delibird_0_bundle_icon"
@@ -2791,7 +2876,7 @@
             "bundle_name": "f_shirt_drifblim_bundle",
             "asset_name": "f_shirt_drifblim_0",
             "group_name": "group_shirt",
-            "sort_order": 157,
+            "sort_order": 164,
             "unlock_type": "IAP_CLOTHING",
             "iap_sku": "pgorelease.avatar.f_shirt_drifblim_0",
             "icon_name": "f_shirt_drifblim_0_bundle_icon"
@@ -2808,7 +2893,7 @@
             "bundle_name": "f_shirt_earthday_2018_bundle",
             "asset_name": "f_shirt_earthday_2018",
             "group_name": "group_shirt",
-            "sort_order": 158,
+            "sort_order": 165,
             "unlock_type": "DEFAULT",
             "icon_name": "f_shirt_earthday_2018_bundle_icon"
         }
@@ -2824,7 +2909,7 @@
             "bundle_name": "f_shirt_fragment_bundle",
             "asset_name": "f_shirt_fragment_0",
             "group_name": "group_shirt",
-            "sort_order": 159,
+            "sort_order": 166,
             "unlock_type": "DEFAULT",
             "icon_name": "f_shirt_fragment_bundle_icon"
         }
@@ -2840,7 +2925,7 @@
             "bundle_name": "f_shirt_frlg_bundle",
             "asset_name": "f_shirt_frlg_0",
             "group_name": "group_shirt",
-            "sort_order": 160,
+            "sort_order": 167,
             "unlock_type": "IAP_CLOTHING",
             "unlock_badge_type": "BADGE_POKEDEX_ENTRIES",
             "iap_sku": "pgorelease.avatar.f_shirt_frlg_0",
@@ -2859,7 +2944,7 @@
             "bundle_name": "f_shirt_gengar_bundle",
             "asset_name": "f_shirt_gengar_0",
             "group_name": "group_shirt",
-            "sort_order": 161,
+            "sort_order": 168,
             "unlock_type": "IAP_CLOTHING",
             "iap_sku": "pgorelease.avatar.f_shirt_gengar_0",
             "icon_name": "f_shirt_gengar_0_bundle_icon"
@@ -2876,7 +2961,7 @@
             "bundle_name": "f_shirt_gymleader_bundle",
             "asset_name": "f_shirt_gymleader_0",
             "group_name": "group_shirt",
-            "sort_order": 162,
+            "sort_order": 169,
             "unlock_type": "IAP_CLOTHING",
             "unlock_badge_type": "BADGE_HOURS_DEFENDED",
             "iap_sku": "pgorelease.avatar.f_shirt_gymleader_0",
@@ -2895,7 +2980,7 @@
             "bundle_name": "f_shirt_gymleader_bundle",
             "asset_name": "f_shirt_gymleader_1",
             "group_name": "group_shirt",
-            "sort_order": 163,
+            "sort_order": 170,
             "unlock_type": "IAP_CLOTHING",
             "unlock_badge_type": "BADGE_HOURS_DEFENDED",
             "iap_sku": "pgorelease.avatar.f_shirt_gymleader_1",
@@ -2914,7 +2999,7 @@
             "bundle_name": "f_shirt_gymleader_bundle",
             "asset_name": "f_shirt_gymleader_2",
             "group_name": "group_shirt",
-            "sort_order": 164,
+            "sort_order": 171,
             "unlock_type": "IAP_CLOTHING",
             "unlock_badge_type": "BADGE_HOURS_DEFENDED",
             "iap_sku": "pgorelease.avatar.f_shirt_gymleader_2",
@@ -2933,7 +3018,7 @@
             "bundle_name": "f_shirt_hgss_bundle",
             "asset_name": "f_shirt_hgss_0",
             "group_name": "group_shirt",
-            "sort_order": 165,
+            "sort_order": 172,
             "unlock_type": "IAP_CLOTHING",
             "unlock_badge_type": "BADGE_POKEDEX_ENTRIES_GEN2",
             "iap_sku": "pgorelease.avatar.f_shirt_hgss_0",
@@ -2952,7 +3037,7 @@
             "bundle_name": "f_shirt_ingress_bundle",
             "asset_name": "f_shirt_ingress_0",
             "group_name": "group_shirt",
-            "sort_order": 166,
+            "sort_order": 173,
             "unlock_type": "DEFAULT",
             "icon_name": "f_shirt_ingress_bundle_icon"
         }
@@ -2968,7 +3053,7 @@
             "bundle_name": "f_shirt_ingress_e_bundle",
             "asset_name": "f_shirt_ingress_e_0",
             "group_name": "group_shirt",
-            "sort_order": 167,
+            "sort_order": 174,
             "unlock_type": "DEFAULT",
             "icon_name": "f_shirt_ingress_e_bundle_icon"
         }
@@ -2984,7 +3069,7 @@
             "bundle_name": "f_shirt_ingress_r_bundle",
             "asset_name": "f_shirt_ingress_r_0",
             "group_name": "group_shirt",
-            "sort_order": 168,
+            "sort_order": 175,
             "unlock_type": "DEFAULT",
             "icon_name": "f_shirt_ingress_r_bundle_icon"
         }
@@ -3000,7 +3085,7 @@
             "bundle_name": "f_shirt_latias_latios_bundle",
             "asset_name": "f_shirt_latias_latios_0",
             "group_name": "group_shirt",
-            "sort_order": 169,
+            "sort_order": 176,
             "unlock_type": "IAP_CLOTHING",
             "iap_sku": "pgorelease.avatar.f_shirt_latias_latios_0",
             "icon_name": "f_shirt_latias_latios_bundle_icon"
@@ -3017,7 +3102,7 @@
             "bundle_name": "f_shirt_mew_bundle",
             "asset_name": "f_shirt_mew_0",
             "group_name": "group_shirt",
-            "sort_order": 170,
+            "sort_order": 177,
             "unlock_type": "IAP_CLOTHING",
             "iap_sku": "pgorelease.avatar.f_shirt_mew_0",
             "icon_name": "f_shirt_mew_bundle_icon"
@@ -3034,7 +3119,7 @@
             "bundle_name": "f_shirt_misty_bundle",
             "asset_name": "f_shirt_misty_0",
             "group_name": "group_shirt",
-            "sort_order": 171,
+            "sort_order": 178,
             "unlock_type": "IAP_CLOTHING",
             "iap_sku": "pgorelease.avatar.f_shirt_misty_0",
             "icon_name": "f_shirt_misty_0_bundle_icon"
@@ -3051,7 +3136,7 @@
             "bundle_name": "f_shirt_pikachufan_bundle",
             "asset_name": "f_shirt_pikachufan_0",
             "group_name": "group_shirt",
-            "sort_order": 172,
+            "sort_order": 179,
             "unlock_type": "IAP_CLOTHING",
             "unlock_badge_type": "BADGE_PIKACHU",
             "iap_sku": "pgorelease.avatar.f_shirt_pikachufan_0",
@@ -3070,7 +3155,7 @@
             "bundle_name": "f_shirt_spiritomb_bundle",
             "asset_name": "f_shirt_spiritomb_0",
             "group_name": "group_shirt",
-            "sort_order": 173,
+            "sort_order": 180,
             "unlock_type": "IAP_CLOTHING",
             "iap_sku": "pgorelease.avatar.f_shirt_spiritomb_0",
             "icon_name": "f_shirt_spiritomb_0_bundle_icon"
@@ -3087,7 +3172,7 @@
             "bundle_name": "f_shirt_sweater_bundle",
             "asset_name": "f_shirt_sweater_30_0",
             "group_name": "group_shirt",
-            "sort_order": 174,
+            "sort_order": 181,
             "unlock_type": "IAP_CLOTHING",
             "iap_sku": "pgorelease.avatar.f_shirt_sweater_30_0",
             "icon_name": "f_shirt_sweater_30_bundle_icon",
@@ -3105,7 +3190,7 @@
             "bundle_name": "f_shirt_sweater_bundle",
             "asset_name": "f_shirt_sweater_30_1",
             "group_name": "group_shirt",
-            "sort_order": 175,
+            "sort_order": 182,
             "unlock_type": "IAP_CLOTHING",
             "iap_sku": "pgorelease.avatar.f_shirt_sweater_30_1",
             "icon_name": "f_shirt_sweater_30_bundle_icon",
@@ -3123,7 +3208,7 @@
             "bundle_name": "f_shirt_sweater_bundle",
             "asset_name": "f_shirt_sweater_30_2",
             "group_name": "group_shirt",
-            "sort_order": 176,
+            "sort_order": 183,
             "unlock_type": "IAP_CLOTHING",
             "iap_sku": "pgorelease.avatar.f_shirt_sweater_30_2",
             "icon_name": "f_shirt_sweater_30_bundle_icon",
@@ -3141,7 +3226,7 @@
             "bundle_name": "f_shirt_sweater_bundle",
             "asset_name": "f_shirt_sweater_instinct",
             "group_name": "group_shirt",
-            "sort_order": 177,
+            "sort_order": 184,
             "unlock_type": "IAP_CLOTHING",
             "iap_sku": "pgorelease.avatar.f_shirt_sweater_instinct",
             "icon_name": "f_shirt_sweater_instinct_bundle_icon"
@@ -3158,7 +3243,7 @@
             "bundle_name": "f_shirt_sweater_bundle",
             "asset_name": "f_shirt_sweater_mystic",
             "group_name": "group_shirt",
-            "sort_order": 178,
+            "sort_order": 185,
             "unlock_type": "IAP_CLOTHING",
             "iap_sku": "pgorelease.avatar.f_shirt_sweater_mystic",
             "icon_name": "f_shirt_sweater_mystic_bundle_icon"
@@ -3175,7 +3260,7 @@
             "bundle_name": "f_shirt_sweater_bundle",
             "asset_name": "f_shirt_sweater_valor",
             "group_name": "group_shirt",
-            "sort_order": 179,
+            "sort_order": 186,
             "unlock_type": "IAP_CLOTHING",
             "iap_sku": "pgorelease.avatar.f_shirt_sweater_valor",
             "icon_name": "f_shirt_sweater_valor_bundle_icon"
@@ -3192,7 +3277,7 @@
             "bundle_name": "f_shirt_tanktop_bundle",
             "asset_name": "f_shirt_tanktop_0",
             "group_name": "group_shirt",
-            "sort_order": 180,
+            "sort_order": 187,
             "unlock_type": "IAP_CLOTHING",
             "iap_sku": "pgorelease.avatar.f_shirt_tanktop_0",
             "icon_name": "f_shirt_tanktop_bundle_icon"
@@ -3209,7 +3294,7 @@
             "bundle_name": "f_shirt_tanktop_bundle",
             "asset_name": "f_shirt_tanktop_1",
             "group_name": "group_shirt",
-            "sort_order": 181,
+            "sort_order": 188,
             "unlock_type": "IAP_CLOTHING",
             "iap_sku": "pgorelease.avatar.f_shirt_tanktop_1",
             "icon_name": "f_shirt_tanktop_bundle_icon"
@@ -3226,7 +3311,7 @@
             "bundle_name": "f_shirt_tanktop_bundle",
             "asset_name": "f_shirt_tanktop_2",
             "group_name": "group_shirt",
-            "sort_order": 182,
+            "sort_order": 189,
             "unlock_type": "IAP_CLOTHING",
             "iap_sku": "pgorelease.avatar.f_shirt_tanktop_2",
             "icon_name": "f_shirt_tanktop_bundle_icon"
@@ -3243,7 +3328,7 @@
             "bundle_name": "f_shirt_tanktop_bundle",
             "asset_name": "f_shirt_tanktop_charizard_0",
             "group_name": "group_shirt",
-            "sort_order": 183,
+            "sort_order": 190,
             "unlock_type": "IAP_CLOTHING",
             "iap_sku": "pgorelease.avatar.f_shirt_tanktop_charizard_0",
             "icon_name": "f_shirt_tanktop_charizard_bundle_icon"
@@ -3260,7 +3345,7 @@
             "bundle_name": "f_shirt_tanktop_bundle",
             "asset_name": "f_shirt_tanktop_charizard_1",
             "group_name": "group_shirt",
-            "sort_order": 184,
+            "sort_order": 191,
             "unlock_type": "IAP_CLOTHING",
             "iap_sku": "pgorelease.avatar.f_shirt_tanktop_charizard_1",
             "icon_name": "f_shirt_tanktop_charizard_bundle_icon"
@@ -3277,7 +3362,7 @@
             "bundle_name": "f_shirt_tanktop_bundle",
             "asset_name": "f_shirt_tanktop_charizard_2",
             "group_name": "group_shirt",
-            "sort_order": 185,
+            "sort_order": 192,
             "unlock_type": "IAP_CLOTHING",
             "iap_sku": "pgorelease.avatar.f_shirt_tanktop_charizard_2",
             "icon_name": "f_shirt_tanktop_charizard_bundle_icon"
@@ -3294,7 +3379,7 @@
             "bundle_name": "f_shirt_tanktop_bundle",
             "asset_name": "f_shirt_tanktop_pikachu_0",
             "group_name": "group_shirt",
-            "sort_order": 186,
+            "sort_order": 193,
             "unlock_type": "IAP_CLOTHING",
             "iap_sku": "pgorelease.avatar.f_shirt_tanktop_pikachu_0",
             "icon_name": "f_shirt_tanktop_pikachu_bundle_icon"
@@ -3311,7 +3396,7 @@
             "bundle_name": "f_shirt_tanktop_bundle",
             "asset_name": "f_shirt_tanktop_pikachu_1",
             "group_name": "group_shirt",
-            "sort_order": 187,
+            "sort_order": 194,
             "unlock_type": "IAP_CLOTHING",
             "iap_sku": "pgorelease.avatar.f_shirt_tanktop_pikachu_1",
             "icon_name": "f_shirt_tanktop_pikachu_bundle_icon"
@@ -3328,10 +3413,44 @@
             "bundle_name": "f_shirt_tanktop_bundle",
             "asset_name": "f_shirt_tanktop_pikachu_2",
             "group_name": "group_shirt",
-            "sort_order": 188,
+            "sort_order": 195,
             "unlock_type": "IAP_CLOTHING",
             "iap_sku": "pgorelease.avatar.f_shirt_tanktop_pikachu_2",
             "icon_name": "f_shirt_tanktop_pikachu_bundle_icon"
+        }
+    },
+    {
+        "template_id": "AVATAR_f_shirt_teamaqua",
+        "avatar_customization": {
+            "enabled": true,
+            "avatar_type": "PLAYER_AVATAR_FEMALE",
+            "slot": [
+                "SHIRT"
+            ],
+            "bundle_name": "f_shirt_teamaqua_bundle",
+            "asset_name": "f_shirt_teamaqua_0",
+            "group_name": "group_shirt",
+            "sort_order": 147,
+            "unlock_type": "IAP_CLOTHING",
+            "iap_sku": "pgorelease.avatar.f_shirt_teamaqua_0",
+            "icon_name": "f_shirt_teamaqua_0_bundle_icon"
+        }
+    },
+    {
+        "template_id": "AVATAR_f_shirt_teammagma",
+        "avatar_customization": {
+            "enabled": true,
+            "avatar_type": "PLAYER_AVATAR_FEMALE",
+            "slot": [
+                "SHIRT"
+            ],
+            "bundle_name": "f_shirt_teammagma_bundle",
+            "asset_name": "f_shirt_teammagma_0",
+            "group_name": "group_shirt",
+            "sort_order": 146,
+            "unlock_type": "IAP_CLOTHING",
+            "iap_sku": "pgorelease.avatar.f_shirt_teammagma_0",
+            "icon_name": "f_shirt_teammagma_0_bundle_icon"
         }
     },
     {
@@ -3345,7 +3464,7 @@
             "bundle_name": "f_shirt_teamrocket_bundle",
             "asset_name": "f_shirt_teamrocket_0",
             "group_name": "group_shirt",
-            "sort_order": 189,
+            "sort_order": 196,
             "unlock_type": "IAP_CLOTHING",
             "iap_sku": "pgorelease.avatar.f_shirt_teamrocket_0",
             "icon_name": "f_shirt_teamrocket_0_bundle_icon"
@@ -3362,7 +3481,7 @@
             "bundle_name": "f_shirt_teamrocket_bundle",
             "asset_name": "f_shirt_teamrocket_1",
             "group_name": "group_shirt",
-            "sort_order": 190,
+            "sort_order": 197,
             "unlock_type": "IAP_CLOTHING",
             "iap_sku": "pgorelease.avatar.f_shirt_teamrocket_1",
             "icon_name": "f_shirt_teamrocket_1_bundle_icon"
@@ -3379,7 +3498,7 @@
             "bundle_name": "f_shirt_tshirt_bundle",
             "asset_name": "f_shirt_tshirt_cycling_0",
             "group_name": "group_shirt",
-            "sort_order": 191,
+            "sort_order": 198,
             "unlock_type": "IAP_CLOTHING",
             "iap_sku": "pgorelease.avatar.f_shirt_tshirt_cycling_0",
             "icon_name": "f_shirt_tshirt_cycling_bundle_icon"
@@ -3396,7 +3515,7 @@
             "bundle_name": "f_shirt_tshirt_bundle",
             "asset_name": "f_shirt_tshirt_cycling_1",
             "group_name": "group_shirt",
-            "sort_order": 192,
+            "sort_order": 199,
             "unlock_type": "IAP_CLOTHING",
             "iap_sku": "pgorelease.avatar.f_shirt_tshirt_cycling_1",
             "icon_name": "f_shirt_tshirt_cycling_bundle_icon"
@@ -3413,7 +3532,7 @@
             "bundle_name": "f_shirt_tshirt_bundle",
             "asset_name": "f_shirt_tshirt_cycling_2",
             "group_name": "group_shirt",
-            "sort_order": 193,
+            "sort_order": 200,
             "unlock_type": "IAP_CLOTHING",
             "iap_sku": "pgorelease.avatar.f_shirt_tshirt_cycling_2",
             "icon_name": "f_shirt_tshirt_cycling_bundle_icon"
@@ -3430,7 +3549,7 @@
             "bundle_name": "f_shirt_tshirt_bundle",
             "asset_name": "f_shirt_tshirt_cycling_3",
             "group_name": "group_shirt",
-            "sort_order": 194,
+            "sort_order": 201,
             "unlock_type": "IAP_CLOTHING",
             "iap_sku": "pgorelease.avatar.f_shirt_tshirt_cycling_3",
             "icon_name": "f_shirt_tshirt_cycling_bundle_icon"
@@ -3447,7 +3566,7 @@
             "bundle_name": "f_shirt_tshirt_bundle",
             "asset_name": "f_shirt_tshirt_fest_chicago_2017",
             "group_name": "group_shirt",
-            "sort_order": 195,
+            "sort_order": 202,
             "unlock_type": "DEFAULT",
             "icon_name": "f_shirt_tshirt_fest_chicago_2017_bundle_icon"
         }
@@ -3463,7 +3582,7 @@
             "bundle_name": "f_shirt_tshirt_bundle",
             "asset_name": "f_shirt_tshirt_fest_chicago_2018",
             "group_name": "group_shirt",
-            "sort_order": 196,
+            "sort_order": 203,
             "unlock_type": "DEFAULT",
             "icon_name": "f_shirt_tshirt_fest_chicago_2018_bundle_icon"
         }
@@ -3479,7 +3598,7 @@
             "bundle_name": "f_shirt_tshirt_bundle",
             "asset_name": "f_shirt_tshirt_global_goals_2017",
             "group_name": "group_shirt",
-            "sort_order": 197,
+            "sort_order": 204,
             "unlock_type": "DEFAULT",
             "icon_name": "f_shirt_tshirt_global_goals_2017_bundle_icon"
         }
@@ -3495,7 +3614,7 @@
             "bundle_name": "f_shirt_tshirt_bundle",
             "asset_name": "f_shirt_tshirt_pikachu_0",
             "group_name": "group_shirt",
-            "sort_order": 198,
+            "sort_order": 205,
             "unlock_type": "IAP_CLOTHING",
             "iap_sku": "pgorelease.avatar.f_shirt_tshirt_pikachu_0",
             "icon_name": "f_shirt_tshirt_pikachu_bundle_icon"
@@ -3512,7 +3631,7 @@
             "bundle_name": "f_shirt_tshirt_bundle",
             "asset_name": "f_shirt_tshirt_pikachu_1",
             "group_name": "group_shirt",
-            "sort_order": 199,
+            "sort_order": 206,
             "unlock_type": "IAP_CLOTHING",
             "iap_sku": "pgorelease.avatar.f_shirt_tshirt_pikachu_1",
             "icon_name": "f_shirt_tshirt_pikachu_bundle_icon"
@@ -3529,7 +3648,7 @@
             "bundle_name": "f_shirt_tshirt_bundle",
             "asset_name": "f_shirt_tshirt_pikachu_2",
             "group_name": "group_shirt",
-            "sort_order": 200,
+            "sort_order": 207,
             "unlock_type": "IAP_CLOTHING",
             "iap_sku": "pgorelease.avatar.f_shirt_tshirt_pikachu_2",
             "icon_name": "f_shirt_tshirt_pikachu_bundle_icon"
@@ -3546,7 +3665,7 @@
             "bundle_name": "f_shirt_tshirt_bundle",
             "asset_name": "f_shirt_tshirt_pikachu_3",
             "group_name": "group_shirt",
-            "sort_order": 201,
+            "sort_order": 208,
             "unlock_type": "IAP_CLOTHING",
             "iap_sku": "pgorelease.avatar.f_shirt_tshirt_pikachu_3",
             "icon_name": "f_shirt_tshirt_pikachu_bundle_icon"
@@ -3563,7 +3682,7 @@
             "bundle_name": "f_shirt_tshirt_bundle",
             "asset_name": "f_shirt_tshirt_pikachu_4",
             "group_name": "group_shirt",
-            "sort_order": 202,
+            "sort_order": 209,
             "unlock_type": "IAP_CLOTHING",
             "iap_sku": "pgorelease.avatar.f_shirt_tshirt_pikachu_4",
             "icon_name": "f_shirt_tshirt_pikachu_bundle_icon"
@@ -3580,7 +3699,7 @@
             "bundle_name": "f_shirt_tshirt_bundle",
             "asset_name": "f_shirt_tshirt_pikachu_5",
             "group_name": "group_shirt",
-            "sort_order": 203,
+            "sort_order": 210,
             "unlock_type": "IAP_CLOTHING",
             "iap_sku": "pgorelease.avatar.f_shirt_tshirt_pikachu_5",
             "icon_name": "f_shirt_tshirt_pikachu_bundle_icon"
@@ -3597,7 +3716,7 @@
             "bundle_name": "f_shirt_tshirt_bundle",
             "asset_name": "f_shirt_tshirt_pikachu_6",
             "group_name": "group_shirt",
-            "sort_order": 204,
+            "sort_order": 211,
             "unlock_type": "IAP_CLOTHING",
             "iap_sku": "pgorelease.avatar.f_shirt_tshirt_pikachu_6",
             "icon_name": "f_shirt_tshirt_pikachu_bundle_icon"
@@ -3614,7 +3733,7 @@
             "bundle_name": "f_shirt_ultra_bundle",
             "asset_name": "f_shirt_ultra_0",
             "group_name": "group_shirt",
-            "sort_order": 205,
+            "sort_order": 212,
             "unlock_type": "DEFAULT",
             "icon_name": "f_shirt_ultra_bundle_icon"
         }
@@ -3630,7 +3749,7 @@
             "bundle_name": "f_shirt_veterantrainerxy_bundle",
             "asset_name": "f_shirt_veterantrainerxy_0",
             "group_name": "group_shirt",
-            "sort_order": 143,
+            "sort_order": 150,
             "unlock_type": "IAP_CLOTHING",
             "unlock_badge_type": "BADGE_ULTRA_LEAGUE",
             "iap_sku": "pgorelease.avatar.f_shirt_veterantrainerxy_0",
@@ -3649,7 +3768,7 @@
             "bundle_name": "f_shoes_acetrainerbw_bundle",
             "asset_name": "f_shoes_acetrainerbw_0",
             "group_name": "group_shoes",
-            "sort_order": 206,
+            "sort_order": 215,
             "unlock_type": "IAP_CLOTHING",
             "unlock_badge_type": "BADGE_BATTLE_TRAINING_WON",
             "iap_sku": "pgorelease.avatar.f_shoes_acetrainerbw_0",
@@ -3668,7 +3787,7 @@
             "bundle_name": "f_shoes_acetrainersm_bundle",
             "asset_name": "f_shoes_acetrainersm_0",
             "group_name": "group_shoes",
-            "sort_order": 207,
+            "sort_order": 216,
             "unlock_type": "IAP_CLOTHING",
             "unlock_badge_type": "BADGE_MASTER_LEAGUE",
             "iap_sku": "pgorelease.avatar.f_shoes_acetrainersm_0",
@@ -3687,7 +3806,7 @@
             "bundle_name": "f_shoes_battlegirl_bundle",
             "asset_name": "f_shoes_battlegirl_0",
             "group_name": "group_shoes",
-            "sort_order": 210,
+            "sort_order": 219,
             "unlock_type": "IAP_CLOTHING",
             "unlock_badge_type": "BADGE_BATTLE_ATTACK_WON",
             "iap_sku": "pgorelease.avatar.f_shoes_battlegirl_0",
@@ -3706,7 +3825,7 @@
             "bundle_name": "f_shoes_default_bundle",
             "asset_name": "f_shoes_default_0",
             "group_name": "group_shoes",
-            "sort_order": 211,
+            "sort_order": 220,
             "unlock_type": "DEFAULT",
             "icon_name": "f_shoes_default_bundle_icon"
         }
@@ -3722,7 +3841,7 @@
             "bundle_name": "f_shoes_default_bundle",
             "asset_name": "f_shoes_default_1",
             "group_name": "group_shoes",
-            "sort_order": 212,
+            "sort_order": 221,
             "unlock_type": "DEFAULT",
             "icon_name": "f_shoes_default_bundle_icon"
         }
@@ -3738,7 +3857,7 @@
             "bundle_name": "f_shoes_default_bundle",
             "asset_name": "f_shoes_default_2",
             "group_name": "group_shoes",
-            "sort_order": 213,
+            "sort_order": 222,
             "unlock_type": "DEFAULT",
             "icon_name": "f_shoes_default_bundle_icon"
         }
@@ -3754,7 +3873,7 @@
             "bundle_name": "f_shoes_default_bundle",
             "asset_name": "f_shoes_default_3",
             "group_name": "group_shoes",
-            "sort_order": 214,
+            "sort_order": 223,
             "unlock_type": "DEFAULT",
             "icon_name": "f_shoes_default_bundle_icon"
         }
@@ -3770,7 +3889,7 @@
             "bundle_name": "f_shoes_default_bundle",
             "asset_name": "f_shoes_default_4",
             "group_name": "group_shoes",
-            "sort_order": 215,
+            "sort_order": 224,
             "unlock_type": "DEFAULT",
             "icon_name": "f_shoes_default_bundle_icon"
         }
@@ -3786,7 +3905,7 @@
             "bundle_name": "f_shoes_default_bundle",
             "asset_name": "f_shoes_default_5",
             "group_name": "group_shoes",
-            "sort_order": 216,
+            "sort_order": 225,
             "unlock_type": "DEFAULT",
             "icon_name": "f_shoes_default_bundle_icon"
         }
@@ -3802,7 +3921,7 @@
             "bundle_name": "f_shoes_default_bundle",
             "asset_name": "f_shoes_default_6",
             "group_name": "group_shoes",
-            "sort_order": 217,
+            "sort_order": 226,
             "unlock_type": "DEFAULT",
             "icon_name": "f_shoes_default_bundle_icon"
         }
@@ -3818,7 +3937,7 @@
             "bundle_name": "f_shoes_delibird_bundle",
             "asset_name": "f_shoes_delibird_0",
             "group_name": "group_shoes",
-            "sort_order": 209,
+            "sort_order": 218,
             "unlock_type": "IAP_CLOTHING",
             "iap_sku": "pgorelease.avatar.f_shoes_delibird_0",
             "icon_name": "f_shoes_delibird_0_bundle_icon"
@@ -3835,7 +3954,7 @@
             "bundle_name": "f_shoes_empty_bundle",
             "asset_name": "f_shoes_empty",
             "group_name": "group_shoes",
-            "sort_order": 218,
+            "sort_order": 227,
             "unlock_type": "DEFAULT",
             "icon_name": "f_shoes_empty_bundle_icon"
         }
@@ -3851,7 +3970,7 @@
             "bundle_name": "f_shoes_frlg_bundle",
             "asset_name": "f_shoes_frlg_0",
             "group_name": "group_shoes",
-            "sort_order": 219,
+            "sort_order": 228,
             "unlock_type": "IAP_CLOTHING",
             "unlock_badge_type": "BADGE_POKEDEX_ENTRIES",
             "iap_sku": "pgorelease.avatar.f_shoes_frlg_0",
@@ -3870,7 +3989,7 @@
             "bundle_name": "f_shoes_gymleader_bundle",
             "asset_name": "f_shoes_gymleader_0",
             "group_name": "group_shoes",
-            "sort_order": 220,
+            "sort_order": 229,
             "unlock_type": "IAP_CLOTHING",
             "unlock_badge_type": "BADGE_HOURS_DEFENDED",
             "iap_sku": "pgorelease.avatar.f_shoes_gymleader_0",
@@ -3889,7 +4008,7 @@
             "bundle_name": "f_shoes_gymleader_bundle",
             "asset_name": "f_shoes_gymleader_1",
             "group_name": "group_shoes",
-            "sort_order": 221,
+            "sort_order": 230,
             "unlock_type": "IAP_CLOTHING",
             "unlock_badge_type": "BADGE_HOURS_DEFENDED",
             "iap_sku": "pgorelease.avatar.f_shoes_gymleader_1",
@@ -3908,7 +4027,7 @@
             "bundle_name": "f_shoes_gymleader_bundle",
             "asset_name": "f_shoes_gymleader_2",
             "group_name": "group_shoes",
-            "sort_order": 222,
+            "sort_order": 231,
             "unlock_type": "IAP_CLOTHING",
             "unlock_badge_type": "BADGE_HOURS_DEFENDED",
             "iap_sku": "pgorelease.avatar.f_shoes_gymleader_2",
@@ -3927,7 +4046,7 @@
             "bundle_name": "f_shoes_hgss_bundle",
             "asset_name": "f_shoes_hgss_0",
             "group_name": "group_shoes",
-            "sort_order": 223,
+            "sort_order": 232,
             "unlock_type": "IAP_CLOTHING",
             "unlock_badge_type": "BADGE_POKEDEX_ENTRIES_GEN2",
             "iap_sku": "pgorelease.avatar.f_shoes_hgss_0",
@@ -3946,7 +4065,7 @@
             "bundle_name": "f_shoes_misty_bundle",
             "asset_name": "f_shoes_misty_0",
             "group_name": "group_shoes",
-            "sort_order": 224,
+            "sort_order": 233,
             "unlock_type": "IAP_CLOTHING",
             "iap_sku": "pgorelease.avatar.f_shoes_misty_0",
             "icon_name": "f_shoes_misty_0_bundle_icon"
@@ -3963,12 +4082,46 @@
             "bundle_name": "f_shoes_pikachufan_bundle",
             "asset_name": "f_shoes_pikachufan_0",
             "group_name": "group_shoes",
-            "sort_order": 225,
+            "sort_order": 234,
             "unlock_type": "IAP_CLOTHING",
             "unlock_badge_type": "BADGE_PIKACHU",
             "iap_sku": "pgorelease.avatar.f_shoes_pikachufan_0",
             "unlock_badge_level": 50,
             "icon_name": "f_shoes_pikachufan_bundle_icon"
+        }
+    },
+    {
+        "template_id": "AVATAR_f_shoes_teamaqua",
+        "avatar_customization": {
+            "enabled": true,
+            "avatar_type": "PLAYER_AVATAR_FEMALE",
+            "slot": [
+                "SHOES"
+            ],
+            "bundle_name": "f_shoes_teamaqua_bundle",
+            "asset_name": "f_shoes_teamaqua_0",
+            "group_name": "group_shoes",
+            "sort_order": 214,
+            "unlock_type": "IAP_CLOTHING",
+            "iap_sku": "pgorelease.avatar.f_shoes_teamaqua_0",
+            "icon_name": "f_shoes_teamaqua_0_bundle_icon"
+        }
+    },
+    {
+        "template_id": "AVATAR_f_shoes_teammagma",
+        "avatar_customization": {
+            "enabled": true,
+            "avatar_type": "PLAYER_AVATAR_FEMALE",
+            "slot": [
+                "SHOES"
+            ],
+            "bundle_name": "f_shoes_teammagma_bundle",
+            "asset_name": "f_shoes_teammagma_0",
+            "group_name": "group_shoes",
+            "sort_order": 213,
+            "unlock_type": "IAP_CLOTHING",
+            "iap_sku": "pgorelease.avatar.f_shoes_teammagma_0",
+            "icon_name": "f_shoes_teammagma_0_bundle_icon"
         }
     },
     {
@@ -3982,7 +4135,7 @@
             "bundle_name": "f_shoes_teamrocket_bundle",
             "asset_name": "f_shoes_teamrocket_0",
             "group_name": "group_shoes",
-            "sort_order": 226,
+            "sort_order": 235,
             "unlock_type": "IAP_CLOTHING",
             "iap_sku": "pgorelease.avatar.f_shoes_teamrocket_0",
             "icon_name": "f_shoes_teamrocket_0_bundle_icon"
@@ -3999,7 +4152,7 @@
             "bundle_name": "f_shoes_teamrocket_bundle",
             "asset_name": "f_shoes_teamrocket_1",
             "group_name": "group_shoes",
-            "sort_order": 227,
+            "sort_order": 236,
             "unlock_type": "IAP_CLOTHING",
             "iap_sku": "pgorelease.avatar.f_shoes_teamrocket_1",
             "icon_name": "f_shoes_teamrocket_1_bundle_icon"
@@ -4016,7 +4169,7 @@
             "bundle_name": "f_shoes_ultra_bundle",
             "asset_name": "f_shoes_ultra_0",
             "group_name": "group_shoes",
-            "sort_order": 228,
+            "sort_order": 237,
             "unlock_type": "DEFAULT",
             "icon_name": "f_shoes_ultra_bundle_icon"
         }
@@ -4032,7 +4185,7 @@
             "bundle_name": "f_shoes_veterantrainerxy_bundle",
             "asset_name": "f_shoes_veterantrainerxy_0",
             "group_name": "group_shoes",
-            "sort_order": 208,
+            "sort_order": 217,
             "unlock_type": "IAP_CLOTHING",
             "unlock_badge_type": "BADGE_MASTER_LEAGUE",
             "iap_sku": "pgorelease.avatar.f_shoes_veterantrainerxy_0",
@@ -4050,7 +4203,7 @@
             ],
             "asset_name": "f_skin_0",
             "group_name": "group_skin",
-            "sort_order": 232,
+            "sort_order": 241,
             "unlock_type": "DEFAULT"
         }
     },
@@ -4064,7 +4217,7 @@
             ],
             "asset_name": "f_skin_1",
             "group_name": "group_skin",
-            "sort_order": 231,
+            "sort_order": 240,
             "unlock_type": "DEFAULT"
         }
     },
@@ -4078,7 +4231,7 @@
             ],
             "asset_name": "f_skin_10",
             "group_name": "group_skin",
-            "sort_order": 239,
+            "sort_order": 248,
             "unlock_type": "DEFAULT"
         }
     },
@@ -4092,7 +4245,7 @@
             ],
             "asset_name": "f_skin_11",
             "group_name": "group_skin",
-            "sort_order": 240,
+            "sort_order": 249,
             "unlock_type": "DEFAULT"
         }
     },
@@ -4106,7 +4259,7 @@
             ],
             "asset_name": "f_skin_2",
             "group_name": "group_skin",
-            "sort_order": 234,
+            "sort_order": 243,
             "unlock_type": "DEFAULT"
         }
     },
@@ -4120,7 +4273,7 @@
             ],
             "asset_name": "f_skin_3",
             "group_name": "group_skin",
-            "sort_order": 236,
+            "sort_order": 245,
             "unlock_type": "DEFAULT"
         }
     },
@@ -4134,7 +4287,7 @@
             ],
             "asset_name": "f_skin_4",
             "group_name": "group_skin",
-            "sort_order": 229,
+            "sort_order": 238,
             "unlock_type": "DEFAULT"
         }
     },
@@ -4148,7 +4301,7 @@
             ],
             "asset_name": "f_skin_5",
             "group_name": "group_skin",
-            "sort_order": 230,
+            "sort_order": 239,
             "unlock_type": "DEFAULT"
         }
     },
@@ -4162,7 +4315,7 @@
             ],
             "asset_name": "f_skin_6",
             "group_name": "group_skin",
-            "sort_order": 233,
+            "sort_order": 242,
             "unlock_type": "DEFAULT"
         }
     },
@@ -4176,7 +4329,7 @@
             ],
             "asset_name": "f_skin_7",
             "group_name": "group_skin",
-            "sort_order": 235,
+            "sort_order": 244,
             "unlock_type": "DEFAULT"
         }
     },
@@ -4190,7 +4343,7 @@
             ],
             "asset_name": "f_skin_8",
             "group_name": "group_skin",
-            "sort_order": 237,
+            "sort_order": 246,
             "unlock_type": "DEFAULT"
         }
     },
@@ -4204,7 +4357,7 @@
             ],
             "asset_name": "f_skin_9",
             "group_name": "group_skin",
-            "sort_order": 238,
+            "sort_order": 247,
             "unlock_type": "DEFAULT"
         }
     },
@@ -4219,7 +4372,7 @@
             "bundle_name": "f_socks_default_bundle",
             "asset_name": "f_socks_default_0",
             "group_name": "group_socks",
-            "sort_order": 241,
+            "sort_order": 251,
             "unlock_type": "DEFAULT",
             "icon_name": "f_socks_default_bundle_icon"
         }
@@ -4235,7 +4388,7 @@
             "bundle_name": "f_socks_default_bundle",
             "asset_name": "f_socks_default_1",
             "group_name": "group_socks",
-            "sort_order": 242,
+            "sort_order": 252,
             "unlock_type": "DEFAULT",
             "icon_name": "f_socks_default_bundle_icon"
         }
@@ -4251,7 +4404,7 @@
             "bundle_name": "f_socks_default_bundle",
             "asset_name": "f_socks_default_2",
             "group_name": "group_socks",
-            "sort_order": 243,
+            "sort_order": 253,
             "unlock_type": "DEFAULT",
             "icon_name": "f_socks_default_bundle_icon"
         }
@@ -4267,7 +4420,7 @@
             "bundle_name": "f_socks_empty_bundle",
             "asset_name": "f_socks_empty",
             "group_name": "group_socks",
-            "sort_order": 244,
+            "sort_order": 254,
             "unlock_type": "DEFAULT",
             "icon_name": "f_socks_empty_bundle_icon"
         }
@@ -4283,12 +4436,29 @@
             "bundle_name": "f_socks_hgss_bundle",
             "asset_name": "f_socks_hgss_0",
             "group_name": "group_socks",
-            "sort_order": 245,
+            "sort_order": 255,
             "unlock_type": "IAP_CLOTHING",
             "unlock_badge_type": "BADGE_POKEDEX_ENTRIES_GEN2",
             "iap_sku": "pgorelease.avatar.f_socks_hgss_0",
             "unlock_badge_level": 5,
             "icon_name": "f_socks_hgss_bundle_icon"
+        }
+    },
+    {
+        "template_id": "AVATAR_f_socks_teamaqua",
+        "avatar_customization": {
+            "enabled": true,
+            "avatar_type": "PLAYER_AVATAR_FEMALE",
+            "slot": [
+                "SOCKS"
+            ],
+            "bundle_name": "f_socks_teamaqua_bundle",
+            "asset_name": "f_socks_teamaqua_0",
+            "group_name": "group_socks",
+            "sort_order": 250,
+            "unlock_type": "IAP_CLOTHING",
+            "iap_sku": "pgorelease.avatar.f_socks_teamaqua_0",
+            "icon_name": "f_socks_teamaqua_0_bundle_icon"
         }
     },
     {
@@ -4302,7 +4472,7 @@
             "bundle_name": "f_socks_thighhighs_bundle",
             "asset_name": "f_socks_thighhighs_0",
             "group_name": "group_socks",
-            "sort_order": 246,
+            "sort_order": 256,
             "unlock_type": "DEFAULT",
             "icon_name": "f_socks_thighhighs_bundle_icon"
         }
@@ -4741,7 +4911,7 @@
             "bundle_name": "m_gloves_acetrainersm_bundle",
             "asset_name": "m_gloves_acetrainersm_0",
             "group_name": "group_gloves",
-            "sort_order": 1029,
+            "sort_order": 1031,
             "unlock_type": "IAP_CLOTHING",
             "unlock_badge_type": "BADGE_GREAT_LEAGUE",
             "iap_sku": "pgorelease.avatar.m_gloves_acetrainersm_0",
@@ -4759,7 +4929,7 @@
             "bundle_name": "m_gloves_default_bundle",
             "asset_name": "m_gloves_default_0",
             "group_name": "group_gloves",
-            "sort_order": 1030,
+            "sort_order": 1032,
             "unlock_type": "DEFAULT",
             "icon_name": "m_gloves_default_bundle_icon"
         }
@@ -4774,7 +4944,7 @@
             "bundle_name": "m_gloves_default_bundle",
             "asset_name": "m_gloves_default_1",
             "group_name": "group_gloves",
-            "sort_order": 1031,
+            "sort_order": 1033,
             "unlock_type": "DEFAULT",
             "icon_name": "m_gloves_default_bundle_icon"
         }
@@ -4789,7 +4959,7 @@
             "bundle_name": "m_gloves_default_bundle",
             "asset_name": "m_gloves_default_2",
             "group_name": "group_gloves",
-            "sort_order": 1032,
+            "sort_order": 1034,
             "unlock_type": "DEFAULT",
             "icon_name": "m_gloves_default_bundle_icon"
         }
@@ -4804,7 +4974,7 @@
             "bundle_name": "m_gloves_default_bundle",
             "asset_name": "m_gloves_default_3",
             "group_name": "group_gloves",
-            "sort_order": 1033,
+            "sort_order": 1035,
             "unlock_type": "DEFAULT",
             "icon_name": "m_gloves_default_bundle_icon"
         }
@@ -4819,7 +4989,7 @@
             "bundle_name": "m_gloves_delibird_bundle",
             "asset_name": "m_gloves_delibird_0",
             "group_name": "group_gloves",
-            "sort_order": 1028,
+            "sort_order": 1030,
             "unlock_type": "IAP_CLOTHING",
             "iap_sku": "pgorelease.avatar.m_gloves_delibird_0",
             "icon_name": "m_gloves_delibird_0_bundle_icon"
@@ -4835,7 +5005,7 @@
             "bundle_name": "m_gloves_empty_bundle",
             "asset_name": "m_gloves_empty",
             "group_name": "group_gloves",
-            "sort_order": 1034,
+            "sort_order": 1036,
             "unlock_type": "DEFAULT",
             "icon_name": "m_gloves_empty_bundle_icon"
         }
@@ -4850,7 +5020,7 @@
             "bundle_name": "m_gloves_frlg_bundle",
             "asset_name": "m_gloves_frlg_0",
             "group_name": "group_gloves",
-            "sort_order": 1035,
+            "sort_order": 1037,
             "unlock_type": "IAP_CLOTHING",
             "unlock_badge_type": "BADGE_POKEDEX_ENTRIES",
             "iap_sku": "pgorelease.avatar.m_gloves_frlg_0",
@@ -4868,7 +5038,7 @@
             "bundle_name": "m_gloves_gymleader_bundle",
             "asset_name": "m_gloves_gymleader_0",
             "group_name": "group_gloves",
-            "sort_order": 1036,
+            "sort_order": 1038,
             "unlock_type": "IAP_CLOTHING",
             "unlock_badge_type": "BADGE_HOURS_DEFENDED",
             "iap_sku": "pgorelease.avatar.m_gloves_gymleader_0",
@@ -4886,12 +5056,44 @@
             "bundle_name": "m_gloves_jogger_bundle",
             "asset_name": "m_gloves_jogger",
             "group_name": "group_gloves",
-            "sort_order": 1037,
+            "sort_order": 1039,
             "unlock_type": "IAP_CLOTHING",
             "unlock_badge_type": "BADGE_TRAVEL_KM",
             "iap_sku": "pgorelease.avatar.m_gloves_jogger",
             "unlock_badge_level": 10,
             "icon_name": "m_gloves_jogger_bundle_icon"
+        }
+    },
+    {
+        "template_id": "AVATAR_m_gloves_teamaqua",
+        "avatar_customization": {
+            "enabled": true,
+            "slot": [
+                "GLOVES"
+            ],
+            "bundle_name": "m_gloves_teamaqua_bundle",
+            "asset_name": "m_gloves_teamaqua_0",
+            "group_name": "group_gloves",
+            "sort_order": 1029,
+            "unlock_type": "IAP_CLOTHING",
+            "iap_sku": "pgorelease.avatar.m_gloves_teamaqua_0",
+            "icon_name": "m_gloves_teamaqua_0_bundle_icon"
+        }
+    },
+    {
+        "template_id": "AVATAR_m_gloves_teammagma",
+        "avatar_customization": {
+            "enabled": true,
+            "slot": [
+                "GLOVES"
+            ],
+            "bundle_name": "m_gloves_teammagma_bundle",
+            "asset_name": "m_gloves_teammagma_0",
+            "group_name": "group_gloves",
+            "sort_order": 1028,
+            "unlock_type": "IAP_CLOTHING",
+            "iap_sku": "pgorelease.avatar.m_gloves_teammagma_0",
+            "icon_name": "m_gloves_teammagma_0_bundle_icon"
         }
     },
     {
@@ -4904,7 +5106,7 @@
             "bundle_name": "m_gloves_teamrocket_bundle",
             "asset_name": "m_gloves_teamrocket_0",
             "group_name": "group_gloves",
-            "sort_order": 1038,
+            "sort_order": 1040,
             "unlock_type": "IAP_CLOTHING",
             "iap_sku": "pgorelease.avatar.m_gloves_teamrocket_0",
             "icon_name": "m_gloves_teamrocket_bundle_icon"
@@ -4920,7 +5122,7 @@
             "bundle_name": "m_hair_default_asset_bundle",
             "asset_name": "m_hair_default_0",
             "group_name": "group_hair",
-            "sort_order": 1042,
+            "sort_order": 1044,
             "unlock_type": "DEFAULT",
             "icon_name": "m_group_hair"
         }
@@ -4935,7 +5137,7 @@
             "bundle_name": "m_hair_default_asset_bundle",
             "asset_name": "m_hair_default_1",
             "group_name": "group_hair",
-            "sort_order": 1046,
+            "sort_order": 1048,
             "unlock_type": "DEFAULT",
             "icon_name": "m_group_hair"
         }
@@ -4950,7 +5152,7 @@
             "bundle_name": "m_hair_default_asset_bundle",
             "asset_name": "m_hair_default_10",
             "group_name": "group_hair",
-            "sort_order": 1055,
+            "sort_order": 1057,
             "unlock_type": "DEFAULT",
             "icon_name": "m_group_hair"
         }
@@ -4965,7 +5167,7 @@
             "bundle_name": "m_hair_default_asset_bundle",
             "asset_name": "m_hair_default_11",
             "group_name": "group_hair",
-            "sort_order": 1044,
+            "sort_order": 1046,
             "unlock_type": "DEFAULT",
             "icon_name": "m_group_hair"
         }
@@ -4980,7 +5182,7 @@
             "bundle_name": "m_hair_default_asset_bundle",
             "asset_name": "m_hair_default_12",
             "group_name": "group_hair",
-            "sort_order": 1045,
+            "sort_order": 1047,
             "unlock_type": "DEFAULT",
             "icon_name": "m_group_hair"
         }
@@ -4995,7 +5197,7 @@
             "bundle_name": "m_hair_default_asset_bundle",
             "asset_name": "m_hair_default_13",
             "group_name": "group_hair",
-            "sort_order": 1049,
+            "sort_order": 1051,
             "unlock_type": "DEFAULT",
             "icon_name": "m_group_hair"
         }
@@ -5010,7 +5212,7 @@
             "bundle_name": "m_hair_default_asset_bundle",
             "asset_name": "m_hair_default_14",
             "group_name": "group_hair",
-            "sort_order": 1053,
+            "sort_order": 1055,
             "unlock_type": "DEFAULT",
             "icon_name": "m_group_hair"
         }
@@ -5025,7 +5227,7 @@
             "bundle_name": "m_hair_default_asset_bundle",
             "asset_name": "m_hair_default_15",
             "group_name": "group_hair",
-            "sort_order": 1054,
+            "sort_order": 1056,
             "unlock_type": "DEFAULT",
             "icon_name": "m_group_hair"
         }
@@ -5040,7 +5242,7 @@
             "bundle_name": "m_hair_default_asset_bundle",
             "asset_name": "m_hair_default_16",
             "group_name": "group_hair",
-            "sort_order": 1048,
+            "sort_order": 1050,
             "unlock_type": "DEFAULT",
             "icon_name": "m_group_hair"
         }
@@ -5055,7 +5257,7 @@
             "bundle_name": "m_hair_default_asset_bundle",
             "asset_name": "m_hair_default_17",
             "group_name": "group_hair",
-            "sort_order": 1052,
+            "sort_order": 1054,
             "unlock_type": "DEFAULT",
             "icon_name": "m_group_hair"
         }
@@ -5070,7 +5272,7 @@
             "bundle_name": "m_hair_default_asset_bundle",
             "asset_name": "m_hair_default_2",
             "group_name": "group_hair",
-            "sort_order": 1039,
+            "sort_order": 1041,
             "unlock_type": "DEFAULT",
             "icon_name": "m_group_hair"
         }
@@ -5085,7 +5287,7 @@
             "bundle_name": "m_hair_default_asset_bundle",
             "asset_name": "m_hair_default_3",
             "group_name": "group_hair",
-            "sort_order": 1051,
+            "sort_order": 1053,
             "unlock_type": "DEFAULT",
             "icon_name": "m_group_hair"
         }
@@ -5100,7 +5302,7 @@
             "bundle_name": "m_hair_default_asset_bundle",
             "asset_name": "m_hair_default_4",
             "group_name": "group_hair",
-            "sort_order": 1056,
+            "sort_order": 1058,
             "unlock_type": "DEFAULT",
             "icon_name": "m_group_hair"
         }
@@ -5115,7 +5317,7 @@
             "bundle_name": "m_hair_default_asset_bundle",
             "asset_name": "m_hair_default_5",
             "group_name": "group_hair",
-            "sort_order": 1041,
+            "sort_order": 1043,
             "unlock_type": "DEFAULT",
             "icon_name": "m_group_hair"
         }
@@ -5130,7 +5332,7 @@
             "bundle_name": "m_hair_default_asset_bundle",
             "asset_name": "m_hair_default_6",
             "group_name": "group_hair",
-            "sort_order": 1043,
+            "sort_order": 1045,
             "unlock_type": "DEFAULT",
             "icon_name": "m_group_hair"
         }
@@ -5145,7 +5347,7 @@
             "bundle_name": "m_hair_default_asset_bundle",
             "asset_name": "m_hair_default_7",
             "group_name": "group_hair",
-            "sort_order": 1047,
+            "sort_order": 1049,
             "unlock_type": "DEFAULT",
             "icon_name": "m_group_hair"
         }
@@ -5160,7 +5362,7 @@
             "bundle_name": "m_hair_default_asset_bundle",
             "asset_name": "m_hair_default_8",
             "group_name": "group_hair",
-            "sort_order": 1040,
+            "sort_order": 1042,
             "unlock_type": "DEFAULT",
             "icon_name": "m_group_hair"
         }
@@ -5175,7 +5377,7 @@
             "bundle_name": "m_hair_default_asset_bundle",
             "asset_name": "m_hair_default_9",
             "group_name": "group_hair",
-            "sort_order": 1050,
+            "sort_order": 1052,
             "unlock_type": "DEFAULT",
             "icon_name": "m_group_hair"
         }
@@ -5190,7 +5392,7 @@
             "bundle_name": "m_hat_acetrainersm_bundle",
             "asset_name": "m_hat_acetrainersm_0",
             "group_name": "group_hat",
-            "sort_order": 1057,
+            "sort_order": 1060,
             "unlock_type": "IAP_CLOTHING",
             "unlock_badge_type": "BADGE_GREAT_LEAGUE",
             "iap_sku": "pgorelease.avatar.m_hat_acetrainersm_0",
@@ -5208,7 +5410,7 @@
             "bundle_name": "m_hat_adventure_bundle",
             "asset_name": "m_hat_adventure_0",
             "group_name": "group_hat",
-            "sort_order": 1059,
+            "sort_order": 1062,
             "unlock_type": "DEFAULT",
             "icon_name": "m_hat_adventure_bundle_icon"
         }
@@ -5223,7 +5425,7 @@
             "bundle_name": "m_hat_casket_bundle",
             "asset_name": "m_hat_casket_0",
             "group_name": "group_hat",
-            "sort_order": 1060,
+            "sort_order": 1063,
             "unlock_type": "IAP_CLOTHING",
             "iap_sku": "pgorelease.avatar.m_hat_casket_0",
             "icon_name": "m_hat_casket_bundle_icon"
@@ -5239,7 +5441,7 @@
             "bundle_name": "m_hat_default_bundle",
             "asset_name": "m_hat_default_0",
             "group_name": "group_hat",
-            "sort_order": 1061,
+            "sort_order": 1064,
             "unlock_type": "DEFAULT",
             "icon_name": "m_hat_default_bundle_icon"
         }
@@ -5254,7 +5456,7 @@
             "bundle_name": "m_hat_default_bundle",
             "asset_name": "m_hat_default_1",
             "group_name": "group_hat",
-            "sort_order": 1062,
+            "sort_order": 1065,
             "unlock_type": "DEFAULT",
             "icon_name": "m_hat_default_bundle_icon"
         }
@@ -5269,7 +5471,7 @@
             "bundle_name": "m_hat_default_bundle",
             "asset_name": "m_hat_default_2",
             "group_name": "group_hat",
-            "sort_order": 1063,
+            "sort_order": 1066,
             "unlock_type": "DEFAULT",
             "icon_name": "m_hat_default_bundle_icon"
         }
@@ -5284,7 +5486,7 @@
             "bundle_name": "m_hat_default_bundle",
             "asset_name": "m_hat_default_3",
             "group_name": "group_hat",
-            "sort_order": 1064,
+            "sort_order": 1067,
             "unlock_type": "DEFAULT",
             "icon_name": "m_hat_default_bundle_icon"
         }
@@ -5299,7 +5501,7 @@
             "bundle_name": "m_hat_default_bundle",
             "asset_name": "m_hat_default_4",
             "group_name": "group_hat",
-            "sort_order": 1065,
+            "sort_order": 1068,
             "unlock_type": "DEFAULT",
             "icon_name": "m_hat_default_bundle_icon"
         }
@@ -5314,7 +5516,7 @@
             "bundle_name": "m_hat_default_bundle",
             "asset_name": "m_hat_default_5",
             "group_name": "group_hat",
-            "sort_order": 1066,
+            "sort_order": 1069,
             "unlock_type": "DEFAULT",
             "icon_name": "m_hat_default_bundle_icon"
         }
@@ -5329,7 +5531,7 @@
             "bundle_name": "m_hat_delibird_bundle",
             "asset_name": "m_hat_delibird_0",
             "group_name": "group_hat",
-            "sort_order": 1058,
+            "sort_order": 1061,
             "unlock_type": "IAP_CLOTHING",
             "iap_sku": "pgorelease.avatar.m_hat_delibird_0",
             "icon_name": "m_hat_delibird_0_bundle_icon"
@@ -5345,7 +5547,7 @@
             "bundle_name": "m_hat_drifloon_bundle",
             "asset_name": "m_hat_drifloon_0",
             "group_name": "group_hat",
-            "sort_order": 1067,
+            "sort_order": 1070,
             "unlock_type": "IAP_CLOTHING",
             "iap_sku": "pgorelease.avatar.m_hat_drifloon_0",
             "icon_name": "m_hat_drifloon_0_bundle_icon"
@@ -5361,7 +5563,7 @@
             "bundle_name": "m_hat_eeveecap_bundle",
             "asset_name": "m_hat_eeveecap_0",
             "group_name": "group_hat",
-            "sort_order": 1068,
+            "sort_order": 1071,
             "unlock_type": "DEFAULT",
             "icon_name": "m_hat_eeveecap_0_bundle_icon"
         }
@@ -5376,7 +5578,7 @@
             "bundle_name": "m_hat_empty_bundle",
             "asset_name": "m_hat_empty",
             "group_name": "group_hat",
-            "sort_order": 1069,
+            "sort_order": 1072,
             "unlock_type": "DEFAULT",
             "icon_name": "m_hat_empty_bundle_icon"
         }
@@ -5391,7 +5593,7 @@
             "bundle_name": "m_hat_fedora_bundle",
             "asset_name": "m_hat_fedora_0",
             "group_name": "group_hat",
-            "sort_order": 1070,
+            "sort_order": 1073,
             "unlock_type": "IAP_CLOTHING",
             "iap_sku": "pgorelease.avatar.m_hat_fedora_0",
             "icon_name": "m_hat_fedora_bundle_icon"
@@ -5407,7 +5609,7 @@
             "bundle_name": "m_hat_fedora_bundle",
             "asset_name": "m_hat_fedora_1",
             "group_name": "group_hat",
-            "sort_order": 1071,
+            "sort_order": 1074,
             "unlock_type": "IAP_CLOTHING",
             "iap_sku": "pgorelease.avatar.m_hat_fedora_1",
             "icon_name": "m_hat_fedora_bundle_icon"
@@ -5423,7 +5625,7 @@
             "bundle_name": "m_hat_fisher_bundle",
             "asset_name": "m_hat_fisher_0",
             "group_name": "group_hat",
-            "sort_order": 1072,
+            "sort_order": 1075,
             "unlock_type": "IAP_CLOTHING",
             "unlock_badge_type": "BADGE_BIG_MAGIKARP",
             "iap_sku": "pgorelease.avatar.m_hat_fisher_0",
@@ -5441,7 +5643,7 @@
             "bundle_name": "m_hat_fragment_bundle",
             "asset_name": "m_hat_fragment_0",
             "group_name": "group_hat",
-            "sort_order": 1073,
+            "sort_order": 1076,
             "unlock_type": "DEFAULT",
             "icon_name": "m_hat_fragment_bundle_icon"
         }
@@ -5456,7 +5658,7 @@
             "bundle_name": "m_hat_frlg_bundle",
             "asset_name": "m_hat_frlg_0",
             "group_name": "group_hat",
-            "sort_order": 1074,
+            "sort_order": 1077,
             "unlock_type": "IAP_CLOTHING",
             "unlock_badge_type": "BADGE_POKEDEX_ENTRIES",
             "iap_sku": "pgorelease.avatar.m_hat_frlg_0",
@@ -5474,7 +5676,7 @@
             "bundle_name": "m_hat_gengar_bundle",
             "asset_name": "m_hat_gengar_0",
             "group_name": "group_hat",
-            "sort_order": 1075,
+            "sort_order": 1078,
             "unlock_type": "IAP_CLOTHING",
             "iap_sku": "pgorelease.avatar.m_hat_gengar_0",
             "icon_name": "m_hat_gengar_0_bundle_icon"
@@ -5490,7 +5692,7 @@
             "bundle_name": "m_hat_hgss_bundle",
             "asset_name": "m_hat_hgss_0",
             "group_name": "group_hat",
-            "sort_order": 1076,
+            "sort_order": 1079,
             "unlock_type": "IAP_CLOTHING",
             "unlock_badge_type": "BADGE_POKEDEX_ENTRIES_GEN2",
             "iap_sku": "pgorelease.avatar.m_hat_hgss_0",
@@ -5508,7 +5710,7 @@
             "bundle_name": "m_hat_jogger_bundle",
             "asset_name": "m_hat_jogger_0",
             "group_name": "group_hat",
-            "sort_order": 1077,
+            "sort_order": 1080,
             "unlock_type": "IAP_CLOTHING",
             "unlock_badge_type": "BADGE_TRAVEL_KM",
             "iap_sku": "pgorelease.avatar.m_hat_jogger_0",
@@ -5526,7 +5728,7 @@
             "bundle_name": "m_hat_magikarp_bundle",
             "asset_name": "m_hat_magikarp",
             "group_name": "group_hat",
-            "sort_order": 1078,
+            "sort_order": 1081,
             "unlock_type": "DEFAULT",
             "icon_name": "m_hat_magikarp_bundle_icon"
         }
@@ -5541,7 +5743,7 @@
             "bundle_name": "m_hat_mimikyu_bundle",
             "asset_name": "m_hat_mimikyu_0",
             "group_name": "group_hat",
-            "sort_order": 1079,
+            "sort_order": 1082,
             "unlock_type": "DEFAULT",
             "icon_name": "m_hat_mimikyu_bundle_icon"
         }
@@ -5556,7 +5758,7 @@
             "bundle_name": "m_hat_mismagius_bundle",
             "asset_name": "m_hat_mismagius_0",
             "group_name": "group_hat",
-            "sort_order": 1080,
+            "sort_order": 1083,
             "unlock_type": "IAP_CLOTHING",
             "iap_sku": "pgorelease.avatar.m_hat_mismagius_0",
             "icon_name": "m_hat_mismagius_0_bundle_icon"
@@ -5572,7 +5774,7 @@
             "bundle_name": "m_hat_pikachucap_bundle",
             "asset_name": "m_hat_pikachucap_0",
             "group_name": "group_hat",
-            "sort_order": 1081,
+            "sort_order": 1084,
             "unlock_type": "DEFAULT",
             "icon_name": "m_hat_pikachucap_0_bundle_icon"
         }
@@ -5587,7 +5789,7 @@
             "bundle_name": "m_hat_pikachufan_bundle",
             "asset_name": "m_hat_pikachufan_0",
             "group_name": "group_hat",
-            "sort_order": 1082,
+            "sort_order": 1085,
             "unlock_type": "IAP_CLOTHING",
             "unlock_badge_type": "BADGE_PIKACHU",
             "iap_sku": "pgorelease.avatar.m_hat_pikachufan_0",
@@ -5605,7 +5807,7 @@
             "bundle_name": "m_hat_pkmncap_bundle",
             "asset_name": "m_hat_pkmncap_0",
             "group_name": "group_hat",
-            "sort_order": 1083,
+            "sort_order": 1086,
             "unlock_type": "IAP_CLOTHING",
             "iap_sku": "pgorelease.avatar.m_hat_pkmncap_0",
             "icon_name": "m_hat_pkmncap_0_bundle_icon"
@@ -5621,7 +5823,7 @@
             "bundle_name": "m_hat_pkmncap_bundle",
             "asset_name": "m_hat_pkmncap_1",
             "group_name": "group_hat",
-            "sort_order": 1084,
+            "sort_order": 1087,
             "unlock_type": "IAP_CLOTHING",
             "iap_sku": "pgorelease.avatar.m_hat_pkmncap_1",
             "icon_name": "m_hat_pkmncap_1_bundle_icon"
@@ -5637,10 +5839,26 @@
             "bundle_name": "m_hat_pkmncap_bundle",
             "asset_name": "m_hat_pkmncap_2",
             "group_name": "group_hat",
-            "sort_order": 1085,
+            "sort_order": 1088,
             "unlock_type": "IAP_CLOTHING",
             "iap_sku": "pgorelease.avatar.m_hat_pkmncap_2",
             "icon_name": "m_hat_pkmncap_2_bundle_icon"
+        }
+    },
+    {
+        "template_id": "AVATAR_m_hat_teamaqua",
+        "avatar_customization": {
+            "enabled": true,
+            "slot": [
+                "HAT"
+            ],
+            "bundle_name": "m_hat_teamaqua_bundle",
+            "asset_name": "m_hat_teamaqua_0",
+            "group_name": "group_hat",
+            "sort_order": 1059,
+            "unlock_type": "IAP_CLOTHING",
+            "iap_sku": "pgorelease.avatar.m_hat_teamaqua_0",
+            "icon_name": "m_hat_teamaqua_0_bundle_icon"
         }
     },
     {
@@ -5653,7 +5871,7 @@
             "bundle_name": "m_hat_teamleadercap_bundle",
             "asset_name": "m_hat_teamleadercap_0",
             "group_name": "group_hat",
-            "sort_order": 1086,
+            "sort_order": 1089,
             "unlock_type": "IAP_CLOTHING",
             "iap_sku": "pgorelease.avatar.m_hat_teamleadercap_0",
             "icon_name": "m_hat_teamleadercap_0_bundle_icon"
@@ -5669,7 +5887,7 @@
             "bundle_name": "m_hat_teamleadercap_bundle",
             "asset_name": "m_hat_teamleadercap_1",
             "group_name": "group_hat",
-            "sort_order": 1087,
+            "sort_order": 1090,
             "unlock_type": "IAP_CLOTHING",
             "iap_sku": "pgorelease.avatar.m_hat_teamleadercap_1",
             "icon_name": "m_hat_teamleadercap_1_bundle_icon"
@@ -5685,7 +5903,7 @@
             "bundle_name": "m_hat_teamleadercap_bundle",
             "asset_name": "m_hat_teamleadercap_2",
             "group_name": "group_hat",
-            "sort_order": 1088,
+            "sort_order": 1091,
             "unlock_type": "IAP_CLOTHING",
             "iap_sku": "pgorelease.avatar.m_hat_teamleadercap_2",
             "icon_name": "m_hat_teamleadercap_2_bundle_icon"
@@ -5701,7 +5919,7 @@
             "bundle_name": "m_hat_teamrocket_bundle",
             "asset_name": "m_hat_teamrocket_0",
             "group_name": "group_hat",
-            "sort_order": 1089,
+            "sort_order": 1092,
             "unlock_type": "IAP_CLOTHING",
             "iap_sku": "pgorelease.avatar.m_hat_teamrocket_0",
             "icon_name": "m_hat_teamrocket_bundle_icon"
@@ -5717,7 +5935,7 @@
             "bundle_name": "m_hat_tophat_bundle",
             "asset_name": "m_hat_tophat_0",
             "group_name": "group_hat",
-            "sort_order": 1090,
+            "sort_order": 1093,
             "unlock_type": "IAP_CLOTHING",
             "iap_sku": "pgorelease.avatar.m_hat_tophat_0",
             "icon_name": "m_hat_tophat_bundle_icon"
@@ -5733,7 +5951,7 @@
             "bundle_name": "m_hat_ultra_bundle",
             "asset_name": "m_hat_ultra_0",
             "group_name": "group_hat",
-            "sort_order": 1091,
+            "sort_order": 1094,
             "unlock_type": "DEFAULT",
             "icon_name": "m_hat_ultra_bundle_icon"
         }
@@ -5748,7 +5966,7 @@
             "bundle_name": "m_pants_acetrainerbw_bundle",
             "asset_name": "m_pants_acetrainerbw_0",
             "group_name": "group_pants",
-            "sort_order": 1092,
+            "sort_order": 1097,
             "unlock_type": "IAP_CLOTHING",
             "unlock_badge_type": "BADGE_BATTLE_TRAINING_WON",
             "iap_sku": "pgorelease.avatar.m_pants_acetrainerbw_0",
@@ -5766,7 +5984,7 @@
             "bundle_name": "m_pants_acetrainersm_bundle",
             "asset_name": "m_pants_acetrainersm_0",
             "group_name": "group_pants",
-            "sort_order": 1093,
+            "sort_order": 1098,
             "unlock_type": "IAP_CLOTHING",
             "unlock_badge_type": "BADGE_MASTER_LEAGUE",
             "iap_sku": "pgorelease.avatar.m_pants_acetrainersm_0",
@@ -5784,7 +6002,7 @@
             "bundle_name": "m_pants_brock_bundle",
             "asset_name": "m_pants_brock_0",
             "group_name": "group_pants",
-            "sort_order": 1095,
+            "sort_order": 1100,
             "unlock_type": "IAP_CLOTHING",
             "iap_sku": "pgorelease.avatar.m_pants_brock_0",
             "icon_name": "m_pants_brock_0_bundle_icon"
@@ -5800,7 +6018,7 @@
             "bundle_name": "m_pants_default_bundle",
             "asset_name": "m_pants_default_0",
             "group_name": "group_pants",
-            "sort_order": 1096,
+            "sort_order": 1101,
             "unlock_type": "DEFAULT",
             "icon_name": "m_pants_default_bundle_icon"
         }
@@ -5815,7 +6033,7 @@
             "bundle_name": "m_pants_fisher_bundle",
             "asset_name": "m_pants_fisher_0",
             "group_name": "group_pants",
-            "sort_order": 1097,
+            "sort_order": 1102,
             "unlock_type": "IAP_CLOTHING",
             "unlock_badge_type": "BADGE_BIG_MAGIKARP",
             "iap_sku": "pgorelease.avatar.m_pants_fisher_0",
@@ -5833,7 +6051,7 @@
             "bundle_name": "m_pants_frlg_bundle",
             "asset_name": "m_pants_frlg_0",
             "group_name": "group_pants",
-            "sort_order": 1098,
+            "sort_order": 1103,
             "unlock_type": "IAP_CLOTHING",
             "unlock_badge_type": "BADGE_POKEDEX_ENTRIES",
             "iap_sku": "pgorelease.avatar.m_pants_frlg_0",
@@ -5851,7 +6069,7 @@
             "bundle_name": "m_pants_gymleader_bundle",
             "asset_name": "m_pants_gymleader_0",
             "group_name": "group_pants",
-            "sort_order": 1099,
+            "sort_order": 1104,
             "unlock_type": "IAP_CLOTHING",
             "unlock_badge_type": "BADGE_HOURS_DEFENDED",
             "iap_sku": "pgorelease.avatar.m_pants_gymleader_0",
@@ -5869,7 +6087,7 @@
             "bundle_name": "m_pants_gymleader_bundle",
             "asset_name": "m_pants_gymleader_1",
             "group_name": "group_pants",
-            "sort_order": 1100,
+            "sort_order": 1105,
             "unlock_type": "IAP_CLOTHING",
             "unlock_badge_type": "BADGE_HOURS_DEFENDED",
             "iap_sku": "pgorelease.avatar.m_pants_gymleader_1",
@@ -5887,7 +6105,7 @@
             "bundle_name": "m_pants_gymleader_bundle",
             "asset_name": "m_pants_gymleader_2",
             "group_name": "group_pants",
-            "sort_order": 1101,
+            "sort_order": 1106,
             "unlock_type": "IAP_CLOTHING",
             "unlock_badge_type": "BADGE_HOURS_DEFENDED",
             "iap_sku": "pgorelease.avatar.m_pants_gymleader_2",
@@ -5905,7 +6123,7 @@
             "bundle_name": "m_pants_hgss_bundle",
             "asset_name": "m_pants_hgss_0",
             "group_name": "group_pants",
-            "sort_order": 1102,
+            "sort_order": 1107,
             "unlock_type": "IAP_CLOTHING",
             "unlock_badge_type": "BADGE_POKEDEX_ENTRIES_GEN2",
             "iap_sku": "pgorelease.avatar.m_pants_hgss_0",
@@ -5923,7 +6141,7 @@
             "bundle_name": "m_pants_jogger_bundle",
             "asset_name": "m_pants_jogger_0",
             "group_name": "group_pants",
-            "sort_order": 1103,
+            "sort_order": 1108,
             "unlock_type": "IAP_CLOTHING",
             "unlock_badge_type": "BADGE_TRAVEL_KM",
             "iap_sku": "pgorelease.avatar.m_pants_jogger_0",
@@ -5941,7 +6159,7 @@
             "bundle_name": "m_pants_pikachufan_bundle",
             "asset_name": "m_pants_pikachufan_0",
             "group_name": "group_pants",
-            "sort_order": 1104,
+            "sort_order": 1109,
             "unlock_type": "IAP_CLOTHING",
             "unlock_badge_type": "BADGE_PIKACHU",
             "iap_sku": "pgorelease.avatar.m_pants_pikachufan_0",
@@ -5959,7 +6177,7 @@
             "bundle_name": "m_pants_skinnyjeans_bundle",
             "asset_name": "m_pants_skinnyjeans_0",
             "group_name": "group_pants",
-            "sort_order": 1105,
+            "sort_order": 1110,
             "unlock_type": "IAP_CLOTHING",
             "iap_sku": "pgorelease.avatar.m_pants_skinnyjeans_0",
             "icon_name": "m_pants_skinnyjeans_bundle_icon"
@@ -5975,7 +6193,7 @@
             "bundle_name": "m_pants_skinnyjeans_bundle",
             "asset_name": "m_pants_skinnyjeans_1",
             "group_name": "group_pants",
-            "sort_order": 1106,
+            "sort_order": 1111,
             "unlock_type": "IAP_CLOTHING",
             "iap_sku": "pgorelease.avatar.m_pants_skinnyjeans_1",
             "icon_name": "m_pants_skinnyjeans_bundle_icon"
@@ -5991,7 +6209,7 @@
             "bundle_name": "m_pants_skinnyjeans_bundle",
             "asset_name": "m_pants_skinnyjeans_2",
             "group_name": "group_pants",
-            "sort_order": 1107,
+            "sort_order": 1112,
             "unlock_type": "IAP_CLOTHING",
             "iap_sku": "pgorelease.avatar.m_pants_skinnyjeans_2",
             "icon_name": "m_pants_skinnyjeans_bundle_icon"
@@ -6007,7 +6225,7 @@
             "bundle_name": "m_pants_sweats_bundle",
             "asset_name": "m_pants_sweats_0",
             "group_name": "group_pants",
-            "sort_order": 1108,
+            "sort_order": 1113,
             "unlock_type": "IAP_CLOTHING",
             "iap_sku": "pgorelease.avatar.m_pants_sweats_0",
             "icon_name": "m_pants_sweats_bundle_icon"
@@ -6023,7 +6241,7 @@
             "bundle_name": "m_pants_sweats_bundle",
             "asset_name": "m_pants_sweats_1",
             "group_name": "group_pants",
-            "sort_order": 1109,
+            "sort_order": 1114,
             "unlock_type": "IAP_CLOTHING",
             "iap_sku": "pgorelease.avatar.m_pants_sweats_1",
             "icon_name": "m_pants_sweats_bundle_icon"
@@ -6039,7 +6257,7 @@
             "bundle_name": "m_pants_sweats_bundle",
             "asset_name": "m_pants_sweats_2",
             "group_name": "group_pants",
-            "sort_order": 1110,
+            "sort_order": 1115,
             "unlock_type": "IAP_CLOTHING",
             "iap_sku": "pgorelease.avatar.m_pants_sweats_2",
             "icon_name": "m_pants_sweats_bundle_icon"
@@ -6055,7 +6273,7 @@
             "bundle_name": "m_pants_sweats_bundle",
             "asset_name": "m_pants_sweats_3",
             "group_name": "group_pants",
-            "sort_order": 1111,
+            "sort_order": 1116,
             "unlock_type": "IAP_CLOTHING",
             "iap_sku": "pgorelease.avatar.m_pants_sweats_3",
             "icon_name": "m_pants_sweats_bundle_icon"
@@ -6071,10 +6289,42 @@
             "bundle_name": "m_pants_sweats_bundle",
             "asset_name": "m_pants_sweats_4",
             "group_name": "group_pants",
-            "sort_order": 1112,
+            "sort_order": 1117,
             "unlock_type": "IAP_CLOTHING",
             "iap_sku": "pgorelease.avatar.m_pants_sweats_4",
             "icon_name": "m_pants_sweats_bundle_icon"
+        }
+    },
+    {
+        "template_id": "AVATAR_m_pants_teamaqua",
+        "avatar_customization": {
+            "enabled": true,
+            "slot": [
+                "PANTS"
+            ],
+            "bundle_name": "m_pants_teamaqua_bundle",
+            "asset_name": "m_pants_teamaqua_0",
+            "group_name": "group_pants",
+            "sort_order": 1096,
+            "unlock_type": "IAP_CLOTHING",
+            "iap_sku": "pgorelease.avatar.m_pants_teamaqua_0",
+            "icon_name": "m_pants_teamaqua_0_bundle_icon"
+        }
+    },
+    {
+        "template_id": "AVATAR_m_pants_teammagma",
+        "avatar_customization": {
+            "enabled": true,
+            "slot": [
+                "PANTS"
+            ],
+            "bundle_name": "m_pants_teammagma_bundle",
+            "asset_name": "m_pants_teammagma_0",
+            "group_name": "group_pants",
+            "sort_order": 1095,
+            "unlock_type": "IAP_CLOTHING",
+            "iap_sku": "pgorelease.avatar.m_pants_teammagma_0",
+            "icon_name": "m_pants_teammagma_0_bundle_icon"
         }
     },
     {
@@ -6087,7 +6337,7 @@
             "bundle_name": "m_pants_teamrocket_bundle",
             "asset_name": "m_pants_teamrocket_0",
             "group_name": "group_pants",
-            "sort_order": 1113,
+            "sort_order": 1118,
             "unlock_type": "IAP_CLOTHING",
             "iap_sku": "pgorelease.avatar.m_pants_teamrocket_0",
             "icon_name": "m_pants_teamrocket_bundle_icon"
@@ -6103,7 +6353,7 @@
             "bundle_name": "m_pants_ultra_bundle",
             "asset_name": "m_pants_ultra_0",
             "group_name": "group_pants",
-            "sort_order": 1114,
+            "sort_order": 1119,
             "unlock_type": "DEFAULT",
             "icon_name": "m_pants_ultra_bundle_icon"
         }
@@ -6118,7 +6368,7 @@
             "bundle_name": "m_pants_veterantrainerxy_bundle",
             "asset_name": "m_pants_veterantrainerxy_0",
             "group_name": "group_pants",
-            "sort_order": 1094,
+            "sort_order": 1099,
             "unlock_type": "IAP_CLOTHING",
             "unlock_badge_type": "BADGE_GREAT_LEAGUE",
             "iap_sku": "pgorelease.avatar.m_pants_veterantrainerxy_0",
@@ -6136,7 +6386,7 @@
             "bundle_name": "m_shirt_acetrainerbw_bundle",
             "asset_name": "m_shirt_acetrainerbw_0",
             "group_name": "group_shirt",
-            "sort_order": 1115,
+            "sort_order": 1122,
             "unlock_type": "IAP_CLOTHING",
             "unlock_badge_type": "BADGE_BATTLE_TRAINING_WON",
             "iap_sku": "pgorelease.avatar.m_shirt_acetrainerbw_0",
@@ -6154,7 +6404,7 @@
             "bundle_name": "m_shirt_acetrainersm_bundle",
             "asset_name": "m_shirt_acetrainersm_0",
             "group_name": "group_shirt",
-            "sort_order": 1116,
+            "sort_order": 1123,
             "unlock_type": "IAP_CLOTHING",
             "unlock_badge_type": "BADGE_ULTRA_LEAGUE",
             "iap_sku": "pgorelease.avatar.m_shirt_acetrainersm_0",
@@ -6172,7 +6422,7 @@
             "bundle_name": "m_shirt_blazer_bundle",
             "asset_name": "m_shirt_blazer_0",
             "group_name": "group_shirt",
-            "sort_order": 1119,
+            "sort_order": 1126,
             "unlock_type": "IAP_CLOTHING",
             "iap_sku": "pgorelease.avatar.m_shirt_blazer_0",
             "icon_name": "m_shirt_blazer_bundle_icon"
@@ -6188,7 +6438,7 @@
             "bundle_name": "m_shirt_brock_bundle",
             "asset_name": "m_shirt_brock_0",
             "group_name": "group_shirt",
-            "sort_order": 1120,
+            "sort_order": 1127,
             "unlock_type": "IAP_CLOTHING",
             "iap_sku": "pgorelease.avatar.m_shirt_brock_0",
             "icon_name": "m_shirt_brock_0_bundle_icon"
@@ -6204,7 +6454,7 @@
             "bundle_name": "m_shirt_celebi_bundle",
             "asset_name": "m_shirt_celebi_0",
             "group_name": "group_shirt",
-            "sort_order": 1121,
+            "sort_order": 1128,
             "unlock_type": "DEFAULT",
             "icon_name": "m_shirt_celebi_bundle_icon"
         }
@@ -6219,7 +6469,7 @@
             "bundle_name": "m_shirt_default_bundle",
             "asset_name": "m_shirt_default_0",
             "group_name": "group_shirt",
-            "sort_order": 1122,
+            "sort_order": 1129,
             "unlock_type": "DEFAULT",
             "icon_name": "m_shirt_default_0_bundle_icon"
         }
@@ -6234,7 +6484,7 @@
             "bundle_name": "m_shirt_default_bundle",
             "asset_name": "m_shirt_default_1",
             "group_name": "group_shirt",
-            "sort_order": 1123,
+            "sort_order": 1130,
             "unlock_type": "DEFAULT",
             "icon_name": "m_shirt_default_1_bundle_icon"
         }
@@ -6249,7 +6499,7 @@
             "bundle_name": "m_shirt_default_bundle",
             "asset_name": "m_shirt_default_2",
             "group_name": "group_shirt",
-            "sort_order": 1124,
+            "sort_order": 1131,
             "unlock_type": "DEFAULT",
             "icon_name": "m_shirt_default_2_bundle_icon"
         }
@@ -6264,7 +6514,7 @@
             "bundle_name": "m_shirt_default_bundle",
             "asset_name": "m_shirt_default_2B",
             "group_name": "group_shirt",
-            "sort_order": 1125,
+            "sort_order": 1132,
             "unlock_type": "DEFAULT",
             "icon_name": "m_shirt_default_2_bundle_icon"
         }
@@ -6279,7 +6529,7 @@
             "bundle_name": "m_shirt_default_bundle",
             "asset_name": "m_shirt_default_3",
             "group_name": "group_shirt",
-            "sort_order": 1126,
+            "sort_order": 1133,
             "unlock_type": "DEFAULT",
             "icon_name": "m_shirt_default_3_bundle_icon"
         }
@@ -6294,7 +6544,7 @@
             "bundle_name": "m_shirt_default_bundle",
             "asset_name": "m_shirt_default_4",
             "group_name": "group_shirt",
-            "sort_order": 1127,
+            "sort_order": 1134,
             "unlock_type": "DEFAULT",
             "icon_name": "m_shirt_default_2_bundle_icon"
         }
@@ -6309,7 +6559,7 @@
             "bundle_name": "m_shirt_default_bundle",
             "asset_name": "m_shirt_default_5",
             "group_name": "group_shirt",
-            "sort_order": 1128,
+            "sort_order": 1135,
             "unlock_type": "DEFAULT",
             "icon_name": "m_shirt_default_2_bundle_icon"
         }
@@ -6324,7 +6574,7 @@
             "bundle_name": "m_shirt_default_bundle",
             "asset_name": "m_shirt_default_6",
             "group_name": "group_shirt",
-            "sort_order": 1129,
+            "sort_order": 1136,
             "unlock_type": "DEFAULT",
             "icon_name": "m_shirt_default_2_bundle_icon"
         }
@@ -6339,7 +6589,7 @@
             "bundle_name": "m_shirt_default_bundle",
             "asset_name": "m_shirt_default_7",
             "group_name": "group_shirt",
-            "sort_order": 1130,
+            "sort_order": 1137,
             "unlock_type": "DEFAULT",
             "icon_name": "m_shirt_default_2_bundle_icon"
         }
@@ -6354,7 +6604,7 @@
             "bundle_name": "m_shirt_delibird_bundle",
             "asset_name": "m_shirt_delibird_0",
             "group_name": "group_shirt",
-            "sort_order": 1118,
+            "sort_order": 1125,
             "unlock_type": "IAP_CLOTHING",
             "iap_sku": "pgorelease.avatar.m_shirt_delibird_0",
             "icon_name": "m_shirt_delibird_0_bundle_icon"
@@ -6370,7 +6620,7 @@
             "bundle_name": "m_shirt_drifblim_bundle",
             "asset_name": "m_shirt_drifblim_0",
             "group_name": "group_shirt",
-            "sort_order": 1131,
+            "sort_order": 1138,
             "unlock_type": "IAP_CLOTHING",
             "iap_sku": "pgorelease.avatar.m_shirt_drifblim_0",
             "icon_name": "m_shirt_drifblim_0_bundle_icon"
@@ -6386,7 +6636,7 @@
             "bundle_name": "m_shirt_earthday_2018_bundle",
             "asset_name": "m_shirt_earthday_2018",
             "group_name": "group_shirt",
-            "sort_order": 1132,
+            "sort_order": 1139,
             "unlock_type": "DEFAULT",
             "icon_name": "m_shirt_earthday_2018_bundle_icon"
         }
@@ -6401,7 +6651,7 @@
             "bundle_name": "m_shirt_fisher_bundle",
             "asset_name": "m_shirt_fisher_0",
             "group_name": "group_shirt",
-            "sort_order": 1133,
+            "sort_order": 1140,
             "unlock_type": "IAP_CLOTHING",
             "unlock_badge_type": "BADGE_BIG_MAGIKARP",
             "iap_sku": "pgorelease.avatar.m_shirt_fisher_0",
@@ -6419,7 +6669,7 @@
             "bundle_name": "m_shirt_fragment_bundle",
             "asset_name": "m_shirt_fragment_0",
             "group_name": "group_shirt",
-            "sort_order": 1134,
+            "sort_order": 1141,
             "unlock_type": "DEFAULT",
             "icon_name": "m_shirt_fragment_bundle_icon"
         }
@@ -6434,7 +6684,7 @@
             "bundle_name": "m_shirt_frlg_bundle",
             "asset_name": "m_shirt_frlg_0",
             "group_name": "group_shirt",
-            "sort_order": 1135,
+            "sort_order": 1142,
             "unlock_type": "IAP_CLOTHING",
             "unlock_badge_type": "BADGE_POKEDEX_ENTRIES",
             "iap_sku": "pgorelease.avatar.m_shirt_frlg_0",
@@ -6452,7 +6702,7 @@
             "bundle_name": "m_shirt_gengar_bundle",
             "asset_name": "m_shirt_gengar_0",
             "group_name": "group_shirt",
-            "sort_order": 1136,
+            "sort_order": 1143,
             "unlock_type": "IAP_CLOTHING",
             "iap_sku": "pgorelease.avatar.m_shirt_gengar_0",
             "icon_name": "m_shirt_gengar_0_bundle_icon"
@@ -6468,7 +6718,7 @@
             "bundle_name": "m_shirt_gymleader_bundle",
             "asset_name": "m_shirt_gymleader_0",
             "group_name": "group_shirt",
-            "sort_order": 1137,
+            "sort_order": 1144,
             "unlock_type": "IAP_CLOTHING",
             "unlock_badge_type": "BADGE_HOURS_DEFENDED",
             "iap_sku": "pgorelease.avatar.m_shirt_gymleader_0",
@@ -6486,7 +6736,7 @@
             "bundle_name": "m_shirt_gymleader_bundle",
             "asset_name": "m_shirt_gymleader_1",
             "group_name": "group_shirt",
-            "sort_order": 1138,
+            "sort_order": 1145,
             "unlock_type": "IAP_CLOTHING",
             "unlock_badge_type": "BADGE_HOURS_DEFENDED",
             "iap_sku": "pgorelease.avatar.m_shirt_gymleader_1",
@@ -6504,7 +6754,7 @@
             "bundle_name": "m_shirt_gymleader_bundle",
             "asset_name": "m_shirt_gymleader_2",
             "group_name": "group_shirt",
-            "sort_order": 1139,
+            "sort_order": 1146,
             "unlock_type": "IAP_CLOTHING",
             "unlock_badge_type": "BADGE_HOURS_DEFENDED",
             "iap_sku": "pgorelease.avatar.m_shirt_gymleader_2",
@@ -6522,7 +6772,7 @@
             "bundle_name": "m_shirt_hgss_bundle",
             "asset_name": "m_shirt_hgss_0",
             "group_name": "group_shirt",
-            "sort_order": 1140,
+            "sort_order": 1147,
             "unlock_type": "IAP_CLOTHING",
             "unlock_badge_type": "BADGE_POKEDEX_ENTRIES_GEN2",
             "iap_sku": "pgorelease.avatar.m_shirt_hgss_0",
@@ -6540,7 +6790,7 @@
             "bundle_name": "m_shirt_ingress_bundle",
             "asset_name": "m_shirt_ingress_0",
             "group_name": "group_shirt",
-            "sort_order": 1141,
+            "sort_order": 1148,
             "unlock_type": "DEFAULT",
             "icon_name": "m_shirt_ingress_bundle_icon"
         }
@@ -6555,7 +6805,7 @@
             "bundle_name": "m_shirt_ingress_e_bundle",
             "asset_name": "m_shirt_ingress_e_0",
             "group_name": "group_shirt",
-            "sort_order": 1142,
+            "sort_order": 1149,
             "unlock_type": "DEFAULT",
             "icon_name": "m_shirt_ingress_e_bundle_icon"
         }
@@ -6570,7 +6820,7 @@
             "bundle_name": "m_shirt_ingress_r_bundle",
             "asset_name": "m_shirt_ingress_r_0",
             "group_name": "group_shirt",
-            "sort_order": 1143,
+            "sort_order": 1150,
             "unlock_type": "DEFAULT",
             "icon_name": "m_shirt_ingress_r_bundle_icon"
         }
@@ -6585,7 +6835,7 @@
             "bundle_name": "m_shirt_jogger_bundle",
             "asset_name": "m_shirt_jogger_0",
             "group_name": "group_shirt",
-            "sort_order": 1144,
+            "sort_order": 1151,
             "unlock_type": "IAP_CLOTHING",
             "unlock_badge_type": "BADGE_TRAVEL_KM",
             "iap_sku": "pgorelease.avatar.m_shirt_jogger_0",
@@ -6603,7 +6853,7 @@
             "bundle_name": "m_shirt_latias_latios_bundle",
             "asset_name": "m_shirt_latias_latios_0",
             "group_name": "group_shirt",
-            "sort_order": 1145,
+            "sort_order": 1152,
             "unlock_type": "IAP_CLOTHING",
             "iap_sku": "pgorelease.avatar.m_shirt_latias_latios_0",
             "icon_name": "m_shirt_latias_latios_bundle_icon"
@@ -6619,7 +6869,7 @@
             "bundle_name": "m_shirt_longsleeves_bundle",
             "asset_name": "m_shirt_longsleeves_charizard_0",
             "group_name": "group_shirt",
-            "sort_order": 1146,
+            "sort_order": 1153,
             "unlock_type": "IAP_CLOTHING",
             "iap_sku": "pgorelease.avatar.m_shirt_longsleeves_charizard_0",
             "icon_name": "m_shirt_longsleeves_charizard_bundle_icon"
@@ -6635,7 +6885,7 @@
             "bundle_name": "m_shirt_longsleeves_bundle",
             "asset_name": "m_shirt_longsleeves_charizard_1",
             "group_name": "group_shirt",
-            "sort_order": 1147,
+            "sort_order": 1154,
             "unlock_type": "IAP_CLOTHING",
             "iap_sku": "pgorelease.avatar.m_shirt_longsleeves_charizard_1",
             "icon_name": "m_shirt_longsleeves_charizard_bundle_icon"
@@ -6651,7 +6901,7 @@
             "bundle_name": "m_shirt_longsleeves_bundle",
             "asset_name": "m_shirt_longsleeves_charizard_2",
             "group_name": "group_shirt",
-            "sort_order": 1148,
+            "sort_order": 1155,
             "unlock_type": "IAP_CLOTHING",
             "iap_sku": "pgorelease.avatar.m_shirt_longsleeves_charizard_2",
             "icon_name": "m_shirt_longsleeves_charizard_bundle_icon"
@@ -6667,7 +6917,7 @@
             "bundle_name": "m_shirt_longsleeves_bundle",
             "asset_name": "m_shirt_longsleeves_pikachu_0",
             "group_name": "group_shirt",
-            "sort_order": 1149,
+            "sort_order": 1156,
             "unlock_type": "IAP_CLOTHING",
             "iap_sku": "pgorelease.avatar.m_shirt_longsleeves_pikachu_0",
             "icon_name": "m_shirt_longsleeves_pikachu_bundle_icon"
@@ -6683,7 +6933,7 @@
             "bundle_name": "m_shirt_longsleeves_bundle",
             "asset_name": "m_shirt_longsleeves_pikachu_1",
             "group_name": "group_shirt",
-            "sort_order": 1150,
+            "sort_order": 1157,
             "unlock_type": "IAP_CLOTHING",
             "iap_sku": "pgorelease.avatar.m_shirt_longsleeves_pikachu_1",
             "icon_name": "m_shirt_longsleeves_pikachu_bundle_icon"
@@ -6699,7 +6949,7 @@
             "bundle_name": "m_shirt_longsleeves_bundle",
             "asset_name": "m_shirt_longsleeves_pikachu_2",
             "group_name": "group_shirt",
-            "sort_order": 1151,
+            "sort_order": 1158,
             "unlock_type": "IAP_CLOTHING",
             "iap_sku": "pgorelease.avatar.m_shirt_longsleeves_pikachu_2",
             "icon_name": "m_shirt_longsleeves_pikachu_bundle_icon"
@@ -6715,7 +6965,7 @@
             "bundle_name": "m_shirt_mew_bundle",
             "asset_name": "m_shirt_mew_0",
             "group_name": "group_shirt",
-            "sort_order": 1152,
+            "sort_order": 1159,
             "unlock_type": "IAP_CLOTHING",
             "iap_sku": "pgorelease.avatar.m_shirt_mew_0",
             "icon_name": "m_shirt_mew_bundle_icon"
@@ -6731,7 +6981,7 @@
             "bundle_name": "m_shirt_pikachufan_bundle",
             "asset_name": "m_shirt_pikachufan_0",
             "group_name": "group_shirt",
-            "sort_order": 1153,
+            "sort_order": 1160,
             "unlock_type": "IAP_CLOTHING",
             "unlock_badge_type": "BADGE_PIKACHU",
             "iap_sku": "pgorelease.avatar.m_shirt_pikachufan_0",
@@ -6749,7 +6999,7 @@
             "bundle_name": "m_shirt_spiritomb_bundle",
             "asset_name": "m_shirt_spiritomb_0",
             "group_name": "group_shirt",
-            "sort_order": 1154,
+            "sort_order": 1161,
             "unlock_type": "IAP_CLOTHING",
             "iap_sku": "pgorelease.avatar.m_shirt_spiritomb_0",
             "icon_name": "m_shirt_spiritomb_0_bundle_icon"
@@ -6765,7 +7015,7 @@
             "bundle_name": "m_shirt_sweatshirt_bundle",
             "asset_name": "m_shirt_sweatshirt_sporty_0",
             "group_name": "group_shirt",
-            "sort_order": 1155,
+            "sort_order": 1162,
             "unlock_type": "IAP_CLOTHING",
             "iap_sku": "pgorelease.avatar.m_shirt_sweatshirt_sporty_0",
             "icon_name": "m_shirt_sweatshirt_sporty_bundle_icon"
@@ -6781,7 +7031,7 @@
             "bundle_name": "m_shirt_sweatshirt_bundle",
             "asset_name": "m_shirt_sweatshirt_sporty_1",
             "group_name": "group_shirt",
-            "sort_order": 1156,
+            "sort_order": 1163,
             "unlock_type": "IAP_CLOTHING",
             "iap_sku": "pgorelease.avatar.m_shirt_sweatshirt_sporty_1",
             "icon_name": "m_shirt_sweatshirt_sporty_bundle_icon"
@@ -6797,7 +7047,7 @@
             "bundle_name": "m_shirt_sweatshirt_bundle",
             "asset_name": "m_shirt_sweatshirt_sporty_2",
             "group_name": "group_shirt",
-            "sort_order": 1157,
+            "sort_order": 1164,
             "unlock_type": "IAP_CLOTHING",
             "iap_sku": "pgorelease.avatar.m_shirt_sweatshirt_sporty_2",
             "icon_name": "m_shirt_sweatshirt_sporty_bundle_icon"
@@ -6813,7 +7063,7 @@
             "bundle_name": "m_shirt_sweatshirt_bundle",
             "asset_name": "m_shirt_sweatshirt_sporty_3",
             "group_name": "group_shirt",
-            "sort_order": 1158,
+            "sort_order": 1165,
             "unlock_type": "IAP_CLOTHING",
             "iap_sku": "pgorelease.avatar.m_shirt_sweatshirt_sporty_3",
             "icon_name": "m_shirt_sweatshirt_sporty_bundle_icon"
@@ -6829,7 +7079,7 @@
             "bundle_name": "m_shirt_sweatshirt_bundle",
             "asset_name": "m_shirt_sweatshirt_streak_0",
             "group_name": "group_shirt",
-            "sort_order": 1159,
+            "sort_order": 1166,
             "unlock_type": "IAP_CLOTHING",
             "iap_sku": "pgorelease.avatar.m_shirt_sweatshirt_streak_0",
             "icon_name": "m_shirt_sweatshirt_streak_bundle_icon"
@@ -6845,7 +7095,7 @@
             "bundle_name": "m_shirt_sweatshirt_bundle",
             "asset_name": "m_shirt_sweatshirt_streak_1",
             "group_name": "group_shirt",
-            "sort_order": 1160,
+            "sort_order": 1167,
             "unlock_type": "IAP_CLOTHING",
             "iap_sku": "pgorelease.avatar.m_shirt_sweatshirt_streak_1",
             "icon_name": "m_shirt_sweatshirt_streak_bundle_icon"
@@ -6861,7 +7111,7 @@
             "bundle_name": "m_shirt_sweatshirt_bundle",
             "asset_name": "m_shirt_sweatshirt_streak_2",
             "group_name": "group_shirt",
-            "sort_order": 1161,
+            "sort_order": 1168,
             "unlock_type": "IAP_CLOTHING",
             "iap_sku": "pgorelease.avatar.m_shirt_sweatshirt_streak_2",
             "icon_name": "m_shirt_sweatshirt_streak_bundle_icon"
@@ -6877,7 +7127,7 @@
             "bundle_name": "m_shirt_sweatshirt_bundle",
             "asset_name": "m_shirt_sweatshirt_streak_3",
             "group_name": "group_shirt",
-            "sort_order": 1162,
+            "sort_order": 1169,
             "unlock_type": "IAP_CLOTHING",
             "iap_sku": "pgorelease.avatar.m_shirt_sweatshirt_streak_3",
             "icon_name": "m_shirt_sweatshirt_streak_bundle_icon"
@@ -6893,10 +7143,42 @@
             "bundle_name": "m_shirt_sweatshirt_bundle",
             "asset_name": "m_shirt_sweatshirt_streak_4",
             "group_name": "group_shirt",
-            "sort_order": 1163,
+            "sort_order": 1170,
             "unlock_type": "IAP_CLOTHING",
             "iap_sku": "pgorelease.avatar.m_shirt_sweatshirt_streak_4",
             "icon_name": "m_shirt_sweatshirt_streak_bundle_icon"
+        }
+    },
+    {
+        "template_id": "AVATAR_m_shirt_teamaqua",
+        "avatar_customization": {
+            "enabled": true,
+            "slot": [
+                "SHIRT"
+            ],
+            "bundle_name": "m_shirt_teamaqua_bundle",
+            "asset_name": "m_shirt_teamaqua_0",
+            "group_name": "group_shirt",
+            "sort_order": 1121,
+            "unlock_type": "IAP_CLOTHING",
+            "iap_sku": "pgorelease.avatar.m_shirt_teamaqua_0",
+            "icon_name": "m_shirt_teamaqua_0_bundle_icon"
+        }
+    },
+    {
+        "template_id": "AVATAR_m_shirt_teammagma",
+        "avatar_customization": {
+            "enabled": true,
+            "slot": [
+                "SHIRT"
+            ],
+            "bundle_name": "m_shirt_teammagma_bundle",
+            "asset_name": "m_shirt_teammagma_0",
+            "group_name": "group_shirt",
+            "sort_order": 1120,
+            "unlock_type": "IAP_CLOTHING",
+            "iap_sku": "pgorelease.avatar.m_shirt_teammagma_0",
+            "icon_name": "m_shirt_teammagma_0_bundle_icon"
         }
     },
     {
@@ -6909,7 +7191,7 @@
             "bundle_name": "m_shirt_teamrocket_bundle",
             "asset_name": "m_shirt_teamrocket_0",
             "group_name": "group_shirt",
-            "sort_order": 1164,
+            "sort_order": 1171,
             "unlock_type": "IAP_CLOTHING",
             "iap_sku": "pgorelease.avatar.m_shirt_teamrocket_0",
             "icon_name": "m_shirt_teamrocket_0_bundle_icon"
@@ -6925,7 +7207,7 @@
             "bundle_name": "m_shirt_teamrocket_bundle",
             "asset_name": "m_shirt_teamrocket_1",
             "group_name": "group_shirt",
-            "sort_order": 1165,
+            "sort_order": 1172,
             "unlock_type": "IAP_CLOTHING",
             "iap_sku": "pgorelease.avatar.m_shirt_teamrocket_1",
             "icon_name": "m_shirt_teamrocket_1_bundle_icon"
@@ -6941,7 +7223,7 @@
             "bundle_name": "m_shirt_tshirt_bundle",
             "asset_name": "m_shirt_tshirt_fest_chicago_2017",
             "group_name": "group_shirt",
-            "sort_order": 1166,
+            "sort_order": 1173,
             "unlock_type": "DEFAULT",
             "icon_name": "m_shirt_tshirt_fest_chicago_2017_bundle_icon"
         }
@@ -6971,7 +7253,7 @@
             "bundle_name": "m_shirt_tshirt_bundle",
             "asset_name": "m_shirt_tshirt_geometric_0",
             "group_name": "group_shirt",
-            "sort_order": 1167,
+            "sort_order": 1174,
             "unlock_type": "IAP_CLOTHING",
             "iap_sku": "pgorelease.avatar.m_shirt_tshirt_geometric_0",
             "icon_name": "m_shirt_tshirt_geometric_bundle_icon"
@@ -6987,7 +7269,7 @@
             "bundle_name": "m_shirt_tshirt_bundle",
             "asset_name": "m_shirt_tshirt_geometric_1",
             "group_name": "group_shirt",
-            "sort_order": 1168,
+            "sort_order": 1175,
             "unlock_type": "IAP_CLOTHING",
             "iap_sku": "pgorelease.avatar.m_shirt_tshirt_geometric_1",
             "icon_name": "m_shirt_tshirt_geometric_bundle_icon"
@@ -7003,7 +7285,7 @@
             "bundle_name": "m_shirt_tshirt_bundle",
             "asset_name": "m_shirt_tshirt_geometric_2",
             "group_name": "group_shirt",
-            "sort_order": 1169,
+            "sort_order": 1176,
             "unlock_type": "IAP_CLOTHING",
             "iap_sku": "pgorelease.avatar.m_shirt_tshirt_geometric_2",
             "icon_name": "m_shirt_tshirt_geometric_bundle_icon"
@@ -7019,7 +7301,7 @@
             "bundle_name": "m_shirt_tshirt_bundle",
             "asset_name": "m_shirt_tshirt_global_goals_2017",
             "group_name": "group_shirt",
-            "sort_order": 1170,
+            "sort_order": 1177,
             "unlock_type": "DEFAULT",
             "icon_name": "m_shirt_tshirt_global_goals_2017_bundle_icon"
         }
@@ -7034,7 +7316,7 @@
             "bundle_name": "m_shirt_tshirt_bundle",
             "asset_name": "m_shirt_tshirt_instinct",
             "group_name": "group_shirt",
-            "sort_order": 1171,
+            "sort_order": 1178,
             "unlock_type": "IAP_CLOTHING",
             "iap_sku": "pgorelease.avatar.m_shirt_tshirt_instinct",
             "icon_name": "m_shirt_tshirt_instinct_bundle_icon"
@@ -7050,7 +7332,7 @@
             "bundle_name": "m_shirt_tshirt_bundle",
             "asset_name": "m_shirt_tshirt_mystic",
             "group_name": "group_shirt",
-            "sort_order": 1172,
+            "sort_order": 1179,
             "unlock_type": "IAP_CLOTHING",
             "iap_sku": "pgorelease.avatar.m_shirt_tshirt_mystic",
             "icon_name": "m_shirt_tshirt_mystic_bundle_icon"
@@ -7066,7 +7348,7 @@
             "bundle_name": "m_shirt_tshirt_bundle",
             "asset_name": "m_shirt_tshirt_valor",
             "group_name": "group_shirt",
-            "sort_order": 1173,
+            "sort_order": 1180,
             "unlock_type": "IAP_CLOTHING",
             "iap_sku": "pgorelease.avatar.m_shirt_tshirt_valor",
             "icon_name": "m_shirt_tshirt_valor_bundle_icon"
@@ -7082,7 +7364,7 @@
             "bundle_name": "m_shirt_turtleneck_bundle",
             "asset_name": "m_shirt_turtleneck_30_0",
             "group_name": "group_shirt",
-            "sort_order": 1174,
+            "sort_order": 1181,
             "unlock_type": "IAP_CLOTHING",
             "iap_sku": "pgorelease.avatar.m_shirt_turtleneck_30_0",
             "icon_name": "m_shirt_turtleneck_30_bundle_icon",
@@ -7099,7 +7381,7 @@
             "bundle_name": "m_shirt_turtleneck_bundle",
             "asset_name": "m_shirt_turtleneck_30_1",
             "group_name": "group_shirt",
-            "sort_order": 1175,
+            "sort_order": 1182,
             "unlock_type": "IAP_CLOTHING",
             "iap_sku": "pgorelease.avatar.m_shirt_turtleneck_30_1",
             "icon_name": "m_shirt_turtleneck_30_bundle_icon",
@@ -7116,7 +7398,7 @@
             "bundle_name": "m_shirt_turtleneck_bundle",
             "asset_name": "m_shirt_turtleneck_30_2",
             "group_name": "group_shirt",
-            "sort_order": 1176,
+            "sort_order": 1183,
             "unlock_type": "IAP_CLOTHING",
             "iap_sku": "pgorelease.avatar.m_shirt_turtleneck_30_2",
             "icon_name": "m_shirt_turtleneck_30_bundle_icon",
@@ -7133,7 +7415,7 @@
             "bundle_name": "m_shirt_turtleneck_bundle",
             "asset_name": "m_shirt_turtleneck_30_3",
             "group_name": "group_shirt",
-            "sort_order": 1177,
+            "sort_order": 1184,
             "unlock_type": "IAP_CLOTHING",
             "iap_sku": "pgorelease.avatar.m_shirt_turtleneck_30_3",
             "icon_name": "m_shirt_turtleneck_30_bundle_icon",
@@ -7150,7 +7432,7 @@
             "bundle_name": "m_shirt_ultra_bundle",
             "asset_name": "m_shirt_ultra_0",
             "group_name": "group_shirt",
-            "sort_order": 1178,
+            "sort_order": 1185,
             "unlock_type": "DEFAULT",
             "icon_name": "m_shirt_ultra_bundle_icon"
         }
@@ -7165,7 +7447,7 @@
             "bundle_name": "m_shirt_veterantrainerxy_bundle",
             "asset_name": "m_shirt_veterantrainerxy_0",
             "group_name": "group_shirt",
-            "sort_order": 1117,
+            "sort_order": 1124,
             "unlock_type": "IAP_CLOTHING",
             "unlock_badge_type": "BADGE_ULTRA_LEAGUE",
             "iap_sku": "pgorelease.avatar.m_shirt_veterantrainerxy_0",
@@ -7183,7 +7465,7 @@
             "bundle_name": "m_shoes_acetrainerbw_bundle",
             "asset_name": "m_shoes_acetrainerbw_0",
             "group_name": "group_shoes",
-            "sort_order": 1179,
+            "sort_order": 1188,
             "unlock_type": "IAP_CLOTHING",
             "unlock_badge_type": "BADGE_BATTLE_TRAINING_WON",
             "iap_sku": "pgorelease.avatar.m_shoes_acetrainerbw_0",
@@ -7201,7 +7483,7 @@
             "bundle_name": "m_shoes_acetrainersm_bundle",
             "asset_name": "m_shoes_acetrainersm_0",
             "group_name": "group_shoes",
-            "sort_order": 1180,
+            "sort_order": 1189,
             "unlock_type": "IAP_CLOTHING",
             "unlock_badge_type": "BADGE_MASTER_LEAGUE",
             "iap_sku": "pgorelease.avatar.m_shoes_acetrainersm_0",
@@ -7219,7 +7501,7 @@
             "bundle_name": "m_shoes_brock_bundle",
             "asset_name": "m_shoes_brock_0",
             "group_name": "group_shoes",
-            "sort_order": 1183,
+            "sort_order": 1192,
             "unlock_type": "IAP_CLOTHING",
             "iap_sku": "pgorelease.avatar.m_shoes_brock_0",
             "icon_name": "m_shoes_brock_0_bundle_icon"
@@ -7235,7 +7517,7 @@
             "bundle_name": "m_shoes_default_bundle",
             "asset_name": "m_shoes_default_0",
             "group_name": "group_shoes",
-            "sort_order": 1184,
+            "sort_order": 1193,
             "unlock_type": "DEFAULT",
             "icon_name": "m_shoes_default_bundle_icon"
         }
@@ -7250,7 +7532,7 @@
             "bundle_name": "m_shoes_default_bundle",
             "asset_name": "m_shoes_default_1",
             "group_name": "group_shoes",
-            "sort_order": 1185,
+            "sort_order": 1194,
             "unlock_type": "DEFAULT",
             "icon_name": "m_shoes_default_bundle_icon"
         }
@@ -7265,7 +7547,7 @@
             "bundle_name": "m_shoes_default_bundle",
             "asset_name": "m_shoes_default_2",
             "group_name": "group_shoes",
-            "sort_order": 1186,
+            "sort_order": 1195,
             "unlock_type": "DEFAULT",
             "icon_name": "m_shoes_default_bundle_icon"
         }
@@ -7280,7 +7562,7 @@
             "bundle_name": "m_shoes_default_bundle",
             "asset_name": "m_shoes_default_3",
             "group_name": "group_shoes",
-            "sort_order": 1187,
+            "sort_order": 1196,
             "unlock_type": "DEFAULT",
             "icon_name": "m_shoes_default_bundle_icon"
         }
@@ -7295,7 +7577,7 @@
             "bundle_name": "m_shoes_default_bundle",
             "asset_name": "m_shoes_default_4",
             "group_name": "group_shoes",
-            "sort_order": 1188,
+            "sort_order": 1197,
             "unlock_type": "DEFAULT",
             "icon_name": "m_shoes_default_bundle_icon"
         }
@@ -7310,7 +7592,7 @@
             "bundle_name": "m_shoes_default_bundle",
             "asset_name": "m_shoes_default_5",
             "group_name": "group_shoes",
-            "sort_order": 1189,
+            "sort_order": 1198,
             "unlock_type": "DEFAULT",
             "icon_name": "m_shoes_default_bundle_icon"
         }
@@ -7325,7 +7607,7 @@
             "bundle_name": "m_shoes_default_bundle",
             "asset_name": "m_shoes_default_6",
             "group_name": "group_shoes",
-            "sort_order": 1190,
+            "sort_order": 1199,
             "unlock_type": "DEFAULT",
             "icon_name": "m_shoes_default_bundle_icon"
         }
@@ -7340,7 +7622,7 @@
             "bundle_name": "m_shoes_delibird_bundle",
             "asset_name": "m_shoes_delibird_0",
             "group_name": "group_shoes",
-            "sort_order": 1182,
+            "sort_order": 1191,
             "unlock_type": "IAP_CLOTHING",
             "iap_sku": "pgorelease.avatar.m_shoes_delibird_0",
             "icon_name": "m_shoes_delibird_0_bundle_icon"
@@ -7356,7 +7638,7 @@
             "bundle_name": "m_shoes_empty_bundle",
             "asset_name": "m_shoes_empty",
             "group_name": "group_shoes",
-            "sort_order": 1191,
+            "sort_order": 1200,
             "unlock_type": "DEFAULT",
             "icon_name": "m_shoes_empty_bundle_icon"
         }
@@ -7371,7 +7653,7 @@
             "bundle_name": "m_shoes_fisher_bundle",
             "asset_name": "m_shoes_fisher_0",
             "group_name": "group_shoes",
-            "sort_order": 1192,
+            "sort_order": 1201,
             "unlock_type": "IAP_CLOTHING",
             "unlock_badge_type": "BADGE_BIG_MAGIKARP",
             "iap_sku": "pgorelease.avatar.m_shoes_fisher_0",
@@ -7389,7 +7671,7 @@
             "bundle_name": "m_shoes_frlg_bundle",
             "asset_name": "m_shoes_frlg_0",
             "group_name": "group_shoes",
-            "sort_order": 1193,
+            "sort_order": 1202,
             "unlock_type": "IAP_CLOTHING",
             "unlock_badge_type": "BADGE_POKEDEX_ENTRIES",
             "iap_sku": "pgorelease.avatar.m_shoes_frlg_0",
@@ -7407,7 +7689,7 @@
             "bundle_name": "m_shoes_gymleader_bundle",
             "asset_name": "m_shoes_gymleader_0",
             "group_name": "group_shoes",
-            "sort_order": 1194,
+            "sort_order": 1203,
             "unlock_type": "IAP_CLOTHING",
             "unlock_badge_type": "BADGE_HOURS_DEFENDED",
             "iap_sku": "pgorelease.avatar.m_shoes_gymleader_0",
@@ -7425,7 +7707,7 @@
             "bundle_name": "m_shoes_gymleader_bundle",
             "asset_name": "m_shoes_gymleader_1",
             "group_name": "group_shoes",
-            "sort_order": 1195,
+            "sort_order": 1204,
             "unlock_type": "IAP_CLOTHING",
             "unlock_badge_type": "BADGE_HOURS_DEFENDED",
             "iap_sku": "pgorelease.avatar.m_shoes_gymleader_1",
@@ -7443,7 +7725,7 @@
             "bundle_name": "m_shoes_gymleader_bundle",
             "asset_name": "m_shoes_gymleader_2",
             "group_name": "group_shoes",
-            "sort_order": 1196,
+            "sort_order": 1205,
             "unlock_type": "IAP_CLOTHING",
             "unlock_badge_type": "BADGE_HOURS_DEFENDED",
             "iap_sku": "pgorelease.avatar.m_shoes_gymleader_2",
@@ -7461,7 +7743,7 @@
             "bundle_name": "m_shoes_hgss_bundle",
             "asset_name": "m_shoes_hgss_0",
             "group_name": "group_shoes",
-            "sort_order": 1197,
+            "sort_order": 1206,
             "unlock_type": "IAP_CLOTHING",
             "unlock_badge_type": "BADGE_POKEDEX_ENTRIES_GEN2",
             "iap_sku": "pgorelease.avatar.m_shoes_hgss_0",
@@ -7479,7 +7761,7 @@
             "bundle_name": "m_shoes_jogger_bundle",
             "asset_name": "m_shoes_jogger_0",
             "group_name": "group_shoes",
-            "sort_order": 1198,
+            "sort_order": 1207,
             "unlock_type": "IAP_CLOTHING",
             "unlock_badge_type": "BADGE_TRAVEL_KM",
             "iap_sku": "pgorelease.avatar.m_shoes_jogger_0",
@@ -7497,12 +7779,44 @@
             "bundle_name": "m_shoes_pikachufan_bundle",
             "asset_name": "m_shoes_pikachufan_0",
             "group_name": "group_shoes",
-            "sort_order": 1199,
+            "sort_order": 1208,
             "unlock_type": "IAP_CLOTHING",
             "unlock_badge_type": "BADGE_PIKACHU",
             "iap_sku": "pgorelease.avatar.m_shoes_pikachufan_0",
             "unlock_badge_level": 50,
             "icon_name": "m_shoes_pikachufan_bundle_icon"
+        }
+    },
+    {
+        "template_id": "AVATAR_m_shoes_teamaqua",
+        "avatar_customization": {
+            "enabled": true,
+            "slot": [
+                "SHOES"
+            ],
+            "bundle_name": "m_shoes_teamaqua_bundle",
+            "asset_name": "m_shoes_teamaqua_0",
+            "group_name": "group_shoes",
+            "sort_order": 1187,
+            "unlock_type": "IAP_CLOTHING",
+            "iap_sku": "pgorelease.avatar.m_shoes_teamaqua_0",
+            "icon_name": "m_shoes_teamaqua_0_bundle_icon"
+        }
+    },
+    {
+        "template_id": "AVATAR_m_shoes_teammagma",
+        "avatar_customization": {
+            "enabled": true,
+            "slot": [
+                "SHOES"
+            ],
+            "bundle_name": "m_shoes_teammagma_bundle",
+            "asset_name": "m_shoes_teammagma_0",
+            "group_name": "group_shoes",
+            "sort_order": 1186,
+            "unlock_type": "IAP_CLOTHING",
+            "iap_sku": "pgorelease.avatar.m_shoes_teammagma_0",
+            "icon_name": "m_shoes_teammagma_0_bundle_icon"
         }
     },
     {
@@ -7515,7 +7829,7 @@
             "bundle_name": "m_shoes_teamrocket_bundle",
             "asset_name": "m_shoes_teamrocket_0",
             "group_name": "group_shoes",
-            "sort_order": 1200,
+            "sort_order": 1209,
             "unlock_type": "IAP_CLOTHING",
             "iap_sku": "pgorelease.avatar.m_shoes_teamrocket_0",
             "icon_name": "m_shoes_teamrocket_0_bundle_icon"
@@ -7531,7 +7845,7 @@
             "bundle_name": "m_shoes_teamrocket_bundle",
             "asset_name": "m_shoes_teamrocket_1",
             "group_name": "group_shoes",
-            "sort_order": 1201,
+            "sort_order": 1210,
             "unlock_type": "IAP_CLOTHING",
             "iap_sku": "pgorelease.avatar.m_shoes_teamrocket_1",
             "icon_name": "m_shoes_teamrocket_1_bundle_icon"
@@ -7547,7 +7861,7 @@
             "bundle_name": "m_shoes_ultra_bundle",
             "asset_name": "m_shoes_ultra_0",
             "group_name": "group_shoes",
-            "sort_order": 1202,
+            "sort_order": 1211,
             "unlock_type": "DEFAULT",
             "icon_name": "m_shoes_ultra_bundle_icon"
         }
@@ -7562,7 +7876,7 @@
             "bundle_name": "m_shoes_veterantrainerxy_bundle",
             "asset_name": "m_shoes_veterantrainerxy_0",
             "group_name": "group_shoes",
-            "sort_order": 1181,
+            "sort_order": 1190,
             "unlock_type": "IAP_CLOTHING",
             "unlock_badge_type": "BADGE_MASTER_LEAGUE",
             "iap_sku": "pgorelease.avatar.m_shoes_veterantrainerxy_0",
@@ -7579,7 +7893,7 @@
             ],
             "asset_name": "m_skin_0",
             "group_name": "group_skin",
-            "sort_order": 1206,
+            "sort_order": 1215,
             "unlock_type": "DEFAULT"
         }
     },
@@ -7592,7 +7906,7 @@
             ],
             "asset_name": "m_skin_1",
             "group_name": "group_skin",
-            "sort_order": 1205,
+            "sort_order": 1214,
             "unlock_type": "DEFAULT"
         }
     },
@@ -7605,7 +7919,7 @@
             ],
             "asset_name": "m_skin_10",
             "group_name": "group_skin",
-            "sort_order": 1213,
+            "sort_order": 1222,
             "unlock_type": "DEFAULT"
         }
     },
@@ -7618,7 +7932,7 @@
             ],
             "asset_name": "m_skin_11",
             "group_name": "group_skin",
-            "sort_order": 1214,
+            "sort_order": 1223,
             "unlock_type": "DEFAULT"
         }
     },
@@ -7631,7 +7945,7 @@
             ],
             "asset_name": "m_skin_2",
             "group_name": "group_skin",
-            "sort_order": 1208,
+            "sort_order": 1217,
             "unlock_type": "DEFAULT"
         }
     },
@@ -7644,7 +7958,7 @@
             ],
             "asset_name": "m_skin_3",
             "group_name": "group_skin",
-            "sort_order": 1210,
+            "sort_order": 1219,
             "unlock_type": "DEFAULT"
         }
     },
@@ -7657,7 +7971,7 @@
             ],
             "asset_name": "m_skin_4",
             "group_name": "group_skin",
-            "sort_order": 1203,
+            "sort_order": 1212,
             "unlock_type": "DEFAULT"
         }
     },
@@ -7670,7 +7984,7 @@
             ],
             "asset_name": "m_skin_5",
             "group_name": "group_skin",
-            "sort_order": 1204,
+            "sort_order": 1213,
             "unlock_type": "DEFAULT"
         }
     },
@@ -7683,7 +7997,7 @@
             ],
             "asset_name": "m_skin_6",
             "group_name": "group_skin",
-            "sort_order": 1207,
+            "sort_order": 1216,
             "unlock_type": "DEFAULT"
         }
     },
@@ -7696,7 +8010,7 @@
             ],
             "asset_name": "m_skin_7",
             "group_name": "group_skin",
-            "sort_order": 1209,
+            "sort_order": 1218,
             "unlock_type": "DEFAULT"
         }
     },
@@ -7709,7 +8023,7 @@
             ],
             "asset_name": "m_skin_8",
             "group_name": "group_skin",
-            "sort_order": 1211,
+            "sort_order": 1220,
             "unlock_type": "DEFAULT"
         }
     },
@@ -7722,7 +8036,7 @@
             ],
             "asset_name": "m_skin_9",
             "group_name": "group_skin",
-            "sort_order": 1212,
+            "sort_order": 1221,
             "unlock_type": "DEFAULT"
         }
     },
@@ -7736,7 +8050,7 @@
             "bundle_name": "m_socks_default_bundle",
             "asset_name": "m_socks_default_0",
             "group_name": "group_socks",
-            "sort_order": 1215,
+            "sort_order": 1224,
             "unlock_type": "DEFAULT",
             "icon_name": "m_socks_default_bundle_icon"
         }
@@ -7751,7 +8065,7 @@
             "bundle_name": "m_socks_default_bundle",
             "asset_name": "m_socks_default_1",
             "group_name": "group_socks",
-            "sort_order": 1216,
+            "sort_order": 1225,
             "unlock_type": "DEFAULT",
             "icon_name": "m_socks_default_bundle_icon"
         }
@@ -7766,7 +8080,7 @@
             "bundle_name": "m_socks_default_bundle",
             "asset_name": "m_socks_default_2",
             "group_name": "group_socks",
-            "sort_order": 1217,
+            "sort_order": 1226,
             "unlock_type": "DEFAULT",
             "icon_name": "m_socks_default_bundle_icon"
         }
@@ -7781,7 +8095,7 @@
             "bundle_name": "m_socks_default_bundle",
             "asset_name": "m_socks_default_3",
             "group_name": "group_socks",
-            "sort_order": 1218,
+            "sort_order": 1227,
             "unlock_type": "DEFAULT",
             "icon_name": "m_socks_default_bundle_icon"
         }
@@ -7796,7 +8110,7 @@
             "bundle_name": "m_socks_empty_bundle",
             "asset_name": "m_socks_empty",
             "group_name": "group_socks",
-            "sort_order": 1219,
+            "sort_order": 1228,
             "unlock_type": "DEFAULT",
             "icon_name": "m_socks_empty_bundle_icon"
         }
@@ -8213,6 +8527,39 @@
                 50,
                 300
             ]
+        }
+    },
+    {
+        "template_id": "BADGE_TOP_BANANA_1",
+        "badge_settings": {
+            "badge_type": "BADGE_TOP_BANANA_1",
+            "badge_rank": 2,
+            "targets": [
+                100
+            ],
+            "event_badge": true
+        }
+    },
+    {
+        "template_id": "BADGE_TOP_BANANA_2",
+        "badge_settings": {
+            "badge_type": "BADGE_TOP_BANANA_2",
+            "badge_rank": 2,
+            "targets": [
+                100
+            ],
+            "event_badge": true
+        }
+    },
+    {
+        "template_id": "BADGE_TOP_BANANA_3",
+        "badge_settings": {
+            "badge_type": "BADGE_TOP_BANANA_3",
+            "badge_rank": 2,
+            "targets": [
+                100
+            ],
+            "event_badge": true
         }
     },
     {
@@ -8723,7 +9070,7 @@
             "fast_attack_bonus_multiplier": 1.2999999523162842,
             "charge_attack_bonus_multiplier": 1.2999999523162842,
             "defense_bonus_multiplier": 1,
-            "minigame_bonus_base_multiplier": 0.00009999999747378752,
+            "minigame_bonus_base_multiplier": 9.999999747378752e-05,
             "minigame_bonus_variable_multiplier": 1,
             "max_energy": 100,
             "defender_minigame_multiplier": 1,
@@ -8836,9 +9183,9 @@
         "combat_move": {
             "unique_id": "FLAMETHROWER",
             "type": "POKEMON_TYPE_FIRE",
-            "power": 70,
+            "power": 90,
             "vfx_name": "flamethrower",
-            "energy_delta": -50
+            "energy_delta": -55
         }
     },
     {
@@ -8896,7 +9243,7 @@
         "combat_move": {
             "unique_id": "ICE_PUNCH",
             "type": "POKEMON_TYPE_ICE",
-            "power": 50,
+            "power": 55,
             "vfx_name": "ice_punch",
             "energy_delta": -40
         }
@@ -9106,7 +9453,7 @@
         "combat_move": {
             "unique_id": "PSYSHOCK",
             "type": "POKEMON_TYPE_PSYCHIC",
-            "power": 65,
+            "power": 70,
             "vfx_name": "psyshock",
             "energy_delta": -45
         }
@@ -9206,7 +9553,7 @@
         "combat_move": {
             "unique_id": "IRON_HEAD",
             "type": "POKEMON_TYPE_STEEL",
-            "power": 60,
+            "power": 70,
             "vfx_name": "iron_head",
             "energy_delta": -50
         }
@@ -9226,9 +9573,9 @@
         "combat_move": {
             "unique_id": "THUNDER_PUNCH",
             "type": "POKEMON_TYPE_ELECTRIC",
-            "power": 45,
+            "power": 55,
             "vfx_name": "thunder_punch",
-            "energy_delta": -35
+            "energy_delta": -40
         }
     },
     {
@@ -9246,9 +9593,9 @@
         "combat_move": {
             "unique_id": "THUNDERBOLT",
             "type": "POKEMON_TYPE_ELECTRIC",
-            "power": 80,
+            "power": 90,
             "vfx_name": "thunderbolt",
-            "energy_delta": -45
+            "energy_delta": -55
         }
     },
     {
@@ -9306,7 +9653,7 @@
         "combat_move": {
             "unique_id": "DAZZLING_GLEAM",
             "type": "POKEMON_TYPE_FAIRY",
-            "power": 100,
+            "power": 110,
             "vfx_name": "dazzling_gleam",
             "energy_delta": -70
         }
@@ -9646,7 +9993,7 @@
         "combat_move": {
             "unique_id": "BODY_SLAM",
             "type": "POKEMON_TYPE_NORMAL",
-            "power": 50,
+            "power": 60,
             "vfx_name": "body_slam",
             "energy_delta": -35
         }
@@ -9857,7 +10204,7 @@
             "power": 6,
             "vfx_name": "shadow_claw_fast",
             "duration_turns": 1,
-            "energy_delta": 7
+            "energy_delta": 8
         }
     },
     {
@@ -9876,7 +10223,7 @@
         "combat_move": {
             "unique_id": "RAZOR_LEAF_FAST",
             "type": "POKEMON_TYPE_GRASS",
-            "power": 8,
+            "power": 11,
             "vfx_name": "razor_leaf_fast",
             "duration_turns": 1,
             "energy_delta": 4
@@ -9898,7 +10245,7 @@
         "combat_move": {
             "unique_id": "ICE_SHARD_FAST",
             "type": "POKEMON_TYPE_ICE",
-            "power": 8,
+            "power": 9,
             "vfx_name": "ice_shard_fast",
             "duration_turns": 2,
             "energy_delta": 10
@@ -9909,7 +10256,7 @@
         "combat_move": {
             "unique_id": "FROST_BREATH_FAST",
             "type": "POKEMON_TYPE_ICE",
-            "power": 6,
+            "power": 7,
             "vfx_name": "frost_breath_fast",
             "duration_turns": 1,
             "energy_delta": 5
@@ -10091,7 +10438,7 @@
         "combat_move": {
             "unique_id": "CONFUSION_FAST",
             "type": "POKEMON_TYPE_PSYCHIC",
-            "power": 12,
+            "power": 16,
             "vfx_name": "confusion_fast",
             "duration_turns": 3,
             "energy_delta": 12
@@ -10594,7 +10941,7 @@
         "combat_move": {
             "unique_id": "WATERFALL_FAST",
             "type": "POKEMON_TYPE_WATER",
-            "power": 10,
+            "power": 12,
             "vfx_name": "waterfall_fast",
             "duration_turns": 2,
             "energy_delta": 8
@@ -10736,7 +11083,7 @@
         "combat_move": {
             "unique_id": "SMACK_DOWN_FAST",
             "type": "POKEMON_TYPE_ROCK",
-            "power": 10,
+            "power": 12,
             "vfx_name": "smack_down_fast",
             "duration_turns": 2,
             "energy_delta": 8
@@ -14442,7 +14789,7 @@
             "category": "IAP_CATEGORY_AVATAR",
             "sort_order": 2,
             "banner_enabled": true,
-            "image_url": "https://storage.googleapis.com/pgorelease-marketing-images/Holidays2018_avatar_storebanner.jpg",
+            "image_url": "https://storage.googleapis.com/pgorelease-marketing-images/512x256%20No%20Logo.jpg",
             "description": "avatar_shop_description"
         }
     },
@@ -14466,7 +14813,7 @@
         "template_id": "IAP_CATEGORY_POKECOINS",
         "iap_category_display": {
             "category": "IAP_CATEGORY_POKECOINS",
-            "sort_order": 6
+            "sort_order": 7
         }
     },
     {
@@ -20365,8 +20712,7 @@
         "gender_settings": {
             "pokemon": "COMBEE",
             "gender": {
-                "male_percent": 0.875,
-                "female_percent": 0.125
+                "female_percent": 1
             }
         }
     },
@@ -21801,11 +22147,6 @@
                 0
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 10000,
                 "candy_to_unlock": 25
@@ -21903,11 +22244,6 @@
                 66.69999694824219
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 10000,
                 "candy_to_unlock": 25
@@ -21995,11 +22331,6 @@
                 0
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                -0.800000011920929
-            ],
             "third_move": {
                 "stardust_to_unlock": 10000,
                 "candy_to_unlock": 25
@@ -22107,11 +22438,6 @@
                 0
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 10000,
                 "candy_to_unlock": 25
@@ -22207,11 +22533,6 @@
                 0.30000001192092896
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 10000,
                 "candy_to_unlock": 25
@@ -22300,11 +22621,6 @@
                 36.040000915527344
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 10000,
                 "candy_to_unlock": 25
@@ -22397,11 +22713,6 @@
                 0
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                -0.4000000059604645
-            ],
             "third_move": {
                 "stardust_to_unlock": 10000,
                 "candy_to_unlock": 25
@@ -22497,11 +22808,6 @@
                 0.30000001192092896
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 10000,
                 "candy_to_unlock": 25
@@ -22588,11 +22894,6 @@
                 25.600000381469727
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 10000,
                 "candy_to_unlock": 25
@@ -22683,11 +22984,6 @@
                 0
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 10000,
                 "candy_to_unlock": 25
@@ -22778,11 +23074,6 @@
                 0
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 10000,
                 "candy_to_unlock": 25
@@ -22871,11 +23162,6 @@
                 39.099998474121094
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 10000,
                 "candy_to_unlock": 25
@@ -22987,11 +23273,6 @@
                 0
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 10000,
                 "candy_to_unlock": 25
@@ -23103,9 +23384,9 @@
             ],
             "buddy_scale": 19,
             "buddy_portrait_offset": [
-                0,
-                0,
-                0
+                -0.020999999716877937,
+                -0.11599999666213989,
+                0.04699999839067459
             ],
             "third_move": {
                 "stardust_to_unlock": 10000,
@@ -23195,11 +23476,6 @@
                 25.200000762939453
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 10000,
                 "candy_to_unlock": 25
@@ -23313,11 +23589,6 @@
                 0
             ],
             "buddy_scale": 14,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 10000,
                 "candy_to_unlock": 25
@@ -23416,11 +23687,6 @@
                 -30
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 10000,
                 "candy_to_unlock": 25
@@ -23528,11 +23794,6 @@
                 -30
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 10000,
                 "candy_to_unlock": 25
@@ -23626,11 +23887,6 @@
                 0
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 10000,
                 "candy_to_unlock": 25
@@ -23726,11 +23982,6 @@
                 0
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 10000,
                 "candy_to_unlock": 25
@@ -23825,11 +24076,6 @@
                 0
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 10000,
                 "candy_to_unlock": 25
@@ -23934,11 +24180,6 @@
                 -21.200000762939453
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 10000,
                 "candy_to_unlock": 25
@@ -24026,11 +24267,6 @@
                 -21.200000762939453
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 10000,
                 "candy_to_unlock": 25
@@ -24117,11 +24353,6 @@
                 -21.200000762939453
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 10000,
                 "candy_to_unlock": 25
@@ -24236,9 +24467,9 @@
             ],
             "buddy_scale": 14,
             "buddy_portrait_offset": [
+                0.1899999976158142,
                 0,
-                0,
-                0
+                0.44999998807907104
             ],
             "third_move": {
                 "stardust_to_unlock": 10000,
@@ -24347,11 +24578,6 @@
                 -20
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 10000,
                 "candy_to_unlock": 25
@@ -24444,11 +24670,6 @@
                 0
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 50000,
                 "candy_to_unlock": 50
@@ -24515,7 +24736,8 @@
             },
             "quick_moves": [
                 "BITE_FAST",
-                "ACID_FAST"
+                "ACID_FAST",
+                "DRAGON_TAIL_FAST"
             ],
             "cinematic_moves": [
                 "DARK_PULSE",
@@ -24555,9 +24777,9 @@
             ],
             "buddy_scale": 15,
             "buddy_portrait_offset": [
-                0,
-                0,
-                0
+                -0.10000000149011612,
+                0.17100000381469727,
+                0.07999999821186066
             ],
             "third_move": {
                 "stardust_to_unlock": 50000,
@@ -24653,11 +24875,6 @@
                 0
             ],
             "buddy_scale": 11,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 10000,
                 "candy_to_unlock": 25
@@ -24762,11 +24979,6 @@
                 -14.199999809265137
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 10000,
                 "candy_to_unlock": 25
@@ -24854,11 +25066,6 @@
                 -14.199999809265137
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 10000,
                 "candy_to_unlock": 25
@@ -24945,11 +25152,6 @@
                 -14.199999809265137
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 10000,
                 "candy_to_unlock": 25
@@ -25043,11 +25245,6 @@
                 0
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 50000,
                 "candy_to_unlock": 50
@@ -25143,11 +25340,6 @@
                 0
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 50000,
                 "candy_to_unlock": 50
@@ -25242,11 +25434,6 @@
                 0
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 50000,
                 "candy_to_unlock": 50
@@ -25351,11 +25538,6 @@
                 -1.399999976158142
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 50000,
                 "candy_to_unlock": 50
@@ -25443,11 +25625,6 @@
                 -1.399999976158142
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 50000,
                 "candy_to_unlock": 50
@@ -25534,11 +25711,6 @@
                 -1.399999976158142
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 50000,
                 "candy_to_unlock": 50
@@ -25631,11 +25803,6 @@
                 0
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 50000,
                 "candy_to_unlock": 50
@@ -25750,11 +25917,6 @@
                 6.699999809265137
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 50000,
                 "candy_to_unlock": 50
@@ -25861,11 +26023,6 @@
                 57.560001373291016
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 50000,
                 "candy_to_unlock": 50
@@ -25978,9 +26135,9 @@
             ],
             "buddy_scale": 19,
             "buddy_portrait_offset": [
-                0,
-                0,
-                0
+                0.1899999976158142,
+                -0.03999999910593033,
+                0.49000000953674316
             ],
             "third_move": {
                 "stardust_to_unlock": 50000,
@@ -26096,11 +26253,6 @@
                 0
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 50000,
                 "candy_to_unlock": 50
@@ -26207,11 +26359,6 @@
                 12.800000190734863
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 50000,
                 "candy_to_unlock": 50
@@ -26326,8 +26473,8 @@
             "buddy_scale": 19,
             "buddy_portrait_offset": [
                 0,
-                0,
-                0
+                -0.10000000149011612,
+                -0.12999999523162842
             ],
             "third_move": {
                 "stardust_to_unlock": 10000,
@@ -26400,7 +26547,8 @@
             "cinematic_moves": [
                 "DAZZLING_GLEAM",
                 "PSYCHIC",
-                "MOONBLAST"
+                "MOONBLAST",
+                "METEOR_MASH"
             ],
             "animation_time": [
                 2.3333001136779785,
@@ -26435,9 +26583,9 @@
             ],
             "buddy_scale": 19,
             "buddy_portrait_offset": [
+                -0.05000000074505806,
                 0,
-                0,
-                0
+                -0.30000001192092896
             ],
             "third_move": {
                 "stardust_to_unlock": 10000,
@@ -26532,11 +26680,6 @@
                 -1.7999999523162842
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 50000,
                 "candy_to_unlock": 50
@@ -26631,11 +26774,6 @@
                 -1.7999999523162842
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 50000,
                 "candy_to_unlock": 50
@@ -26730,11 +26868,6 @@
                 -1.7999999523162842
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 50000,
                 "candy_to_unlock": 50
@@ -26806,7 +26939,8 @@
             "cinematic_moves": [
                 "HEAT_WAVE",
                 "OVERHEAT",
-                "SOLAR_BEAM"
+                "SOLAR_BEAM",
+                "PSYSHOCK"
             ],
             "animation_time": [
                 2.6666998863220215,
@@ -26840,11 +26974,6 @@
                 68.30000305175781
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 50000,
                 "candy_to_unlock": 50
@@ -26898,7 +27027,8 @@
             "cinematic_moves": [
                 "DAZZLING_GLEAM",
                 "ICE_BEAM",
-                "BLIZZARD"
+                "BLIZZARD",
+                "PSYSHOCK"
             ],
             "animation_time": [
                 2.6666998863220215,
@@ -26933,11 +27063,6 @@
                 68.30000305175781
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 50000,
                 "candy_to_unlock": 50
@@ -26990,7 +27115,8 @@
             "cinematic_moves": [
                 "HEAT_WAVE",
                 "OVERHEAT",
-                "SOLAR_BEAM"
+                "SOLAR_BEAM",
+                "PSYSHOCK"
             ],
             "animation_time": [
                 2.6666998863220215,
@@ -27025,11 +27151,6 @@
                 68.30000305175781
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 50000,
                 "candy_to_unlock": 50
@@ -27144,9 +27265,9 @@
             ],
             "buddy_scale": 19,
             "buddy_portrait_offset": [
-                0,
-                0,
-                0
+                -0.05000000074505806,
+                0.05000000074505806,
+                0.05999999865889549
             ],
             "third_move": {
                 "stardust_to_unlock": 10000,
@@ -27220,7 +27341,8 @@
             "cinematic_moves": [
                 "DAZZLING_GLEAM",
                 "HYPER_BEAM",
-                "PLAY_ROUGH"
+                "PLAY_ROUGH",
+                "ICE_BEAM"
             ],
             "animation_time": [
                 1.666700005531311,
@@ -27255,9 +27377,9 @@
             ],
             "buddy_scale": 19,
             "buddy_portrait_offset": [
-                0,
-                0,
-                0
+                -0.1599999964237213,
+                -0.14000000059604645,
+                -0.6700000166893005
             ],
             "third_move": {
                 "stardust_to_unlock": 10000,
@@ -27354,11 +27476,6 @@
                 32.79999923706055
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 10000,
                 "candy_to_unlock": 25
@@ -27472,11 +27589,6 @@
                 -20
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 10000,
                 "candy_to_unlock": 25
@@ -27570,11 +27682,6 @@
                 0
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 50000,
                 "candy_to_unlock": 50
@@ -27676,11 +27783,6 @@
                 1.5
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 50000,
                 "candy_to_unlock": 50
@@ -27789,7 +27891,7 @@
             "buddy_scale": 19,
             "buddy_portrait_offset": [
                 0,
-                0,
+                0.20000000298023224,
                 0
             ],
             "third_move": {
@@ -27904,11 +28006,6 @@
                 -1.899999976158142
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 50000,
                 "candy_to_unlock": 50
@@ -28014,11 +28111,6 @@
                 -59.599998474121094
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 50000,
                 "candy_to_unlock": 50
@@ -28132,11 +28224,6 @@
                 -52.22999954223633
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 50000,
                 "candy_to_unlock": 50
@@ -28244,11 +28331,6 @@
                 9.100000381469727
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 50000,
                 "candy_to_unlock": 50
@@ -28358,11 +28440,6 @@
                 0
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 50000,
                 "candy_to_unlock": 50
@@ -28455,11 +28532,6 @@
                 0
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 50000,
                 "candy_to_unlock": 50
@@ -28551,11 +28623,6 @@
                 0
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 50000,
                 "candy_to_unlock": 50
@@ -28659,8 +28726,8 @@
             ],
             "buddy_scale": 19,
             "buddy_portrait_offset": [
-                0,
-                0,
+                0.1379999965429306,
+                0.17800000309944153,
                 0
             ],
             "third_move": {
@@ -28749,8 +28816,8 @@
             ],
             "buddy_scale": 19,
             "buddy_portrait_offset": [
-                0,
-                0,
+                0.1379999965429306,
+                0.17800000309944153,
                 0
             ],
             "third_move": {
@@ -28838,8 +28905,8 @@
             ],
             "buddy_scale": 19,
             "buddy_portrait_offset": [
-                0,
-                0,
+                0.1379999965429306,
+                0.17800000309944153,
                 0
             ],
             "third_move": {
@@ -28935,11 +29002,6 @@
                 0
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 50000,
                 "candy_to_unlock": 50
@@ -29036,7 +29098,7 @@
             "buddy_scale": 19,
             "buddy_portrait_offset": [
                 0,
-                0,
+                -0.07000000029802322,
                 0
             ],
             "third_move": {
@@ -29133,11 +29195,6 @@
                 0
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 50000,
                 "candy_to_unlock": 50
@@ -29242,11 +29299,6 @@
                 -29.899999618530273
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 50000,
                 "candy_to_unlock": 50
@@ -29333,11 +29385,6 @@
                 -29.899999618530273
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 50000,
                 "candy_to_unlock": 50
@@ -29425,9 +29472,9 @@
             ],
             "buddy_scale": 19,
             "buddy_portrait_offset": [
-                0,
-                0,
-                0
+                0.5,
+                -0.029999999329447746,
+                1.3600000143051147
             ],
             "third_move": {
                 "stardust_to_unlock": 50000,
@@ -29540,11 +29587,6 @@
                 10
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 50000,
                 "candy_to_unlock": 50
@@ -29631,11 +29673,6 @@
                 52.29999923706055
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 50000,
                 "candy_to_unlock": 50
@@ -29747,11 +29784,6 @@
                 0.20000000298023224
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 50000,
                 "candy_to_unlock": 50
@@ -29857,11 +29889,6 @@
                 34.29999923706055
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 50000,
                 "candy_to_unlock": 50
@@ -29974,9 +30001,9 @@
             ],
             "buddy_scale": 19,
             "buddy_portrait_offset": [
+                0.12999999523162842,
                 0,
-                0,
-                0
+                0.38999998569488525
             ],
             "third_move": {
                 "stardust_to_unlock": 50000,
@@ -30083,11 +30110,6 @@
                 40.400001525878906
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 50000,
                 "candy_to_unlock": 50
@@ -30199,11 +30221,6 @@
                 0
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 50000,
                 "candy_to_unlock": 50
@@ -30305,11 +30322,6 @@
                 51.79999923706055
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 50000,
                 "candy_to_unlock": 50
@@ -30416,11 +30428,6 @@
                 9.300000190734863
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 50000,
                 "candy_to_unlock": 50
@@ -30533,11 +30540,6 @@
                 0
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 50000,
                 "candy_to_unlock": 50
@@ -30653,11 +30655,6 @@
                 30
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 50000,
                 "candy_to_unlock": 50
@@ -30729,7 +30726,8 @@
             "cinematic_moves": [
                 "FUTURESIGHT",
                 "FOCUS_BLAST",
-                "SHADOW_BALL"
+                "SHADOW_BALL",
+                "FIRE_PUNCH"
             ],
             "animation_time": [
                 2,
@@ -30763,11 +30761,6 @@
                 30
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 50000,
                 "candy_to_unlock": 50
@@ -30879,11 +30872,6 @@
                 0
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 50000,
                 "candy_to_unlock": 50
@@ -30999,11 +30987,6 @@
                 60
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 50000,
                 "candy_to_unlock": 50
@@ -31056,7 +31039,8 @@
             "cinematic_moves": [
                 "HEAVY_SLAM",
                 "DYNAMIC_PUNCH",
-                "CLOSE_COMBAT"
+                "CLOSE_COMBAT",
+                "ROCK_SLIDE"
             ],
             "animation_time": [
                 1.666700005531311,
@@ -31090,11 +31074,6 @@
                 30
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 50000,
                 "candy_to_unlock": 50
@@ -31207,11 +31186,6 @@
                 0
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 50000,
                 "candy_to_unlock": 50
@@ -31331,7 +31305,7 @@
             "buddy_scale": 19,
             "buddy_portrait_offset": [
                 0,
-                0,
+                -0.3240000009536743,
                 0
             ],
             "third_move": {
@@ -31422,11 +31396,6 @@
                 43.5
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 50000,
                 "candy_to_unlock": 50
@@ -31540,11 +31509,6 @@
                 0
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 50000,
                 "candy_to_unlock": 50
@@ -31633,11 +31597,6 @@
                 54.060001373291016
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 50000,
                 "candy_to_unlock": 50
@@ -31752,11 +31711,6 @@
                 16.100000381469727
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 10000,
                 "candy_to_unlock": 25
@@ -31853,11 +31807,6 @@
                 16.100000381469727
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 10000,
                 "candy_to_unlock": 25
@@ -31954,11 +31903,6 @@
                 16.100000381469727
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 10000,
                 "candy_to_unlock": 25
@@ -32077,11 +32021,6 @@
                 43.900001525878906
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 10000,
                 "candy_to_unlock": 25
@@ -32182,9 +32121,9 @@
             ],
             "buddy_scale": 19,
             "buddy_portrait_offset": [
-                0,
-                0,
-                0
+                0.09000000357627869,
+                0.09000000357627869,
+                0.11999999731779099
             ],
             "third_move": {
                 "stardust_to_unlock": 10000,
@@ -32285,11 +32224,6 @@
                 43.900001525878906
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 10000,
                 "candy_to_unlock": 25
@@ -32377,11 +32311,6 @@
                 30
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 10000,
                 "candy_to_unlock": 25
@@ -32470,11 +32399,6 @@
                 30
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 10000,
                 "candy_to_unlock": 25
@@ -32563,11 +32487,6 @@
                 30
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 10000,
                 "candy_to_unlock": 25
@@ -32679,11 +32598,6 @@
                 0
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 50000,
                 "candy_to_unlock": 50
@@ -32789,11 +32703,6 @@
                 73.55000305175781
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 50000,
                 "candy_to_unlock": 50
@@ -32911,11 +32820,6 @@
                 -17.200000762939453
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 50000,
                 "candy_to_unlock": 50
@@ -33022,11 +32926,6 @@
                 41
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 50000,
                 "candy_to_unlock": 50
@@ -33122,11 +33021,6 @@
                 86.87999725341797
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 50000,
                 "candy_to_unlock": 50
@@ -33234,11 +33128,6 @@
                 140
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 50000,
                 "candy_to_unlock": 50
@@ -33341,11 +33230,6 @@
                 0
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 50000,
                 "candy_to_unlock": 50
@@ -33459,7 +33343,7 @@
             ],
             "buddy_scale": 19,
             "buddy_portrait_offset": [
-                0,
+                0.20000000298023224,
                 0,
                 0
             ],
@@ -33570,11 +33454,6 @@
                 10
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 50000,
                 "candy_to_unlock": 50
@@ -33686,11 +33565,6 @@
                 0
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 50000,
                 "candy_to_unlock": 50
@@ -33797,11 +33671,6 @@
                 0
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 50000,
                 "candy_to_unlock": 50
@@ -33915,11 +33784,6 @@
                 31.700000762939453
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                19,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 50000,
                 "candy_to_unlock": 50
@@ -34017,9 +33881,9 @@
             ],
             "buddy_scale": 19,
             "buddy_portrait_offset": [
-                19,
-                0,
-                0
+                0.38999998569488525,
+                0.11999999731779099,
+                0.8500000238418579
             ],
             "third_move": {
                 "stardust_to_unlock": 50000,
@@ -34117,9 +33981,9 @@
             ],
             "buddy_scale": 19,
             "buddy_portrait_offset": [
-                19,
                 0,
-                0
+                0.2199999988079071,
+                -0.12999999523162842
             ],
             "third_move": {
                 "stardust_to_unlock": 50000,
@@ -34192,7 +34056,8 @@
             "cinematic_moves": [
                 "DARK_PULSE",
                 "GUNK_SHOT",
-                "SLUDGE_WAVE"
+                "SLUDGE_WAVE",
+                "THUNDER_PUNCH"
             ],
             "animation_time": [
                 2,
@@ -34226,11 +34091,6 @@
                 0
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                19,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 50000,
                 "candy_to_unlock": 50
@@ -34279,7 +34139,8 @@
             },
             "quick_moves": [
                 "BITE_FAST",
-                "POISON_JAB_FAST"
+                "POISON_JAB_FAST",
+                "SNARL_FAST"
             ],
             "cinematic_moves": [
                 "DARK_PULSE",
@@ -34320,9 +34181,9 @@
             ],
             "buddy_scale": 19,
             "buddy_portrait_offset": [
-                19,
                 0,
-                0
+                0,
+                -0.30000001192092896
             ],
             "third_move": {
                 "stardust_to_unlock": 50000,
@@ -34376,7 +34237,8 @@
             "cinematic_moves": [
                 "DARK_PULSE",
                 "GUNK_SHOT",
-                "SLUDGE_WAVE"
+                "SLUDGE_WAVE",
+                "THUNDER_PUNCH"
             ],
             "animation_time": [
                 2,
@@ -34412,9 +34274,9 @@
             ],
             "buddy_scale": 19,
             "buddy_portrait_offset": [
-                19,
+                -0.3100000023841858,
                 0,
-                0
+                -0.9900000095367432
             ],
             "third_move": {
                 "stardust_to_unlock": 50000,
@@ -34527,11 +34389,6 @@
                 0
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 50000,
                 "candy_to_unlock": 50
@@ -34639,11 +34496,6 @@
                 29.510000228881836
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 50000,
                 "candy_to_unlock": 50
@@ -34759,9 +34611,9 @@
             ],
             "buddy_scale": 19,
             "buddy_portrait_offset": [
+                -0.27000001072883606,
                 0,
-                0,
-                0
+                -0.8100000023841858
             ],
             "third_move": {
                 "stardust_to_unlock": 50000,
@@ -34861,11 +34713,6 @@
                 -25
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 50000,
                 "candy_to_unlock": 50
@@ -34975,7 +34822,7 @@
             "buddy_portrait_offset": [
                 0,
                 0,
-                0
+                -0.5199999809265137
             ],
             "third_move": {
                 "stardust_to_unlock": 50000,
@@ -35090,11 +34937,6 @@
                 27.780000686645508
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 75000,
                 "candy_to_unlock": 75
@@ -35207,11 +35049,6 @@
                 55.29999923706055
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 50000,
                 "candy_to_unlock": 50
@@ -35298,11 +35135,6 @@
                 31.049999237060547
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 50000,
                 "candy_to_unlock": 50
@@ -35396,9 +35228,9 @@
             ],
             "buddy_scale": 19,
             "buddy_portrait_offset": [
-                0,
-                0,
-                0
+                0.20999999344348907,
+                -0.11999999731779099,
+                0.44999998807907104
             ],
             "third_move": {
                 "stardust_to_unlock": 50000,
@@ -35506,9 +35338,9 @@
             ],
             "buddy_scale": 19,
             "buddy_portrait_offset": [
-                0,
-                0,
-                0
+                0.18000000715255737,
+                -0.30000001192092896,
+                0.33000001311302185
             ],
             "third_move": {
                 "stardust_to_unlock": 50000,
@@ -35621,11 +35453,6 @@
                 0
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 50000,
                 "candy_to_unlock": 50
@@ -35731,11 +35558,6 @@
                 39.20000076293945
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 50000,
                 "candy_to_unlock": 50
@@ -35838,20 +35660,20 @@
             ],
             "model_scale_v2": 1,
             "buddy_offset_male": [
-                -2.299999952316284,
+                10,
                 0,
-                40
+                -55
             ],
             "buddy_offset_female": [
-                -2.299999952316284,
+                10,
                 0,
-                40
+                -55
             ],
             "buddy_scale": 19,
             "buddy_portrait_offset": [
                 0,
-                0,
-                0
+                -0.11999999731779099,
+                0.07000000029802322
             ],
             "third_move": {
                 "stardust_to_unlock": 50000,
@@ -35959,11 +35781,6 @@
                 23.790000915527344
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 50000,
                 "candy_to_unlock": 50
@@ -36053,16 +35870,21 @@
             ],
             "buddy_scale": 19,
             "buddy_portrait_offset": [
-                0,
-                0,
-                0
+                -0.8700000047683716,
+                -3.950000047683716,
+                -1.9800000190734863
             ],
             "third_move": {
                 "stardust_to_unlock": 50000,
                 "candy_to_unlock": 50
             },
             "is_transferable": true,
-            "is_deployable": true
+            "is_deployable": true,
+            "combat_player_pokemon_position_offset": [
+                1,
+                0,
+                0
+            ]
         }
     },
     {
@@ -36145,11 +35967,6 @@
                 23.790000915527344
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 50000,
                 "candy_to_unlock": 50
@@ -36261,11 +36078,6 @@
                 0
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 50000,
                 "candy_to_unlock": 50
@@ -36370,11 +36182,6 @@
                 20
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 50000,
                 "candy_to_unlock": 50
@@ -36462,11 +36269,6 @@
                 20
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 50000,
                 "candy_to_unlock": 50
@@ -36553,11 +36355,6 @@
                 20
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 50000,
                 "candy_to_unlock": 50
@@ -36663,7 +36460,7 @@
             "buddy_scale": 19,
             "buddy_portrait_offset": [
                 0,
-                0,
+                0.49000000953674316,
                 0
             ],
             "third_move": {
@@ -36770,11 +36567,6 @@
                 57.70000076293945
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 75000,
                 "candy_to_unlock": 75
@@ -36864,6 +36656,13 @@
             "family_id": "FAMILY_LICKITUNG",
             "km_buddy_distance": 3,
             "model_height": 1.2000000476837158,
+            "evolution_branch": [
+                {
+                    "evolution": "LICKILICKY",
+                    "evolution_item_requirement": "ITEM_GEN4_EVOLUTION_STONE",
+                    "candy_cost": 100
+                }
+            ],
             "model_scale_v2": 1,
             "buddy_offset_male": [
                 15.100000381469727,
@@ -36877,8 +36676,8 @@
             ],
             "buddy_scale": 19,
             "buddy_portrait_offset": [
-                0,
-                0,
+                0.07999999821186066,
+                0.10000000149011612,
                 0
             ],
             "third_move": {
@@ -36994,11 +36793,6 @@
                 120
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 50000,
                 "candy_to_unlock": 50
@@ -37052,7 +36846,8 @@
             "cinematic_moves": [
                 "SLUDGE_BOMB",
                 "SHADOW_BALL",
-                "DARK_PULSE"
+                "DARK_PULSE",
+                "THUNDERBOLT"
             ],
             "animation_time": [
                 2,
@@ -37086,11 +36881,6 @@
                 58.560001373291016
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 50000,
                 "candy_to_unlock": 50
@@ -37204,11 +36994,6 @@
                 58.369998931884766
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 50000,
                 "candy_to_unlock": 50
@@ -37305,7 +37090,7 @@
             "buddy_scale": 19,
             "buddy_portrait_offset": [
                 0,
-                0,
+                0.11999999731779099,
                 0
             ],
             "third_move": {
@@ -37373,6 +37158,7 @@
             "evolution_pips": 1,
             "pokedex_height_m": 1.100000023841858,
             "pokedex_weight_kg": 34.599998474121094,
+            "parent_pokemon_id": "HAPPINY",
             "height_std_dev": 0.13750000298023224,
             "weight_std_dev": 4.324999809265137,
             "family_id": "FAMILY_CHANSEY",
@@ -37397,11 +37183,6 @@
                 50.599998474121094
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 75000,
                 "candy_to_unlock": 75
@@ -37492,6 +37273,13 @@
             "family_id": "FAMILY_TANGELA",
             "km_buddy_distance": 3,
             "model_height": 1,
+            "evolution_branch": [
+                {
+                    "evolution": "TANGROWTH",
+                    "evolution_item_requirement": "ITEM_GEN4_EVOLUTION_STONE",
+                    "candy_cost": 100
+                }
+            ],
             "model_scale_v2": 1,
             "buddy_offset_male": [
                 7,
@@ -37504,11 +37292,6 @@
                 20
             ],
             "buddy_scale": 15,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 50000,
                 "candy_to_unlock": 50
@@ -37728,11 +37511,6 @@
                 0
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 50000,
                 "candy_to_unlock": 50
@@ -37846,11 +37624,6 @@
                 66.33000183105469
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 50000,
                 "candy_to_unlock": 50
@@ -37962,11 +37735,6 @@
                 0
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 50000,
                 "candy_to_unlock": 50
@@ -38054,11 +37822,6 @@
                 79.69000244140625
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 50000,
                 "candy_to_unlock": 50
@@ -38152,11 +37915,6 @@
                 60
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 50000,
                 "candy_to_unlock": 50
@@ -38229,7 +37987,9 @@
             "cinematic_moves": [
                 "HYDRO_PUMP",
                 "POWER_GEM",
-                "PSYCHIC"
+                "PSYCHIC",
+                "THUNDER",
+                "ICE_BEAM"
             ],
             "animation_time": [
                 1.733299970626831,
@@ -38263,11 +38023,6 @@
                 62.20000076293945
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 50000,
                 "candy_to_unlock": 50
@@ -38353,6 +38108,7 @@
             "evolution_pips": 1,
             "pokedex_height_m": 1.2999999523162842,
             "pokedex_weight_kg": 54.5,
+            "parent_pokemon_id": "MIME_JR",
             "height_std_dev": 0.16249999403953552,
             "weight_std_dev": 6.8125,
             "family_id": "FAMILY_MR_MIME",
@@ -38370,11 +38126,6 @@
                 20
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 75000,
                 "candy_to_unlock": 75
@@ -38487,9 +38238,9 @@
             ],
             "buddy_scale": 19,
             "buddy_portrait_offset": [
-                0,
-                0,
-                0
+                0.6499999761581421,
+                0.07000000029802322,
+                1.6399999856948853
             ],
             "third_move": {
                 "stardust_to_unlock": 75000,
@@ -38542,7 +38293,8 @@
             "cinematic_moves": [
                 "DRAINING_KISS",
                 "AVALANCHE",
-                "PSYSHOCK"
+                "PSYSHOCK",
+                "FOCUS_BLAST"
             ],
             "animation_time": [
                 2.266700029373169,
@@ -38577,8 +38329,8 @@
             ],
             "buddy_scale": 19,
             "buddy_portrait_offset": [
-                0,
-                0,
+                0.18000000715255737,
+                -0.09000000357627869,
                 0
             ],
             "third_move": {
@@ -38691,11 +38443,6 @@
                 40
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 75000,
                 "candy_to_unlock": 75
@@ -38806,11 +38553,6 @@
                 49.79999923706055
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 75000,
                 "candy_to_unlock": 75
@@ -38913,11 +38655,6 @@
                 43.599998474121094
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 75000,
                 "candy_to_unlock": 75
@@ -39006,11 +38743,6 @@
                 30
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 50000,
                 "candy_to_unlock": 50
@@ -39118,11 +38850,6 @@
                 13.600000381469727
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 10000,
                 "candy_to_unlock": 25
@@ -39211,11 +38938,6 @@
                 63
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 10000,
                 "candy_to_unlock": 25
@@ -39319,11 +39041,6 @@
                 19.700000762939453
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 75000,
                 "candy_to_unlock": 75
@@ -39421,11 +39138,6 @@
                 0
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 50000,
                 "candy_to_unlock": 50
@@ -39553,11 +39265,6 @@
                 0
             ],
             "buddy_scale": 11,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 75000,
                 "candy_to_unlock": 75
@@ -39661,11 +39368,6 @@
                 0
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 75000,
                 "candy_to_unlock": 75
@@ -39775,11 +39477,6 @@
                 0
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 75000,
                 "candy_to_unlock": 75
@@ -39889,11 +39586,6 @@
                 0
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 75000,
                 "candy_to_unlock": 75
@@ -40009,11 +39701,6 @@
                 48.209999084472656
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 50000,
                 "candy_to_unlock": 50
@@ -40107,11 +39794,6 @@
                 0
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 75000,
                 "candy_to_unlock": 75
@@ -40199,11 +39881,6 @@
                 48.209999084472656
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 75000,
                 "candy_to_unlock": 75
@@ -40297,11 +39974,6 @@
                 0
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 75000,
                 "candy_to_unlock": 75
@@ -40350,7 +40022,8 @@
             },
             "quick_moves": [
                 "MUD_SHOT_FAST",
-                "ROCK_SMASH_FAST"
+                "ROCK_SMASH_FAST",
+                "WATERFALL_FAST"
             ],
             "cinematic_moves": [
                 "ANCIENT_POWER",
@@ -40389,11 +40062,6 @@
                 35.70000076293945
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 75000,
                 "candy_to_unlock": 75
@@ -40446,7 +40114,8 @@
             "cinematic_moves": [
                 "ANCIENT_POWER",
                 "IRON_HEAD",
-                "HYPER_BEAM"
+                "HYPER_BEAM",
+                "ROCK_SLIDE"
             ],
             "animation_time": [
                 2.1666998863220215,
@@ -40480,9 +40149,9 @@
             ],
             "buddy_scale": 19,
             "buddy_portrait_offset": [
-                0,
-                0,
-                0
+                -0.11999999731779099,
+                0.14000000059604645,
+                -0.10000000149011612
             ],
             "third_move": {
                 "stardust_to_unlock": 75000,
@@ -40534,7 +40203,8 @@
             "cinematic_moves": [
                 "HEAVY_SLAM",
                 "HYPER_BEAM",
-                "EARTHQUAKE"
+                "EARTHQUAKE",
+                "OUTRAGE"
             ],
             "animation_time": [
                 2.4000000953674316,
@@ -40549,6 +40219,7 @@
             "evolution_pips": 1,
             "pokedex_height_m": 2.0999999046325684,
             "pokedex_weight_kg": 460,
+            "parent_pokemon_id": "MUNCHLAX",
             "height_std_dev": 0.26249998807907104,
             "weight_std_dev": 57.5,
             "family_id": "FAMILY_SNORLAX",
@@ -40569,7 +40240,7 @@
             "buddy_scale": 19,
             "buddy_portrait_offset": [
                 0,
-                0,
+                -0.18000000715255737,
                 0
             ],
             "third_move": {
@@ -40667,11 +40338,6 @@
                 28.010000228881836
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 100000,
                 "candy_to_unlock": 100
@@ -40756,11 +40422,6 @@
                 18.139999389648438
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 100000,
                 "candy_to_unlock": 100
@@ -40845,11 +40506,6 @@
                 18.139999389648438
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 100000,
                 "candy_to_unlock": 100
@@ -40941,11 +40597,6 @@
                 0
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 75000,
                 "candy_to_unlock": 75
@@ -41042,11 +40693,6 @@
                 39.70000076293945
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 75000,
                 "candy_to_unlock": 75
@@ -41135,11 +40781,6 @@
                 51.70000076293945
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 75000,
                 "candy_to_unlock": 75
@@ -41227,9 +40868,9 @@
             ],
             "buddy_scale": 19,
             "buddy_portrait_offset": [
-                0,
-                0,
-                0
+                0.09000000357627869,
+                0.05999999865889549,
+                0.3499999940395355
             ],
             "third_move": {
                 "stardust_to_unlock": 100000,
@@ -41356,11 +40997,6 @@
                 -19.799999237060547
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 100000,
                 "candy_to_unlock": 100
@@ -41451,11 +41087,6 @@
                 0
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 10000,
                 "candy_to_unlock": 25
@@ -41551,11 +41182,6 @@
                 -9.899999618530273
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 10000,
                 "candy_to_unlock": 25
@@ -41642,11 +41268,6 @@
                 31.229999542236328
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 10000,
                 "candy_to_unlock": 25
@@ -41740,9 +41361,9 @@
             ],
             "buddy_scale": 19,
             "buddy_portrait_offset": [
-                0,
-                0,
-                0
+                -0.029999999329447746,
+                0.05999999865889549,
+                -0.11999999731779099
             ],
             "third_move": {
                 "stardust_to_unlock": 10000,
@@ -41839,11 +41460,6 @@
                 0
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 10000,
                 "candy_to_unlock": 25
@@ -41930,11 +41546,6 @@
                 32.540000915527344
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 10000,
                 "candy_to_unlock": 25
@@ -42027,11 +41638,6 @@
                 0
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 10000,
                 "candy_to_unlock": 25
@@ -42127,11 +41733,6 @@
                 3
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 10000,
                 "candy_to_unlock": 25
@@ -42218,11 +41819,6 @@
                 14.819999694824219
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 10000,
                 "candy_to_unlock": 25
@@ -42315,11 +41911,6 @@
                 0
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 10000,
                 "candy_to_unlock": 25
@@ -42405,11 +41996,6 @@
                 -9.460000038146973
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 10000,
                 "candy_to_unlock": 25
@@ -42505,8 +42091,8 @@
             "buddy_scale": 19,
             "buddy_portrait_offset": [
                 0,
-                0,
-                0
+                -0.05999999865889549,
+                -0.20999999344348907
             ],
             "third_move": {
                 "stardust_to_unlock": 10000,
@@ -42599,7 +42185,7 @@
             "buddy_portrait_offset": [
                 0,
                 0,
-                0
+                0.029999999329447746
             ],
             "third_move": {
                 "stardust_to_unlock": 10000,
@@ -42697,9 +42283,9 @@
             ],
             "buddy_scale": 19,
             "buddy_portrait_offset": [
+                -0.029999999329447746,
                 0,
-                0,
-                0
+                -0.23999999463558197
             ],
             "third_move": {
                 "stardust_to_unlock": 10000,
@@ -42790,9 +42376,9 @@
             ],
             "buddy_scale": 19,
             "buddy_portrait_offset": [
-                0,
-                0,
-                0
+                -0.36000001430511475,
+                -0.27000001072883606,
+                -1
             ],
             "third_move": {
                 "stardust_to_unlock": 10000,
@@ -42887,11 +42473,6 @@
                 0
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 10000,
                 "candy_to_unlock": 25
@@ -42979,7 +42560,7 @@
             ],
             "buddy_scale": 19,
             "buddy_portrait_offset": [
-                0,
+                0.05999999865889549,
                 0,
                 0
             ],
@@ -43072,9 +42653,9 @@
             ],
             "buddy_scale": 19,
             "buddy_portrait_offset": [
-                0,
-                0,
-                0
+                -0.33000001311302185,
+                -0.25,
+                -0.7799999713897705
             ],
             "third_move": {
                 "stardust_to_unlock": 10000,
@@ -43170,11 +42751,6 @@
                 0
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 50000,
                 "candy_to_unlock": 50
@@ -43263,11 +42839,6 @@
                 82.54000091552734
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 50000,
                 "candy_to_unlock": 50
@@ -43360,9 +42931,9 @@
             ],
             "buddy_scale": 13,
             "buddy_portrait_offset": [
-                0,
-                0,
-                0
+                0.10000000149011612,
+                -0.05999999865889549,
+                0.25
             ],
             "third_move": {
                 "stardust_to_unlock": 10000,
@@ -43458,7 +43029,7 @@
             "buddy_scale": 13,
             "buddy_portrait_offset": [
                 0,
-                0,
+                -0.11999999731779099,
                 0
             ],
             "third_move": {
@@ -43555,9 +43126,9 @@
             ],
             "buddy_scale": 14,
             "buddy_portrait_offset": [
-                0,
-                0,
-                0
+                -0.05999999865889549,
+                -0.05999999865889549,
+                -0.18000000715255737
             ],
             "third_move": {
                 "stardust_to_unlock": 10000,
@@ -43750,11 +43321,6 @@
                 -20
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 50000,
                 "candy_to_unlock": 50
@@ -43851,7 +43417,7 @@
             "buddy_scale": 10,
             "buddy_portrait_offset": [
                 0,
-                0,
+                -0.029999999329447746,
                 0
             ],
             "third_move": {
@@ -44039,11 +43605,6 @@
                 0
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 75000,
                 "candy_to_unlock": 75
@@ -44139,11 +43700,6 @@
                 0
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 75000,
                 "candy_to_unlock": 75
@@ -44196,7 +43752,8 @@
             "cinematic_moves": [
                 "ZAP_CANNON",
                 "FOCUS_BLAST",
-                "THUNDER"
+                "THUNDER",
+                "POWER_GEM"
             ],
             "animation_time": [
                 1.333299994468689,
@@ -44232,7 +43789,7 @@
             "buddy_scale": 19,
             "buddy_portrait_offset": [
                 0,
-                0,
+                -0.15000000596046448,
                 0
             ],
             "third_move": {
@@ -44320,11 +43877,6 @@
                 0
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 50000,
                 "candy_to_unlock": 50
@@ -44419,11 +43971,6 @@
                 0
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 50000,
                 "candy_to_unlock": 50
@@ -44578,6 +44125,7 @@
             "evolution_pips": 1,
             "pokedex_height_m": 1.190000057220459,
             "pokedex_weight_kg": 38,
+            "parent_pokemon_id": "BONSLY",
             "height_std_dev": 0.14875000715255737,
             "weight_std_dev": 4.75,
             "family_id": "FAMILY_SUDOWOODO",
@@ -44597,7 +44145,7 @@
             "buddy_scale": 19,
             "buddy_portrait_offset": [
                 0,
-                0,
+                -0.09000000357627869,
                 0
             ],
             "third_move": {
@@ -44686,8 +44234,8 @@
             ],
             "buddy_scale": 19,
             "buddy_portrait_offset": [
-                0,
-                0,
+                0.05999999865889549,
+                -0.09000000357627869,
                 0
             ],
             "third_move": {
@@ -44785,11 +44333,6 @@
                 40
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 50000,
                 "candy_to_unlock": 50
@@ -44890,7 +44433,7 @@
             "buddy_scale": 19,
             "buddy_portrait_offset": [
                 0,
-                0,
+                -0.20999999344348907,
                 0
             ],
             "third_move": {
@@ -44981,11 +44524,6 @@
                 50.25
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 50000,
                 "candy_to_unlock": 50
@@ -45056,6 +44594,13 @@
             "family_id": "FAMILY_AIPOM",
             "km_buddy_distance": 3,
             "model_height": 0.800000011920929,
+            "evolution_branch": [
+                {
+                    "evolution": "AMBIPOM",
+                    "evolution_item_requirement": "ITEM_GEN4_EVOLUTION_STONE",
+                    "candy_cost": 100
+                }
+            ],
             "model_scale_v2": 1,
             "buddy_offset_male": [
                 10.210000038146973,
@@ -45070,7 +44615,7 @@
             "buddy_scale": 19,
             "buddy_portrait_offset": [
                 0,
-                0,
+                -0.15000000596046448,
                 0
             ],
             "third_move": {
@@ -45169,7 +44714,7 @@
             "buddy_scale": 12,
             "buddy_portrait_offset": [
                 0,
-                0,
+                -0.09000000357627869,
                 0
             ],
             "third_move": {
@@ -45258,7 +44803,7 @@
             ],
             "buddy_scale": 19,
             "buddy_portrait_offset": [
-                0,
+                0.10000000149011612,
                 0,
                 0
             ],
@@ -45334,6 +44879,13 @@
             "family_id": "FAMILY_YANMA",
             "km_buddy_distance": 3,
             "model_height": 1.1299999952316284,
+            "evolution_branch": [
+                {
+                    "evolution": "YANMEGA",
+                    "evolution_item_requirement": "ITEM_GEN4_EVOLUTION_STONE",
+                    "candy_cost": 100
+                }
+            ],
             "model_scale_v2": 1,
             "buddy_offset_male": [
                 3.299999952316284,
@@ -45347,9 +44899,9 @@
             ],
             "buddy_scale": 19,
             "buddy_portrait_offset": [
+                0.3100000023841858,
                 0,
-                0,
-                0
+                0.49000000953674316
             ],
             "third_move": {
                 "stardust_to_unlock": 50000,
@@ -45445,8 +44997,8 @@
             ],
             "buddy_scale": 19,
             "buddy_portrait_offset": [
-                0,
-                0,
+                0.029999999329447746,
+                -0.07999999821186066,
                 0
             ],
             "third_move": {
@@ -45539,7 +45091,7 @@
             "buddy_portrait_offset": [
                 0,
                 0,
-                0
+                -0.2199999988079071
             ],
             "third_move": {
                 "stardust_to_unlock": 50000,
@@ -45626,11 +45178,6 @@
                 0
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 75000,
                 "candy_to_unlock": 75
@@ -45715,11 +45262,6 @@
                 0
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 75000,
                 "candy_to_unlock": 75
@@ -45811,11 +45353,6 @@
                 0
             ],
             "buddy_scale": 16,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 50000,
                 "candy_to_unlock": 50
@@ -45903,9 +45440,9 @@
             ],
             "buddy_scale": 19,
             "buddy_portrait_offset": [
-                0,
-                0,
-                0
+                -0.05000000074505806,
+                -0.30000001192092896,
+                -0.3199999928474426
             ],
             "third_move": {
                 "stardust_to_unlock": 50000,
@@ -46017,9 +45554,9 @@
             ],
             "buddy_scale": 19,
             "buddy_portrait_offset": [
-                0,
-                0,
-                0
+                0.10000000149011612,
+                -0.11999999731779099,
+                0.14000000059604645
             ],
             "third_move": {
                 "stardust_to_unlock": 50000,
@@ -46119,11 +45656,6 @@
                 19.899999618530273
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 75000,
                 "candy_to_unlock": 75
@@ -46224,11 +45756,6 @@
                 52.20000076293945
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 50000,
                 "candy_to_unlock": 50
@@ -46331,11 +45858,6 @@
                 51.900001525878906
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 50000,
                 "candy_to_unlock": 50
@@ -46449,7 +45971,7 @@
             "buddy_portrait_offset": [
                 0,
                 0,
-                0
+                -0.25
             ],
             "third_move": {
                 "stardust_to_unlock": 75000,
@@ -46560,7 +46082,7 @@
             "buddy_portrait_offset": [
                 0,
                 0,
-                0
+                -0.25
             ],
             "third_move": {
                 "stardust_to_unlock": 75000,
@@ -46663,9 +46185,9 @@
             ],
             "buddy_scale": 19,
             "buddy_portrait_offset": [
+                0.30000001192092896,
                 0,
-                0,
-                0
+                0.5600000023841858
             ],
             "third_move": {
                 "stardust_to_unlock": 50000,
@@ -46776,11 +46298,6 @@
                 15
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 75000,
                 "candy_to_unlock": 75
@@ -46886,7 +46403,7 @@
             "buddy_scale": 19,
             "buddy_portrait_offset": [
                 0,
-                0,
+                0.33000001311302185,
                 0
             ],
             "third_move": {
@@ -46999,11 +46516,6 @@
                 0
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 50000,
                 "candy_to_unlock": 50
@@ -47108,11 +46620,6 @@
                 22.1299991607666
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 50000,
                 "candy_to_unlock": 50
@@ -47215,11 +46722,6 @@
                 0
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 50000,
                 "candy_to_unlock": 50
@@ -47325,11 +46827,6 @@
                 28.600000381469727
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 75000,
                 "candy_to_unlock": 75
@@ -47431,11 +46928,6 @@
                 -9.640000343322754
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 50000,
                 "candy_to_unlock": 50
@@ -47538,11 +47030,6 @@
                 41.27000045776367
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 50000,
                 "candy_to_unlock": 50
@@ -47652,8 +47139,8 @@
             ],
             "buddy_scale": 19,
             "buddy_portrait_offset": [
-                0,
-                0,
+                0.029999999329447746,
+                -0.09000000357627869,
                 0
             ],
             "third_move": {
@@ -47767,8 +47254,8 @@
             ],
             "buddy_scale": 19,
             "buddy_portrait_offset": [
-                0,
-                0,
+                0.019999999552965164,
+                -0.09000000357627869,
                 0
             ],
             "third_move": {
@@ -47836,7 +47323,8 @@
             },
             "quick_moves": [
                 "METAL_CLAW_FAST",
-                "COUNTER_FAST"
+                "COUNTER_FAST",
+                "SHADOW_CLAW_FAST"
             ],
             "cinematic_moves": [
                 "CLOSE_COMBAT",
@@ -47875,11 +47363,6 @@
                 28.059999465942383
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 50000,
                 "candy_to_unlock": 50
@@ -47992,7 +47475,7 @@
             "buddy_scale": 19,
             "buddy_portrait_offset": [
                 0,
-                0,
+                -0.05000000074505806,
                 0
             ],
             "third_move": {
@@ -48099,11 +47582,6 @@
                 -56.099998474121094
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 10000,
                 "candy_to_unlock": 25
@@ -48216,9 +47694,9 @@
             ],
             "buddy_scale": 19,
             "buddy_portrait_offset": [
-                0,
-                0,
-                0
+                -0.019999999552965164,
+                0.05000000074505806,
+                -0.12999999523162842
             ],
             "third_move": {
                 "stardust_to_unlock": 50000,
@@ -48325,11 +47803,6 @@
                 30.889999389648438
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 50000,
                 "candy_to_unlock": 50
@@ -48430,11 +47903,6 @@
                 0
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 50000,
                 "candy_to_unlock": 50
@@ -48546,11 +48014,6 @@
                 0
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 10000,
                 "candy_to_unlock": 25
@@ -48654,11 +48117,6 @@
                 -65.69999694824219
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 10000,
                 "candy_to_unlock": 25
@@ -48759,11 +48217,6 @@
                 0
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 75000,
                 "candy_to_unlock": 75
@@ -48829,7 +48282,8 @@
             },
             "quick_moves": [
                 "BUBBLE_FAST",
-                "WING_ATTACK_FAST"
+                "WING_ATTACK_FAST",
+                "BULLET_SEED_FAST"
             ],
             "cinematic_moves": [
                 "WATER_PULSE",
@@ -48867,11 +48321,6 @@
                 47.779998779296875
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 75000,
                 "candy_to_unlock": 75
@@ -48975,11 +48424,6 @@
                 29.200000762939453
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 75000,
                 "candy_to_unlock": 75
@@ -49091,11 +48535,6 @@
                 0
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 50000,
                 "candy_to_unlock": 50
@@ -49167,7 +48606,8 @@
             "cinematic_moves": [
                 "CRUNCH",
                 "FIRE_BLAST",
-                "FOUL_PLAY"
+                "FOUL_PLAY",
+                "FLAMETHROWER"
             ],
             "animation_time": [
                 1.333299994468689,
@@ -49200,11 +48640,6 @@
                 0
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 50000,
                 "candy_to_unlock": 50
@@ -49311,11 +48746,6 @@
                 41.58000183105469
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 50000,
                 "candy_to_unlock": 50
@@ -49425,11 +48855,6 @@
                 -5.059999942779541
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 50000,
                 "candy_to_unlock": 50
@@ -49495,7 +48920,8 @@
             },
             "quick_moves": [
                 "TACKLE_FAST",
-                "COUNTER_FAST"
+                "COUNTER_FAST",
+                "MUD_SLAP_FAST"
             ],
             "cinematic_moves": [
                 "EARTHQUAKE",
@@ -49534,11 +48960,6 @@
                 20
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 50000,
                 "candy_to_unlock": 50
@@ -49650,11 +49071,6 @@
                 0
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 50000,
                 "candy_to_unlock": 50
@@ -49756,11 +49172,6 @@
                 49.18000030517578
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 50000,
                 "candy_to_unlock": 50
@@ -49861,7 +49272,7 @@
             "buddy_scale": 19,
             "buddy_portrait_offset": [
                 0,
-                0,
+                -0.05000000074505806,
                 0
             ],
             "third_move": {
@@ -49984,9 +49395,9 @@
             ],
             "buddy_scale": 19,
             "buddy_portrait_offset": [
-                0,
-                0,
-                0
+                0.09000000357627869,
+                -0.07000000029802322,
+                0.25
             ],
             "third_move": {
                 "stardust_to_unlock": 10000,
@@ -50089,11 +49500,6 @@
                 -72.7699966430664
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 75000,
                 "candy_to_unlock": 75
@@ -50207,7 +49613,7 @@
             "buddy_scale": 10,
             "buddy_portrait_offset": [
                 0,
-                0,
+                -0.07999999821186066,
                 0
             ],
             "third_move": {
@@ -50320,11 +49726,6 @@
                 -1
             ],
             "buddy_scale": 10,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 10000,
                 "candy_to_unlock": 25
@@ -50437,7 +49838,7 @@
             "buddy_scale": 10,
             "buddy_portrait_offset": [
                 0,
-                0,
+                -0.10000000149011612,
                 0
             ],
             "third_move": {
@@ -50508,7 +49909,9 @@
             "cinematic_moves": [
                 "STOMP",
                 "BODY_SLAM",
-                "GYRO_BALL"
+                "GYRO_BALL",
+                "THUNDERBOLT",
+                "ICE_BEAM"
             ],
             "animation_time": [
                 1.333299994468689,
@@ -50541,11 +49944,6 @@
                 46.599998474121094
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 75000,
                 "candy_to_unlock": 75
@@ -50648,11 +50046,6 @@
                 20.799999237060547
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 75000,
                 "candy_to_unlock": 75
@@ -50721,7 +50114,8 @@
             "cinematic_moves": [
                 "THUNDER",
                 "THUNDERBOLT",
-                "WILD_CHARGE"
+                "WILD_CHARGE",
+                "SHADOW_BALL"
             ],
             "animation_time": [
                 1.333299994468689,
@@ -50755,11 +50149,6 @@
                 30
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 100000,
                 "candy_to_unlock": 100
@@ -50827,7 +50216,8 @@
             "cinematic_moves": [
                 "FLAMETHROWER",
                 "FIRE_BLAST",
-                "OVERHEAT"
+                "OVERHEAT",
+                "IRON_HEAD"
             ],
             "animation_time": [
                 1.333299994468689,
@@ -50861,11 +50251,6 @@
                 30
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 100000,
                 "candy_to_unlock": 100
@@ -50934,7 +50319,8 @@
             "cinematic_moves": [
                 "HYDRO_PUMP",
                 "BUBBLE_BEAM",
-                "WATER_PULSE"
+                "WATER_PULSE",
+                "ICE_BEAM"
             ],
             "animation_time": [
                 1.333299994468689,
@@ -50968,11 +50354,6 @@
                 -20
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 100000,
                 "candy_to_unlock": 100
@@ -51084,11 +50465,6 @@
                 0
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 75000,
                 "candy_to_unlock": 75
@@ -51205,9 +50581,9 @@
             ],
             "buddy_scale": 19,
             "buddy_portrait_offset": [
-                -0.25,
+                -0.4000000059604645,
                 -0.14000000059604645,
-                -0.6499999761581421
+                -1
             ],
             "third_move": {
                 "stardust_to_unlock": 75000,
@@ -51483,7 +50859,8 @@
             },
             "quick_moves": [
                 "EXTRASENSORY_FAST",
-                "STEEL_WING_FAST"
+                "STEEL_WING_FAST",
+                "HIDDEN_POWER_FAST"
             ],
             "cinematic_moves": [
                 "BRAVE_BIRD",
@@ -53888,7 +53265,8 @@
             "cinematic_moves": [
                 "HYDRO_PUMP",
                 "BLIZZARD",
-                "SOLAR_BEAM"
+                "SOLAR_BEAM",
+                "ICE_BEAM"
             ],
             "animation_time": [
                 1.333299994468689,
@@ -54029,6 +53407,11 @@
                 0
             ],
             "buddy_scale": 19,
+            "buddy_portrait_offset": [
+                0.05999999865889549,
+                -0.07999999821186066,
+                0.10000000149011612
+            ],
             "third_move": {
                 "stardust_to_unlock": 50000,
                 "candy_to_unlock": 50
@@ -54887,6 +54270,11 @@
             "km_buddy_distance": 5,
             "model_height": 0.9454545378684998,
             "evolution_branch": [
+                {
+                    "evolution": "GALLADE",
+                    "evolution_item_requirement": "ITEM_GEN4_EVOLUTION_STONE",
+                    "candy_cost": 100
+                },
                 {
                     "evolution": "GARDEVOIR",
                     "candy_cost": 100
@@ -58484,9 +57872,9 @@
             ],
             "buddy_scale": 19,
             "buddy_portrait_offset": [
-                0.10000000149011612,
+                0.17000000178813934,
                 -0.4399999976158142,
-                -0.17000000178813934
+                0.019999999552965164
             ],
             "third_move": {
                 "stardust_to_unlock": 10000,
@@ -60184,6 +59572,11 @@
                 0
             ],
             "buddy_scale": 19,
+            "buddy_portrait_offset": [
+                0.6499999761581421,
+                0.11999999731779099,
+                1.4299999475479126
+            ],
             "third_move": {
                 "stardust_to_unlock": 50000,
                 "candy_to_unlock": 50
@@ -62439,6 +61832,7 @@
             "cinematic_moves": [
                 "ENERGY_BALL",
                 "SHADOW_BALL",
+                "PSYSHOCK",
                 "PSYSHOCK"
             ],
             "animation_time": [
@@ -62712,8 +62106,13 @@
             "model_height": 0.6581196784973145,
             "evolution_branch": [
                 {
+                    "evolution": "FROSLASS",
+                    "evolution_item_requirement": "ITEM_GEN4_EVOLUTION_STONE",
+                    "candy_cost": 100
+                },
+                {
                     "evolution": "GLALIE",
-                    "candy_cost": 50
+                    "candy_cost": 100
                 }
             ],
             "model_scale_v2": 1,
@@ -63763,7 +63162,8 @@
             },
             "quick_moves": [
                 "DRAGON_TAIL_FAST",
-                "FIRE_FANG_FAST"
+                "FIRE_FANG_FAST",
+                "BITE_FAST"
             ],
             "cinematic_moves": [
                 "FIRE_BLAST",
@@ -64608,16 +64008,16 @@
             "type": "POKEMON_TYPE_GROUND",
             "camera": {
                 "disk_radius_m": 0.5550000071525574,
-                "cylinder_radius_m": 2.5,
-                "cylinder_height_m": 4,
+                "cylinder_radius_m": 2.4000000953674316,
+                "cylinder_height_m": 3,
                 "shoulder_mode_scale": 0.5
             },
             "encounter": {
                 "base_capture_rate": 0.019999999552965164,
                 "base_flee_rate": 0.009999999776482582,
                 "collision_radius_m": 1,
-                "collision_height_m": 2.5,
-                "collision_head_radius_m": 0.25,
+                "collision_height_m": 2,
+                "collision_head_radius_m": 0.800000011920929,
                 "movement_timer_s": 11,
                 "jump_time_s": 1.100000023841858,
                 "attack_timer_s": 20,
@@ -65015,6 +64415,11 @@
                 70
             ],
             "buddy_scale": 19,
+            "buddy_portrait_offset": [
+                0.7599999904632568,
+                -0.05000000074505806,
+                1.7100000381469727
+            ],
             "third_move": {
                 "stardust_to_unlock": 100000,
                 "candy_to_unlock": 100
@@ -65063,7 +64468,7 @@
             ],
             "cinematic_moves": [
                 "PSYCHO_BOOST",
-                "ZAP_CANNON",
+                "THUNDERBOLT",
                 "ROCK_SLIDE"
             ],
             "animation_time": [
@@ -65099,6 +64504,11 @@
                 70
             ],
             "buddy_scale": 19,
+            "buddy_portrait_offset": [
+                0.7599999904632568,
+                -0.05000000074505806,
+                1.7100000381469727
+            ],
             "third_move": {
                 "stardust_to_unlock": 100000,
                 "candy_to_unlock": 100
@@ -65183,6 +64593,11 @@
                 70
             ],
             "buddy_scale": 19,
+            "buddy_portrait_offset": [
+                0.7599999904632568,
+                -0.05000000074505806,
+                1.7100000381469727
+            ],
             "third_move": {
                 "stardust_to_unlock": 100000,
                 "candy_to_unlock": 100
@@ -65231,7 +64646,7 @@
             ],
             "cinematic_moves": [
                 "PSYCHO_BOOST",
-                "ZAP_CANNON",
+                "THUNDERBOLT",
                 "SWIFT"
             ],
             "animation_time": [
@@ -65267,6 +64682,11 @@
                 70
             ],
             "buddy_scale": 19,
+            "buddy_portrait_offset": [
+                0.7599999904632568,
+                -0.05000000074505806,
+                1.7100000381469727
+            ],
             "third_move": {
                 "stardust_to_unlock": 100000,
                 "candy_to_unlock": 100
@@ -66352,18 +65772,23 @@
             "km_buddy_distance": 1,
             "buddy_size": "BUDDY_FLYING",
             "model_height": 2.3399999141693115,
-            "model_scale_v2": 0.75,
+            "model_scale_v2": 0.949999988079071,
             "buddy_offset_male": [
-                100,
+                4.300000190734863,
                 0,
-                -200
+                16.6200008392334
             ],
             "buddy_offset_female": [
-                100,
+                4.300000190734863,
                 0,
-                -200
+                16.6200008392334
             ],
-            "buddy_scale": 19,
+            "buddy_scale": 16,
+            "buddy_portrait_offset": [
+                -0.38999998569488525,
+                0.07000000029802322,
+                -0.8999999761581421
+            ],
             "third_move": {
                 "stardust_to_unlock": 10000,
                 "candy_to_unlock": 25
@@ -66706,12 +66131,12 @@
             "buddy_offset_male": [
                 10.5,
                 0,
-                103.75
+                96
             ],
             "buddy_offset_female": [
                 10.5,
                 0,
-                103.75
+                96
             ],
             "buddy_scale": 19,
             "third_move": {
@@ -66947,7 +66372,8 @@
             },
             "quick_moves": [
                 "SPARK_FAST",
-                "SNARL_FAST"
+                "SNARL_FAST",
+                "HIDDEN_POWER_FAST"
             ],
             "cinematic_moves": [
                 "HYPER_BEAM",
@@ -67129,7 +66555,8 @@
             "cinematic_moves": [
                 "SOLAR_BEAM",
                 "SLUDGE_BOMB",
-                "DAZZLING_GLEAM"
+                "DAZZLING_GLEAM",
+                "GRASS_KNOT"
             ],
             "animation_time": [
                 1.899999976158142,
@@ -67182,7 +66609,6 @@
             "pokemon_id": "CRANIDOS",
             "model_scale": 1.2599999904632568,
             "type": "POKEMON_TYPE_ROCK",
-            "type_2": "POKEMON_TYPE_ROCK",
             "camera": {
                 "disk_radius_m": 0.3779999911785126,
                 "cylinder_radius_m": 0.5,
@@ -67272,7 +66698,6 @@
             "pokemon_id": "RAMPARDOS",
             "model_scale": 1.2599999904632568,
             "type": "POKEMON_TYPE_ROCK",
-            "type_2": "POKEMON_TYPE_ROCK",
             "camera": {
                 "disk_radius_m": 0.3779999911785126,
                 "cylinder_radius_m": 0.800000011920929,
@@ -67596,16 +67021,6 @@
                     "form": "WORMADAM_PLANT"
                 },
                 {
-                    "evolution": "WORMADAM",
-                    "candy_cost": 50,
-                    "form": "WORMADAM_SANDY"
-                },
-                {
-                    "evolution": "WORMADAM",
-                    "candy_cost": 50,
-                    "form": "WORMADAM_TRASH"
-                },
-                {
                     "evolution": "MOTHIM",
                     "candy_cost": 50
                 }
@@ -67640,14 +67055,15 @@
                 "disk_radius_m": 0.3779999911785126,
                 "cylinder_radius_m": 0.25200000405311584,
                 "cylinder_height_m": 0.3779999911785126,
+                "cylinder_ground_m": 0.27000001072883606,
                 "shoulder_mode_scale": 0.5
             },
             "encounter": {
                 "base_capture_rate": 0.5,
                 "base_flee_rate": 0.20000000298023224,
-                "collision_radius_m": 0.1889999955892563,
-                "collision_height_m": 0.25200000405311584,
-                "collision_head_radius_m": 0.12600000202655792,
+                "collision_radius_m": 0.09000000357627869,
+                "collision_height_m": 0.09000000357627869,
+                "collision_head_radius_m": 0.09000000357627869,
                 "movement_type": "MOVEMENT_FLYING",
                 "movement_timer_s": 10,
                 "jump_time_s": 0.8999999761581421,
@@ -67696,16 +67112,6 @@
                     "evolution": "WORMADAM",
                     "candy_cost": 50,
                     "form": "WORMADAM_PLANT"
-                },
-                {
-                    "evolution": "WORMADAM",
-                    "candy_cost": 50,
-                    "form": "WORMADAM_SANDY"
-                },
-                {
-                    "evolution": "WORMADAM",
-                    "candy_cost": 50,
-                    "form": "WORMADAM_TRASH"
                 },
                 {
                     "evolution": "MOTHIM",
@@ -67803,17 +67209,7 @@
                 {
                     "evolution": "WORMADAM",
                     "candy_cost": 50,
-                    "form": "WORMADAM_PLANT"
-                },
-                {
-                    "evolution": "WORMADAM",
-                    "candy_cost": 50,
                     "form": "WORMADAM_SANDY"
-                },
-                {
-                    "evolution": "WORMADAM",
-                    "candy_cost": 50,
-                    "form": "WORMADAM_TRASH"
                 },
                 {
                     "evolution": "MOTHIM",
@@ -67908,16 +67304,6 @@
             "km_buddy_distance": 5,
             "model_height": 0.3400000035762787,
             "evolution_branch": [
-                {
-                    "evolution": "WORMADAM",
-                    "candy_cost": 50,
-                    "form": "WORMADAM_PLANT"
-                },
-                {
-                    "evolution": "WORMADAM",
-                    "candy_cost": 50,
-                    "form": "WORMADAM_SANDY"
-                },
                 {
                     "evolution": "WORMADAM",
                     "candy_cost": 50,
@@ -68053,14 +67439,15 @@
             "type_2": "POKEMON_TYPE_GRASS",
             "camera": {
                 "disk_radius_m": 0.3779999911785126,
-                "cylinder_radius_m": 0.25200000405311584,
+                "cylinder_radius_m": 0.2199999988079071,
                 "cylinder_height_m": 0.3779999911785126,
+                "cylinder_ground_m": 0.30000001192092896,
                 "shoulder_mode_scale": 0.5
             },
             "encounter": {
                 "base_capture_rate": 0.15000000596046448,
                 "base_flee_rate": 0.07000000029802322,
-                "collision_radius_m": 0.1889999955892563,
+                "collision_radius_m": 0.12600000202655792,
                 "collision_height_m": 0.25200000405311584,
                 "collision_head_radius_m": 0.12600000202655792,
                 "movement_type": "MOVEMENT_FLYING",
@@ -68434,8 +67821,6 @@
                 "movement_timer_s": 10,
                 "jump_time_s": 0.8999999761581421,
                 "attack_timer_s": 29,
-                "bonus_candy_capture_reward": 2,
-                "bonus_stardust_capture_reward": 200,
                 "attack_probability": 0.05000000074505806,
                 "dodge_probability": 0.4000000059604645,
                 "dodge_duration_s": 1,
@@ -68468,7 +67853,6 @@
             "evolution_pips": 1,
             "pokedex_height_m": 0.30000001192092896,
             "pokedex_weight_kg": 5.5,
-            "parent_pokemon_id": "MOTHIM",
             "height_std_dev": 0.03750000149011612,
             "weight_std_dev": 0.6875,
             "family_id": "FAMILY_COMBEE",
@@ -68536,7 +67920,7 @@
                 "dodge_probability": 0.30000001192092896,
                 "dodge_duration_s": 1,
                 "dodge_distance": 1,
-                "camera_distance": 3,
+                "camera_distance": 4,
                 "min_pokemon_action_frequency_s": 0.20000000298023224,
                 "max_pokemon_action_frequency_s": 1.600000023841858
             },
@@ -68567,25 +67951,30 @@
             "evolution_pips": 1,
             "pokedex_height_m": 1.2000000476837158,
             "pokedex_weight_kg": 38.5,
-            "parent_pokemon_id": "MOTHIM",
+            "parent_pokemon_id": "COMBEE",
             "height_std_dev": 0.15000000596046448,
             "weight_std_dev": 4.8125,
             "family_id": "FAMILY_COMBEE",
             "candy_to_evolve": 25,
             "km_buddy_distance": 3,
             "model_height": 1.2699999809265137,
-            "model_scale_v2": 0.75,
+            "model_scale_v2": 1,
             "buddy_offset_male": [
                 -3.4000000953674316,
                 -8,
-                27.25
+                -55.20000076293945
             ],
             "buddy_offset_female": [
                 -3.4000000953674316,
                 -8,
-                27.25
+                -55.20000076293945
             ],
             "buddy_scale": 19,
+            "buddy_portrait_offset": [
+                0.23999999463558197,
+                0.05999999865889549,
+                0.6000000238418579
+            ],
             "third_move": {
                 "stardust_to_unlock": 50000,
                 "candy_to_unlock": 50
@@ -68691,7 +68080,7 @@
             "camera": {
                 "disk_radius_m": 0.3779999911785126,
                 "cylinder_radius_m": 0.25200000405311584,
-                "cylinder_height_m": 0.3779999911785126,
+                "cylinder_height_m": 0.699999988079071,
                 "shoulder_mode_scale": 0.5
             },
             "encounter": {
@@ -68763,11 +68152,6 @@
                 0
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 50000,
                 "candy_to_unlock": 50
@@ -68854,11 +68238,6 @@
                 19.799999237060547
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 50000,
                 "candy_to_unlock": 50
@@ -68955,9 +68334,9 @@
             ],
             "buddy_scale": 19,
             "buddy_portrait_offset": [
-                0,
-                0,
-                0
+                0.03200000151991844,
+                -0.07500000298023224,
+                0.10000000149011612
             ],
             "third_move": {
                 "stardust_to_unlock": 50000,
@@ -69047,8 +68426,8 @@
             "buddy_scale": 19,
             "buddy_portrait_offset": [
                 0,
-                0,
-                -0.550000011920929
+                0.12800000607967377,
+                0
             ],
             "third_move": {
                 "stardust_to_unlock": 50000,
@@ -69127,19 +68506,19 @@
             "model_scale_v2": 1,
             "form": "CHERRIM_OVERCAST",
             "buddy_offset_male": [
-                0,
+                6,
                 0,
                 0
             ],
             "buddy_offset_female": [
-                0,
+                6,
                 0,
                 0
             ],
             "buddy_scale": 19,
             "buddy_portrait_offset": [
-                0,
-                0,
+                0.019999999552965164,
+                0.05999999865889549,
                 0
             ],
             "third_move": {
@@ -69219,19 +68598,19 @@
             "model_scale_v2": 1,
             "form": "CHERRIM_SUNNY",
             "buddy_offset_male": [
-                0,
+                6,
                 0,
                 0
             ],
             "buddy_offset_female": [
-                0,
+                6,
                 0,
                 0
             ],
             "buddy_scale": 19,
             "buddy_portrait_offset": [
-                0,
-                0,
+                0.020999999716877937,
+                -0.12099999934434891,
                 0
             ],
             "third_move": {
@@ -69324,9 +68703,9 @@
             ],
             "buddy_scale": 19,
             "buddy_portrait_offset": [
+                0.17000000178813934,
                 0,
-                0,
-                0
+                0.3790000081062317
             ],
             "third_move": {
                 "stardust_to_unlock": 75000,
@@ -69403,7 +68782,7 @@
                 {
                     "evolution": "GASTRODON",
                     "candy_cost": 50,
-                    "form": "GASTRODON_WEST_SEA"
+                    "form": "GASTRODON_EAST_SEA"
                 }
             ],
             "model_scale_v2": 1.2699999809265137,
@@ -69420,9 +68799,9 @@
             ],
             "buddy_scale": 19,
             "buddy_portrait_offset": [
+                0.17000000178813934,
                 0,
-                0,
-                0
+                0.3790000081062317
             ],
             "third_move": {
                 "stardust_to_unlock": 75000,
@@ -69440,16 +68819,16 @@
             "type": "POKEMON_TYPE_WATER",
             "camera": {
                 "disk_radius_m": 0.3779999911785126,
-                "cylinder_radius_m": 0.25200000405311584,
-                "cylinder_height_m": 0.3779999911785126,
+                "cylinder_radius_m": 0.15000000596046448,
+                "cylinder_height_m": 0.30000001192092896,
                 "shoulder_mode_scale": 0.5
             },
             "encounter": {
                 "base_capture_rate": 0.5,
                 "base_flee_rate": 0.10000000149011612,
-                "collision_radius_m": 0.1889999955892563,
-                "collision_height_m": 0.25200000405311584,
-                "collision_head_radius_m": 0.12600000202655792,
+                "collision_radius_m": 0.10000000149011612,
+                "collision_height_m": 0.12999999523162842,
+                "collision_head_radius_m": 0.07500000298023224,
                 "movement_type": "MOVEMENT_JUMP",
                 "movement_timer_s": 10,
                 "jump_time_s": 0.8999999761581421,
@@ -69516,9 +68895,9 @@
             ],
             "buddy_scale": 19,
             "buddy_portrait_offset": [
+                0.17000000178813934,
                 0,
-                0,
-                0
+                0.3790000081062317
             ],
             "third_move": {
                 "stardust_to_unlock": 75000,
@@ -69606,11 +68985,6 @@
                 0
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 75000,
                 "candy_to_unlock": 75
@@ -69628,16 +69002,16 @@
             "type_2": "POKEMON_TYPE_GROUND",
             "camera": {
                 "disk_radius_m": 0.3779999911785126,
-                "cylinder_radius_m": 0.25200000405311584,
-                "cylinder_height_m": 0.3779999911785126,
+                "cylinder_radius_m": 0.30000001192092896,
+                "cylinder_height_m": 0.8999999761581421,
                 "shoulder_mode_scale": 0.5
             },
             "encounter": {
                 "base_capture_rate": 0.20000000298023224,
                 "base_flee_rate": 0.05999999865889549,
-                "collision_radius_m": 0.1889999955892563,
+                "collision_radius_m": 0.25,
                 "collision_height_m": 0.25200000405311584,
-                "collision_head_radius_m": 0.12600000202655792,
+                "collision_head_radius_m": 0.18000000715255737,
                 "movement_type": "MOVEMENT_JUMP",
                 "movement_timer_s": 10,
                 "jump_time_s": 0.8999999761581421,
@@ -69699,11 +69073,6 @@
                 0
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 75000,
                 "candy_to_unlock": 75
@@ -69721,16 +69090,16 @@
             "type_2": "POKEMON_TYPE_GROUND",
             "camera": {
                 "disk_radius_m": 0.3779999911785126,
-                "cylinder_radius_m": 0.25200000405311584,
-                "cylinder_height_m": 0.3779999911785126,
+                "cylinder_radius_m": 0.30000001192092896,
+                "cylinder_height_m": 0.8999999761581421,
                 "shoulder_mode_scale": 0.5
             },
             "encounter": {
                 "base_capture_rate": 0.20000000298023224,
                 "base_flee_rate": 0.05999999865889549,
-                "collision_radius_m": 0.1889999955892563,
+                "collision_radius_m": 0.25,
                 "collision_height_m": 0.25200000405311584,
-                "collision_head_radius_m": 0.12600000202655792,
+                "collision_head_radius_m": 0.18000000715255737,
                 "movement_type": "MOVEMENT_JUMP",
                 "movement_timer_s": 10,
                 "jump_time_s": 0.8999999761581421,
@@ -69792,11 +69161,6 @@
                 0
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 75000,
                 "candy_to_unlock": 75
@@ -69884,9 +69248,9 @@
             ],
             "buddy_scale": 17,
             "buddy_portrait_offset": [
-                0,
-                0,
-                -0.49000000953674316
+                -0.13099999725818634,
+                -0.1599999964237213,
+                -0.4000000059604645
             ],
             "third_move": {
                 "stardust_to_unlock": 50000,
@@ -69980,9 +69344,9 @@
             ],
             "buddy_scale": 19,
             "buddy_portrait_offset": [
-                0,
-                0,
-                0
+                0.6299999952316284,
+                -0.11999999731779099,
+                1.4600000381469727
             ],
             "third_move": {
                 "stardust_to_unlock": 75000,
@@ -70072,11 +69436,11 @@
                 0,
                 22.5
             ],
-            "buddy_scale": 17,
+            "buddy_scale": 19,
             "buddy_portrait_offset": [
-                0,
-                0,
-                -1.5
+                -0.7200000286102295,
+                -0.49000000953674316,
+                -1.6799999475479126
             ],
             "third_move": {
                 "stardust_to_unlock": 75000,
@@ -70167,9 +69531,9 @@
             ],
             "buddy_scale": 19,
             "buddy_portrait_offset": [
-                0,
-                0,
-                0
+                0.05000000074505806,
+                -0.11999999731779099,
+                0.10999999940395355
             ],
             "third_move": {
                 "stardust_to_unlock": 50000,
@@ -70259,8 +69623,8 @@
             ],
             "buddy_scale": 19,
             "buddy_portrait_offset": [
-                0,
-                0,
+                0.029999999329447746,
+                -0.07000000029802322,
                 0
             ],
             "third_move": {
@@ -70279,14 +69643,15 @@
             "type": "POKEMON_TYPE_GHOST",
             "camera": {
                 "disk_radius_m": 0.3779999911785126,
-                "cylinder_radius_m": 0.25200000405311584,
-                "cylinder_height_m": 0.3779999911785126,
+                "cylinder_radius_m": 0.23000000417232513,
+                "cylinder_height_m": 0.699999988079071,
+                "cylinder_ground_m": 0.4000000059604645,
                 "shoulder_mode_scale": 0.5
             },
             "encounter": {
                 "base_capture_rate": 0.10000000149011612,
                 "base_flee_rate": 0.07000000029802322,
-                "collision_radius_m": 0.1889999955892563,
+                "collision_radius_m": 0.10000000149011612,
                 "collision_height_m": 0.25200000405311584,
                 "collision_head_radius_m": 0.12600000202655792,
                 "movement_type": "MOVEMENT_HOVERING",
@@ -70299,7 +69664,7 @@
                 "dodge_probability": 0.30000001192092896,
                 "dodge_duration_s": 1,
                 "dodge_distance": 1,
-                "camera_distance": 2.25,
+                "camera_distance": 4,
                 "min_pokemon_action_frequency_s": 0.20000000298023224,
                 "max_pokemon_action_frequency_s": 1.600000023841858
             },
@@ -70351,7 +69716,7 @@
             "buddy_scale": 19,
             "buddy_portrait_offset": [
                 0,
-                0,
+                -0.05000000074505806,
                 0
             ],
             "third_move": {
@@ -70408,7 +69773,8 @@
             "cinematic_moves": [
                 "BRAVE_BIRD",
                 "PSYCHIC",
-                "DARK_PULSE"
+                "DARK_PULSE",
+                "SKY_ATTACK"
             ],
             "animation_time": [
                 1.899999976158142,
@@ -70442,11 +69808,6 @@
                 -46.400001525878906
             ],
             "buddy_scale": 15,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 50000,
                 "candy_to_unlock": 50
@@ -70536,11 +69897,6 @@
                 0
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                3.700000047683716
-            ],
             "third_move": {
                 "stardust_to_unlock": 50000,
                 "candy_to_unlock": 50
@@ -70628,9 +69984,9 @@
             ],
             "buddy_scale": 19,
             "buddy_portrait_offset": [
-                0,
-                0,
-                -0.550000011920929
+                0.07999999821186066,
+                -0.10999999940395355,
+                0.20000000298023224
             ],
             "third_move": {
                 "stardust_to_unlock": 50000,
@@ -70666,7 +70022,7 @@
                 "attack_probability": 0.10000000149011612,
                 "dodge_probability": 0.15000000596046448,
                 "dodge_duration_s": 1,
-                "dodge_distance": 1,
+                "dodge_distance": 0.10000000149011612,
                 "camera_distance": 2.25,
                 "min_pokemon_action_frequency_s": 0.20000000298023224,
                 "max_pokemon_action_frequency_s": 1.600000023841858
@@ -70722,11 +70078,6 @@
                 0
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 10000,
                 "candy_to_unlock": 25
@@ -70818,9 +70169,9 @@
             ],
             "buddy_scale": 19,
             "buddy_portrait_offset": [
-                0,
-                0,
-                0
+                0.18000000715255737,
+                -0.05999999865889549,
+                0.38999998569488525
             ],
             "third_move": {
                 "stardust_to_unlock": 50000,
@@ -70910,11 +70261,6 @@
                 83.27999877929688
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 50000,
                 "candy_to_unlock": 50
@@ -70950,7 +70296,7 @@
                 "attack_probability": 0.10000000149011612,
                 "dodge_probability": 0.15000000596046448,
                 "dodge_duration_s": 1,
-                "dodge_distance": 1,
+                "dodge_distance": 0.5,
                 "camera_distance": 3,
                 "min_pokemon_action_frequency_s": 0.20000000298023224,
                 "max_pokemon_action_frequency_s": 1.600000023841858
@@ -71006,11 +70352,6 @@
                 0
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 50000,
                 "candy_to_unlock": 50
@@ -71100,9 +70441,9 @@
             ],
             "buddy_scale": 15,
             "buddy_portrait_offset": [
-                0,
-                0,
-                -1.600000023841858
+                -0.20000000298023224,
+                0.3700000047683716,
+                -0.5299999713897705
             ],
             "third_move": {
                 "stardust_to_unlock": 50000,
@@ -71121,13 +70462,13 @@
             "camera": {
                 "disk_radius_m": 0.3779999911785126,
                 "cylinder_radius_m": 0.25200000405311584,
-                "cylinder_height_m": 0.3779999911785126,
+                "cylinder_height_m": 0.4300000071525574,
                 "shoulder_mode_scale": 0.5
             },
             "encounter": {
                 "base_capture_rate": 0.10000000149011612,
                 "base_flee_rate": 0.03999999910593033,
-                "collision_radius_m": 0.1889999955892563,
+                "collision_radius_m": 0.10000000149011612,
                 "collision_height_m": 0.25200000405311584,
                 "collision_head_radius_m": 0.12600000202655792,
                 "movement_type": "MOVEMENT_JUMP",
@@ -71178,7 +70519,8 @@
             "evolution_branch": [
                 {
                     "evolution": "SUDOWOODO",
-                    "candy_cost": 50
+                    "candy_cost": 50,
+                    "km_buddy_distance_requirement": 15
                 }
             ],
             "model_scale_v2": 1,
@@ -71193,11 +70535,6 @@
                 0
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 10000,
                 "candy_to_unlock": 25
@@ -71273,7 +70610,8 @@
             "evolution_branch": [
                 {
                     "evolution": "MR_MIME",
-                    "candy_cost": 50
+                    "candy_cost": 50,
+                    "km_buddy_distance_requirement": 15
                 }
             ],
             "model_scale_v2": 0.800000011920929,
@@ -71289,8 +70627,8 @@
             ],
             "buddy_scale": 19,
             "buddy_portrait_offset": [
-                0,
-                0,
+                0.019999999552965164,
+                -0.10000000149011612,
                 0
             ],
             "third_move": {
@@ -71365,7 +70703,8 @@
             "evolution_branch": [
                 {
                     "evolution": "CHANSEY",
-                    "candy_cost": 25
+                    "candy_cost": 25,
+                    "km_buddy_distance_requirement": 15
                 }
             ],
             "model_scale_v2": 1,
@@ -71380,11 +70719,6 @@
                 0
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 10000,
                 "candy_to_unlock": 25
@@ -71469,11 +70803,6 @@
                 0
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                -0.30000001192092896
-            ],
             "third_move": {
                 "stardust_to_unlock": 75000,
                 "candy_to_unlock": 75
@@ -71559,9 +70888,9 @@
             ],
             "buddy_scale": 16,
             "buddy_portrait_offset": [
-                0,
-                0,
-                2.700000047683716
+                -0.41999998688697815,
+                0.07999999821186066,
+                -0.8100000023841858
             ],
             "third_move": {
                 "stardust_to_unlock": 75000,
@@ -71654,9 +70983,9 @@
             ],
             "buddy_scale": 19,
             "buddy_portrait_offset": [
-                0,
-                0,
-                -0.6299999952316284
+                -0.20999999344348907,
+                0.17000000178813934,
+                -0.23999999463558197
             ],
             "third_move": {
                 "stardust_to_unlock": 75000,
@@ -71748,14 +71077,9 @@
             "buddy_offset_female": [
                 0,
                 0,
-                0
+                -61
             ],
             "buddy_scale": 17,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 75000,
                 "candy_to_unlock": 75
@@ -71824,7 +71148,7 @@
             "evolution_pips": 1,
             "pokedex_height_m": 1.899999976158142,
             "pokedex_weight_kg": 95,
-            "parent_pokemon_id": "GIBLE",
+            "parent_pokemon_id": "GABITE",
             "height_std_dev": 0.23749999701976776,
             "weight_std_dev": 11.875,
             "family_id": "FAMILY_GIBLE",
@@ -71835,19 +71159,14 @@
             "buddy_offset_male": [
                 0,
                 0,
-                0
+                -67.4000015258789
             ],
             "buddy_offset_female": [
                 0,
                 0,
-                0
+                -67.4000015258789
             ],
             "buddy_scale": 15,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 75000,
                 "candy_to_unlock": 75
@@ -71937,11 +71256,6 @@
                 0
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 10000,
                 "candy_to_unlock": 25
@@ -72032,7 +71346,7 @@
             "buddy_scale": 19,
             "buddy_portrait_offset": [
                 0,
-                0,
+                -0.07000000029802322,
                 0
             ],
             "third_move": {
@@ -72122,11 +71436,6 @@
                 27.5
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 75000,
                 "candy_to_unlock": 75
@@ -72143,16 +71452,16 @@
             "type": "POKEMON_TYPE_GROUND",
             "camera": {
                 "disk_radius_m": 0.3779999911785126,
-                "cylinder_radius_m": 0.25200000405311584,
-                "cylinder_height_m": 0.3779999911785126,
+                "cylinder_radius_m": 0.800000011920929,
+                "cylinder_height_m": 0.699999988079071,
                 "shoulder_mode_scale": 0.5
             },
             "encounter": {
                 "base_capture_rate": 0.4000000059604645,
                 "base_flee_rate": 0.10000000149011612,
-                "collision_radius_m": 0.1889999955892563,
+                "collision_radius_m": 0.25,
                 "collision_height_m": 0.25200000405311584,
-                "collision_head_radius_m": 0.12600000202655792,
+                "collision_head_radius_m": 0.30000001192092896,
                 "movement_timer_s": 10,
                 "jump_time_s": 0.8999999761581421,
                 "attack_timer_s": 29,
@@ -72160,7 +71469,7 @@
                 "dodge_probability": 0.10000000149011612,
                 "dodge_duration_s": 1,
                 "dodge_distance": 1,
-                "camera_distance": 2.25,
+                "camera_distance": 3,
                 "min_pokemon_action_frequency_s": 0.20000000298023224,
                 "max_pokemon_action_frequency_s": 1.600000023841858
             },
@@ -72216,9 +71525,9 @@
             ],
             "buddy_scale": 19,
             "buddy_portrait_offset": [
-                0,
-                0,
-                0
+                -0.3499999940395355,
+                -0.05999999865889549,
+                -1.2599999904632568
             ],
             "third_move": {
                 "stardust_to_unlock": 10000,
@@ -72236,16 +71545,16 @@
             "type": "POKEMON_TYPE_GROUND",
             "camera": {
                 "disk_radius_m": 0.3779999911785126,
-                "cylinder_radius_m": 0.25200000405311584,
-                "cylinder_height_m": 0.3779999911785126,
+                "cylinder_radius_m": 2.299999952316284,
+                "cylinder_height_m": 1.600000023841858,
                 "shoulder_mode_scale": 0.5
             },
             "encounter": {
                 "base_capture_rate": 0.15000000596046448,
                 "base_flee_rate": 0.07999999821186066,
-                "collision_radius_m": 0.1889999955892563,
+                "collision_radius_m": 0.800000011920929,
                 "collision_height_m": 0.25200000405311584,
-                "collision_head_radius_m": 0.12600000202655792,
+                "collision_head_radius_m": 0.699999988079071,
                 "movement_timer_s": 10,
                 "jump_time_s": 0.8999999761581421,
                 "attack_timer_s": 29,
@@ -72255,7 +71564,7 @@
                 "dodge_probability": 0.10000000149011612,
                 "dodge_duration_s": 1,
                 "dodge_distance": 1,
-                "camera_distance": 2.25,
+                "camera_distance": 5,
                 "min_pokemon_action_frequency_s": 0.20000000298023224,
                 "max_pokemon_action_frequency_s": 1.600000023841858
             },
@@ -72306,9 +71615,9 @@
             ],
             "buddy_scale": 19,
             "buddy_portrait_offset": [
+                -0.8100000023841858,
                 0,
-                0,
-                0
+                -2.4800000190734863
             ],
             "third_move": {
                 "stardust_to_unlock": 10000,
@@ -72400,11 +71709,6 @@
                 3.619999885559082
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 75000,
                 "candy_to_unlock": 75
@@ -72453,7 +71757,8 @@
             },
             "quick_moves": [
                 "POISON_STING_FAST",
-                "INFESTATION_FAST"
+                "INFESTATION_FAST",
+                "BITE_FAST"
             ],
             "cinematic_moves": [
                 "CRUNCH",
@@ -72480,22 +71785,22 @@
             "candy_to_evolve": 25,
             "km_buddy_distance": 5,
             "model_height": 1.2000000476837158,
-            "model_scale_v2": 0.75,
+            "model_scale_v2": 1,
             "buddy_offset_male": [
-                1.7699999809265137,
+                -4,
                 0,
-                -94
+                -115
             ],
             "buddy_offset_female": [
-                1.7699999809265137,
+                -4,
                 0,
-                -94
+                -115
             ],
             "buddy_scale": 19,
             "buddy_portrait_offset": [
+                0.5799999833106995,
                 0,
-                0,
-                -0.28999999165534973
+                1.2300000190734863
             ],
             "third_move": {
                 "stardust_to_unlock": 75000,
@@ -72515,7 +71820,7 @@
             "camera": {
                 "disk_radius_m": 0.3779999911785126,
                 "cylinder_radius_m": 0.25200000405311584,
-                "cylinder_height_m": 0.3779999911785126,
+                "cylinder_height_m": 0.6000000238418579,
                 "shoulder_mode_scale": 0.5
             },
             "encounter": {
@@ -72523,7 +71828,7 @@
                 "base_flee_rate": 0.11999999731779099,
                 "collision_radius_m": 0.1889999955892563,
                 "collision_height_m": 0.25200000405311584,
-                "collision_head_radius_m": 0.12600000202655792,
+                "collision_head_radius_m": 0.17000000178813934,
                 "movement_type": "MOVEMENT_JUMP",
                 "movement_timer_s": 10,
                 "jump_time_s": 0.8999999761581421,
@@ -72579,19 +71884,14 @@
             "buddy_offset_male": [
                 0,
                 0,
-                0
+                -28.600000381469727
             ],
             "buddy_offset_female": [
                 0,
                 0,
-                0
+                -28.600000381469727
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 50000,
                 "candy_to_unlock": 50
@@ -72680,9 +71980,9 @@
             ],
             "buddy_scale": 19,
             "buddy_portrait_offset": [
-                0,
-                0,
-                0
+                0.25,
+                0.14000000059604645,
+                0.4699999988079071
             ],
             "third_move": {
                 "stardust_to_unlock": 50000,
@@ -72770,8 +72070,8 @@
             ],
             "buddy_scale": 19,
             "buddy_portrait_offset": [
-                0,
-                0,
+                0.07999999821186066,
+                -0.05000000074505806,
                 0
             ],
             "third_move": {
@@ -72807,7 +72107,7 @@
                 "attack_probability": 0.10000000149011612,
                 "dodge_probability": 0.10000000149011612,
                 "dodge_duration_s": 1,
-                "dodge_distance": 1,
+                "dodge_distance": 0.4000000059604645,
                 "camera_distance": 2.25,
                 "min_pokemon_action_frequency_s": 0.20000000298023224,
                 "max_pokemon_action_frequency_s": 1.600000023841858
@@ -72863,11 +72163,6 @@
                 0
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 50000,
                 "candy_to_unlock": 50
@@ -72884,16 +72179,17 @@
             "type": "POKEMON_TYPE_WATER",
             "camera": {
                 "disk_radius_m": 0.3779999911785126,
-                "cylinder_radius_m": 0.25200000405311584,
-                "cylinder_height_m": 0.3779999911785126,
+                "cylinder_radius_m": 0.5,
+                "cylinder_height_m": 0.6499999761581421,
+                "cylinder_ground_m": 0.4000000059604645,
                 "shoulder_mode_scale": 0.5
             },
             "encounter": {
                 "base_capture_rate": 0.20000000298023224,
                 "base_flee_rate": 0.05999999865889549,
-                "collision_radius_m": 0.1889999955892563,
+                "collision_radius_m": 0.27000001072883606,
                 "collision_height_m": 0.25200000405311584,
-                "collision_head_radius_m": 0.12600000202655792,
+                "collision_head_radius_m": 0.27000001072883606,
                 "movement_type": "MOVEMENT_HOVERING",
                 "movement_timer_s": 10,
                 "jump_time_s": 0.8999999761581421,
@@ -72903,7 +72199,7 @@
                 "attack_probability": 0.10000000149011612,
                 "dodge_probability": 0.10000000149011612,
                 "dodge_duration_s": 1,
-                "dodge_distance": 1,
+                "dodge_distance": 0.4000000059604645,
                 "camera_distance": 2.25,
                 "min_pokemon_action_frequency_s": 0.20000000298023224,
                 "max_pokemon_action_frequency_s": 1.600000023841858
@@ -72945,18 +72241,18 @@
             "buddy_offset_male": [
                 0,
                 0,
-                0
+                -35.70000076293945
             ],
             "buddy_offset_female": [
                 0,
                 0,
-                0
+                -35.70000076293945
             ],
             "buddy_scale": 19,
             "buddy_portrait_offset": [
+                -0.10999999940395355,
                 0,
-                0,
-                0
+                -0.2800000011920929
             ],
             "third_move": {
                 "stardust_to_unlock": 50000,
@@ -72975,16 +72271,17 @@
             "type_2": "POKEMON_TYPE_FLYING",
             "camera": {
                 "disk_radius_m": 0.3779999911785126,
-                "cylinder_radius_m": 0.25200000405311584,
-                "cylinder_height_m": 0.3779999911785126,
+                "cylinder_radius_m": 0.4000000059604645,
+                "cylinder_height_m": 0.4000000059604645,
+                "cylinder_ground_m": 0.5,
                 "shoulder_mode_scale": 0.5
             },
             "encounter": {
                 "base_capture_rate": 0.10000000149011612,
                 "base_flee_rate": 0.03999999910593033,
-                "collision_radius_m": 0.1889999955892563,
-                "collision_height_m": 0.25200000405311584,
-                "collision_head_radius_m": 0.12600000202655792,
+                "collision_radius_m": 0.20000000298023224,
+                "collision_height_m": 0.5,
+                "collision_head_radius_m": 0.20000000298023224,
                 "movement_type": "MOVEMENT_HOVERING",
                 "movement_timer_s": 10,
                 "jump_time_s": 0.8999999761581421,
@@ -73049,9 +72346,9 @@
             ],
             "buddy_scale": 19,
             "buddy_portrait_offset": [
-                0,
-                0,
-                0
+                -0.10000000149011612,
+                -0.05000000074505806,
+                -0.3400000035762787
             ],
             "third_move": {
                 "stardust_to_unlock": 10000,
@@ -73070,16 +72367,16 @@
             "type_2": "POKEMON_TYPE_ICE",
             "camera": {
                 "disk_radius_m": 0.3779999911785126,
-                "cylinder_radius_m": 0.25200000405311584,
-                "cylinder_height_m": 0.3779999911785126,
+                "cylinder_radius_m": 0.30000001192092896,
+                "cylinder_height_m": 0.8999999761581421,
                 "shoulder_mode_scale": 0.5
             },
             "encounter": {
                 "base_capture_rate": 0.30000001192092896,
                 "base_flee_rate": 0.10000000149011612,
-                "collision_radius_m": 0.1889999955892563,
+                "collision_radius_m": 0.30000001192092896,
                 "collision_height_m": 0.25200000405311584,
-                "collision_head_radius_m": 0.12600000202655792,
+                "collision_head_radius_m": 0.27000001072883606,
                 "movement_type": "MOVEMENT_JUMP",
                 "movement_timer_s": 10,
                 "jump_time_s": 0.8999999761581421,
@@ -73135,18 +72432,18 @@
             "buddy_offset_male": [
                 0,
                 0,
-                0
+                -49.70000076293945
             ],
             "buddy_offset_female": [
                 0,
                 0,
-                0
+                -49.70000076293945
             ],
             "buddy_scale": 19,
             "buddy_portrait_offset": [
+                -0.27000001072883606,
                 0,
-                0,
-                0
+                -0.7699999809265137
             ],
             "third_move": {
                 "stardust_to_unlock": 50000,
@@ -73234,11 +72531,6 @@
                 -57.209999084472656
             ],
             "buddy_scale": 17,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 50000,
                 "candy_to_unlock": 50
@@ -73326,11 +72618,6 @@
                 22.829999923706055
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 50000,
                 "candy_to_unlock": 50
@@ -73407,22 +72694,22 @@
             "candy_to_evolve": 25,
             "km_buddy_distance": 3,
             "model_height": 1.559999942779541,
-            "model_scale_v2": 0.8999999761581421,
+            "model_scale_v2": 1,
             "buddy_offset_male": [
-                0,
-                41.52000045776367,
-                -61.5
+                -5,
+                -3.299999952316284,
+                -90
             ],
             "buddy_offset_female": [
-                0,
-                41.52000045776367,
-                -61.5
+                -5,
+                -3.299999952316284,
+                -90
             ],
-            "buddy_scale": 11,
+            "buddy_scale": 18,
             "buddy_portrait_offset": [
-                0,
-                0,
-                -4.039999961853027
+                -1.0099999904632568,
+                -0.1599999964237213,
+                -2.3399999141693115
             ],
             "third_move": {
                 "stardust_to_unlock": 50000,
@@ -73510,11 +72797,6 @@
                 -42.52000045776367
             ],
             "buddy_scale": 16,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 50000,
                 "candy_to_unlock": 50
@@ -73532,7 +72814,7 @@
             "type_2": "POKEMON_TYPE_ROCK",
             "camera": {
                 "disk_radius_m": 0.3779999911785126,
-                "cylinder_radius_m": 1.7999999523162842,
+                "cylinder_radius_m": 1.2000000476837158,
                 "cylinder_height_m": 2.5,
                 "shoulder_mode_scale": 0.5
             },
@@ -73589,24 +72871,20 @@
             "family_id": "FAMILY_RHYHORN",
             "candy_to_evolve": 25,
             "km_buddy_distance": 3,
+            "buddy_size": "BUDDY_BIG",
             "model_height": 2.700000047683716,
-            "model_scale_v2": 1,
+            "model_scale_v2": 0.8999999761581421,
             "buddy_offset_male": [
-                -9.199999809265137,
-                0,
-                -82.52999877929688
-            ],
-            "buddy_offset_female": [
-                -9.199999809265137,
-                0,
-                -82.52999877929688
-            ],
-            "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
+                10,
                 0,
                 0
             ],
+            "buddy_offset_female": [
+                10,
+                0,
+                0
+            ],
+            "buddy_scale": 15,
             "third_move": {
                 "stardust_to_unlock": 50000,
                 "candy_to_unlock": 50
@@ -73628,16 +72906,16 @@
             "type": "POKEMON_TYPE_GRASS",
             "camera": {
                 "disk_radius_m": 0.3779999911785126,
-                "cylinder_radius_m": 0.25200000405311584,
-                "cylinder_height_m": 0.3779999911785126,
+                "cylinder_radius_m": 1,
+                "cylinder_height_m": 2,
                 "shoulder_mode_scale": 0.5
             },
             "encounter": {
                 "base_capture_rate": 0.15000000596046448,
                 "base_flee_rate": 0.10000000149011612,
-                "collision_radius_m": 0.1889999955892563,
+                "collision_radius_m": 1,
                 "collision_height_m": 0.25200000405311584,
-                "collision_head_radius_m": 0.12600000202655792,
+                "collision_head_radius_m": 1,
                 "movement_type": "MOVEMENT_JUMP",
                 "movement_timer_s": 10,
                 "jump_time_s": 0.8999999761581421,
@@ -73648,7 +72926,7 @@
                 "dodge_probability": 0.30000001192092896,
                 "dodge_duration_s": 1,
                 "dodge_distance": 1,
-                "camera_distance": 2.25,
+                "camera_distance": 6,
                 "min_pokemon_action_frequency_s": 0.20000000298023224,
                 "max_pokemon_action_frequency_s": 1.600000023841858
             },
@@ -73685,23 +72963,24 @@
             "family_id": "FAMILY_TANGELA",
             "candy_to_evolve": 25,
             "km_buddy_distance": 3,
+            "buddy_size": "BUDDY_BIG",
             "model_height": 2.049999952316284,
             "model_scale_v2": 0.9900000095367432,
             "buddy_offset_male": [
+                16.18000030517578,
                 0,
-                0,
-                0
+                20.170000076293945
             ],
             "buddy_offset_female": [
+                16.18000030517578,
                 0,
-                0,
-                0
+                20.170000076293945
             ],
-            "buddy_scale": 19,
+            "buddy_scale": 15,
             "buddy_portrait_offset": [
-                0,
-                0,
-                0
+                -0.7900000214576721,
+                -0.30000001192092896,
+                -2.4100000858306885
             ],
             "third_move": {
                 "stardust_to_unlock": 50000,
@@ -73789,11 +73068,6 @@
                 -56.900001525878906
             ],
             "buddy_scale": 16,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                -0.30000001192092896
-            ],
             "third_move": {
                 "stardust_to_unlock": 75000,
                 "candy_to_unlock": 75
@@ -73846,7 +73120,8 @@
             "cinematic_moves": [
                 "BRICK_BREAK",
                 "FIRE_PUNCH",
-                "FIRE_BLAST"
+                "FIRE_BLAST",
+                "PSYCHIC"
             ],
             "animation_time": [
                 1.899999976158142,
@@ -73880,11 +73155,6 @@
                 -69.37000274658203
             ],
             "buddy_scale": 17,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                -0.30000001192092896
-            ],
             "third_move": {
                 "stardust_to_unlock": 75000,
                 "candy_to_unlock": 75
@@ -73939,7 +73209,8 @@
             "cinematic_moves": [
                 "ANCIENT_POWER",
                 "DAZZLING_GLEAM",
-                "AERIAL_ACE"
+                "AERIAL_ACE",
+                "FLAMETHROWER"
             ],
             "animation_time": [
                 1.899999976158142,
@@ -73973,11 +73244,6 @@
                 -66.5199966430664
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 50000,
                 "candy_to_unlock": 50
@@ -73995,8 +73261,9 @@
             "type_2": "POKEMON_TYPE_FLYING",
             "camera": {
                 "disk_radius_m": 0.3779999911785126,
-                "cylinder_radius_m": 0.25200000405311584,
+                "cylinder_radius_m": 1,
                 "cylinder_height_m": 0.3779999911785126,
+                "cylinder_ground_m": 1,
                 "shoulder_mode_scale": 0.5
             },
             "encounter": {
@@ -74015,7 +73282,7 @@
                 "dodge_probability": 0.30000001192092896,
                 "dodge_duration_s": 1,
                 "dodge_distance": 1,
-                "camera_distance": 2.25,
+                "camera_distance": 4,
                 "min_pokemon_action_frequency_s": 0.20000000298023224,
                 "max_pokemon_action_frequency_s": 1.600000023841858
             },
@@ -74055,20 +73322,20 @@
             "model_height": 1.7999999523162842,
             "model_scale_v2": 1,
             "buddy_offset_male": [
+                10,
                 0,
-                0,
-                0
+                -100
             ],
             "buddy_offset_female": [
+                10,
                 0,
-                0,
-                0
+                -100
             ],
             "buddy_scale": 19,
             "buddy_portrait_offset": [
                 0,
                 0,
-                0
+                -0.1599999964237213
             ],
             "third_move": {
                 "stardust_to_unlock": 50000,
@@ -74158,7 +73425,7 @@
             "buddy_scale": 19,
             "buddy_portrait_offset": [
                 0,
-                0,
+                -0.09000000357627869,
                 0
             ],
             "third_move": {
@@ -74178,7 +73445,7 @@
             "camera": {
                 "disk_radius_m": 0.3779999911785126,
                 "cylinder_radius_m": 0.4000000059604645,
-                "cylinder_height_m": 0.3779999911785126,
+                "cylinder_height_m": 0.699999988079071,
                 "shoulder_mode_scale": 0.5
             },
             "encounter": {
@@ -74248,9 +73515,9 @@
             ],
             "buddy_scale": 19,
             "buddy_portrait_offset": [
-                0,
-                0,
-                -0.7200000286102295
+                0.07999999821186066,
+                -0.05000000074505806,
+                0.14000000059604645
             ],
             "third_move": {
                 "stardust_to_unlock": 50000,
@@ -74341,9 +73608,9 @@
             ],
             "buddy_scale": 19,
             "buddy_portrait_offset": [
-                0,
-                0,
-                0
+                0.28999999165534973,
+                0.15000000596046448,
+                0.4699999988079071
             ],
             "third_move": {
                 "stardust_to_unlock": 75000,
@@ -74419,6 +73686,7 @@
             "family_id": "FAMILY_SWINUB",
             "candy_to_evolve": 25,
             "km_buddy_distance": 3,
+            "buddy_size": "BUDDY_BIG",
             "model_height": 3.819999933242798,
             "model_scale_v2": 0.699999988079071,
             "buddy_offset_male": [
@@ -74432,11 +73700,6 @@
                 -141
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 50000,
                 "candy_to_unlock": 50
@@ -74490,7 +73753,8 @@
             "cinematic_moves": [
                 "SOLAR_BEAM",
                 "HYPER_BEAM",
-                "ZAP_CANNON"
+                "ZAP_CANNON",
+                "BLIZZARD"
             ],
             "animation_time": [
                 1.899999976158142,
@@ -74525,9 +73789,9 @@
             ],
             "buddy_scale": 19,
             "buddy_portrait_offset": [
-                0,
-                0,
-                -0.7200000286102295
+                -0.009999999776482582,
+                -0.10999999940395355,
+                -0.07999999821186066
             ],
             "third_move": {
                 "stardust_to_unlock": 50000,
@@ -74615,12 +73879,7 @@
                 0,
                 -55.29999923706055
             ],
-            "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
+            "buddy_scale": 17,
             "third_move": {
                 "stardust_to_unlock": 75000,
                 "candy_to_unlock": 75
@@ -74709,9 +73968,9 @@
             ],
             "buddy_scale": 19,
             "buddy_portrait_offset": [
-                0,
-                0,
-                -1.2200000286102295
+                -0.20000000298023224,
+                0.47999998927116394,
+                -0.8199999928474426
             ],
             "third_move": {
                 "stardust_to_unlock": 50000,
@@ -74750,7 +74009,7 @@
                 "dodge_probability": 0.30000001192092896,
                 "dodge_duration_s": 1,
                 "dodge_distance": 1,
-                "camera_distance": 4,
+                "camera_distance": 6,
                 "min_pokemon_action_frequency_s": 0.20000000298023224,
                 "max_pokemon_action_frequency_s": 1.600000023841858
             },
@@ -74787,23 +74046,24 @@
             "family_id": "FAMILY_DUSKULL",
             "candy_to_evolve": 25,
             "km_buddy_distance": 3,
+            "buddy_size": "BUDDY_BIG",
             "model_height": 2.200000047683716,
-            "model_scale_v2": 0.5,
+            "model_scale_v2": 0.9700000286102295,
             "buddy_offset_male": [
+                48,
                 0,
-                0,
-                14.550000190734863
+                -77.4000015258789
             ],
             "buddy_offset_female": [
+                48,
                 0,
-                0,
-                14.550000190734863
+                -77.4000015258789
             ],
             "buddy_scale": 19,
             "buddy_portrait_offset": [
+                -0.46000000834465027,
                 0,
-                0,
-                0
+                -1.2000000476837158
             ],
             "third_move": {
                 "stardust_to_unlock": 50000,
@@ -74894,9 +74154,9 @@
             ],
             "buddy_scale": 19,
             "buddy_portrait_offset": [
-                0,
-                0,
-                0
+                -0.23999999463558197,
+                -0.1599999964237213,
+                -0.6299999952316284
             ],
             "third_move": {
                 "stardust_to_unlock": 50000,
@@ -74982,11 +74242,6 @@
                 0
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 75000,
                 "candy_to_unlock": 75
@@ -75072,11 +74327,6 @@
                 0
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 75000,
                 "candy_to_unlock": 75
@@ -75162,11 +74412,6 @@
                 0
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 75000,
                 "candy_to_unlock": 75
@@ -75252,11 +74497,6 @@
                 0
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 75000,
                 "candy_to_unlock": 75
@@ -75342,11 +74582,6 @@
                 0
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 75000,
                 "candy_to_unlock": 75
@@ -75432,11 +74667,6 @@
                 0
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 75000,
                 "candy_to_unlock": 75
@@ -75522,11 +74752,6 @@
                 0
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 75000,
                 "candy_to_unlock": 75
@@ -75613,9 +74838,9 @@
             ],
             "buddy_scale": 19,
             "buddy_portrait_offset": [
-                0,
-                0,
-                0
+                0.1599999964237213,
+                -0.07999999821186066,
+                0.38999998569488525
             ],
             "third_move": {
                 "stardust_to_unlock": 100000,
@@ -75701,11 +74926,6 @@
                 0
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0.23999999463558197
-            ],
             "third_move": {
                 "stardust_to_unlock": 100000,
                 "candy_to_unlock": 100
@@ -75791,9 +75011,9 @@
             ],
             "buddy_scale": 19,
             "buddy_portrait_offset": [
-                0,
-                0,
-                0
+                0.15000000596046448,
+                -0.029999999329447746,
+                0.3100000023841858
             ],
             "third_move": {
                 "stardust_to_unlock": 100000,
@@ -75868,23 +75088,18 @@
             "km_buddy_distance": 20,
             "buddy_size": "BUDDY_BIG",
             "model_height": 5.599999904632568,
-            "model_scale_v2": 0.3700000047683716,
+            "model_scale_v2": 0.6100000143051147,
             "buddy_offset_male": [
-                19.139999389648438,
+                1.100000023841858,
                 0,
-                26.200000762939453
+                -14.789999961853027
             ],
             "buddy_offset_female": [
-                19.139999389648438,
+                1.100000023841858,
                 0,
-                26.200000762939453
+                -14.789999961853027
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 100000,
                 "candy_to_unlock": 100
@@ -76009,7 +75224,7 @@
                 "dodge_probability": 0.05000000074505806,
                 "dodge_duration_s": 1,
                 "dodge_distance": 1,
-                "camera_distance": 4,
+                "camera_distance": 6,
                 "min_pokemon_action_frequency_s": 0.20000000298023224,
                 "max_pokemon_action_frequency_s": 1.600000023841858
             },
@@ -76048,22 +75263,22 @@
             "km_buddy_distance": 20,
             "buddy_size": "BUDDY_BIG",
             "model_height": 2.359999895095825,
-            "model_scale_v2": 0.5,
+            "model_scale_v2": 0.9399999976158142,
             "buddy_offset_male": [
-                24.75,
+                9.649999618530273,
                 0,
-                31
+                -7.800000190734863
             ],
             "buddy_offset_female": [
-                24.75,
+                9.649999618530273,
                 0,
-                31
+                -7.800000190734863
             ],
-            "buddy_scale": 19,
+            "buddy_scale": 16,
             "buddy_portrait_offset": [
-                0,
-                0,
-                -1.6399999856948853
+                -0.3400000035762787,
+                0.23000000417232513,
+                -1.2899999618530273
             ],
             "third_move": {
                 "stardust_to_unlock": 100000,
@@ -76136,7 +75351,7 @@
             "km_buddy_distance": 20,
             "buddy_size": "BUDDY_BIG",
             "model_height": 3.240000009536743,
-            "model_scale_v2": 0.4000000059604645,
+            "model_scale_v2": 0.8299999833106995,
             "buddy_offset_male": [
                 12.069999694824219,
                 0,
@@ -76149,9 +75364,9 @@
             ],
             "buddy_scale": 19,
             "buddy_portrait_offset": [
-                -1.9199999570846558,
-                0,
-                -3.2200000286102295
+                -0.3400000035762787,
+                -0.800000011920929,
+                -1.1399999856948853
             ],
             "third_move": {
                 "stardust_to_unlock": 100000,
@@ -76187,7 +75402,7 @@
                 "dodge_probability": 0.05000000074505806,
                 "dodge_duration_s": 1,
                 "dodge_distance": 1,
-                "camera_distance": 5,
+                "camera_distance": 6,
                 "min_pokemon_action_frequency_s": 0.20000000298023224,
                 "max_pokemon_action_frequency_s": 1.600000023841858
             },
@@ -76226,7 +75441,7 @@
             "km_buddy_distance": 20,
             "buddy_size": "BUDDY_BIG",
             "model_height": 5.800000190734863,
-            "model_scale_v2": 0.3330000042915344,
+            "model_scale_v2": 0.6000000238418579,
             "buddy_offset_male": [
                 25.5,
                 0,
@@ -76238,11 +75453,6 @@
                 1.25
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 100000,
                 "candy_to_unlock": 100
@@ -76316,7 +75526,7 @@
             "km_buddy_distance": 20,
             "buddy_size": "BUDDY_BIG",
             "model_height": 5.380000114440918,
-            "model_scale_v2": 0.35499998927116394,
+            "model_scale_v2": 0.6299999952316284,
             "form": "GIRATINA_ALTERED",
             "buddy_offset_male": [
                 25.5,
@@ -76330,9 +75540,9 @@
             ],
             "buddy_scale": 19,
             "buddy_portrait_offset": [
-                0,
-                0,
-                0
+                0.33000001311302185,
+                0.20999999344348907,
+                0.8399999737739563
             ],
             "third_move": {
                 "stardust_to_unlock": 100000,
@@ -76405,24 +75615,25 @@
             "family_id": "FAMILY_GIRATINA",
             "candy_to_evolve": 25,
             "km_buddy_distance": 20,
+            "buddy_size": "BUDDY_BIG",
             "model_height": 5.800000190734863,
             "model_scale_v2": 0.6000000238418579,
             "form": "GIRATINA_ORIGIN",
             "buddy_offset_male": [
+                14.1899995803833,
                 0,
-                0,
-                0
+                -34.5
             ],
             "buddy_offset_female": [
+                14.149999618530273,
                 0,
-                0,
-                0
+                -34.5
             ],
             "buddy_scale": 19,
             "buddy_portrait_offset": [
-                0,
-                0,
-                0
+                -0.3499999940395355,
+                0.14000000059604645,
+                -0.8799999952316284
             ],
             "third_move": {
                 "stardust_to_unlock": 100000,
@@ -76497,7 +75708,7 @@
             "km_buddy_distance": 20,
             "buddy_size": "BUDDY_FLYING",
             "model_height": 1.5,
-            "model_scale_v2": 0.8999999761581421,
+            "model_scale_v2": 1,
             "buddy_offset_male": [
                 19.75,
                 0,
@@ -76509,11 +75720,6 @@
                 31.25
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 100000,
                 "candy_to_unlock": 100
@@ -76598,9 +75804,9 @@
             ],
             "buddy_scale": 19,
             "buddy_portrait_offset": [
-                0,
-                0,
-                -0.5600000023841858
+                0.029999999329447746,
+                0.10999999940395355,
+                0.07999999821186066
             ],
             "third_move": {
                 "stardust_to_unlock": 100000,
@@ -76684,11 +75890,6 @@
                 0
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 100000,
                 "candy_to_unlock": 100
@@ -76721,7 +75922,7 @@
                 "dodge_probability": 0.15000000596046448,
                 "dodge_duration_s": 1,
                 "dodge_distance": 1,
-                "camera_distance": 2.25,
+                "camera_distance": 4,
                 "min_pokemon_action_frequency_s": 0.20000000298023224,
                 "max_pokemon_action_frequency_s": 1.600000023841858
             },
@@ -76759,7 +75960,7 @@
             "candy_to_evolve": 25,
             "km_buddy_distance": 20,
             "model_height": 1.659999966621399,
-            "model_scale_v2": 0.949999988079071,
+            "model_scale_v2": 1,
             "buddy_offset_male": [
                 -4.5,
                 0,
@@ -76772,9 +75973,9 @@
             ],
             "buddy_scale": 19,
             "buddy_portrait_offset": [
-                0,
-                0,
-                -1
+                -0.20000000298023224,
+                0.009999999776482582,
+                -0.44999998807907104
             ],
             "third_move": {
                 "stardust_to_unlock": 100000,
@@ -76858,9 +76059,9 @@
             ],
             "buddy_scale": 19,
             "buddy_portrait_offset": [
-                0,
-                0,
-                0
+                0.1899999976158142,
+                -0.05000000074505806,
+                0.4099999964237213
             ],
             "third_move": {
                 "stardust_to_unlock": 100000,
@@ -76876,15 +76077,15 @@
             "type": "POKEMON_TYPE_GRASS",
             "camera": {
                 "disk_radius_m": 0.3779999911785126,
-                "cylinder_radius_m": 0.25200000405311584,
-                "cylinder_height_m": 0.3779999911785126,
+                "cylinder_radius_m": 0.18000000715255737,
+                "cylinder_height_m": 0.20000000298023224,
                 "shoulder_mode_scale": 0.5
             },
             "encounter": {
                 "base_capture_rate": 0.019999999552965164,
-                "collision_radius_m": 0.1889999955892563,
+                "collision_radius_m": 0.11999999731779099,
                 "collision_height_m": 0.25200000405311584,
-                "collision_head_radius_m": 0.12600000202655792,
+                "collision_head_radius_m": 0.10000000149011612,
                 "movement_type": "MOVEMENT_JUMP",
                 "movement_timer_s": 10,
                 "jump_time_s": 0.8999999761581421,
@@ -76944,11 +76145,6 @@
                 0
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 100000,
                 "candy_to_unlock": 100
@@ -77032,11 +76228,6 @@
                 0
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 100000,
                 "candy_to_unlock": 100
@@ -77068,7 +76259,7 @@
                 "dodge_probability": 0.15000000596046448,
                 "dodge_duration_s": 1,
                 "dodge_distance": 1,
-                "camera_distance": 2.25,
+                "camera_distance": 6,
                 "min_pokemon_action_frequency_s": 0.20000000298023224,
                 "max_pokemon_action_frequency_s": 1.600000023841858
             },
@@ -77105,24 +76296,20 @@
             "family_id": "FAMILY_ARCEUS",
             "candy_to_evolve": 25,
             "km_buddy_distance": 20,
+            "buddy_size": "BUDDY_BIG",
             "model_height": 3.299999952316284,
             "model_scale_v2": 0.8199999928474426,
             "buddy_offset_male": [
-                0,
+                19.25,
                 0,
                 0
             ],
             "buddy_offset_female": [
-                0,
+                19.25,
                 0,
                 0
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 100000,
                 "candy_to_unlock": 100
@@ -77154,7 +76341,7 @@
                 "dodge_probability": 0.15000000596046448,
                 "dodge_duration_s": 1,
                 "dodge_distance": 1,
-                "camera_distance": 2.25,
+                "camera_distance": 6,
                 "min_pokemon_action_frequency_s": 0.20000000298023224,
                 "max_pokemon_action_frequency_s": 1.600000023841858
             },
@@ -77191,25 +76378,21 @@
             "family_id": "FAMILY_ARCEUS",
             "candy_to_evolve": 25,
             "km_buddy_distance": 20,
+            "buddy_size": "BUDDY_BIG",
             "model_height": 3.299999952316284,
             "model_scale_v2": 0.8199999928474426,
             "form": "ARCEUS_BUG",
             "buddy_offset_male": [
-                0,
+                19.25,
                 0,
                 0
             ],
             "buddy_offset_female": [
-                0,
+                19.25,
                 0,
                 0
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 100000,
                 "candy_to_unlock": 100
@@ -77241,7 +76424,7 @@
                 "dodge_probability": 0.15000000596046448,
                 "dodge_duration_s": 1,
                 "dodge_distance": 1,
-                "camera_distance": 2.25,
+                "camera_distance": 6,
                 "min_pokemon_action_frequency_s": 0.20000000298023224,
                 "max_pokemon_action_frequency_s": 1.600000023841858
             },
@@ -77278,25 +76461,21 @@
             "family_id": "FAMILY_ARCEUS",
             "candy_to_evolve": 25,
             "km_buddy_distance": 20,
+            "buddy_size": "BUDDY_BIG",
             "model_height": 3.299999952316284,
             "model_scale_v2": 0.8199999928474426,
             "form": "ARCEUS_DARK",
             "buddy_offset_male": [
-                0,
+                19.25,
                 0,
                 0
             ],
             "buddy_offset_female": [
-                0,
+                19.25,
                 0,
                 0
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 100000,
                 "candy_to_unlock": 100
@@ -77328,7 +76507,7 @@
                 "dodge_probability": 0.15000000596046448,
                 "dodge_duration_s": 1,
                 "dodge_distance": 1,
-                "camera_distance": 2.25,
+                "camera_distance": 6,
                 "min_pokemon_action_frequency_s": 0.20000000298023224,
                 "max_pokemon_action_frequency_s": 1.600000023841858
             },
@@ -77365,25 +76544,21 @@
             "family_id": "FAMILY_ARCEUS",
             "candy_to_evolve": 25,
             "km_buddy_distance": 20,
+            "buddy_size": "BUDDY_BIG",
             "model_height": 3.299999952316284,
             "model_scale_v2": 0.8199999928474426,
             "form": "ARCEUS_DRAGON",
             "buddy_offset_male": [
-                0,
+                19.25,
                 0,
                 0
             ],
             "buddy_offset_female": [
-                0,
+                19.25,
                 0,
                 0
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 100000,
                 "candy_to_unlock": 100
@@ -77415,7 +76590,7 @@
                 "dodge_probability": 0.15000000596046448,
                 "dodge_duration_s": 1,
                 "dodge_distance": 1,
-                "camera_distance": 2.25,
+                "camera_distance": 6,
                 "min_pokemon_action_frequency_s": 0.20000000298023224,
                 "max_pokemon_action_frequency_s": 1.600000023841858
             },
@@ -77452,25 +76627,21 @@
             "family_id": "FAMILY_ARCEUS",
             "candy_to_evolve": 25,
             "km_buddy_distance": 20,
+            "buddy_size": "BUDDY_BIG",
             "model_height": 3.299999952316284,
             "model_scale_v2": 0.8199999928474426,
             "form": "ARCEUS_ELECTRIC",
             "buddy_offset_male": [
-                0,
+                19.25,
                 0,
                 0
             ],
             "buddy_offset_female": [
-                0,
+                19.25,
                 0,
                 0
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 100000,
                 "candy_to_unlock": 100
@@ -77502,7 +76673,7 @@
                 "dodge_probability": 0.15000000596046448,
                 "dodge_duration_s": 1,
                 "dodge_distance": 1,
-                "camera_distance": 2.25,
+                "camera_distance": 6,
                 "min_pokemon_action_frequency_s": 0.20000000298023224,
                 "max_pokemon_action_frequency_s": 1.600000023841858
             },
@@ -77539,25 +76710,21 @@
             "family_id": "FAMILY_ARCEUS",
             "candy_to_evolve": 25,
             "km_buddy_distance": 20,
+            "buddy_size": "BUDDY_BIG",
             "model_height": 3.299999952316284,
             "model_scale_v2": 0.8199999928474426,
             "form": "ARCEUS_FAIRY",
             "buddy_offset_male": [
-                0,
+                19.25,
                 0,
                 0
             ],
             "buddy_offset_female": [
-                0,
+                19.25,
                 0,
                 0
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 100000,
                 "candy_to_unlock": 100
@@ -77589,7 +76756,7 @@
                 "dodge_probability": 0.15000000596046448,
                 "dodge_duration_s": 1,
                 "dodge_distance": 1,
-                "camera_distance": 2.25,
+                "camera_distance": 6,
                 "min_pokemon_action_frequency_s": 0.20000000298023224,
                 "max_pokemon_action_frequency_s": 1.600000023841858
             },
@@ -77626,25 +76793,21 @@
             "family_id": "FAMILY_ARCEUS",
             "candy_to_evolve": 25,
             "km_buddy_distance": 20,
+            "buddy_size": "BUDDY_BIG",
             "model_height": 3.299999952316284,
             "model_scale_v2": 0.8199999928474426,
             "form": "ARCEUS_FIGHTING",
             "buddy_offset_male": [
-                0,
+                19.25,
                 0,
                 0
             ],
             "buddy_offset_female": [
-                0,
+                19.25,
                 0,
                 0
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 100000,
                 "candy_to_unlock": 100
@@ -77676,7 +76839,7 @@
                 "dodge_probability": 0.15000000596046448,
                 "dodge_duration_s": 1,
                 "dodge_distance": 1,
-                "camera_distance": 2.25,
+                "camera_distance": 6,
                 "min_pokemon_action_frequency_s": 0.20000000298023224,
                 "max_pokemon_action_frequency_s": 1.600000023841858
             },
@@ -77713,25 +76876,21 @@
             "family_id": "FAMILY_ARCEUS",
             "candy_to_evolve": 25,
             "km_buddy_distance": 20,
+            "buddy_size": "BUDDY_BIG",
             "model_height": 3.299999952316284,
             "model_scale_v2": 0.8199999928474426,
             "form": "ARCEUS_FIRE",
             "buddy_offset_male": [
-                0,
+                19.25,
                 0,
                 0
             ],
             "buddy_offset_female": [
-                0,
+                19.25,
                 0,
                 0
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 100000,
                 "candy_to_unlock": 100
@@ -77763,7 +76922,7 @@
                 "dodge_probability": 0.15000000596046448,
                 "dodge_duration_s": 1,
                 "dodge_distance": 1,
-                "camera_distance": 2.25,
+                "camera_distance": 6,
                 "min_pokemon_action_frequency_s": 0.20000000298023224,
                 "max_pokemon_action_frequency_s": 1.600000023841858
             },
@@ -77800,25 +76959,21 @@
             "family_id": "FAMILY_ARCEUS",
             "candy_to_evolve": 25,
             "km_buddy_distance": 20,
+            "buddy_size": "BUDDY_BIG",
             "model_height": 3.299999952316284,
             "model_scale_v2": 0.8199999928474426,
             "form": "ARCEUS_FLYING",
             "buddy_offset_male": [
-                0,
+                19.25,
                 0,
                 0
             ],
             "buddy_offset_female": [
-                0,
+                19.25,
                 0,
                 0
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 100000,
                 "candy_to_unlock": 100
@@ -77850,7 +77005,7 @@
                 "dodge_probability": 0.15000000596046448,
                 "dodge_duration_s": 1,
                 "dodge_distance": 1,
-                "camera_distance": 2.25,
+                "camera_distance": 6,
                 "min_pokemon_action_frequency_s": 0.20000000298023224,
                 "max_pokemon_action_frequency_s": 1.600000023841858
             },
@@ -77887,25 +77042,21 @@
             "family_id": "FAMILY_ARCEUS",
             "candy_to_evolve": 25,
             "km_buddy_distance": 20,
+            "buddy_size": "BUDDY_BIG",
             "model_height": 3.299999952316284,
             "model_scale_v2": 0.8199999928474426,
             "form": "ARCEUS_GHOST",
             "buddy_offset_male": [
-                0,
+                19.25,
                 0,
                 0
             ],
             "buddy_offset_female": [
-                0,
+                19.25,
                 0,
                 0
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 100000,
                 "candy_to_unlock": 100
@@ -77937,7 +77088,7 @@
                 "dodge_probability": 0.15000000596046448,
                 "dodge_duration_s": 1,
                 "dodge_distance": 1,
-                "camera_distance": 2.25,
+                "camera_distance": 6,
                 "min_pokemon_action_frequency_s": 0.20000000298023224,
                 "max_pokemon_action_frequency_s": 1.600000023841858
             },
@@ -77974,25 +77125,21 @@
             "family_id": "FAMILY_ARCEUS",
             "candy_to_evolve": 25,
             "km_buddy_distance": 20,
+            "buddy_size": "BUDDY_BIG",
             "model_height": 3.299999952316284,
             "model_scale_v2": 0.8199999928474426,
             "form": "ARCEUS_GRASS",
             "buddy_offset_male": [
-                0,
+                19.25,
                 0,
                 0
             ],
             "buddy_offset_female": [
-                0,
+                19.25,
                 0,
                 0
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 100000,
                 "candy_to_unlock": 100
@@ -78024,7 +77171,7 @@
                 "dodge_probability": 0.15000000596046448,
                 "dodge_duration_s": 1,
                 "dodge_distance": 1,
-                "camera_distance": 2.25,
+                "camera_distance": 6,
                 "min_pokemon_action_frequency_s": 0.20000000298023224,
                 "max_pokemon_action_frequency_s": 1.600000023841858
             },
@@ -78061,25 +77208,21 @@
             "family_id": "FAMILY_ARCEUS",
             "candy_to_evolve": 25,
             "km_buddy_distance": 20,
+            "buddy_size": "BUDDY_BIG",
             "model_height": 3.299999952316284,
             "model_scale_v2": 0.8199999928474426,
             "form": "ARCEUS_GROUND",
             "buddy_offset_male": [
-                0,
+                19.25,
                 0,
                 0
             ],
             "buddy_offset_female": [
-                0,
+                19.25,
                 0,
                 0
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 100000,
                 "candy_to_unlock": 100
@@ -78111,7 +77254,7 @@
                 "dodge_probability": 0.15000000596046448,
                 "dodge_duration_s": 1,
                 "dodge_distance": 1,
-                "camera_distance": 2.25,
+                "camera_distance": 6,
                 "min_pokemon_action_frequency_s": 0.20000000298023224,
                 "max_pokemon_action_frequency_s": 1.600000023841858
             },
@@ -78148,25 +77291,21 @@
             "family_id": "FAMILY_ARCEUS",
             "candy_to_evolve": 25,
             "km_buddy_distance": 20,
+            "buddy_size": "BUDDY_BIG",
             "model_height": 3.299999952316284,
             "model_scale_v2": 0.8199999928474426,
             "form": "ARCEUS_ICE",
             "buddy_offset_male": [
-                0,
+                19.25,
                 0,
                 0
             ],
             "buddy_offset_female": [
-                0,
+                19.25,
                 0,
                 0
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 100000,
                 "candy_to_unlock": 100
@@ -78181,15 +77320,15 @@
             "type": "POKEMON_TYPE_NORMAL",
             "camera": {
                 "disk_radius_m": 0.3779999911785126,
-                "cylinder_radius_m": 0.25200000405311584,
-                "cylinder_height_m": 0.3779999911785126,
+                "cylinder_radius_m": 1.2999999523162842,
+                "cylinder_height_m": 3.200000047683716,
                 "shoulder_mode_scale": 0.5
             },
             "encounter": {
                 "base_capture_rate": 0.019999999552965164,
-                "collision_radius_m": 0.1889999955892563,
-                "collision_height_m": 0.25200000405311584,
-                "collision_head_radius_m": 0.12600000202655792,
+                "collision_radius_m": 1.2999999523162842,
+                "collision_height_m": 3.200000047683716,
+                "collision_head_radius_m": 0.5,
                 "movement_type": "MOVEMENT_HOVERING",
                 "movement_timer_s": 10,
                 "jump_time_s": 0.8999999761581421,
@@ -78198,7 +77337,7 @@
                 "dodge_probability": 0.15000000596046448,
                 "dodge_duration_s": 1,
                 "dodge_distance": 1,
-                "camera_distance": 2.25,
+                "camera_distance": 6,
                 "min_pokemon_action_frequency_s": 0.20000000298023224,
                 "max_pokemon_action_frequency_s": 1.600000023841858
             },
@@ -78235,25 +77374,21 @@
             "family_id": "FAMILY_ARCEUS",
             "candy_to_evolve": 25,
             "km_buddy_distance": 20,
+            "buddy_size": "BUDDY_BIG",
             "model_height": 3.299999952316284,
             "model_scale_v2": 0.8199999928474426,
             "form": "ARCEUS_NORMAL",
             "buddy_offset_male": [
-                0,
+                19.25,
                 0,
                 0
             ],
             "buddy_offset_female": [
-                0,
+                19.25,
                 0,
                 0
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 100000,
                 "candy_to_unlock": 100
@@ -78285,7 +77420,7 @@
                 "dodge_probability": 0.15000000596046448,
                 "dodge_duration_s": 1,
                 "dodge_distance": 1,
-                "camera_distance": 2.25,
+                "camera_distance": 6,
                 "min_pokemon_action_frequency_s": 0.20000000298023224,
                 "max_pokemon_action_frequency_s": 1.600000023841858
             },
@@ -78322,25 +77457,21 @@
             "family_id": "FAMILY_ARCEUS",
             "candy_to_evolve": 25,
             "km_buddy_distance": 20,
+            "buddy_size": "BUDDY_BIG",
             "model_height": 3.299999952316284,
             "model_scale_v2": 0.8199999928474426,
             "form": "ARCEUS_POISON",
             "buddy_offset_male": [
-                0,
+                19.25,
                 0,
                 0
             ],
             "buddy_offset_female": [
-                0,
+                19.25,
                 0,
                 0
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 100000,
                 "candy_to_unlock": 100
@@ -78372,7 +77503,7 @@
                 "dodge_probability": 0.15000000596046448,
                 "dodge_duration_s": 1,
                 "dodge_distance": 1,
-                "camera_distance": 2.25,
+                "camera_distance": 6,
                 "min_pokemon_action_frequency_s": 0.20000000298023224,
                 "max_pokemon_action_frequency_s": 1.600000023841858
             },
@@ -78409,25 +77540,21 @@
             "family_id": "FAMILY_ARCEUS",
             "candy_to_evolve": 25,
             "km_buddy_distance": 20,
+            "buddy_size": "BUDDY_BIG",
             "model_height": 3.299999952316284,
             "model_scale_v2": 0.8199999928474426,
             "form": "ARCEUS_PSYCHIC",
             "buddy_offset_male": [
-                0,
+                19.25,
                 0,
                 0
             ],
             "buddy_offset_female": [
-                0,
+                19.25,
                 0,
                 0
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 100000,
                 "candy_to_unlock": 100
@@ -78459,7 +77586,7 @@
                 "dodge_probability": 0.15000000596046448,
                 "dodge_duration_s": 1,
                 "dodge_distance": 1,
-                "camera_distance": 2.25,
+                "camera_distance": 6,
                 "min_pokemon_action_frequency_s": 0.20000000298023224,
                 "max_pokemon_action_frequency_s": 1.600000023841858
             },
@@ -78496,25 +77623,21 @@
             "family_id": "FAMILY_ARCEUS",
             "candy_to_evolve": 25,
             "km_buddy_distance": 20,
+            "buddy_size": "BUDDY_BIG",
             "model_height": 3.299999952316284,
             "model_scale_v2": 0.8199999928474426,
             "form": "ARCEUS_ROCK",
             "buddy_offset_male": [
-                0,
+                19.25,
                 0,
                 0
             ],
             "buddy_offset_female": [
-                0,
+                19.25,
                 0,
                 0
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 100000,
                 "candy_to_unlock": 100
@@ -78546,7 +77669,7 @@
                 "dodge_probability": 0.15000000596046448,
                 "dodge_duration_s": 1,
                 "dodge_distance": 1,
-                "camera_distance": 2.25,
+                "camera_distance": 6,
                 "min_pokemon_action_frequency_s": 0.20000000298023224,
                 "max_pokemon_action_frequency_s": 1.600000023841858
             },
@@ -78583,25 +77706,21 @@
             "family_id": "FAMILY_ARCEUS",
             "candy_to_evolve": 25,
             "km_buddy_distance": 20,
+            "buddy_size": "BUDDY_BIG",
             "model_height": 3.299999952316284,
             "model_scale_v2": 0.8199999928474426,
             "form": "ARCEUS_STEEL",
             "buddy_offset_male": [
-                0,
+                19.25,
                 0,
                 0
             ],
             "buddy_offset_female": [
-                0,
+                19.25,
                 0,
                 0
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 100000,
                 "candy_to_unlock": 100
@@ -78633,7 +77752,7 @@
                 "dodge_probability": 0.15000000596046448,
                 "dodge_duration_s": 1,
                 "dodge_distance": 1,
-                "camera_distance": 2.25,
+                "camera_distance": 6,
                 "min_pokemon_action_frequency_s": 0.20000000298023224,
                 "max_pokemon_action_frequency_s": 1.600000023841858
             },
@@ -78670,25 +77789,21 @@
             "family_id": "FAMILY_ARCEUS",
             "candy_to_evolve": 25,
             "km_buddy_distance": 20,
+            "buddy_size": "BUDDY_BIG",
             "model_height": 3.299999952316284,
             "model_scale_v2": 0.8199999928474426,
             "form": "ARCEUS_WATER",
             "buddy_offset_male": [
-                0,
+                19.25,
                 0,
                 0
             ],
             "buddy_offset_female": [
-                0,
+                19.25,
                 0,
                 0
             ],
             "buddy_scale": 19,
-            "buddy_portrait_offset": [
-                0,
-                0,
-                0
-            ],
             "third_move": {
                 "stardust_to_unlock": 100000,
                 "candy_to_unlock": 100

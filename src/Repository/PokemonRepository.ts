@@ -17,7 +17,8 @@ export class PokemonRepository {
             return (item.template_id as string).startsWith("V0")
                 && (item.template_id as string).indexOf(`_POKEMON_`) != -1
                 && item.pokemon_settings != null
-                && !item.pokemon_settings.evolution_ids;
+                && this.bannedPokemon.indexOf(item.template_id) == -1
+                && !item.pokemon_settings.evolution_branch;
         });        
 
         pokemon.forEach((gm_pokemon : any) => {

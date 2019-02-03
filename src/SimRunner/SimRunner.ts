@@ -3,16 +3,24 @@ import { MoveRepository } from "../Repository/MoveRepository";
 import { SimulationResult } from "../Simulator/SimulationResult";
 import { Simulator } from "../Simulator/Simulator";
 import { Battler } from "../Models/Battler";
+import { Type } from "../Shared/Types";
 
 export class SimRunner {
 
-    RunAllVsAllSimulations(MaxCP: number) {
+    RunAllVsAllSimulations(MaxCP: number, allowedTypes?: Array<Type>) {
 
         let pokemon_repo = new PokemonRepository();
         let move_repo = new MoveRepository();
 
-        let pokemons =  pokemon_repo.LoadAllPokemon().slice(0, 150);
-        
+        let pokemons =  pokemon_repo.LoadAllPokemon();
+
+        if(allowedTypes) {
+            pokemons = pokemons.filter(pokemon => {
+                return allowedTypes.indexOf(pokemon.Type1) != -1 ||
+                       (pokemon.Type2 && allowedTypes.indexOf(pokemon.Type2) != -1);
+            });
+        }
+
         let sim_results : Array<SimulationResult>= new Array;
         
         console.log(`Simulating matchups between: ${ pokemons.length } Pokemon.`);
@@ -20,7 +28,7 @@ export class SimRunner {
         console.time("pvp-sims-all-vs-all");
         let sim = new Simulator();
         
-        let shields = [[0,0], [0, 1], [1, 0], [1, 1], [2, 2]];
+        let shields = [[0,0], [1, 1], [2, 2]];
 
         shields.forEach(shield => {
 
@@ -51,7 +59,7 @@ export class SimRunner {
                                         null,
                                         shield[1]
                                     ));
-                    
+
                                     sim_results.push(sim.Simulate());
                                 });    
                             });

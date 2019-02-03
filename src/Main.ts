@@ -5,47 +5,53 @@ import Constants from "./Shared/Constants";
 import { SQLGenerator } from "./Data/SQLGenerator";
 import { PokemonRepository } from "./Repository/PokemonRepository";
 import { SimulationResult } from "./Simulator/SimulationResult";
-
-
+import { SimulationResultRepository } from "./Repository/SimulationResultRepository";
+import { Type } from "./Shared/Types";
 
 let runner = new SimRunner();
-let results = runner.RunAllVsAllSimulations(Constants.GREAT_LEAGUE_MAX_CP);
+let results = runner.RunAllVsAllSimulations(Constants.GREAT_LEAGUE_MAX_CP, [Type.Poison, Type.Fairy, Type.Ghost, Type.Fairy]);
 
-// console.log(results.length);
-// let db = new sqlite3.Database(Constants.SQLITE_DB, sqlite3.OPEN_READWRITE, (err) => {
+/*
+
+
+console.log(results.length);
+let db = new sqlite3.Database(Constants.SQLITE_DB, sqlite3.OPEN_READWRITE, (err) => {
     
-//     if (err) {
-//       return console.error(err.message);
-//     }
+    if (err) {
+      return console.error(err.message);
+    }
 
-//     console.log('Connected to the SQlite database.'); 
-// });
+    console.log('Connected to the SQlite database.'); 
+});
 
-// let sql = new SQLGenerator();
+let sql = new SQLGenerator();
 
-// let step = 0;
-// let step_size = 200000;
+let step = 0;
+let step_size = 200000;
 
-// while(step * step_size < results.length) {
+while(step * step_size < results.length) {
     
-//     db.exec(sql.GenerateSimulationResultInsertCommand(
-//         results.slice(step * step_size, step * step_size + step_size)
-//     ))
+    db.exec(sql.GenerateSimulationResultInsertCommand(
+        results.slice(step * step_size, step * step_size + step_size)
+    ))
 
-//     console.log(`Processed ${ step * step_size } - ${ step * step_size + step_size }`)
-//     step++;
+    console.log(`Processed ${ step * step_size } - ${ step * step_size + step_size }`)
+    step++;
 
-// }
+}
 
 
-// db.close((err) => {
+db.close((err) => {
 
-//     if (err) {
-//         return console.error(err.message);
-//     }
+    if (err) {
+        return console.error(err.message);
+    }
 
-//     console.log('Close the database connection.');
-// });
+    console.log('Close the database connection.');
+});
+*/
+
+
 
 let output : any = { };
 let pokemons = (new PokemonRepository()).LoadAllPokemon()
@@ -94,8 +100,11 @@ _(results)
     output[key].total_score = output[key].wins / output[key].losses * output[key].win_score / output[key].loss_score; 
 })
 
-_(output).values().orderBy(row => { return row.total_score }, 'desc').take(5).each(row => {
+_(output)
+.values()
+.filter(row => {
+    return row.total_score > 0;
+})
+.orderBy(row => { return row.total_score }, 'desc').each(row => {
     console.log(row)
 })
-
-
