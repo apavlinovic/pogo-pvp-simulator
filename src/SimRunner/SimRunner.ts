@@ -7,7 +7,7 @@ import { Type } from "../Shared/Types";
 
 export class SimRunner {
 
-    RunAllVsAllSimulations(MaxCP: number, allowedTypes?: Array<Type>) {
+    RunAllVsAllSimulations(MaxCP: number, shields: Array<Array<number>> = [[0, 0]], allowedTypes?: Array<Type>) {
 
         let pokemon_repo = new PokemonRepository(allowedTypes);
         let move_repo = new MoveRepository();
@@ -21,8 +21,8 @@ export class SimRunner {
         console.time("pvp-sims-all-vs-all");
         let sim = new Simulator();
         
-        let shields = [[0,0]];
 
+        console.log(shields)
         shields.forEach(shield => {
 
             pokemons.forEach(attacker => {

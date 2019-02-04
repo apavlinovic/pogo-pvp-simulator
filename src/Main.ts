@@ -12,7 +12,7 @@ import { Battler } from "./Models/Battler";
 import { MoveRepository } from "./Repository/MoveRepository";
 import { Printer } from "./Utility/Printer";
 import { Pokemon } from "./Models/Pokemon";
-import * as EloRank from "elo-rank";
+import { Rankings, IAveragedRankingResultMap } from "./Rankings/Rankings";
 
 
 // var repo = new PokemonRepository();
@@ -53,8 +53,7 @@ import * as EloRank from "elo-rank";
 // printer.PrintBattleTimeline(output)
 
 
-let runner = new SimRunner();
-let results = runner.RunAllVsAllSimulations(Constants.GREAT_LEAGUE_MAX_CP, [Type.Poison, Type.Fairy, Type.Ghost, Type.Dark]);
+
 
 /*
 
@@ -98,29 +97,46 @@ db.close((err) => {
 
 
 
-let output : any = { };
-let pokemons = (new PokemonRepository([Type.Poison, Type.Fairy, Type.Ghost, Type.Dark])).LoadAllPokemon()
-let elo = new EloRank();
+let runner = new SimRunner();
+let ranker = new Rankings();
 
+let results_0_0_shields = ranker.CalculateRanking(runner.RunAllVsAllSimulations(Constants.GREAT_LEAGUE_MAX_CP, [[0, 0]], [Type.Poison, Type.Fairy, Type.Ghost, Type.Dark]));
+let results_0_1_shields = ranker.CalculateRanking(runner.RunAllVsAllSimulations(Constants.GREAT_LEAGUE_MAX_CP, [[0, 1]], [Type.Poison, Type.Fairy, Type.Ghost, Type.Dark]));
+let results_1_0_shields = ranker.CalculateRanking(runner.RunAllVsAllSimulations(Constants.GREAT_LEAGUE_MAX_CP, [[1, 0]], [Type.Poison, Type.Fairy, Type.Ghost, Type.Dark]));
+let results_1_1_shields = ranker.CalculateRanking(runner.RunAllVsAllSimulations(Constants.GREAT_LEAGUE_MAX_CP, [[1, 1]], [Type.Poison, Type.Fairy, Type.Ghost, Type.Dark]));
+let results_2_2_shields = ranker.CalculateRanking(runner.RunAllVsAllSimulations(Constants.GREAT_LEAGUE_MAX_CP, [[2, 2]], [Type.Poison, Type.Fairy, Type.Ghost, Type.Dark]));
 
-_(pokemons).each(poke => {
-    output[poke.ID] = {
-        id: poke.ID,
-        elo: 1200
-    };
-})
+let averagedRatings : IAveragedRankingResultMap = {};
 
-_(results).forEach((simResult: SimulationResult) => {
-    let currentEloWinner = output[simResult.Winner.Pokemon.ID].elo;
-    let currentEloLooser = output[simResult.Looser.Pokemon.ID].elo;
+for (const pokemonID in results_0_0_shields) {
+    if (results_0_0_shields.hasOwnProperty(pokemonID)) {
+        
+        averagedRatings[pokemonID] = {
+            rankings: [],
+            overall: 0
+        };
 
-    let expectedEloWinner = elo.getExpected(currentEloWinner, currentEloLooser);
-    let expectedEloLooser = elo.getExpected(currentEloLooser, currentEloWinner);
+        const rating_0_0 = results_0_0_shields[pokemonID];
+        const rating_0_1 = results_0_1_shields[pokemonID];
+        const rating_1_0 = results_1_0_shields[pokemonID];
+        const rating_1_1 = results_1_1_shields[pokemonID];
+        const rating_2_2 = results_2_2_shields[pokemonID];
+        
+        averagedRatings[pokemonID].rankings = [ rating_0_0, rating_0_1, rating_1_0, rating_1_1, rating_2_2];
+        averagedRatings[pokemonID].overall = (rating_0_0.Elo + rating_0_1.Elo + rating_1_0.Elo + rating_1_1.Elo + rating_2_2.Elo) / 5;
+    }
+}
 
-    output[simResult.Winner.Pokemon.ID].elo = elo.updateRating(expectedEloWinner, 1, currentEloWinner);
-    output[simResult.Looser.Pokemon.ID].elo = elo.updateRating(expectedEloLooser, 0, currentEloLooser);
-});
+let output = new Array;
 
-_(output).orderBy('elo', 'desc').each(res => {
-    console.log(res);
+for (const pokemonID in averagedRatings) {
+    if (averagedRatings.hasOwnProperty(pokemonID)) {
+        output.push([pokemonID, averagedRatings[pokemonID].overall])
+    }
+}
+
+_(output).orderBy(o => {
+    return o[1]
+}, 'desc').each(o => {
+    console.log(o[0], '\t', o[1]);
 })
