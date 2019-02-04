@@ -8,9 +8,7 @@
     "start": "tsc && node --max-old-space-size=8192 lib/main.js",
     "build": "tsc"
   },
-  "baseUrl": "types",
-  "typeRoots": ["types"],
-  
+
   "husky": {
     "hooks": {
       "pre-commit": "npm run build"

@@ -37,3 +37,12 @@ test('PokemonRepository:PokemonCreate', () => {
     let arceus_dark = repo.LoadPokemon("V0493_POKEMON_ARCEUS_DARK")
     expect(arceus_dark).toBeUndefined();
 });
+
+test('PokemonRepository:TypeFilter', () => {
+    let repo = new PokemonRepository([ Type.Dragon ]);
+
+    let allDragons = repo.LoadAllPokemon();
+
+    expect(allDragons.length).toBeGreaterThan(0);
+   
+});

@@ -24,7 +24,10 @@ export class PokemonRepository {
 
         if(allowedTypes) {
             pokemon = pokemon.filter((item: any) => {
-                return allowedTypes.indexOf(item.Type1) != -1 || (item.Type2 && allowedTypes.indexOf(item.Type2) != -1);
+                let type = Type[this.ExtractTypeIdentifier(item.pokemon_settings.type)];
+                let type2 = item.pokemon_settings.type_2 ? Type[this.ExtractTypeIdentifier(item.pokemon_settings.type_2)] : null;
+
+                return allowedTypes.indexOf(type) != -1 || (type2 && allowedTypes.indexOf(type2) != -1);
             });      
         }
 

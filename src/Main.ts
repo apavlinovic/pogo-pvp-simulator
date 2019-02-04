@@ -12,6 +12,7 @@ import { Battler } from "./Models/Battler";
 import { MoveRepository } from "./Repository/MoveRepository";
 import { Printer } from "./Utility/Printer";
 import { Pokemon } from "./Models/Pokemon";
+import * as EloRank from "elo-rank";
 
 
 // var repo = new PokemonRepository();
@@ -98,51 +99,28 @@ db.close((err) => {
 
 
 let output : any = { };
-let pokemons = (new PokemonRepository()).LoadAllPokemon()
+let pokemons = (new PokemonRepository([Type.Poison, Type.Fairy, Type.Ghost, Type.Dark])).LoadAllPokemon()
+let elo = new EloRank();
+
 
 _(pokemons).each(poke => {
     output[poke.ID] = {
         id: poke.ID,
-        wins: 0,
-        win_moves: [],
-        losses: 0,
-        total_score: 0
+        elo: 1200
     };
 })
 
+_(results).forEach((simResult: SimulationResult) => {
+    let currentEloWinner = output[simResult.Winner.Pokemon.ID].elo;
+    let currentEloLooser = output[simResult.Looser.Pokemon.ID].elo;
 
-_(results)
-.groupBy((sim: SimulationResult) => {
-    return `${sim.Winner.Pokemon.ID}`
-})
-.each((result_by_pokemon: Array<SimulationResult>, pokemon_id: string) => {
+    let expectedEloWinner = elo.getExpected(currentEloWinner, currentEloLooser);
+    let expectedEloLooser = elo.getExpected(currentEloLooser, currentEloWinner);
 
-     _(result_by_pokemon).groupBy((sim: SimulationResult) => {
-        return `${sim.Winner.FastMove.ID}/${sim.Winner.ChargeMove.ID}`
-    }).each((result_by_moveset: Array<SimulationResult>, move_set: string) => {
-        output[pokemon_id].win_moves.push([move_set, result_by_moveset.length / result_by_pokemon.length]);
+    output[simResult.Winner.Pokemon.ID].elo = elo.updateRating(expectedEloWinner, 1, currentEloWinner);
+    output[simResult.Looser.Pokemon.ID].elo = elo.updateRating(expectedEloLooser, 0, currentEloLooser);
+});
 
-        output[pokemon_id].win_moves = _(output[pokemon_id].win_moves).orderBy(wm => wm[1], 'desc').value();
-    })
-
-    output[pokemon_id].wins = result_by_pokemon.length;
-})
-
-_(results)
-.groupBy((sim: SimulationResult) => {
-    return `${sim.Looser.Pokemon.ID}`
-})
-.each((result: Array<SimulationResult>, key: string) => {
-
-    output[key].losses = result.length;
-})
-
-_(output)
-.values()
-.filter(row => {
-    return row.wins > 0 /*&& row.wins > row.losses */;
-})
-.orderBy(row => { return row.wins / row.losses }, 'desc').each(row => {
-    console.log(row.id, row.wins / row.losses)
-    console.log(row.win_moves[0])
+_(output).orderBy('elo', 'desc').each(res => {
+    console.log(res);
 })
