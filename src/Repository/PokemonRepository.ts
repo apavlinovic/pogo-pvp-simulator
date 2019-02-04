@@ -8,18 +8,25 @@ export class PokemonRepository {
     dataContext: any;
     bannedPokemon = [  'V0292_POKEMON_SHEDINJA', 'V0132_POKEMON_DITTO' ];
 
-    constructor() {
+    constructor(allowedTypes?: Array<Type>) {
         this.dataContext = {};
 
         let pokemon = JSON.parse(fs.readFileSync('./src/Data/GameMaster.js', 'utf8'));
 
         pokemon = pokemon.filter((item: any) => {
-            return (item.template_id as string).startsWith("V0")
-                && (item.template_id as string).indexOf(`_POKEMON_`) != -1
-                && item.pokemon_settings != null
+            return  item.pokemon_settings != null
+                && !item.pokemon_settings.evolution_branch
+                
                 && this.bannedPokemon.indexOf(item.template_id) == -1
-                && !item.pokemon_settings.evolution_branch;
-        });        
+                && !item.template_id.startsWith('V0493_POKEMON_ARCEUS_') 
+                && !item.template_id.startsWith('V0479_POKEMON_ROTOM');
+        })
+
+        if(allowedTypes) {
+            pokemon = pokemon.filter((item: any) => {
+                return allowedTypes.indexOf(item.Type1) != -1 || (item.Type2 && allowedTypes.indexOf(item.Type2) != -1);
+            });      
+        }
 
         pokemon.forEach((gm_pokemon : any) => {
             this.dataContext[gm_pokemon.template_id] = this.CreatePokemonModelFromDataContextPokemon(gm_pokemon);

@@ -9,20 +9,10 @@ export class SimRunner {
 
     RunAllVsAllSimulations(MaxCP: number, allowedTypes?: Array<Type>) {
 
-        let pokemon_repo = new PokemonRepository();
+        let pokemon_repo = new PokemonRepository(allowedTypes);
         let move_repo = new MoveRepository();
 
         let pokemons =  pokemon_repo.LoadAllPokemon();
-
-        if(allowedTypes) {
-            pokemons = pokemons.filter(pokemon => {
-                return allowedTypes.indexOf(pokemon.Type1) != -1 ||
-                       (pokemon.Type2 && allowedTypes.indexOf(pokemon.Type2) != -1);
-            }).filter(pokemon => {
-                return !pokemon.ID.startsWith('V0493_POKEMON_ARCEUS_') && !pokemon.ID.startsWith('V0479_POKEMON_ROTOM')
-            });
-
-        }
 
         let sim_results : Array<SimulationResult>= new Array;
         

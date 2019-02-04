@@ -35,6 +35,5 @@ test('PokemonRepository:PokemonCreate', () => {
     expect(arceus.Type1).toBe(Type.Normal);
 
     let arceus_dark = repo.LoadPokemon("V0493_POKEMON_ARCEUS_DARK")
-    expect(arceus_dark.CP).toBe(3989);
-    expect(arceus_dark.Type1).toBe(Type.Dark);     
+    expect(arceus_dark).toBeUndefined();
 });
