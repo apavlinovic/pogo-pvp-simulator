@@ -76,7 +76,7 @@ export class Battler {
     }
 
     CanUseChargeMove() {
-        return this.Energy + this.ChargeMove.Energy > 0;
+        return this.Energy + this.ChargeMove.Energy >= 0;
     }
 
     CanAct() {
@@ -99,12 +99,15 @@ export class Battler {
 
     UseShield() {
         this.Shields--;
-        this.Cooldown = Constants.SHIELD_TURN_DURATION;
         this.NextDeclaredMove = null;
 
         if(this.Timeline) {
             this.Timeline.AddEvent(new TimelineEvent(this.Turn, Constants.CHARGE_MOVE_TURN_DURATION, TimelineEventType.Shield))
         }
+    }
+
+    ApplyShieldCooldown() {
+        this.Cooldown = Constants.SHIELD_TURN_DURATION;
     }
 
     DeclareAttack(move: Move) {

@@ -51,8 +51,10 @@ export class Simulator {
 
                 if(defender.CanUseShield()) {
                     defender.UseShield();
+                    defender.ApplyShieldCooldown();
                     attacker.FoilAttack();
                 } else {
+                    defender.ApplyShieldCooldown();
                     attacker.ExecuteAttack(defender)
                 }
 

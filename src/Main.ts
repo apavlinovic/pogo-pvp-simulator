@@ -15,42 +15,42 @@ import { Pokemon } from "./Models/Pokemon";
 import { Rankings, IAveragedRankingResultMap } from "./Rankings/Rankings";
 
 
-// var repo = new PokemonRepository();
-// var move_repo = new MoveRepository();
+var repo = new PokemonRepository();
+var move_repo = new MoveRepository();
 
-// var azumarill : Pokemon = repo.LoadPokemon("V0184_POKEMON_AZUMARILL");
-// var raichu : Pokemon = repo.LoadPokemon("V0026_POKEMON_RAICHU_NORMAL");
+var azumarill : Pokemon = repo.LoadPokemon("V0184_POKEMON_AZUMARILL");
+var raichu : Pokemon = repo.LoadPokemon("V0026_POKEMON_RAICHU_NORMAL");
 
-// azumarill.ScaleToCombatPower(Constants.GREAT_LEAGUE_MAX_CP);
-// raichu.ScaleToCombatPower(Constants.GREAT_LEAGUE_MAX_CP);
+azumarill.ScaleToCombatPower(Constants.GREAT_LEAGUE_MAX_CP);
+raichu.ScaleToCombatPower(Constants.GREAT_LEAGUE_MAX_CP);
 
-// var sim = new Simulator();
+var sim = new Simulator();
 
-// sim.SetBattlers(new Battler(
-//     azumarill,
-//     move_repo.LoadMove("BUBBLE_FAST"),
-//     move_repo.LoadMove("HYDRO_PUMP"),
-//     null,
-//     2,
-//     true
-// ),
-// new Battler(
-//     raichu,
-//     move_repo.LoadMove("VOLT_SWITCH_FAST"),
-//     move_repo.LoadMove("WILD_CHARGE"),
-//     null,
-//     2,
-//     true
-// ));
-
-
-// var output = sim.Simulate();
+sim.SetBattlers(new Battler(
+    azumarill,
+    move_repo.LoadMove("BUBBLE_FAST"),
+    move_repo.LoadMove("HYDRO_PUMP"),
+    null,
+    0,
+    true
+),
+new Battler(
+    raichu,
+    move_repo.LoadMove("VOLT_SWITCH_FAST"),
+    move_repo.LoadMove("WILD_CHARGE"),
+    null,
+    0,
+    true
+));
 
 
-// var printer = new Printer()
+var output = sim.Simulate();
 
-// console.log(output.Winner.Pokemon.ID, output.Winner.Health)
-// printer.PrintBattleTimeline(output)
+
+var printer = new Printer()
+
+console.log(output.Winner.Pokemon.ID, output.Winner.Health)
+printer.PrintBattleTimeline(output)
 
 
 
@@ -97,46 +97,46 @@ db.close((err) => {
 
 
 
-let runner = new SimRunner();
-let ranker = new Rankings();
+// let runner = new SimRunner();
+// let ranker = new Rankings();
 
-let results_0_0_shields = ranker.CalculateRanking(runner.RunAllVsAllSimulations(Constants.GREAT_LEAGUE_MAX_CP, [[0, 0]], [Type.Poison, Type.Fairy, Type.Ghost, Type.Dark]));
-let results_0_1_shields = ranker.CalculateRanking(runner.RunAllVsAllSimulations(Constants.GREAT_LEAGUE_MAX_CP, [[0, 1]], [Type.Poison, Type.Fairy, Type.Ghost, Type.Dark]));
-let results_1_0_shields = ranker.CalculateRanking(runner.RunAllVsAllSimulations(Constants.GREAT_LEAGUE_MAX_CP, [[1, 0]], [Type.Poison, Type.Fairy, Type.Ghost, Type.Dark]));
-let results_1_1_shields = ranker.CalculateRanking(runner.RunAllVsAllSimulations(Constants.GREAT_LEAGUE_MAX_CP, [[1, 1]], [Type.Poison, Type.Fairy, Type.Ghost, Type.Dark]));
-let results_2_2_shields = ranker.CalculateRanking(runner.RunAllVsAllSimulations(Constants.GREAT_LEAGUE_MAX_CP, [[2, 2]], [Type.Poison, Type.Fairy, Type.Ghost, Type.Dark]));
+// let results_0_0_shields = ranker.CalculateRanking(runner.RunAllVsAllSimulations(Constants.GREAT_LEAGUE_MAX_CP, [[0, 0]], [Type.Poison, Type.Fairy, Type.Ghost, Type.Dark]));
+// let results_0_1_shields = ranker.CalculateRanking(runner.RunAllVsAllSimulations(Constants.GREAT_LEAGUE_MAX_CP, [[0, 1]], [Type.Poison, Type.Fairy, Type.Ghost, Type.Dark]));
+// let results_1_0_shields = ranker.CalculateRanking(runner.RunAllVsAllSimulations(Constants.GREAT_LEAGUE_MAX_CP, [[1, 0]], [Type.Poison, Type.Fairy, Type.Ghost, Type.Dark]));
+// let results_1_1_shields = ranker.CalculateRanking(runner.RunAllVsAllSimulations(Constants.GREAT_LEAGUE_MAX_CP, [[1, 1]], [Type.Poison, Type.Fairy, Type.Ghost, Type.Dark]));
+// let results_2_2_shields = ranker.CalculateRanking(runner.RunAllVsAllSimulations(Constants.GREAT_LEAGUE_MAX_CP, [[2, 2]], [Type.Poison, Type.Fairy, Type.Ghost, Type.Dark]));
 
-let averagedRatings : IAveragedRankingResultMap = {};
+// let averagedRatings : IAveragedRankingResultMap = {};
 
-for (const pokemonID in results_0_0_shields) {
-    if (results_0_0_shields.hasOwnProperty(pokemonID)) {
+// for (const pokemonID in results_0_0_shields) {
+//     if (results_0_0_shields.hasOwnProperty(pokemonID)) {
         
-        averagedRatings[pokemonID] = {
-            rankings: [],
-            overall: 0
-        };
+//         averagedRatings[pokemonID] = {
+//             rankings: [],
+//             overall: 0
+//         };
 
-        const rating_0_0 = results_0_0_shields[pokemonID];
-        const rating_0_1 = results_0_1_shields[pokemonID];
-        const rating_1_0 = results_1_0_shields[pokemonID];
-        const rating_1_1 = results_1_1_shields[pokemonID];
-        const rating_2_2 = results_2_2_shields[pokemonID];
+//         const rating_0_0 = results_0_0_shields[pokemonID];
+//         const rating_0_1 = results_0_1_shields[pokemonID];
+//         const rating_1_0 = results_1_0_shields[pokemonID];
+//         const rating_1_1 = results_1_1_shields[pokemonID];
+//         const rating_2_2 = results_2_2_shields[pokemonID];
         
-        averagedRatings[pokemonID].rankings = [ rating_0_0, rating_0_1, rating_1_0, rating_1_1, rating_2_2];
-        averagedRatings[pokemonID].overall = (rating_0_0.Elo + rating_0_1.Elo + rating_1_0.Elo + rating_1_1.Elo + rating_2_2.Elo) / 5;
-    }
-}
+//         averagedRatings[pokemonID].rankings = [ rating_0_0, rating_0_1, rating_1_0, rating_1_1, rating_2_2];
+//         averagedRatings[pokemonID].overall = (rating_0_0.Elo + rating_0_1.Elo + rating_1_0.Elo + rating_1_1.Elo + rating_2_2.Elo) / 5;
+//     }
+// }
 
-let output = new Array;
+// let output = new Array;
 
-for (const pokemonID in averagedRatings) {
-    if (averagedRatings.hasOwnProperty(pokemonID)) {
-        output.push([pokemonID, averagedRatings[pokemonID].overall])
-    }
-}
+// for (const pokemonID in averagedRatings) {
+//     if (averagedRatings.hasOwnProperty(pokemonID)) {
+//         output.push([pokemonID, averagedRatings[pokemonID].overall])
+//     }
+// }
 
-_(output).orderBy(o => {
-    return o[1]
-}, 'desc').each(o => {
-    console.log(o[0], '\t', o[1]);
-})
+// _(output).orderBy(o => {
+//     return o[1]
+// }, 'desc').each(o => {
+//     console.log(o[0], '\t', o[1]);
+// })
