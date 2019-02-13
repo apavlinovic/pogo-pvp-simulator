@@ -1,6 +1,7 @@
 import { SimulationResult } from "../Simulator/SimulationResult";
 import _ = require("lodash");
 import * as Elo from "arpad";
+import { Battler } from "../Models/Battler";
 
 export class Rankings {
     CalculateRanking(simResults: Array<SimulationResult>) {
@@ -9,23 +10,28 @@ export class Rankings {
         const elo_engine = new Elo();
 
         _(simResults).forEach((simResult: SimulationResult) => {
-            output[simResult.Winner.Pokemon.ID] = output[simResult.Winner.Pokemon.ID] || new RankingResult();
-            output[simResult.Looser.Pokemon.ID] = output[simResult.Looser.Pokemon.ID] || new RankingResult();
 
-            output[simResult.Winner.Pokemon.ID].TrackWin();
-            output[simResult.Looser.Pokemon.ID].TrackLoss();
+            output[this.GeneratePokemonWithMovesetIdentifier(simResult.Winner)] = output[this.GeneratePokemonWithMovesetIdentifier(simResult.Winner)] || new RankingResult();
+            output[this.GeneratePokemonWithMovesetIdentifier(simResult.Looser)] = output[this.GeneratePokemonWithMovesetIdentifier(simResult.Looser)] || new RankingResult();
 
-            let winner_elo = output[simResult.Winner.Pokemon.ID].Elo;
-            let looser_elo = output[simResult.Looser.Pokemon.ID].Elo;
+            output[this.GeneratePokemonWithMovesetIdentifier(simResult.Winner)].TrackWin();
+            output[this.GeneratePokemonWithMovesetIdentifier(simResult.Looser)].TrackLoss();
+
+            let winner_elo = output[this.GeneratePokemonWithMovesetIdentifier(simResult.Winner)].Elo;
+            let looser_elo = output[this.GeneratePokemonWithMovesetIdentifier(simResult.Looser)].Elo;
 
             let winner_odds = elo_engine.expectedScore(winner_elo, looser_elo);
             let looser_odds = elo_engine.expectedScore(looser_elo, winner_elo);
 
-            output[simResult.Winner.Pokemon.ID].Elo = elo_engine.newRating(winner_odds, 1.0, winner_elo);
-            output[simResult.Looser.Pokemon.ID].Elo = elo_engine.newRating(looser_odds, 0.0, looser_elo);
+            output[this.GeneratePokemonWithMovesetIdentifier(simResult.Winner)].Elo = elo_engine.newRating(winner_odds, 1.0, winner_elo);
+            output[this.GeneratePokemonWithMovesetIdentifier(simResult.Looser)].Elo = elo_engine.newRating(looser_odds, 0.0, looser_elo);
         });
 
         return output;
+    }
+
+    private GeneratePokemonWithMovesetIdentifier(battler: Battler) {
+        return `${battler.Pokemon.ID}-${battler.FastMove.ID}-${battler.ChargeMove.ID}`
     }
 }
 
@@ -35,12 +41,13 @@ export interface IRankingResultMap {
 
 export interface IAveragedRankingResultMap {
     [pokemonID: string] : {
-        rankings: Array<RankingResult>,
-        overall: number
+        elo: number,
+        wins: number,
+        losses: number
     };
 } 
 
-class RankingResult {
+export class RankingResult {
 
     Elo: number;    
     Wins: number;

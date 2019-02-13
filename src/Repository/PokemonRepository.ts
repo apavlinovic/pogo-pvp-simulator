@@ -15,7 +15,7 @@ export class PokemonRepository {
 
         pokemon = pokemon.filter((item: any) => {
             return  item.pokemon_settings != null
-                && !item.pokemon_settings.evolution_branch
+                // && !item.pokemon_settings.evolution_branch
                 
                 && this.bannedPokemon.indexOf(item.template_id) == -1
                 && !item.template_id.startsWith('V0493_POKEMON_ARCEUS_') 

@@ -12,7 +12,7 @@ import { Battler } from "./Models/Battler";
 import { MoveRepository } from "./Repository/MoveRepository";
 import { Printer } from "./Utility/Printer";
 import { Pokemon } from "./Models/Pokemon";
-import { Rankings, IAveragedRankingResultMap } from "./Rankings/Rankings";
+import { Rankings, IAveragedRankingResultMap, RankingResult } from "./Rankings/Rankings";
 
 
 var repo = new PokemonRepository();
@@ -59,88 +59,84 @@ printer.PrintBattleTimeline(output)
 
 */
 
-/*
-
-
-console.log(results.length);
-let db = new sqlite3.Database(Constants.SQLITE_DB, sqlite3.OPEN_READWRITE, (err) => {
-    
-    if (err) {
-      return console.error(err.message);
-    }
-
-    console.log('Connected to the SQlite database.'); 
-});
-
-let sql = new SQLGenerator();
-
-let step = 0;
-let step_size = 200000;
-
-while(step * step_size < results.length) {
-    
-    db.exec(sql.GenerateSimulationResultInsertCommand(
-        results.slice(step * step_size, step * step_size + step_size)
-    ))
-
-    console.log(`Processed ${ step * step_size } - ${ step * step_size + step_size }`)
-    step++;
-
-}
-
-
-db.close((err) => {
-
-    if (err) {
-        return console.error(err.message);
-    }
-
-    console.log('Close the database connection.');
-});
-*/
-
 
 
 let runner = new SimRunner();
 let ranker = new Rankings();
-
-let results_0_0_shields = ranker.CalculateRanking(runner.RunAllVsAllSimulations(Constants.GREAT_LEAGUE_MAX_CP, [[0, 0]], [Type.Poison, Type.Fairy, Type.Ghost, Type.Dark]));
-let results_0_1_shields = ranker.CalculateRanking(runner.RunAllVsAllSimulations(Constants.GREAT_LEAGUE_MAX_CP, [[0, 1]], [Type.Poison, Type.Fairy, Type.Ghost, Type.Dark]));
-let results_1_0_shields = ranker.CalculateRanking(runner.RunAllVsAllSimulations(Constants.GREAT_LEAGUE_MAX_CP, [[1, 0]], [Type.Poison, Type.Fairy, Type.Ghost, Type.Dark]));
-let results_1_1_shields = ranker.CalculateRanking(runner.RunAllVsAllSimulations(Constants.GREAT_LEAGUE_MAX_CP, [[1, 1]], [Type.Poison, Type.Fairy, Type.Ghost, Type.Dark]));
-let results_2_2_shields = ranker.CalculateRanking(runner.RunAllVsAllSimulations(Constants.GREAT_LEAGUE_MAX_CP, [[2, 2]], [Type.Poison, Type.Fairy, Type.Ghost, Type.Dark]));
-
 let averagedRatings : IAveragedRankingResultMap = {};
 
-for (const pokemonID in results_0_0_shields) {
-    if (results_0_0_shields.hasOwnProperty(pokemonID)) {
-        
-        averagedRatings[pokemonID] = {
-            rankings: [],
-            overall: 0
-        };
+for(let aShield = 0; aShield <= 0; aShield++) {
+    for(let bShield = 0; bShield <= 0; bShield++) {
 
-        const rating_0_0 = results_0_0_shields[pokemonID];
-        const rating_0_1 = results_0_1_shields[pokemonID];
-        const rating_1_0 = results_1_0_shields[pokemonID];
-        const rating_1_1 = results_1_1_shields[pokemonID];
-        const rating_2_2 = results_2_2_shields[pokemonID];
-        
-        averagedRatings[pokemonID].rankings = [ rating_0_0, rating_0_1, rating_1_0, rating_1_1, rating_2_2];
-        averagedRatings[pokemonID].overall = (rating_0_0.Elo + rating_0_1.Elo + rating_1_0.Elo + rating_1_1.Elo + rating_2_2.Elo) / 5;
+        let result = ranker.CalculateRanking(
+            runner.RunAllVsAllSimulations(
+                Constants.GREAT_LEAGUE_MAX_CP, [[aShield, bShield]],
+                [Type.Poison, Type.Fairy, Type.Ghost, Type.Dark])
+            );
+
+        for (const pokemonID in result) {
+            if (result.hasOwnProperty(pokemonID)) {
+                averagedRatings[pokemonID] = averagedRatings[pokemonID] || {
+                    elo: 0,
+                    wins: 0,
+                    losses: 0,
+                };  
+            }
+
+            averagedRatings[pokemonID].elo += result[pokemonID].Elo;
+            averagedRatings[pokemonID].wins += result[pokemonID].Wins;
+            averagedRatings[pokemonID].losses += result[pokemonID].Loss;
+        }
+
     }
 }
 
-let output = new Array;
+let output : any = {};
 
-for (const pokemonID in averagedRatings) {
-    if (averagedRatings.hasOwnProperty(pokemonID)) {
-        output.push([pokemonID, averagedRatings[pokemonID].overall])
+for (const pokemonMovesetID in averagedRatings) {
+    if (averagedRatings.hasOwnProperty(pokemonMovesetID)) {
+        let [ pokemon, fastMove, chargeMove ] = pokemonMovesetID.split('-');
+
+        output[pokemon] = output[pokemon] || {};
+        output[pokemon][fastMove] = output[pokemon][fastMove] || {};
+
+        output[pokemon][fastMove][chargeMove] = { 
+            elo: averagedRatings[pokemonMovesetID].elo / 8, 
+            wins: averagedRatings[pokemonMovesetID].wins / 8, 
+            losses: averagedRatings[pokemonMovesetID].losses / 8 
+        }
     }
 }
 
-_(output).orderBy(o => {
-    return o[1]
+let printable_output = new Array;
+
+for (const pokemon in output) {
+    let total_elo = 0;
+    let total_wins = 0;
+    let total_losses = 0;
+    let total_moves = 0;
+
+    for (const fast_move in output[pokemon]) {
+        for (const charge_move in output[pokemon][fast_move]) {
+            total_moves++;
+
+            total_wins += output[pokemon][fast_move][charge_move].wins;
+            total_losses += output[pokemon][fast_move][charge_move].losses;
+            total_elo += output[pokemon][fast_move][charge_move].elo;
+        }
+    }
+
+    output[pokemon].total_elo = total_elo / total_moves;
+    output[pokemon].total_wins = total_wins / total_moves;
+    output[pokemon].total_losses = total_losses / total_moves;
+
+    output[pokemon].name = pokemon;
+
+    printable_output.push(output[pokemon]);
+}
+
+_(printable_output).orderBy(o => {
+    return o.total_wins / o.total_losses
 }, 'desc').each(o => {
-    console.log(o[0], '\t', o[1]);
+    console.log(o.name, '\t', o.total_wins / o.total_losses);
 })
