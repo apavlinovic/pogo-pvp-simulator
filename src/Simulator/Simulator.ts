@@ -44,7 +44,7 @@ export class Simulator {
         
         if(attacker.CanAct()) {
             if(attacker.CanUseChargeMove()
-            // && !attacker.CanUseFastMoveBeforeTargetCanAct(defender)
+            && !attacker.CanUseFastMoveBeforeTargetCanAct(defender)
             && !attacker.CanKillTarget(defender, attacker.FastMove)) {
 
                 attacker.DeclareAttack(attacker.ChargeMove);

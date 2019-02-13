@@ -43,8 +43,13 @@ export class Battler {
     }
 
     Tick() {
-        this.Cooldown -= Constants.HALF_TURN_DURATION;
-        this.Turn += Constants.HALF_TURN_DURATION;
+        this.Cooldown -= Constants.SIM_TURN_DELTA;
+        this.Turn += Constants.SIM_TURN_DELTA;
+
+        if(this.Cooldown < 0) {
+            this.Cooldown = 0;
+        };
+
     }
 
     ScaleTo(combatPower: number) {
@@ -86,6 +91,10 @@ export class Battler {
 
     CanUseFastMoveBeforeTargetCanAct(target: Battler) {
         if(this.FastMove.Turns) {
+            if(this.FastMove.Turns === Constants.HALF_TURN_DURATION) {
+                return false;
+            }
+
             return target.Cooldown > this.FastMove.Turns;
         }
 
@@ -114,12 +123,6 @@ export class Battler {
     DeclareAttack(move: Move) {
         this.Energy += move.Energy;
         this.NextDeclaredMove = move;
-        
-        // if(this.Energy > Constants.MAX_ENG) {
-        //     this.Energy = Constants.MAX_ENG;
-        // } else if (this.Energy < 0) {
-        //     this.Energy = 0;
-        // }
 
         if(move.Category == MoveCategory.Fast) {
             this.Cooldown = move.Turns as number;

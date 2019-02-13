@@ -17,30 +17,31 @@ import { Rankings, IAveragedRankingResultMap } from "./Rankings/Rankings";
 
 var repo = new PokemonRepository();
 var move_repo = new MoveRepository();
-
-var opponent : Pokemon = repo.LoadPokemon("V0184_POKEMON_AZUMARILL");
+/*
+// var opponent : Pokemon = repo.LoadPokemon("V0184_POKEMON_AZUMARILL");
 // var opponent : Pokemon = repo.LoadPokemon("V0131_POKEMON_LAPRAS");
-var me : Pokemon = repo.LoadPokemon("V0026_POKEMON_RAICHU_NORMAL");
+var opponent : Pokemon = repo.LoadPokemon("V0277_POKEMON_SWELLOW");
+// var me : Pokemon = repo.LoadPokemon("V0026_POKEMON_RAICHU_NORMAL");
+var me : Pokemon = repo.LoadPokemon("V0260_POKEMON_SWAMPERT");
 
 opponent.ScaleToCombatPower(Constants.GREAT_LEAGUE_MAX_CP);
 me.ScaleToCombatPower(Constants.GREAT_LEAGUE_MAX_CP);
 
-console.log(me.HP, opponent.HP);
 
 var sim = new Simulator();
 
 sim.SetBattlers(new Battler(
     opponent,
-    move_repo.LoadMove("BUBBLE_FAST"),
-    move_repo.LoadMove("HYDRO_PUMP"),
+    move_repo.LoadMove("WING_ATTACK_FAST"),
+    move_repo.LoadMove("BRAVE_BIRD"),
     null,
     2,
     true
 ),
 new Battler(
     me,
-    move_repo.LoadMove("VOLT_SWITCH_FAST"),
-    move_repo.LoadMove("THUNDER_PUNCH"),
+    move_repo.LoadMove("WATER_GUN_FAST"),
+    move_repo.LoadMove("SLUDGE_WAVE"),
     null,
     2,
     true
@@ -56,7 +57,7 @@ console.log(output.Winner.Pokemon.ID, output.Winner.Health)
 printer.PrintBattleTimeline(output)
 
 
-
+*/
 
 /*
 
@@ -98,7 +99,7 @@ db.close((err) => {
 });
 */
 
-/*
+
 
 let runner = new SimRunner();
 let ranker = new Rankings();
@@ -142,4 +143,4 @@ _(output).orderBy(o => {
     return o[1]
 }, 'desc').each(o => {
     console.log(o[0], '\t', o[1]);
-})*/
+})

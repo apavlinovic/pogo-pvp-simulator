@@ -19,7 +19,7 @@ export class Move {
 
         this.Turns = turns || (
             this.Category === MoveCategory.Fast 
-            ? Constants.HALF_TURN_DURATION 
+            ? Constants.HALF_TURN_DURATION
             : Constants.CHARGE_MOVE_TURN_DURATION
         );
     }
