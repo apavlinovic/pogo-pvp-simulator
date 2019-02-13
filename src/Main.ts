@@ -24,33 +24,35 @@ var raichu : Pokemon = repo.LoadPokemon("V0026_POKEMON_RAICHU_NORMAL");
 azumarill.ScaleToCombatPower(Constants.GREAT_LEAGUE_MAX_CP);
 raichu.ScaleToCombatPower(Constants.GREAT_LEAGUE_MAX_CP);
 
-// var sim = new Simulator();
+console.log(raichu)
 
-// sim.SetBattlers(new Battler(
-//     azumarill,
-//     move_repo.LoadMove("BUBBLE_FAST"),
-//     move_repo.LoadMove("HYDRO_PUMP"),
-//     null,
-//     0,
-//     true
-// ),
-// new Battler(
-//     raichu,
-//     move_repo.LoadMove("VOLT_SWITCH_FAST"),
-//     move_repo.LoadMove("WILD_CHARGE"),
-//     null,
-//     0,
-//     true
-// ));
+var sim = new Simulator();
+
+sim.SetBattlers(new Battler(
+    azumarill,
+    move_repo.LoadMove("BUBBLE_FAST"),
+    move_repo.LoadMove("HYDRO_PUMP"),
+    null,
+    2,
+    true
+),
+new Battler(
+    raichu,
+    move_repo.LoadMove("VOLT_SWITCH_FAST"),
+    move_repo.LoadMove("WILD_CHARGE"),
+    null,
+    2,
+    true
+));
 
 
-// var output = sim.Simulate();
+var output = sim.Simulate();
 
 
-// var printer = new Printer()
+var printer = new Printer()
 
-// console.log(output.Winner.Pokemon.ID, output.Winner.Health)
-// printer.PrintBattleTimeline(output)
+console.log(output.Winner.Pokemon.ID, output.Winner.Health)
+printer.PrintBattleTimeline(output)
 
 
 
@@ -95,7 +97,7 @@ db.close((err) => {
 });
 */
 
-
+/*
 
 let runner = new SimRunner();
 let ranker = new Rankings();
@@ -139,4 +141,4 @@ _(output).orderBy(o => {
     return o[1]
 }, 'desc').each(o => {
     console.log(o[0], '\t', o[1]);
-})
+})*/

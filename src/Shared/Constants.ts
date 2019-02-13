@@ -10,8 +10,8 @@ export default class Constants {
 	static CHARGE_ATTACK_BONUS_MULTIPLIER = 1.2999999523162842;
 
     static TURN_DURATION_MS = 500;
-    static CHARGE_MOVE_TURN_DURATION = 6;
-    static SHIELD_TURN_DURATION = 6;
+    static CHARGE_MOVE_TURN_DURATION = 8;
+    static SHIELD_TURN_DURATION = 8;
 	static SHIELD_COUNT = 2;
 	
 	static GREAT_LEAGUE_MAX_CP = 1500;
