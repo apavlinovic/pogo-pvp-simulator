@@ -43,8 +43,8 @@ export class Battler {
     }
 
     Tick() {
-        this.Cooldown--;
-        this.Turn++;
+        this.Cooldown -= Constants.HALF_TURN_DURATION;
+        this.Turn += Constants.HALF_TURN_DURATION;
     }
 
     ScaleTo(combatPower: number) {
@@ -115,13 +115,17 @@ export class Battler {
         this.Energy += move.Energy;
         this.NextDeclaredMove = move;
         
-        if(this.Energy > Constants.MAX_ENG) {
-            this.Energy = Constants.MAX_ENG;
-        } else if (this.Energy < 0) {
-            this.Energy = 0;
-        }
+        // if(this.Energy > Constants.MAX_ENG) {
+        //     this.Energy = Constants.MAX_ENG;
+        // } else if (this.Energy < 0) {
+        //     this.Energy = 0;
+        // }
 
-        this.Cooldown = move.Turns || Constants.CHARGE_MOVE_TURN_DURATION;
+        if(move.Category == MoveCategory.Fast) {
+            this.Cooldown = move.Turns as number;
+        } else {
+            this.Cooldown = Constants.CHARGE_MOVE_TURN_DURATION + Constants.HALF_TURN_DURATION;
+        }
 
         if(this.Timeline) {
             if(move.Category == MoveCategory.Fast) {

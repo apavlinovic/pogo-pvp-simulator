@@ -36,7 +36,7 @@ export class Timeline {
 
         for (const turn in zipped) {
             if (zipped.hasOwnProperty(turn)) {
-                result.push([ parseInt(turn), zipped[turn][0], zipped[turn][1] ]);
+                result.push([ parseFloat(turn), zipped[turn][0], zipped[turn][1] ]);
             }
         }
 

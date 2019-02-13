@@ -1,4 +1,5 @@
 import { Type } from "../Shared/Types";
+import Constants from "../Shared/Constants";
 
 export class Move {
     ID: string;
@@ -13,9 +14,14 @@ export class Move {
         this.ID = id;
         this.Power = power || 0;
         this.Energy = energy;
-        this.Turns = turns;
-        this.Type = type;
         this.Category = energy > 0 ? MoveCategory.Fast : MoveCategory.Charge;
+        this.Type = type;
+
+        this.Turns = turns || (
+            this.Category === MoveCategory.Fast 
+            ? Constants.HALF_TURN_DURATION 
+            : Constants.CHARGE_MOVE_TURN_DURATION
+        );
     }
 }
 

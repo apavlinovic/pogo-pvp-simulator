@@ -18,18 +18,19 @@ import { Rankings, IAveragedRankingResultMap } from "./Rankings/Rankings";
 var repo = new PokemonRepository();
 var move_repo = new MoveRepository();
 
-var azumarill : Pokemon = repo.LoadPokemon("V0184_POKEMON_AZUMARILL");
-var raichu : Pokemon = repo.LoadPokemon("V0026_POKEMON_RAICHU_NORMAL");
+var opponent : Pokemon = repo.LoadPokemon("V0184_POKEMON_AZUMARILL");
+// var opponent : Pokemon = repo.LoadPokemon("V0131_POKEMON_LAPRAS");
+var me : Pokemon = repo.LoadPokemon("V0026_POKEMON_RAICHU_NORMAL");
 
-azumarill.ScaleToCombatPower(Constants.GREAT_LEAGUE_MAX_CP);
-raichu.ScaleToCombatPower(Constants.GREAT_LEAGUE_MAX_CP);
+opponent.ScaleToCombatPower(Constants.GREAT_LEAGUE_MAX_CP);
+me.ScaleToCombatPower(Constants.GREAT_LEAGUE_MAX_CP);
 
-console.log(raichu)
+console.log(me.HP, opponent.HP);
 
 var sim = new Simulator();
 
 sim.SetBattlers(new Battler(
-    azumarill,
+    opponent,
     move_repo.LoadMove("BUBBLE_FAST"),
     move_repo.LoadMove("HYDRO_PUMP"),
     null,
@@ -37,9 +38,9 @@ sim.SetBattlers(new Battler(
     true
 ),
 new Battler(
-    raichu,
+    me,
     move_repo.LoadMove("VOLT_SWITCH_FAST"),
-    move_repo.LoadMove("WILD_CHARGE"),
+    move_repo.LoadMove("THUNDER_PUNCH"),
     null,
     2,
     true
