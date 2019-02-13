@@ -65,3 +65,12 @@ test('DamageFormula:AccurateNumber', () => {
 
     expect(Formulas.CalculateDamageToTargetPokemon(venusaur, venusaur, frenzy_plant)).toBe(32);
 })
+
+test('DamageFormula:Splash', () => {
+    let venusaur = pokemon_repo.LoadPokemon("V0003_POKEMON_VENUSAUR");
+    let splash = move_repo.LoadMove("COMBAT_V0231_MOVE_SPLASH_FAST");
+
+    expect(Formulas.CalculateDamageToTargetPokemon(venusaur, venusaur, splash)).toBe(1);
+})
+
+
