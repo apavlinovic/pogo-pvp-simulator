@@ -105,8 +105,5 @@ export class Pokemon {
         private Formula_CP(ATK: number, DEF: number, STA: number, CPM: number) {
             return Math.floor((ATK * Math.pow(DEF, 0.5) * Math.pow(STA, 0.5) * Math.pow(CPM, 2)) / 10);
         }
-        
-        GetStabMultiplier(move: Move) {
-            return (move.Type === this.Type1 || move.Type === this.Type2) ? Constants.STAB_MULTI : 1;
-        }
+                
     }

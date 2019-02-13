@@ -41,7 +41,7 @@ export class PokemonRepository {
         return Object.values(this.dataContext) as Array<Pokemon>;
     }
 
-    LoadPokemon(game_master_id: any) {
+    LoadPokemon(game_master_id: any): Pokemon {
         
         return this.dataContext[game_master_id]
     }

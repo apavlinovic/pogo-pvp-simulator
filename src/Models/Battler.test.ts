@@ -6,7 +6,6 @@ import Constants from "../Shared/Constants";
 let pokemon_repo = new PokemonRepository()
 let move_repo = new MoveRepository();
 
-
 test('Battler initializes and resets properly', () => {
 
     let venusaur = pokemon_repo.LoadPokemon("V0003_POKEMON_VENUSAUR");
@@ -26,6 +25,7 @@ test('Battler initializes and resets properly', () => {
     expect(venu_battler.CanAct()).toBe(true);
     expect(venu_battler.Energy).toBe(0);
 });
+
 
 test('Battler energy generation and usage works and doesnt break limits', () => {
 

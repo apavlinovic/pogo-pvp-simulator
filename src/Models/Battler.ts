@@ -3,6 +3,7 @@ import { Move, MoveCategory } from "./Move";
 import { TypeEfficiency } from "../Shared/TypeEfficiency";
 import Constants from "../Shared/Constants";
 import { Timeline, TimelineEvent, TimelineEventType } from "../Simulator/Timeline";
+import Formulas from "../Shared/Formulas";
 
 export class Battler {
     Pokemon: Pokemon;
@@ -93,7 +94,7 @@ export class Battler {
 
     CanKillTarget(target: Battler, move: Move) {
 
-        return target.Health <= this.CalculateDamageToTargetPokemon(target.Pokemon, move);
+        return target.Health <= Formulas.CalculateDamageToTargetPokemon(this.Pokemon, target.Pokemon, move);
     }
 
 
@@ -114,8 +115,8 @@ export class Battler {
         this.Energy += move.Energy;
         this.NextDeclaredMove = move;
         
-        if(this.Energy > 100) {
-            this.Energy = 100;
+        if(this.Energy > Constants.MAX_ENG) {
+            this.Energy = Constants.MAX_ENG;
         } else if (this.Energy < 0) {
             this.Energy = 0;
         }
@@ -137,7 +138,7 @@ export class Battler {
 
     ExecuteAttack(target: Battler) {
         if(this.NextDeclaredMove) {
-            let damage = this.CalculateDamageToTargetPokemon(target.Pokemon, this.NextDeclaredMove);
+            let damage = Formulas.CalculateDamageToTargetPokemon(this.Pokemon, target.Pokemon, this.NextDeclaredMove);
             target.Health -= damage;
 
             return damage;
@@ -145,17 +146,4 @@ export class Battler {
 
         return 0;
     }
-
-    private CalculateDamageToTargetPokemon(target: Pokemon, move: Move) {
-        let multi_type = TypeEfficiency.GetMoveEfficiency(move.Type, target.Type1, target.Type2);
-        let multi_stab = this.Pokemon.GetStabMultiplier(move);
-
-        let ratio_cpm = Constants.GetCPM(this.Pokemon.LVL) / Constants.GetCPM(target.LVL);
-        let ratio_stats = (this.Pokemon.ATK + this.Pokemon.IV_ATK) / (target.DEF + target.IV_DEF);
-
-        let move_damage = 0.5 * (move.Power * ratio_stats * ratio_cpm) * (multi_type * multi_stab);
-
-        return Math.floor(move_damage) + 1;
-    }
-
 }
