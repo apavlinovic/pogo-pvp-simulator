@@ -9,7 +9,7 @@ test('PokemonRepository:LoadAll', () => {
     expect(pokemons).not.toBeNull();
     expect(pokemons).not.toBeUndefined();
 
-    expect(pokemons[2]).toMatchObject(repo.LoadPokemon("V0009_POKEMON_BLASTOISE"));
+    expect(pokemons[2]).toMatchObject(repo.LoadPokemon("V0003_POKEMON_VENUSAUR"));
     expect(pokemons[pokemons.length - 1]).toMatchObject(repo.LoadPokemon("V0809_POKEMON_MELMETAL"));
 })
 

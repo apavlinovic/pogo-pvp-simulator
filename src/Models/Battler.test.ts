@@ -35,10 +35,9 @@ test('Battler energy generation and usage works and doesnt break limits', () => 
     
     let venu_battler = new Battler(venusaur, vine_whip, frenzy_plant);
 
-    // Doesn't overflow on 100 Energy and Fast move usage
     venu_battler.Energy = 100;
     venu_battler.DeclareAttack(vine_whip);
-    expect(venu_battler.Energy).toBe(100);
+    expect(venu_battler.Energy).toBe(100 + vine_whip.Energy);
 
     venu_battler.Reset();
 
@@ -50,10 +49,8 @@ test('Battler energy generation and usage works and doesnt break limits', () => 
 
     venu_battler.Reset();
 
-    // Charge usage doesn't force energy to go below 0
-
     venu_battler.DeclareAttack(frenzy_plant);
-    expect(venu_battler.Energy).toBe(0);
+    expect(venu_battler.Energy).toBe(0 + frenzy_plant.Energy);
 });
 
 test('Battler deals damage properly', () => {

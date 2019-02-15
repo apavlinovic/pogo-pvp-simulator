@@ -33,7 +33,7 @@ export class MoveRepository {
     }
 
 
-    LoadMove(game_master_id: string) {
+    LoadMove(game_master_id: string) : Move {
 
         return this.dataContext[game_master_id];
     }

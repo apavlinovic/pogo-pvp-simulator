@@ -1,6 +1,7 @@
 import { Type } from "../Shared/Types";
 import { MoveRepository } from "./MoveRepository";
 import { MoveCategory } from "../Models/Move";
+import Constants from "../Shared/Constants";
 
 test('MoveRepository:MoveCreate', () => {
     let repo = new MoveRepository();
@@ -18,7 +19,7 @@ test('MoveRepository:MoveCreate', () => {
 
     let brave_bird = repo.LoadMove("COMBAT_V0256_MOVE_BRAVE_BIRD");
     expect(brave_bird.Energy).toBe(-55);
-    expect(brave_bird.Turns).toBe(null);
+    expect(brave_bird.Turns).toBe(Constants.CHARGE_MOVE_TURN_DURATION);
     expect(brave_bird.Power).toBe(90);
     expect(brave_bird.Type).toBe(Type.Flying);
     expect(brave_bird.Category).toBe(MoveCategory.Charge);
