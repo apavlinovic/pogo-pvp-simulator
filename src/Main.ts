@@ -2,7 +2,6 @@ import _ = require("lodash");
 import * as sqlite3 from 'sqlite3'
 import { SimRunner } from "./SimRunner/SimRunner";
 import Constants from "./Shared/Constants";
-import { SQLGenerator } from "./Data/SQLGenerator";
 import { PokemonRepository } from "./Repository/PokemonRepository";
 import { SimulationResult } from "./Simulator/SimulationResult";
 import { SimulationResultRepository } from "./Repository/SimulationResultRepository";
