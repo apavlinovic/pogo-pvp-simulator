@@ -65,13 +65,16 @@ let runner = new SimRunner();
 let ranker = new Rankings();
 let averagedRatings : IAveragedRankingResultMap = {};
 
-for(let aShield = 0; aShield <= 0; aShield++) {
-    for(let bShield = 0; bShield <= 0; bShield++) {
+let tempest_league = [Type.Electric, Type.Ice, Type.Flying, Type.Ground];
+let twilight_league = [Type.Poison, Type.Fairy, Type.Ghost, Type.Dark];
+
+for(let aShield = 0; aShield <= 1; aShield++) {
+    for(let bShield = 0; bShield <= 1; bShield++) {
 
         let result = ranker.CalculateRanking(
             runner.RunAllVsAllSimulations(
                 Constants.GREAT_LEAGUE_MAX_CP, [[aShield, bShield]],
-                [Type.Poison, Type.Fairy, Type.Ghost, Type.Dark])
+                twilight_league)
             );
 
         for (const pokemonID in result) {
@@ -87,7 +90,6 @@ for(let aShield = 0; aShield <= 0; aShield++) {
             averagedRatings[pokemonID].wins += result[pokemonID].Wins;
             averagedRatings[pokemonID].losses += result[pokemonID].Loss;
         }
-
     }
 }
 
@@ -126,9 +128,10 @@ for (const pokemon in output) {
         }
     }
 
-    output[pokemon].total_elo = total_elo / total_moves;
-    output[pokemon].total_wins = total_wins / total_moves;
-    output[pokemon].total_losses = total_losses / total_moves;
+    output[pokemon].total_elo = total_elo;
+    output[pokemon].total_wins = total_wins;
+    output[pokemon].total_losses = total_losses;
+    output[pokemon].total_moves = total_moves;
 
     output[pokemon].name = pokemon;
 
@@ -136,7 +139,7 @@ for (const pokemon in output) {
 }
 
 _(printable_output).orderBy(o => {
-    return o.total_wins / o.total_losses
-}, 'desc').each(o => {
-    console.log(o.name, '\t', o.total_wins / o.total_losses);
+    return o.total_elo;
+}, 'desc').each((o, i) => {
+    console.log(i, o.name);
 })

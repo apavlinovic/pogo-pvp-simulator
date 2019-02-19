@@ -124,6 +124,10 @@ export class Battler {
         this.Energy += move.Energy;
         this.NextDeclaredMove = move;
 
+        if(this.Energy > Constants.MAX_ENG) {
+            this.Energy = Constants.MAX_ENG;
+        }
+
         if(move.Category == MoveCategory.Fast) {
             this.Cooldown = move.Turns as number;
         } else {

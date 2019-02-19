@@ -31,7 +31,7 @@ export class Rankings {
     }
 
     private GeneratePokemonWithMovesetIdentifier(battler: Battler) {
-        return `${battler.Pokemon.ID}-${battler.FastMove.ID}-${battler.ChargeMove.ID}`
+        return `${battler.Pokemon.ID}`
     }
 }
 

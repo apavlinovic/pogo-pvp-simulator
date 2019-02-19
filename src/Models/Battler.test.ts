@@ -37,7 +37,7 @@ test('Battler energy generation and usage works and doesnt break limits', () => 
 
     venu_battler.Energy = 100;
     venu_battler.DeclareAttack(vine_whip);
-    expect(venu_battler.Energy).toBe(100 + vine_whip.Energy);
+    expect(venu_battler.Energy).toBe(100);
 
     venu_battler.Reset();
 
